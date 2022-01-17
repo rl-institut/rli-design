@@ -4,10 +4,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build-sass": "sass ./src/static/scss/carbon.scss ./src/static/css/carbon.css",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "glob": "^7.2.0",
+    "sass": "^1.48.0",
     "vite": "^2.7.2"
+  },
+  "dependencies": {
+    "carbon-components": "^10.51.0"
   }
 }
