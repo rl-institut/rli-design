@@ -1,5 +1,6 @@
-# rms-design
-Source of truth for the UI components and pages of the RLI-Management-System (RMS)
+# RMS-Design
+
+Source of truth for the UX/UI of the RLI-Management-System (RMS). Based on [Vite](https://vitejs.dev/).
 
 ## Install (after doing `git clone`)
 ```bash
@@ -31,7 +32,7 @@ src/
 npm run dev
 ```
 
-## Build CSS form SCSS
+## Build CSS from SCSS
 ```bash
 npm run build-sass
 ```
