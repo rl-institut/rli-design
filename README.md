@@ -41,9 +41,10 @@ npm run dev
 ## Build CSS from SCSS
 
 ```bash
+npm run sass
 ```
 
-Please note: the used SCSS files are hefty. Although Vite auto builds CSS from SCSS files, this takes a long time. Therefore the SCSS to CSS build step was factored out (by linking to a bundled CSS file) as a separate step with (Dart Sass), which is much faster, but still takes a few seconds. Vite also claims that using Sass/SCSS/less is a somehow outdated approach and that ["it is recommended to use native CSS variables with PostCSS"](https://vitejs.dev/guide/features.html#css).
+Please note: the used SCSS files are hefty. Although Vite auto builds CSS from SCSS files, this takes a long time. Therefore the SCSS to CSS build step was factored out (by linking to a bundled CSS file) as a separate step with (Dart Sass), which is much faster, but still takes a few seconds. Vite also claims that using Sass/SCSS/Less is a somehow outdated approach and that ["it is recommended to use native CSS variables with PostCSS"](https://vitejs.dev/guide/features.html#css).
 
 ## Build CSS from SCSS with watch mode
 
