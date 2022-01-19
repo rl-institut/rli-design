@@ -1,4 +1,5 @@
 import path from "path";
+import nunjucks from "vite-plugin-nunjucks";
 
 export default {
   root: path.join(__dirname, "src"),
@@ -11,4 +12,5 @@ export default {
       },
     },
   },
+  plugins: [nunjucks()],
 };

@@ -66,6 +66,12 @@ Please note: to run the build step, usually is not needed. A developer develops 
 npm run preview
 ```
 
+## Templating 
+
+This repo uses Vite, which is a new type of frontend build system which supports most modern JavaScript (JS) based frontend technologies like React, Vue, Typescript, JSX etc., out of the box. Vite can be extended via its plugin system to support further JS frontend technologies. The RMS is coded in Django and uses the [Django Template Language (DTL)](https://docs.djangoproject.com/en/dev/ref/templates/language/), which is implemented in Python. Therefore, it is not a JS frontend technology, and Vite can't utilize it. To mimic Django's template syntax, this Vite repo uses [vite-plugin-nunjucks](https://github.com/Jax-p/vite-plugin-nunjucks), which uses the JS template library [Nunjucks](https://github.com/mozilla/nunjucks) which is inspired by the Python based [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) templating language which again is inspired by the DTL and therefore has a very similar syntax. The resulting syntax similarity will help us develop components and pages that shall mimic its later use with the DTL.
+
+For a quick usage introduction, please go to the [Vite Nunjucks plugin readme](https://github.com/Jax-p/vite-plugin-nunjucks) and take it from there.
+
 ## Resources
 
 - [Awesome Design Systems](https://github.com/alexpate/awesome-design-systems) - a collection of awesome design systems
