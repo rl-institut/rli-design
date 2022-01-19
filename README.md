@@ -65,3 +65,10 @@ Please note: to run the build step, usually is not needed. A developer develops 
 ```bash
 npm run preview
 ```
+
+## Resources
+
+- [Awesome Design Systems](https://github.com/alexpate/awesome-design-systems) - a collection of awesome design systems
+- [Carbon Design System](https://www.carbondesignsystem.com/) - an example of an well designed design system
+- [makeup-js](https://github.com/makeup/makeup-js) - a suite of vanilla JavaScript modules for building accessible user interfaces
+- [ROCA: Resource-oriented Client Architecture](https://github.com/innoq/ROCA) - a collection of simple best practices for decent Web applications
