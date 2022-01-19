@@ -1,0 +1,8 @@
+// Import from ./_variable_overrides.scss
+@import "variable_overrides";
+
+// Imported from node_modules, more infos: https://getbootstrap.com/docs/5.0/customize/sass/
+@import "bootstrap/scss/bootstrap";
+
+// Import from ./_custom.scss
+@import "custom";

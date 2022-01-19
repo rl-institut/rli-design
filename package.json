@@ -4,8 +4,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "sass": "sass ./src/static/scss/carbon.scss ./src/static/css/carbon.css",
-    "sass-watch": "sass --watch ./src/static/scss/carbon.scss ./src/static/css/carbon.css",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -14,6 +12,6 @@
     "vite-plugin-nunjucks": "^0.1.10"
   },
   "dependencies": {
-    "carbon-components": "^10.51.0"
+    "bootstrap": "^5.1.3"
   }
 }

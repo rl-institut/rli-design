@@ -1,41 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RMS-Design</title>
-    <link rel="stylesheet" type="text/css" href="./static/css/carbon.css" />
-  </head>
-  <body>
-    <h1>RMS-Design</h1>
+{% extends "src/layout.html" %}
 
-    <ul class="bx--list--unordered">
-      <li class="bx--list__item">
-        Official website:
-        <a href="https://www.carbondesignsystem.com/" class="bx--link">
-          Link
-        </a>
-      </li>
-      <li class="bx--list__item">
-        Vanilla HTML/JS component examples:
-        <a href="https://the-carbon-components.netlify.app/" class="bx--link">
-          Link
-        </a>
-      </li>
-      <li class="bx--list__item">
-        Vanilla HTML/JS pattern examples:
-        <a href="https://the-carbon-components.netlify.app/" class="bx--link">
-          Link
-        </a>
-      </li>
-    </ul>
+{% block content %}
+<h1>Main Page</h1>
 
-    <div>
-      <a href="./nested/" class="bx--link">Link to nested page</a>
-    </div>
+<p>Hi, this is the main landing page.</p>
+<p>
+  This project uses
+  <a
+    href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+    class="link-primary"
+    >Bootstrap 5</a
+  >.
+</p>
 
-    <script type="module" src="./static/js/carbon.js"></script>
-    <script type="module" src="./index.js"></script>
-  </body>
-</html>
+<a
+  href="./nested/"
+  class="btn btn-primary active"
+  role="button"
+  aria-pressed="true"
+  >Nested page</a
+>
+{% endblock %}
+
+{% block js %}
+<script type="module" src="./index.js"></script>
+{% endblock %}

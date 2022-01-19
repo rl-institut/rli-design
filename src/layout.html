@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RMS-Design</title>
+    <link rel="stylesheet" type="text/css" href="/static/scss/styles.scss" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bd-content p-5" role="main">
+      {% block content %}{% endblock %}
+    </main>
+
+    <script type="module" src="/static/js/main.js"></script>
+    {% block js %}{% endblock %}
+  </body>
+</html>
