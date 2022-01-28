@@ -17,6 +17,7 @@
 
 // scss-docs-start color-variables
 $blue: #002E50;
+$rli-black: #292929;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -119,7 +120,7 @@ $blue: #002E50;
 // Set the number of columns and specify the width of the gutters.
 
 // Container padding
-
+$container-padding-x: 2rem;
 
 // Components
 //
@@ -132,6 +133,10 @@ $blue: #002E50;
 // scss-docs-end border-radius-variables
 
 // scss-docs-start box-shadow-variables
+$box-shadow:                  0 .5rem 1rem rgba($blue, .15);
+$box-shadow-sm:               0 .125rem .25rem rgba($blue, .075);
+$box-shadow-lg:               0 1rem 3rem rgba($blue, .175);
+$box-shadow-inset:            inset 0 1px 2px rgba($blue, .075);
 // scss-docs-end box-shadow-variables
 
 // scss-docs-start caret-variables
@@ -257,10 +262,17 @@ $blue: #002E50;
 // Navbar
 
 // scss-docs-start navbar-variables
+$navbar-nav-link-padding-x: 1rem;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
 // scss-docs-end navbar-variables
 
 // scss-docs-start navbar-theme-variables
+$navbar-light-color:                $rli-black;
+$navbar-light-hover-color:          rgba($rli-black, .7) !default;
+$navbar-light-active-color:         rgba($rli-black, .9) !default;
+$navbar-light-disabled-color:       rgba($rli-black, .3) !default;
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-light-toggler-border-color: none;
 // scss-docs-end navbar-theme-variables
 
 
