@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -7,10 +7,10 @@
     <title>RMS-Design</title>
     <link rel="stylesheet" type="text/css" href="/static/scss/styles.scss" />
   </head>
-  <body>
+  <body class="d-flex flex-column h-100">
     <header>
       <nav class="navbar navbar-light navbar-expand-md bg-white fixed-top shadow-sm">
-        <div class="container-fluid">
+        <div class="container-fluid px-3">
           <a class="navbar-brand" href="#" aria-current="page">RLI Management System</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -35,9 +35,16 @@
       </nav>
     </header>
 
-    <main class="bd-content p-5" role="main">
+    <main class="bd-content flex-shrink-0" role="main">
       {% block content %}{% endblock %}
     </main>
+
+    <footer class="footer mt-auto py-2 bg-light bg-white">
+      <div class="container-fluid d-flex justify-content-between">
+        <span class="fw-light">Reiner Lemoine Institut</span>
+        <span><a href="#">v3.42.1</a></span>
+      </div>
+    </footer>
 
     <script type="module" src="/static/js/main.js"></script>
     {% block js %}{% endblock %}

@@ -62,6 +62,15 @@ $black: #292929;
 // You can add more entries to the $spacers map, should you need more variation.
 
 // scss-docs-start spacer-variables-maps
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .5,  // 0.5rem
+  2: $spacer,       // 1rem
+  3: $spacer * 1.5, // 1.5rem
+  4: $spacer * 2,   // 2rem
+  5: $spacer * 4,   // 4rem
+);
 // scss-docs-end spacer-variables-maps
 
 // Position
@@ -93,6 +102,7 @@ $body-color: $black;
 // Links
 //
 // Style anchor elements.
+$link-decoration: none;
 
 // Paragraphs
 //
