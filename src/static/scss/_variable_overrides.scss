@@ -157,6 +157,8 @@ $box-shadow-inset:            inset 0 1px 2px rgba($blue, .075);
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
+$font-family-sans-serif: Roboto, Helvetica, Arial, sans-serif;
+$font-family-monospace: "Roboto Mono", monospace;
 // stylelint-enable value-keyword-case
 
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
