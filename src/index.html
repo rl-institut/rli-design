@@ -1,25 +1,28 @@
 {% extends "src/layout.html" %}
 
 {% block content %}
-<h1>Main Page</h1>
 
-<p>Hi, this is the main landing page.</p>
-<p>
-  This project uses
-  <a
-    href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
-    class="link-primary"
-    >Bootstrap 5</a
-  >.
-</p>
+<section class="login">
+  <div class="container-xxl h-100 d-flex justify-content-center align-items-center">
+    <div class="bg-white col col-sm-10 col-md-8 col-lg-6 col-xl-4 p-md-4">
+      <form>
+        <img class="mb-4" src="../../static/logos/RLI_logo_weiss.png" alt="" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+        <div class="form-floating">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+        <p class="mt-5 mb-3">&copy; 2022</p>
+      </form>
+    </div>
+  </div>
+</section>
 
-<a
-  href="/nested/"
-  class="btn btn-primary active"
-  role="button"
-  aria-pressed="true"
-  >Nested page</a
->
 {% endblock %}
 
 {% block js %}
