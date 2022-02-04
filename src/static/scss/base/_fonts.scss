@@ -13,15 +13,6 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('Roboto-MediumItalic.woff2') format('woff2'),
-      url('Roboto-MediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
   src: url('Roboto-BoldItalic.woff2') format('woff2'),
       url('Roboto-BoldItalic.woff') format('woff');
   font-weight: 700;
@@ -34,15 +25,6 @@
   src: url('Roboto-Thin.woff2') format('woff2'),
       url('Roboto-Thin.woff') format('woff');
   font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('Roboto-Medium.woff2') format('woff2'),
-      url('Roboto-Medium.woff') format('woff');
-  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
