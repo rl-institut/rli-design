@@ -11,12 +11,15 @@
         </div>
         <h1 class="h3 mb-3 fw-normal">Login</h1>
         <div class="mb-2">
-          <label for="loginUserName">User name</label>
-          <input type="email" class="form-control" id="loginUserName" placeholder="Username">
+          <label for="loginUserName" class="form-label">User name</label>
+          <input type="text" class="form-control is-invalid" id="loginUserName" placeholder="firstname.lastname" name="fname" aria-describedby="validationServerUsernameFeedback" required>
+          <div id="validationServerUsernameFeedback" class="invalid-feedback">
+            Valid user name as firstname.lastname is required.
+          </div>
         </div>
         <div class="mb-4">
-          <label for="floatingPassword">Password</label>
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="loginPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="loginPassword" placeholder="Passwort" name="fname">
         </div>
         <button class="w-100 btn btn-lg btn-primary" type="submit">Log in</button>
       </form>
