@@ -4,5 +4,10 @@
 // Imported from node_modules, more infos: https://getbootstrap.com/docs/5.0/customize/sass/
 @import "bootstrap/scss/bootstrap";
 
-// Import from ./_custom.scss
-@import "custom";
+// Import custom SCSS
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/links';
+@import 'components/forms';
+@import 'layout/general';
+@import 'layout/login';
