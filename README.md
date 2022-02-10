@@ -8,7 +8,7 @@ This repo is a collection of elements, components, pages and ideas on creating t
 
 ## Live Preview (branch `main`)
 
-https://rms-design-8d69fd10-214d-46a8-a5cd-93888ceee417.netlify.app/
+https://rms-design-8d69fd10.netlify.app
 
 ## Install (after doing `git clone`)
 
