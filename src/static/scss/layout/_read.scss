@@ -1,0 +1,45 @@
+.read-layout {
+  @extend .position-relative;
+  @extend .overflow-hidden;
+
+  &__header {
+    height: 13rem;
+    background-image: url(/static/images/mike-setchell-BrLSwmGPVpI-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include media-breakpoint-up(md) {
+      height: 18rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 25rem;
+    }
+  }
+
+  &__content {
+    @extend .px-3;
+
+    .row {
+      @extend .justify-content-center;
+      @extend .py-4;
+      @extend .py-md-5;
+    }
+
+    .col {
+      @extend .col-md-10;
+      @extend .col-xl-8;
+      @extend .col-xxl-6;
+    }
+  }
+
+  &__section {
+    @extend .pb-2;
+    @extend .pb-xl-4;
+
+    p {
+      @extend .fw-light;
+    }
+  }
+}
