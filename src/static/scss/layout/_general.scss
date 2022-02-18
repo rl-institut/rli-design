@@ -1,3 +1,11 @@
 main {
   padding-top: $c-navbar-height;
 }
+
+.bs-row {
+  @extend .row;
+}
+
+.bs-col {
+  @extend .col;
+}
