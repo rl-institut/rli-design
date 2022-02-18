@@ -83,7 +83,7 @@ $spacers: (
 // Body
 //
 // Settings for the `<body>` element.
-$body-color: $black;
+$body-color: $blue;
 // Utilities maps
 //
 // Extends the default `$theme-colors` maps to help create our utilities.
@@ -102,6 +102,7 @@ $body-color: $black;
 // Links
 //
 // Style anchor elements.
+$link-color: #0060AF;
 $link-decoration: none;
 
 // Paragraphs
@@ -289,10 +290,10 @@ $navbar-nav-link-padding-x: 1rem;
 // scss-docs-end navbar-variables
 
 // scss-docs-start navbar-theme-variables
-$navbar-light-color:                $black;
-$navbar-light-hover-color:          rgba($black, .7);
-$navbar-light-active-color:         rgba($black, .9);
-$navbar-light-disabled-color:       rgba($black, .3);
+$navbar-light-color:                $blue;
+$navbar-light-hover-color:          rgba($blue, .7);
+$navbar-light-active-color:         rgba($blue, .9);
+$navbar-light-disabled-color:       rgba($blue, .3);
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 $navbar-light-toggler-border-color: none;
 // scss-docs-end navbar-theme-variables
