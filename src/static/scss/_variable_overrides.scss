@@ -83,7 +83,7 @@ $spacers: (
 // Body
 //
 // Settings for the `<body>` element.
-$body-color: $black;
+$body-color: $blue;
 // Utilities maps
 //
 // Extends the default `$theme-colors` maps to help create our utilities.
@@ -102,6 +102,7 @@ $body-color: $black;
 // Links
 //
 // Style anchor elements.
+$link-color: #0060AF;
 $link-decoration: none;
 
 // Paragraphs
@@ -173,6 +174,14 @@ $font-family-monospace: "Roboto Mono", monospace;
 
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
 // $font-size-base affects the font size of the body text
+$font-size-base:              1rem;
+
+$h1-font-size:                $font-size-base * 2;
+$h2-font-size:                $font-size-base * 1.5;
+$h3-font-size:                $font-size-base * 1.25;
+$h4-font-size:                $font-size-base * 1.25;
+$h5-font-size:                $font-size-base;
+$h6-font-size:                $font-size-base;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -212,7 +221,7 @@ $font-family-monospace: "Roboto Mono", monospace;
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 // scss-docs-start btn-variables
-$btn-font-weight: 700;
+$btn-font-weight: 400;
 
 // Allows for customizing button radius independently from global border radius
 // scss-docs-end btn-variables
@@ -281,11 +290,11 @@ $navbar-nav-link-padding-x: 1rem;
 // scss-docs-end navbar-variables
 
 // scss-docs-start navbar-theme-variables
-$navbar-light-color:                $black;
-$navbar-light-hover-color:          rgba($black, .7) !default;
-$navbar-light-active-color:         rgba($black, .9) !default;
-$navbar-light-disabled-color:       rgba($black, .3) !default;
-$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-light-color:                $blue;
+$navbar-light-hover-color:          rgba($blue, .7);
+$navbar-light-active-color:         rgba($blue, .9);
+$navbar-light-disabled-color:       rgba($blue, .3);
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 $navbar-light-toggler-border-color: none;
 // scss-docs-end navbar-theme-variables
 

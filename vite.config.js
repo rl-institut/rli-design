@@ -7,8 +7,9 @@ export default {
     outDir: path.join(__dirname, "dist"),
     rollupOptions: {
       input: {
-        index: path.resolve(__dirname, "src/index.html"),
-        nested: path.resolve(__dirname, "src/nested/index.html"),
+        login: path.resolve(__dirname, "src/index.html"),
+        about: path.resolve(__dirname, "src/about/index.html"),
+        contact: path.resolve(__dirname, "src/contact.html"),
       },
     },
   },
