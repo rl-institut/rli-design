@@ -3,7 +3,7 @@
   background-color: $white;
 
   @include media-breakpoint-up(md) {
-    background-image: url(../../static/images/bg_pv_blue_gradient.jpg);
+    background-image: url(/static/images/bg_pv_blue_gradient.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

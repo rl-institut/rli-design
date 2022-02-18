@@ -1,0 +1,27 @@
+{% extends "src/layout.html" %}
+
+{% block content %}
+
+<section class="read-layout read-layout--contact">
+  <div class="read-layout__header"></div>
+  <div class="read-layout__content container">
+    <div class="row">
+      <div class="col">
+        <h1>Kontakt</h1>
+        <section class="read-layout__section">
+          <p>Hast du eine Frage oder einen Hinweis? Kontaktiere uns einfach! Dafür gibt es zwei Möglichkeiten:</p>
+          <ul>
+            <li>schreibe eine E-Mail an <a href="mailto:rms@rl-institut.de">rms@rl-institut.de</a></li>
+            <li>tätige eine Fehlermeldung auf <a href="http://192.168.10.26/projects/finanztool/issues">Redmine</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block js %}
+<script type="module" src="/index.js"></script>
+{% endblock %}

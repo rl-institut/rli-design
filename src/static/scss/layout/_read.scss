@@ -4,7 +4,7 @@
 
   &__header {
     height: 13rem;
-    background-image: url(/static/images/mike-setchell-BrLSwmGPVpI-unsplash.jpg);
+    background-image: url(/static/images/bg_windmills_blue_gradient.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -14,7 +14,7 @@
     }
 
     @include media-breakpoint-up(lg) {
-      height: 25rem;
+      height: 20rem;
     }
   }
 
@@ -38,8 +38,19 @@
     @extend .pb-2;
     @extend .pb-xl-4;
 
-    p {
+    p,
+    ul {
       @extend .fw-light;
+    }
+
+    &--highlight {
+      @extend .fst-italic;
+    }
+  }
+
+  &--contact {
+    .read-layout__header {
+      background-image: url(/static/images/bg_pv_roof_blue_gradient.jpg);
     }
   }
 }
