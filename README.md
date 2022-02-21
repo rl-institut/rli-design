@@ -38,7 +38,7 @@ npm run preview
 
 ## Design Philoshopy
 
-This project is composed of a very small team, therefore the strategy is to base our design on exsiting design systems, but also to customize what needs to be customized in order to stand out as RLI-style. With this approach we want to create a minimal, flexible and living design system that will allow us to scale it up in the future for other projects if wanted. Minimal, because there is no need to spend months on creating something totally new, when there are already really good practices on other platforms that can be integrated into ours. Flexible, because we want to base our design choices on our existing RLI guidelines and web applications, as well as on external platforms. Living, because we don't think that anything is fixed in stone and that the design system will evolve with the RLI and its products.
+This project is composed of a very small team, therefore the strategy is to base our design on existing design systems, but also to customize what needs to be customized in order to stand out as RLI-style. With this approach we want to create a minimal, flexible and living design system that will allow us to scale it up in the future for other projects if wanted. Minimal, because there is no need to spend months on creating something totally new, when there are already really good practices on other platforms that can be integrated into ours. Flexible, because we want to base our design choices on our existing RLI guidelines and web applications, as well as on external platforms. Living, because we don't think that anything is fixed in stone and that the design system will evolve with the RLI and its products.
 
 Further links:
 
@@ -59,4 +59,3 @@ For a quick usage introduction, please go to the [Vite Nunjucks plugin readme](h
 ## Resources
 
 - [Design Systems 101](https://www.nngroup.com/articles/design-systems-101/)
-- [ROCA: Resource-oriented Client Architecture](https://github.com/innoq/ROCA) - a collection of simple best practices for decent web applications
