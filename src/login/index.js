@@ -2,4 +2,4 @@
 
 // This file can be named anything
 
-console.log("Page specfic code in src/index.js initialized!");
+console.log("Page specfic code in src/login/index.js initialized!");

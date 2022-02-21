@@ -2,33 +2,13 @@
 
 {% block content %}
 
-<section class="login">
-  <div class="container-xxl h-100 d-flex justify-content-center align-items-center">
-    <div class="bg-white col col-sm-10 col-md-8 col-lg-6 col-xl-4 p-md-4">
-      <form>
-        <div class="text-center" aria-hidden="true">
-          <img class="login-logo mb-4" src="/static/logos/RMS_logo.svg" alt="RMS Logo">
-        </div>
-        <h1 class="h3 mb-3 fw-normal">Login</h1>
-        <div class="mb-2">
-          <label for="loginUserName" class="form-label">User name</label>
-          <input type="text" class="form-control is-invalid" id="loginUserName" placeholder="firstname.lastname" name="fname" aria-describedby="validationServerUsernameFeedback" required>
-          <div id="validationServerUsernameFeedback" class="invalid-feedback">
-            Valid user name as firstname.lastname is required.
-          </div>
-        </div>
-        <div class="mb-4">
-          <label for="loginPassword" class="form-label">Password</label>
-          <input type="password" class="form-control" id="loginPassword" placeholder="Passwort" name="fname">
-        </div>
-        <button class="w-100 btn btn-primary" type="submit">Log in</button>
-      </form>
-    </div>
-  </div>
+<section class="container">
+  <h1>RMS-Design</h1>
+  <ul>
+    <li><a href="/dashboard/">Dashboard</a></li>
+    <li><a href="/login/">Login</a></li>
+    <li><a href="/onboarding/">On-boarding</a></li>
+  </ul>
 </section>
 
-{% endblock %}
-
-{% block js %}
-<script type="module" src="/index.js"></script>
 {% endblock %}

@@ -2,4 +2,4 @@
 
 // This file can be named anything
 
-console.log("Page specfic code in src/contact.js initialized!");
+console.log("Page specfic code in src/login/contact.js initialized!");
