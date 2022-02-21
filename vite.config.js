@@ -10,6 +10,7 @@ export default {
         login: path.resolve(__dirname, "src/index.html"),
         about: path.resolve(__dirname, "src/about/index.html"),
         contact: path.resolve(__dirname, "src/contact.html"),
+        onboarding: path.resolve(__dirname, "src/onboarding/applications.html"),
       },
     },
   },
