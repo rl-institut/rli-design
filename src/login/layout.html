@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RMS-Design</title>
+    <link rel="stylesheet" type="text/css" href="/static/scss/styles.scss" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <nav class="navbar navbar-light navbar-expand-md bg-white fixed-top shadow-sm">
+        <div class="container-fluid px-3">
+          <a class="navbar-brand" href="/" aria-current="page">
+            <img src="/static/logos/RMS_logo_notitle.svg" alt="RMS Logo" width="97.5" height="30">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">RMS Login</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="/login/">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login/about/">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-shrink-0">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer mt-auto py-2 bg-white">
+      <div class="container-fluid px-3 d-flex justify-content-between">
+        <span class="fw-light">Reiner Lemoine Institut</span>
+        <span><a href="#">v3.42.1</a></span>
+      </div>
+    </footer>
+
+    <script type="module" src="/static/js/main.js"></script>
+    {% block js %}{% endblock %}
+  </body>
+</html>
