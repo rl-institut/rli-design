@@ -2,4 +2,4 @@
 
 // This file can be named anything
 
-console.log("Page specfic code in src/about/some-random-name.js initialized!");
+console.log("Page specfic code in src/login/about/some-random-name.js initialized!");
