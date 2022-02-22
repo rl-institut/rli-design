@@ -72,7 +72,7 @@ Your navigation and `href` values should then be `/ds/`, `/ds/design-system/` an
 
 ### 2. File-based-naming with individually named html files
 
-You can also name your HTML files diferently in the same, then you have to use the HTML file ending.
+You can also name your HTML files diferently in the same and keep them in the same folder, then you have to use the HTML file ending (except for `index.html`).
 
 ```
 ds/index.html
