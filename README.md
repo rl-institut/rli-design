@@ -56,6 +56,37 @@ This repo uses Vite, which is a new type of frontend build system which supports
 
 For a quick usage introduction, please go to the [Vite Nunjucks plugin readme](https://github.com/Jax-p/vite-plugin-nunjucks) and take it from there.
 
+## How to structure your HTML files and folders
+
+In Vite with vanilla HTML/JS, you can name and structure your HTML pages two ways. This ways have in principle nothing to do with Vite, they are inherent to how HTML works in your browser.
+
+### 1. Folder-based-naming with index.html files
+
+```
+ds/index.html
+ds/design-system/index.html
+ds/typography/index.html
+```
+
+Your navigation and `href` values should then be `/ds/`, `/ds/design-system/` and `/ds/design-system/` - every time you have `index.html` as a file name you can completely omit `index.html`.
+
+### 2. File-based-naming with individually named html files
+
+You can also name your HTML files diferently in the same and keep them in the same folder, then you have to use the HTML file ending (except for `index.html`).
+
+```
+ds/index.html
+ds/design-system.html
+ds/typography.html
+```
+
+Your navigation and `href` values should then be `/ds/` (omitted, because `index.html`), `/ds/design-system.html` and `/ds/typography.html`
+
+### Hints
+
+- you can combine both techniques
+- in `href` links I recommend to use absolute paths (relative to your root folder, in our case `src/`) with a leading slash "`/`". For example: `/ds/design-system/` for `src/ds/design-system/index.html`
+
 ## Resources
 
 - [Design Systems 101](https://www.nngroup.com/articles/design-systems-101/)
