@@ -12,7 +12,18 @@
       <p>To override Bootstrap variables, use <code>_variable_overrides.scss</code> and place it at the right position in the document (check where it is located inside <code>node_modules/bootstrap/scss/_variables.scss</code>), to be sure not to override the varibale more than once.</p>
     </div>
     <div class="ds__item bs-row">
-      <h2>Colors</h2>
+      <div class="bs-col">
+        <h2>Colors</h2>
+        <p>Primary color is <code>$blue</code>. It is mostly used for text, but also some background elements images.</p>
+        <p>Color for anchors is <code>$link-color</code>.</p>
+        <p>Try to use very light background colors such as <code>$white</code> or <code>$gray-100</code>. You can use box-shadows such as <code>$box-shadow-sm</code> on a component if the component and background both have <code>$white</code> as a background-color.</p>
+      </div>
+      <div class="bs-col ds__colors">
+        <div class="bs-row">
+          <div class="bs-col sample sample--black"></div>
+          <div class="bs-col sample sample--white"></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

@@ -12,4 +12,19 @@
   &__item {
     @extend .pb-4;
   }
+
+  &__colors {
+
+    .sample {
+      height: 6.5rem;
+
+      &--black {
+        background-color: $black;
+      }
+
+      &--white {
+        background-color: $white;
+      }
+    }
+  }
 }
