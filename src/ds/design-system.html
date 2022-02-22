@@ -5,7 +5,13 @@
 <section class="ds">
   <div class="ds__container">
     <h1>RMS Design System</h1>
-    <div class="bs-row">
+    <div class="ds__item bs-row">
+      <h2>Layout</h2>
+      <p>RMS is primarily based on ZURB Foundation. We will migrate the CSS system to Bootstrap. In order to prevent display errors and bugs, we should be sure we don't use classes that are used in Foundation. Since Bootstrap has the same type of structure as Foundation, we should use a different system. For that purpose, use BEM system as much as possible: <code>block__element--modifier</code>. Whenever possible use <a href="https://sass-lang.com/documentation/at-rules/extend" target=“_blank“ rel=“noopener noreferrer“>@extend from Sass:</a> <code>@extend {bootstrap-class}</code> if the styles you are looking for are already available under a Bootstrap class.</p>
+      <p>There are exceptions to the use of BEM, such as <code>.row</code> and <code>.col</code>. Use in that case the <code>.bs-row</code> and <code>.bs-col</code> classes. <code>@extend</code> is used to integrate the Bootsrap class declarations in these custom classes. Similarly, if only a Bootstrap class can be used and not the BEM system, create a new class and declaration: <code>.bs-{bootstrap-class}</code> and extend the Bootstrap class: <code>@extend {bootstrap-class}</code>.</p>
+      <p>To override Bootstrap variables, use <code>_variable_overrides.scss</code> and place it at the right position in the document (check where it is located inside <code>node_modules/bootstrap/scss/_variables.scss</code>), to be sure not to override the varibale more than once.</p>
+    </div>
+    <div class="ds__item bs-row">
       <h2>Colors</h2>
     </div>
   </div>

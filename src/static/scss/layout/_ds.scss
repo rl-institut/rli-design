@@ -8,4 +8,8 @@
     @extend .d-flex;
     @extend .flex-column;
   }
+
+  &__item {
+    @extend .pb-4;
+  }
 }
