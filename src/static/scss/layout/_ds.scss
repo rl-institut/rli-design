@@ -16,7 +16,16 @@
   &__colors {
 
     .sample {
-      height: 6.5rem;
+      @extend .d-flex;
+      @extend .justify-content-center;
+      @extend .align-items-center;
+      color: $white;
+      height: 2rem;
+
+      &--blue {
+        background-color: $blue;
+        height: 6rem;
+      }
 
       &--black {
         background-color: $black;
@@ -24,6 +33,121 @@
 
       &--white {
         background-color: $white;
+        color: $blue;
+      }
+
+      &--gray-900 {
+        background-color: $gray-900;
+      }
+
+      &--gray-800 {
+        background-color: $gray-800;
+      }
+
+      &--gray-700 {
+        background-color: $gray-700;
+      }
+
+      &--gray-600 {
+        background-color: $gray-600;
+      }
+
+      &--gray-500 {
+        background-color: $gray-500;
+      }
+
+      &--gray-400 {
+        background-color: $gray-400;
+      }
+
+      &--gray-300 {
+        background-color: $gray-300;
+        color: $blue;
+      }
+
+      &--gray-200 {
+        background-color: $gray-200;
+        color: $blue;
+      }
+
+      &--gray-100 {
+        background-color: $gray-100;
+        color: $blue;
+      }
+
+      &--c-color-blue-5 {
+        background-color: $c-color-blue-5;
+      }
+
+      &--c-color-blue-4 {
+        background-color: $c-color-blue-4;
+      }
+
+      &--c-color-blue-3 {
+        background-color: $c-color-blue-3;
+        color: $blue;
+      }
+
+      &--c-color-blue-2 {
+        background-color: $c-color-blue-2;
+        color: $blue;
+      }
+
+      &--c-color-green-5 {
+        background-color: $c-color-green-5;
+      }
+
+      &--c-color-green-4 {
+        background-color: $c-color-green-4;
+        color: $blue;
+      }
+
+      &--c-color-green-3 {
+        background-color: $c-color-green-3;
+        color: $blue;
+      }
+
+      &--c-color-green-2 {
+        background-color: $c-color-green-2;
+        color: $blue;
+      }
+
+      &--c-color-yellow-5 {
+        background-color: $c-color-yellow-5;
+        color: $blue;
+      }
+
+      &--c-color-yellow-4 {
+        background-color: $c-color-yellow-4;
+        color: $blue;
+      }
+
+      &--c-color-yellow-3 {
+        background-color: $c-color-yellow-3;
+        color: $blue;
+      }
+
+      &--c-color-yellow-2 {
+        background-color: $c-color-yellow-2;
+        color: $blue;
+      }
+
+      &--c-color-red-5 {
+        background-color: $c-color-red-5;
+      }
+
+      &--c-color-red-4 {
+        background-color: $c-color-red-4;
+      }
+
+      &--c-color-red-3 {
+        background-color: $c-color-red-3;
+        color: $blue;
+      }
+
+      &--c-color-red-2 {
+        background-color: $c-color-red-2;
+        color: $blue;
       }
     }
   }
