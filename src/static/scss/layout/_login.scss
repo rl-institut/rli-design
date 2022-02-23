@@ -1,15 +1,18 @@
 .login {
   height: calc(100vh - #{$c-navbar-height} - #{$c-footer-height});
   background-color: $white;
+  
 
   @include media-breakpoint-up(md) {
     background-image: url(/static/images/bg_pv_blue_gradient.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    
   }
 
   .login-logo {
     height: 3.5rem;
+    
   }
 }
