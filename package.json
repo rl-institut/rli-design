@@ -12,6 +12,7 @@
     "vite-plugin-nunjucks": "^0.1.10"
   },
   "dependencies": {
-    "bootstrap": "^5.1.3"
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.1"
   }
 }
