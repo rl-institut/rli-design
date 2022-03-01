@@ -2,563 +2,593 @@
 
 {% block content %}
 
-<body class="bg-light">
-    <div class="container">
-        <div class="py-5  text-center">
-            <img class="mb-4 d-block mx-auto" src="../../static/logos/RLI_logo_weiss.png" width="72" height="72" alt="">
-            <h2>Benutzerkonto Form</h2>
-        </div>
+<main class="flex-shrink-0">
+  <div class="container">
+    <div class="py-5  text-center">
+      <h2>Neuer Account</h2>
     </div>
-    <div class="container">
-        <h4>New Benutzerkonto </h4>
-        <form novalidate action="">
-            <div class="row g-3">
-                <h5>Anagaben zur Erstellung Von User Accounts fur neue ( MA / Studierenden / Praktikant*innen ) </h5>
-                <div id="email">
-                    <h5 class="card-title">interne E-Mail Verteiler (Zutreffendes bitte ankreuzen) :
-                    </h5>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Team Teo
-                                            All</label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Simulation</label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Github</label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Rli_Py-User</label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Oemof</label>
-                                    </div>
+  </div>
+  <div class="container">
+    <form novalidate action="">
+      <div class="row g-3">
+        <h5>Angaben zur Erstellung von User Accounts für neue (MA/Studierenden/Praktikant*innen)</h5>
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Wan</label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Team Admin</label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                        <label class="form-check-label"
-                                            for="flexSwitchCheckDefault">Promovierende</label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">RLS Kolleg</label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">AG OA</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Team TEO MA</label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Team OG All
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Team Off-Grid
-                                            MA</label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Team EEMob All
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Team EEMob
-                                            MA</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="my-4">
-                <div id="datenbank">
-                    <h5 class="card-title">Daten Bank :
-                    </h5>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-check">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Wird ein Benutzerkonto für die RLI Datenbank (SRVDB01) benötigt? (j/n)
-                                </label>
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Wird ein Benutzerkonto für die NextCloud benötigt? (j/n)
-                                </label>
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <label for="Systen  type" class="form-label">System <span class="asteriskField">*</span> </label>
-                    <select name="" id="Systen  type" class="form-select">
-                        <option value="" selected="">Choose...</option>
-                        <option value="19">Linux</option>
-                        <option value="20">Windows</option>
-                    </select>
-                    <div class="invalid-feedback"> valid first name is required.</div>
-                </div>
-                <div class="col-sm-6">
-                    <label for="first name" class="form-label">spez. Software? </label>
-                    <input id="first name" type="text" class="form-control" placeholder=".......">
-                    <div class="invalid-feedback"> valid first name is required.</div>
-                </div>
-
-
-                <hr class="my-4">
-                <div class="row g-3">
-                       <div >
-                           <h4>Freigaben Projektordner (nur bei Studierenden / Praktikant*innen)</h4>
-                        <div  class="col-md-12 " id="div_id_Projektnr" > <label for="id_Projektnr"
-                            class="control-label requiredField">
-                            Projektnr.:<span class="asteriskField">*</span> </label>
-                         <select name="Projektnr" class="form-select" required=""
-                                id="id_kostentraeger">
-                                <option value="" selected="">---------</option>
-                                <option value="316">307_Berlin_pariskonform</option>
-                                <option value="311">304_ASEP_Phil2</option>
-                                <option value="314">306_Fuhrpark_edis</option>
-                                <option value="274">275_EnerSHelf</option>
-                                <option value="299">293_AGYA-Water-Energy</option>
-                                <option value="293">291_Solar_City_Spandau</option>
-                                <option value="218">303_wirt_Ge_Betr</option>
-                                <option value="287">285_E.DIS_NETZ_eLOG</option>
-                                <option value="290">288_keMob_FFO_Vortrag</option>
-                                <option value="280">279_keMOB_DINspec</option>
-                                <option value="264">266_ keMob_WELMO</option>
-                                <option value="273">806_Entwicklungsbudget_Mobilität</option>
-                                <option value="168">802_Teambudget_OffGrid</option>
-                                <option value="170">803_Teambudget_EMob</option>
-                                <option value="169">804_Teambudget_TEO</option>
-                                <option value="24">Diplomarbeit Max</option>
-                                <option value="279">Ersthelfer</option>
-                                <option value="317">308_MZB_Enabel</option>
-                                <option value="269">271_HyStarter</option>
-                                <option value="312">305_UMAS_Gasspeicher</option>
-                                <option value="315">AG_Ladeinfrastruktur</option>
-                                <option value="300">294_eGo^n</option>
-                                <option value="291">289_MEP_Nepal_II</option>
-                                <option value="263">AG_Zug</option>
-                                <option value="288">286_Entwicklung-Kolleg</option>
-                                <option value="258">263_keMob_WS_Haldensleben</option>
-                                <option value="165">188_Allego_adR</option>
-                                <option value="132">161_EUEI-PDF</option>
-                                <option value="121">154_Mini-Grids-India</option>
-                                <option value="114">148_Kenya_off_grid</option>
-                                <option value="58">075_IAV_PHEV</option>
-                                <option value="294">703_wGB_Mobi</option>
-                                <option value="313">705_wGB_Localiser</option>
-                                <option value="318">309_PeopleSuN</option>
-                                <option value="34">055_Inselv_Karibik</option>
-                                <option value="256">955_kind_krank</option>
-                                <option value="230">240_NESP2</option>
-                                <option value="301">295_EMob2025+</option>
-                                <option value="295">292_Netz_eLog</option>
-                                <option value="275">276_MMR_PE</option>
-                                <option value="278">Team: Admin_intern</option>
-                                <option value="23">000_Abschlussarbeiten</option>
-                                <option value="27">Datenbankprojekt</option>
-                                <option value="105">Masterarbeit Robin Göbel</option>
-                                <option value="3">108_Multiprojektmanagement</option>
-                                <option value="292">290_Mistra-WG</option>
-                                <option value="224">Team MobS</option>
-                                <option value="261">Dienstreise</option>
-                                <option value="49">131_Off-Grid Algerien</option>
-                                <option value="231">241_E-Brotgarten</option>
-                                <option value="276">277_BER_Gutachten</option>
-                                <option value="266">268_edis_SkizzeDHL</option>
-                                <option value="259">264_keMob_Eva_Detmold</option>
-                                <option value="257">262_keMob_ProPotsdam_WS</option>
-                                <option value="267">269_AVSI</option>
-                                <option value="268">270_BayWa</option>
-                                <option value="213">Welcome</option>
-                                <option value="192">Theoretical Transformation Research</option>
-                                <option value="265">267_ keMob_Zukunftsforum</option>
-                                <option value="262">WAM</option>
-                                <option value="244">250_E-Land</option>
-                                <option value="260">265_GIZ_Mauritius</option>
-                                <option value="150">175_PTH_EAA</option>
-                                <option value="104">143_windNODE</option>
-                                <option value="53">035_Energienetz_WB (elubes)</option>
-                                <option value="154">954_Auszahlung_Ueberstunden</option>
-                                <option value="144">170_ImplaN</option>
-                                <option value="91">smooth</option>
-                                <option value="72">113_KWEA_an_Schulen</option>
-                                <option value="81">901_Admin_Orga</option>
-                                <option value="298">oemof_app_Berlin_Brandenburg</option>
-                                <option value="198">805_Entwicklungsbudget_OffGrid</option>
-                                <option value="186">204_EBus_Detmold</option>
-                                <option value="217">230_REA-Nigeria</option>
-                                <option value="270">272_Wine2Energy</option>
-                                <option value="211">225_keMob_VortragNahverkehr</option>
-                                <option value="271">273_AGYA-Mobility-WS</option>
-                                <option value="203">217_Zambia_OG</option>
-                                <option value="188">ecoPtG_wisdom</option>
-                                <option value="178">197_EMK_Detmold</option>
-                                <option value="171">190_Sperenberg</option>
-                                <option value="197">212_keMob_degewo_AHP</option>
-                                <option value="303">297_RLS-Kolleg</option>
-                                <option value="223">Bereichsadmin</option>
-                                <option value="124">RLI_Intern</option>
-                                <option value="6">Redmine Konfigurieren</option>
-                                <option value="227">237_keMob_ViP_Workshop</option>
-                                <option value="193">208_ModAna_SuMoTra_Mau</option>
-                                <option value="77">123_KWEA_Olymp</option>
-                                <option value="174">193_Heraeus</option>
-                                <option value="19">101_Akquise_TEO</option>
-                                <option value="252">258_keMob_DKBworkshop</option>
-                                <option value="253">259_Solar4Food</option>
-                                <option value="254">260_keMob_LiREK_Antrag</option>
-                                <option value="255">261_keMob_P2_Kurzbericht</option>
-                                <option value="196">211_keMob_LISmap</option>
-                                <option value="97">138_H2BER2</option>
-                                <option value="233">2101_open_MODEX</option>
-                                <option value="183">201_Male_VRE</option>
-                                <option value="65">083_Akquise_Off-Grid</option>
-                                <option value="21">060_Netzknotenmodell</option>
-                                <option value="166">189_Nicaragua</option>
-                                <option value="191">Komm_Runde</option>
-                                <option value="305">Anya</option>
-                                <option value="250">256_FlexMex</option>
-                                <option value="195">210_keMob_EDis_Panketal</option>
-                                <option value="96">950_Urlaub</option>
-                                <option value="95">951_Krankheit</option>
-                                <option value="167">801_Teambudget_Admin</option>
-                                <option value="176">195_Pre_IMS2</option>
-                                <option value="151">176_ViP_Potsdam</option>
-                                <option value="79">128_EBTC_India</option>
-                                <option value="156">180_EMobKo_FFO</option>
-                                <option value="28">122_Hybrid Somalia</option>
-                                <option value="130">159_SSA_Off-Grid</option>
-                                <option value="187">205_DALE</option>
-                                <option value="251">257_Open_MODEX</option>
-                                <option value="67">097_S46_Exponat_HTW</option>
-                                <option value="66">088_Suzlon_Azimut</option>
-                                <option value="52">INENSUS</option>
-                                <option value="209">224_C4D_Beratung</option>
-                                <option value="11">109_EOS</option>
-                                <option value="112">147_Akquise_Mob</option>
-                                <option value="69">100_degewo_II</option>
-                                <option value="136">164_GIZ_Workshop_Peking</option>
-                                <option value="162">185_Kinzig_H2_Station</option>
-                                <option value="307">Alexandra</option>
-                                <option value="308">Marlin</option>
-                                <option value="16">Team: Transformation von Energiesystemen</option>
-                                <option value="30">Finanztool</option>
-                                <option value="200">214_WS-OG</option>
-                                <option value="116">150_REEEM</option>
-                                <option value="142">168_Grips-WS</option>
-                                <option value="75">119_ProtoBreeze</option>
-                                <option value="90">135_Nigeria_GIS</option>
-                                <option value="15">Geschäftsmodellrunde</option>
-                                <option value="88">RLI-IT</option>
-                                <option value="59">076_ENERKITE_ZIM</option>
-                                <option value="309">299_open_plan</option>
-                                <option value="117">151_AHK_PHL</option>
-                                <option value="26">Reegis</option>
-                                <option value="138">165_PIOnEER</option>
-                                <option value="115">149_Jumeme</option>
-                                <option value="31">Urlaubsplanung</option>
-                                <option value="118">152_Werner&amp;Mertz</option>
-                                <option value="89">134_ABB</option>
-                                <option value="109">Bereich: Mobilität</option>
-                                <option value="25">Python-Programmierprojekte</option>
-                                <option value="113">MA-Runde</option>
-                                <option value="122">testsmooth</option>
-                                <option value="13">037_SmartPowerFlow</option>
-                                <option value="128">157_Akquise_GF</option>
-                                <option value="37">125_One_Shore</option>
-                                <option value="50">039_100%PtG</option>
-                                <option value="86">115_QinoTech</option>
-                                <option value="39">127_EnAvAn</option>
-                                <option value="78">124_IFC_Kenya</option>
-                                <option value="179">198_PiXse</option>
-                                <option value="17">Simulantinnen</option>
-                                <option value="148">953_Elternzeit</option>
-                                <option value="249">255_keMob_ElMobileBerlin</option>
-                                <option value="289">287_APEC_Islands</option>
-                                <option value="57">067_SF_EUREF</option>
-                                <option value="44">Blaue Runde</option>
-                                <option value="108">145_Nigeria-Electrification</option>
-                                <option value="189">206_keMob_KW_i2g</option>
-                                <option value="206">220_GRECO</option>
-                                <option value="42">Team: Off-Grid</option>
-                                <option value="64">082_Tetraeder</option>
-                                <option value="310">Akquise</option>
-                                <option value="55">000_Interne Projekte</option>
-                                <option value="80">902_Admin_fachlich</option>
-                                <option value="297">702_wGB_OG</option>
-                                <option value="296">704_wGB_TEO</option>
-                                <option value="145">171_Rafiki</option>
-                                <option value="248">254_keMob_PotA_Berlin</option>
-                                <option value="205">219_RLS-Meta</option>
-                                <option value="302">296_keMob_Krampnitz</option>
-                                <option value="137">Projektleiterrunde</option>
-                                <option value="131">160_Werner&amp;Mertz_two</option>
-                                <option value="202">216_Solid</option>
-                                <option value="190">207_SzenarienDB</option>
-                                <option value="272">274_Innogy</option>
-                                <option value="155">179_EMobKo_Osna</option>
-                                <option value="281">280_Energiequelle_oemof_WS</option>
-                                <option value="158">oemof-intern</option>
-                                <option value="182">200_trav_Conf</option>
-                                <option value="181">199_SmEnDePath</option>
-                                <option value="185">203_WePoSeKo</option>
-                                <option value="60">078_Luftstrom</option>
-                                <option value="12">102_reegis_hp</option>
-                                <option value="32">Projekt Handbuch</option>
-                                <option value="35">Projekt-Reportsystem</option>
-                                <option value="33">Projekt - Management Handbuch</option>
-                                <option value="119">952_Mutterschutz</option>
-                                <option value="237">247_keMob_HOWOGE</option>
-                                <option value="123">155_BattEl</option>
-                                <option value="228">238_PeopleSuN</option>
-                                <option value="304">298_YemHE</option>
-                                <option value="70">104_HTW_FC_EUREF</option>
-                                <option value="234">3101_Modex_FLEXMEX</option>
-                                <option value="194">209_knMob_FEW_Luft</option>
-                                <option value="149">174_Off-grid_micro-grids</option>
-                                <option value="277">278_keMob_Kalletal_Vorstudie</option>
-                                <option value="126">Gleitzeit</option>
-                                <option value="184">202_PL_RE_Tanz</option>
-                                <option value="306">Ricardo</option>
-                                <option value="99">092_SMENOS</option>
-                                <option value="110">TestWiki</option>
-                                <option value="18">Promovierendenrunde</option>
-                                <option value="46">130_OneHour_Py</option>
-                                <option value="134">RLI_kfm_intern</option>
-                                <option value="120">153_Off_Wind</option>
-                                <option value="133">162_Kenya_GIZ</option>
-                                <option value="94">999_RLI_Vorträge</option>
-                                <option value="93">998_Kommunikation</option>
-                                <option value="71">112_2020_Wärme</option>
-                                <option value="63">094_kWEA_MuK_IAV</option>
-                                <option value="152">178_EMobKo_Kölleda</option>
-                                <option value="143">169_Kopernikus</option>
-                                <option value="215">228_H2Mob</option>
-                                <option value="220">232_keMob_Emden_Antrag</option>
-                                <option value="221">233_keMob_EMK_Witten</option>
-                                <option value="225">235_SEV-EZ</option>
-                                <option value="226">236_MEP-Nepal-I</option>
-                                <option value="48">129_ADB_Hatiya</option>
-                                <option value="9">036_BNE</option>
-                                <option value="180">Blockchain-Runde</option>
-                                <option value="68">099_HBW_FastGens</option>
-                                <option value="106">144_TXL</option>
-                                <option value="127">156_ASEP_Phil</option>
-                                <option value="92">137_GIZ_PEP</option>
-                                <option value="74">116_H2_BER</option>
-                                <option value="147">173_WS_EMob_Kinzig</option>
-                                <option value="14">000_RLI - allgemein</option>
-                                <option value="232">1101_open_BEA</option>
-                                <option value="56">066_SF_Suedkreuz</option>
-                                <option value="5">110_CAES</option>
-                                <option value="76">121_McPhysible</option>
-                                <option value="175">194_Ener_Phil</option>
-                                <option value="100">140_open_eGo</option>
-                                <option value="38">126_KKW_Rheinsberg</option>
-                                <option value="164">186_i2G</option>
-                                <option value="8">pahesmf</option>
-                                <option value="141">167_DY_Elec</option>
-                                <option value="98">139_WW_Dessau</option>
-                                <option value="129">158_Myanmar_Off-Grid</option>
-                                <option value="102">142_Renac_lecture</option>
-                                <option value="41">PTG-Runde</option>
-                                <option value="140">300_Testprojekt</option>
-                                <option value="243">Iris Masterarbeit</option>
-                                <option value="238">248_E-Metrobus</option>
-                                <option value="282">282_DB_ELFI2</option>
-                                <option value="159">182_H2_Mobility</option>
-                                <option value="157">181_EnTraPhil</option>
-                                <option value="160">183_EW_Potsdam</option>
-                                <option value="283">281_LIS_2030</option>
-                                <option value="214">227_keMob_LDS</option>
-                                <option value="284">283_IASS-WS</option>
-                                <option value="229">239_Off-Grid-NDC</option>
-                                <option value="172">191_PIOnEER2</option>
-                                <option value="111">146_El_Düso</option>
-                                <option value="212">226_keMob_Kreislippe</option>
-                                <option value="216">229_keMob_Gewobag_AHP</option>
-                                <option value="222">234_OSE_Modellvergleich</option>
-                                <option value="285">284_LOD-GEOSS</option>
-                                <option value="286">GRELMO</option>
-                                <option value="245">251_keMob_NV_TMB_Vortrag</option>
-                                <option value="61">087_HTW-Pitch-Prüfstand</option>
-                                <option value="62">090_HYPOS</option>
-                                <option value="73">114_Modell_PTG_Audi</option>
-                                <option value="204">218_keMob_Trier_DenkWerk</option>
-                                <option value="246">252_WS_WFBB</option>
-                                <option value="247">253_C-BEAR</option>
-                                <option value="146">172_Myanmar_GIZ</option>
-                                <option value="153">177_OpRobA_MobEnSys</option>
-                                <option value="239">243_Travelling_Conference_SEA2</option>
-                                <option value="219">231_keMob_Emden_Busse</option>
-                                <option value="199">213_BBAEG</option>
-                                <option value="173">192_oemof_heat</option>
-                                <option value="201">215_SKS</option>
-                                <option value="208">222_MTU_LIS</option>
-                                <option value="207">221_Gartenfeld</option>
-                                <option value="87">132_FU_klimaneutral</option>
-                                <option value="161">184_Kinzig_LIS</option>
-                                <option value="163">187_NOW</option>
-                                <option value="236">246_Humphry</option>
-                                <option value="101">141_ecoPtG</option>
-                                <option value="210">223_Ketzin</option>
-                                <option value="177">196_Allego_KM</option>
-                                <option value="103">136_Eranetmed</option>
-                                <option value="135">163_open_FRED</option>
-                                <option value="139">166_BBB_2</option>
-                                <option value="29">111_OGEvGE</option>
-                                <option value="235">245_open_BEA</option>
-                                <option value="240">244_keMob_MV_Vortrag</option>
-                                <option value="242">249_H2_WS</option>
-                                <option value="241">242_ClimateResElec_SEA</option>
-    
-                            </select> 
-                    </div>
-                       </div>
-                    <div class="col-sm-2">
-                        <div class="card border-primary mb-3" style="max-width: 18rem;">
-                            <div class="card-header">Header</div>
-                            <div class="card-body text-primary">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="card border-primary mb-3" style="max-width: 18rem;">
-                            <div class="card-header">Header</div>
-                            <div class="card-body text-primary">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="card border-primary mb-3" style="max-width: 18rem;">
-                            <div class="card-header">Header</div>
-                            <div class="card-body text-primary">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="card border-primary mb-3" style="max-width: 18rem;">
-                            <div class="card-header">Header</div>
-                            <div class="card-body text-primary">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="card border-primary mb-3" style="max-width: 18rem;">
-                            <div class="card-header">Header</div>
-                            <div class="card-body text-primary">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="card border-primary mb-3" style="max-width: 18rem;">
-                            <div class="card-header">Header</div>
-                            <div class="card-body text-primary">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="card border-primary mb-3" style="max-width: 18rem;">
-                            <div class="card-header">Header</div>
-                            <div class="card-body text-primary">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="card border-primary mb-3" style="max-width: 18rem;">
-                            <div class="card-header">Header</div>
-                            <div class="card-body text-primary">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              
+        <div id="div_id_mailinglists" class="mb-3">
+          <label class="form-label requiredField">
+            Mailinglists<span class="asteriskField">*</span>
+          </label>
+          <div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="mailinglists" value="1" id="id_mailinglists_0">
+              <label for="id_mailinglists_0" class="form-check-label">
+                Team EEMob MA
+              </label>
             </div>
-        </form>
-    </div>
-</body>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="mailinglists" value="2" id="id_mailinglists_1">
+              <label for="id_mailinglists_1" class="form-check-label">
+                Team EEMob All
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="mailinglists" value="3" id="id_mailinglists_2">
+              <label for="id_mailinglists_2" class="form-check-label">
+                Team Off-Grid MA
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="mailinglists" value="4" id="id_mailinglists_3">
+              <label for="id_mailinglists_3" class="form-check-label">
+                Team OG All
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="mailinglists" value="5" id="id_mailinglists_4">
+              <label for="id_mailinglists_4" class="form-check-label">
+                Team TEO MA
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="mailinglists" value="6" id="id_mailinglists_5">
+              <label for="id_mailinglists_5" class="form-check-label">
+                AG OA
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="mailinglists" value="7" id="id_mailinglists_6">
+              <label for="id_mailinglists_6" class="form-check-label">
+                RLS Kolleg
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="mailinglists" value="8" id="id_mailinglists_7">
+              <label for="id_mailinglists_7" class="form-check-label">
+                Promovierende
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="mailinglists" value="9" id="id_mailinglists_8">
+              <label for="id_mailinglists_8" class="form-check-label">
+                Team Admin
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="mailinglists" value="10" id="id_mailinglists_9">
+              <label for="id_mailinglists_9" class="form-check-label">
+                Team TEO All
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="mailinglists" value="11" id="id_mailinglists_10">
+              <label for="id_mailinglists_10" class="form-check-label">
+                Simulanten
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="mailinglists" value="12" id="id_mailinglists_11">
+              <label for="id_mailinglists_11" class="form-check-label">
+                Github
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="mailinglists" value="13" id="id_mailinglists_12">
+              <label for="id_mailinglists_12" class="form-check-label">
+                RLI_Py-Users
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="mailinglists" value="14" id="id_mailinglists_13">
+              <label for="id_mailinglists_13" class="form-check-label">
+                Oemof
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="mailinglists" value="15" id="id_mailinglists_14">
+              <label for="id_mailinglists_14" class="form-check-label">
+                Wam
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div id="services">
+          <h5 class="card-title">Zugänge</h5>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <div id="div_id_db_access" class="mb-3">
+                  <input type="checkbox" name="db_access" class="checkboxinput form-check-input" id="id_db_access">
+                  <label for="id_db_access" class="form-check-label">
+                    Datenbankzugang
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <div id="div_id_nextcloud_access" class="mb-3">
+                  <input type="checkbox" name="nextcloud_access" class="checkboxinput form-check-input" id="id_nextcloud_access">
+                  <label for="id_nextcloud_access" class="form-check-label">
+                    Nextcloud-Zugang
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="setup">
+          <h5 class="card-title">PC Einrichtung</h5>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <div id="div_id_pc_setup" class="mb-3">
+                  <input type="checkbox" name="pc_setup" class="checkboxinput form-check-input" id="id_pc_setup">
+                  <label for="id_pc_setup" class="form-check-label">
+                    Benötigt PC Einrichtung
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div id="div_id_os_system" class="mb-3">
+                <label for="id_os_system" class="form-label requiredField">
+                  Betriebssystem<span class="asteriskField">*</span>
+                </label>
+                <select name="os_system" class="select form-select" id="id_os_system">
+                  <option value="Linux">Linux</option>
+                  <option value="Windows">Windows</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div id="div_id_additional_software" class="mb-3">
+                <label for="id_additional_software" class="form-label requiredField">
+                  Zusätzlich benötigte Software<span class="asteriskField">*</span>
+                </label>
+                <textarea name="additional_software" cols="40" rows="10" class="textarea form-control" required id="id_additional_software">
+</textarea>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="project_approvals">
+          <input type="hidden" name="project_approvals-TOTAL_FORMS" value="1" id="id_project_approvals-TOTAL_FORMS"><input type="hidden" name="project_approvals-INITIAL_FORMS" value="0" id="id_project_approvals-INITIAL_FORMS"><input type="hidden"
+            name="project_approvals-MIN_NUM_FORMS" value="0" id="id_project_approvals-MIN_NUM_FORMS"><input type="hidden" name="project_approvals-MAX_NUM_FORMS" value="1000" id="id_project_approvals-MAX_NUM_FORMS">
+
+          <div class="pa-form">
+            <form method="post"> <input type="hidden" name="csrfmiddlewaretoken" value="R4b2Z4N92apLmV3mTYKP08dzdpi8Lqwq54Tv5FoUAM8HuoXpKUE01rKdXvYE0HAQ">
+              <div id="div_id_project_approvals-0-project" class="mb-3"> <label for="id_project_approvals-0-project" class="form-label requiredField">
+                  Projekt<span class="asteriskField">*</span> </label> <select name="project_approvals-0-project" class="select form-select" id="id_project_approvals-0-project">
+                  <option value="" selected>---------</option>
+                  <option value="316">307_Berlin_pariskonform</option>
+                  <option value="311">304_ASEP_Phil2</option>
+                  <option value="314">306_Fuhrpark_edis</option>
+                  <option value="274">275_EnerSHelf</option>
+                  <option value="299">293_AGYA-Water-Energy</option>
+                  <option value="293">291_Solar_City_Spandau</option>
+                  <option value="218">303_wirt_Ge_Betr</option>
+                  <option value="287">285_E.DIS_NETZ_eLOG</option>
+                  <option value="290">288_keMob_FFO_Vortrag</option>
+                  <option value="280">279_keMOB_DINspec</option>
+                  <option value="264">266_ keMob_WELMO</option>
+                  <option value="273">806_Entwicklungsbudget_Mobilität</option>
+                  <option value="168">802_Teambudget_OffGrid</option>
+                  <option value="170">803_Teambudget_EMob</option>
+                  <option value="169">804_Teambudget_TEO</option>
+                  <option value="24">Diplomarbeit Max</option>
+                  <option value="279">Ersthelfer</option>
+                  <option value="317">308_MZB_Enabel</option>
+                  <option value="269">271_HyStarter</option>
+                  <option value="312">305_UMAS_Gasspeicher</option>
+                  <option value="315">AG_Ladeinfrastruktur</option>
+                  <option value="300">294_eGo^n</option>
+                  <option value="291">289_MEP_Nepal_II</option>
+                  <option value="263">AG_Zug</option>
+                  <option value="288">286_Entwicklung-Kolleg</option>
+                  <option value="258">263_keMob_WS_Haldensleben</option>
+                  <option value="165">188_Allego_adR</option>
+                  <option value="132">161_EUEI-PDF</option>
+                  <option value="121">154_Mini-Grids-India</option>
+                  <option value="114">148_Kenya_off_grid</option>
+                  <option value="58">075_IAV_PHEV</option>
+                  <option value="294">703_wGB_Mobi</option>
+                  <option value="313">705_wGB_Localiser</option>
+                  <option value="318">309_PeopleSuN</option>
+                  <option value="34">055_Inselv_Karibik</option>
+                  <option value="256">955_kind_krank</option>
+                  <option value="230">240_NESP2</option>
+                  <option value="301">295_EMob2025+</option>
+                  <option value="295">292_Netz_eLog</option>
+                  <option value="275">276_MMR_PE</option>
+                  <option value="278">Team: Admin_intern</option>
+                  <option value="23">000_Abschlussarbeiten</option>
+                  <option value="27">Datenbankprojekt</option>
+                  <option value="105">Masterarbeit Robin Göbel</option>
+                  <option value="3">108_Multiprojektmanagement</option>
+                  <option value="292">290_Mistra-WG</option>
+                  <option value="224">Team MobS</option>
+                  <option value="261">Dienstreise</option>
+                  <option value="49">131_Off-Grid Algerien</option>
+                  <option value="231">241_E-Brotgarten</option>
+                  <option value="276">277_BER_Gutachten</option>
+                  <option value="266">268_edis_SkizzeDHL</option>
+                  <option value="259">264_keMob_Eva_Detmold</option>
+                  <option value="257">262_keMob_ProPotsdam_WS</option>
+                  <option value="267">269_AVSI</option>
+                  <option value="268">270_BayWa</option>
+                  <option value="213">Welcome</option>
+                  <option value="192">Theoretical Transformation Research</option>
+                  <option value="265">267_ keMob_Zukunftsforum</option>
+                  <option value="262">WAM</option>
+                  <option value="244">250_E-Land</option>
+                  <option value="260">265_GIZ_Mauritius</option>
+                  <option value="150">175_PTH_EAA</option>
+                  <option value="104">143_windNODE</option>
+                  <option value="53">035_Energienetz_WB (elubes)</option>
+                  <option value="154">954_Auszahlung_Ueberstunden</option>
+                  <option value="144">170_ImplaN</option>
+                  <option value="91">smooth</option>
+                  <option value="72">113_KWEA_an_Schulen</option>
+                  <option value="81">901_Admin_Orga</option>
+                  <option value="298">oemof_app_Berlin_Brandenburg</option>
+                  <option value="198">805_Entwicklungsbudget_OffGrid</option>
+                  <option value="186">204_EBus_Detmold</option>
+                  <option value="217">230_REA-Nigeria</option>
+                  <option value="270">272_Wine2Energy</option>
+                  <option value="211">225_keMob_VortragNahverkehr</option>
+                  <option value="271">273_AGYA-Mobility-WS</option>
+                  <option value="203">217_Zambia_OG</option>
+                  <option value="188">ecoPtG_wisdom</option>
+                  <option value="178">197_EMK_Detmold</option>
+                  <option value="171">190_Sperenberg</option>
+                  <option value="197">212_keMob_degewo_AHP</option>
+                  <option value="303">297_RLS-Kolleg</option>
+                  <option value="223">Bereichsadmin</option>
+                  <option value="124">RLI_Intern</option>
+                  <option value="6">Redmine Konfigurieren</option>
+                  <option value="227">237_keMob_ViP_Workshop</option>
+                  <option value="193">208_ModAna_SuMoTra_Mau</option>
+                  <option value="77">123_KWEA_Olymp</option>
+                  <option value="174">193_Heraeus</option>
+                  <option value="19">101_Akquise_TEO</option>
+                  <option value="252">258_keMob_DKBworkshop</option>
+                  <option value="253">259_Solar4Food</option>
+                  <option value="254">260_keMob_LiREK_Antrag</option>
+                  <option value="255">261_keMob_P2_Kurzbericht</option>
+                  <option value="196">211_keMob_LISmap</option>
+                  <option value="97">138_H2BER2</option>
+                  <option value="233">2101_open_MODEX</option>
+                  <option value="183">201_Male_VRE</option>
+                  <option value="65">083_Akquise_Off-Grid</option>
+                  <option value="21">060_Netzknotenmodell</option>
+                  <option value="166">189_Nicaragua</option>
+                  <option value="191">Komm_Runde</option>
+                  <option value="305">Anya</option>
+                  <option value="250">256_FlexMex</option>
+                  <option value="195">210_keMob_EDis_Panketal</option>
+                  <option value="96">950_Urlaub</option>
+                  <option value="95">951_Krankheit</option>
+                  <option value="167">801_Teambudget_Admin</option>
+                  <option value="176">195_Pre_IMS2</option>
+                  <option value="151">176_ViP_Potsdam</option>
+                  <option value="79">128_EBTC_India</option>
+                  <option value="156">180_EMobKo_FFO</option>
+                  <option value="28">122_Hybrid Somalia</option>
+                  <option value="130">159_SSA_Off-Grid</option>
+                  <option value="187">205_DALE</option>
+                  <option value="251">257_Open_MODEX</option>
+                  <option value="67">097_S46_Exponat_HTW</option>
+                  <option value="66">088_Suzlon_Azimut</option>
+                  <option value="52">INENSUS</option>
+                  <option value="209">224_C4D_Beratung</option>
+                  <option value="11">109_EOS</option>
+                  <option value="112">147_Akquise_Mob</option>
+                  <option value="69">100_degewo_II</option>
+                  <option value="136">164_GIZ_Workshop_Peking</option>
+                  <option value="162">185_Kinzig_H2_Station</option>
+                  <option value="307">Alexandra</option>
+                  <option value="308">Marlin</option>
+                  <option value="16">Team: Transformation von Energiesystemen</option>
+                  <option value="30">Finanztool</option>
+                  <option value="200">214_WS-OG</option>
+                  <option value="116">150_REEEM</option>
+                  <option value="142">168_Grips-WS</option>
+                  <option value="75">119_ProtoBreeze</option>
+                  <option value="90">135_Nigeria_GIS</option>
+                  <option value="15">Geschäftsmodellrunde</option>
+                  <option value="88">RLI-IT</option>
+                  <option value="59">076_ENERKITE_ZIM</option>
+                  <option value="309">299_open_plan</option>
+                  <option value="117">151_AHK_PHL</option>
+                  <option value="26">Reegis</option>
+                  <option value="138">165_PIOnEER</option>
+                  <option value="115">149_Jumeme</option>
+                  <option value="31">Urlaubsplanung</option>
+                  <option value="118">152_Werner&amp;Mertz</option>
+                  <option value="89">134_ABB</option>
+                  <option value="109">Bereich: Mobilität</option>
+                  <option value="25">Python-Programmierprojekte</option>
+                  <option value="113">MA-Runde</option>
+                  <option value="122">testsmooth</option>
+                  <option value="13">037_SmartPowerFlow</option>
+                  <option value="128">157_Akquise_GF</option>
+                  <option value="37">125_One_Shore</option>
+                  <option value="50">039_100%PtG</option>
+                  <option value="86">115_QinoTech</option>
+                  <option value="39">127_EnAvAn</option>
+                  <option value="78">124_IFC_Kenya</option>
+                  <option value="179">198_PiXse</option>
+                  <option value="17">Simulantinnen</option>
+                  <option value="148">953_Elternzeit</option>
+                  <option value="249">255_keMob_ElMobileBerlin</option>
+                  <option value="289">287_APEC_Islands</option>
+                  <option value="57">067_SF_EUREF</option>
+                  <option value="44">Blaue Runde</option>
+                  <option value="108">145_Nigeria-Electrification</option>
+                  <option value="189">206_keMob_KW_i2g</option>
+                  <option value="206">220_GRECO</option>
+                  <option value="42">Team: Off-Grid</option>
+                  <option value="64">082_Tetraeder</option>
+                  <option value="310">Akquise</option>
+                  <option value="55">000_Interne Projekte</option>
+                  <option value="80">902_Admin_fachlich</option>
+                  <option value="297">702_wGB_OG</option>
+                  <option value="296">704_wGB_TEO</option>
+                  <option value="145">171_Rafiki</option>
+                  <option value="248">254_keMob_PotA_Berlin</option>
+                  <option value="205">219_RLS-Meta</option>
+                  <option value="302">296_keMob_Krampnitz</option>
+                  <option value="137">Projektleiterrunde</option>
+                  <option value="131">160_Werner&amp;Mertz_two</option>
+                  <option value="202">216_Solid</option>
+                  <option value="190">207_SzenarienDB</option>
+                  <option value="272">274_Innogy</option>
+                  <option value="155">179_EMobKo_Osna</option>
+                  <option value="281">280_Energiequelle_oemof_WS</option>
+                  <option value="158">oemof-intern</option>
+                  <option value="182">200_trav_Conf</option>
+                  <option value="181">199_SmEnDePath</option>
+                  <option value="185">203_WePoSeKo</option>
+                  <option value="60">078_Luftstrom</option>
+                  <option value="12">102_reegis_hp</option>
+                  <option value="32">Projekt Handbuch</option>
+                  <option value="35">Projekt-Reportsystem</option>
+                  <option value="33">Projekt - Management Handbuch</option>
+                  <option value="119">952_Mutterschutz</option>
+                  <option value="237">247_keMob_HOWOGE</option>
+                  <option value="123">155_BattEl</option>
+                  <option value="228">238_PeopleSuN</option>
+                  <option value="304">298_YemHE</option>
+                  <option value="70">104_HTW_FC_EUREF</option>
+                  <option value="234">3101_Modex_FLEXMEX</option>
+                  <option value="194">209_knMob_FEW_Luft</option>
+                  <option value="149">174_Off-grid_micro-grids</option>
+                  <option value="277">278_keMob_Kalletal_Vorstudie</option>
+                  <option value="126">Gleitzeit</option>
+                  <option value="184">202_PL_RE_Tanz</option>
+                  <option value="306">Ricardo</option>
+                  <option value="99">092_SMENOS</option>
+                  <option value="110">TestWiki</option>
+                  <option value="18">Promovierendenrunde</option>
+                  <option value="46">130_OneHour_Py</option>
+                  <option value="134">RLI_kfm_intern</option>
+                  <option value="120">153_Off_Wind</option>
+                  <option value="133">162_Kenya_GIZ</option>
+                  <option value="94">999_RLI_Vorträge</option>
+                  <option value="93">998_Kommunikation</option>
+                  <option value="71">112_2020_Wärme</option>
+                  <option value="63">094_kWEA_MuK_IAV</option>
+                  <option value="152">178_EMobKo_Kölleda</option>
+                  <option value="143">169_Kopernikus</option>
+                  <option value="215">228_H2Mob</option>
+                  <option value="220">232_keMob_Emden_Antrag</option>
+                  <option value="221">233_keMob_EMK_Witten</option>
+                  <option value="225">235_SEV-EZ</option>
+                  <option value="226">236_MEP-Nepal-I</option>
+                  <option value="48">129_ADB_Hatiya</option>
+                  <option value="9">036_BNE</option>
+                  <option value="180">Blockchain-Runde</option>
+                  <option value="68">099_HBW_FastGens</option>
+                  <option value="106">144_TXL</option>
+                  <option value="127">156_ASEP_Phil</option>
+                  <option value="92">137_GIZ_PEP</option>
+                  <option value="74">116_H2_BER</option>
+                  <option value="147">173_WS_EMob_Kinzig</option>
+                  <option value="14">000_RLI - allgemein</option>
+                  <option value="232">1101_open_BEA</option>
+                  <option value="56">066_SF_Suedkreuz</option>
+                  <option value="5">110_CAES</option>
+                  <option value="76">121_McPhysible</option>
+                  <option value="175">194_Ener_Phil</option>
+                  <option value="100">140_open_eGo</option>
+                  <option value="38">126_KKW_Rheinsberg</option>
+                  <option value="164">186_i2G</option>
+                  <option value="8">pahesmf</option>
+                  <option value="141">167_DY_Elec</option>
+                  <option value="98">139_WW_Dessau</option>
+                  <option value="129">158_Myanmar_Off-Grid</option>
+                  <option value="102">142_Renac_lecture</option>
+                  <option value="41">PTG-Runde</option>
+                  <option value="140">300_Testprojekt</option>
+                  <option value="243">Iris Masterarbeit</option>
+                  <option value="238">248_E-Metrobus</option>
+                  <option value="282">282_DB_ELFI2</option>
+                  <option value="159">182_H2_Mobility</option>
+                  <option value="157">181_EnTraPhil</option>
+                  <option value="160">183_EW_Potsdam</option>
+                  <option value="283">281_LIS_2030</option>
+                  <option value="214">227_keMob_LDS</option>
+                  <option value="284">283_IASS-WS</option>
+                  <option value="229">239_Off-Grid-NDC</option>
+                  <option value="172">191_PIOnEER2</option>
+                  <option value="111">146_El_Düso</option>
+                  <option value="212">226_keMob_Kreislippe</option>
+                  <option value="216">229_keMob_Gewobag_AHP</option>
+                  <option value="222">234_OSE_Modellvergleich</option>
+                  <option value="285">284_LOD-GEOSS</option>
+                  <option value="286">GRELMO</option>
+                  <option value="245">251_keMob_NV_TMB_Vortrag</option>
+                  <option value="61">087_HTW-Pitch-Prüfstand</option>
+                  <option value="62">090_HYPOS</option>
+                  <option value="73">114_Modell_PTG_Audi</option>
+                  <option value="204">218_keMob_Trier_DenkWerk</option>
+                  <option value="246">252_WS_WFBB</option>
+                  <option value="247">253_C-BEAR</option>
+                  <option value="146">172_Myanmar_GIZ</option>
+                  <option value="153">177_OpRobA_MobEnSys</option>
+                  <option value="239">243_Travelling_Conference_SEA2</option>
+                  <option value="219">231_keMob_Emden_Busse</option>
+                  <option value="199">213_BBAEG</option>
+                  <option value="173">192_oemof_heat</option>
+                  <option value="201">215_SKS</option>
+                  <option value="208">222_MTU_LIS</option>
+                  <option value="207">221_Gartenfeld</option>
+                  <option value="87">132_FU_klimaneutral</option>
+                  <option value="161">184_Kinzig_LIS</option>
+                  <option value="163">187_NOW</option>
+                  <option value="236">246_Humphry</option>
+                  <option value="101">141_ecoPtG</option>
+                  <option value="210">223_Ketzin</option>
+                  <option value="177">196_Allego_KM</option>
+                  <option value="103">136_Eranetmed</option>
+                  <option value="135">163_open_FRED</option>
+                  <option value="139">166_BBB_2</option>
+                  <option value="29">111_OGEvGE</option>
+                  <option value="235">245_open_BEA</option>
+                  <option value="240">244_keMob_MV_Vortrag</option>
+                  <option value="242">249_H2_WS</option>
+                  <option value="241">242_ClimateResElec_SEA</option>
+
+                </select> </div>
+              <div id="div_id_project_approvals-0-akquise" class="mb-3"> <label for="id_project_approvals-0-akquise" class="form-label requiredField">
+                  Akquise<span class="asteriskField">*</span> </label> <select name="project_approvals-0-akquise" class="select form-select" id="id_project_approvals-0-akquise">
+                  <option value="0">NoApproval</option>
+                  <option value="1">Read</option>
+                  <option value="2">Write</option>
+
+                </select> </div>
+              <div id="div_id_project_approvals-0-projektsteuerung" class="mb-3"> <label for="id_project_approvals-0-projektsteuerung" class="form-label requiredField">
+                  Projektsteuerung<span class="asteriskField">*</span> </label> <select name="project_approvals-0-projektsteuerung" class="select form-select" id="id_project_approvals-0-projektsteuerung">
+                  <option value="0">NoApproval</option>
+                  <option value="1">Read</option>
+                  <option value="2">Write</option>
+
+                </select> </div>
+              <div id="div_id_project_approvals-0-projektinhalte" class="mb-3"> <label for="id_project_approvals-0-projektinhalte" class="form-label requiredField">
+                  Projektinhalte<span class="asteriskField">*</span> </label> <select name="project_approvals-0-projektinhalte" class="select form-select" id="id_project_approvals-0-projektinhalte">
+                  <option value="0">NoApproval</option>
+                  <option value="1">Read</option>
+                  <option value="2">Write</option>
+
+                </select> </div>
+              <div id="div_id_project_approvals-0-berichte" class="mb-3"> <label for="id_project_approvals-0-berichte" class="form-label requiredField">
+                  Berichte<span class="asteriskField">*</span> </label> <select name="project_approvals-0-berichte" class="select form-select" id="id_project_approvals-0-berichte">
+                  <option value="0">NoApproval</option>
+                  <option value="1">Read</option>
+                  <option value="2">Write</option>
+
+                </select> </div>
+              <div id="div_id_project_approvals-0-oea" class="mb-3"> <label for="id_project_approvals-0-oea" class="form-label requiredField">
+                  Oea<span class="asteriskField">*</span> </label> <select name="project_approvals-0-oea" class="select form-select" id="id_project_approvals-0-oea">
+                  <option value="0">NoApproval</option>
+                  <option value="1">Read</option>
+                  <option value="2">Write</option>
+
+                </select> </div>
+              <div id="div_id_project_approvals-0-bilder" class="mb-3"> <label for="id_project_approvals-0-bilder" class="form-label requiredField">
+                  Bilder<span class="asteriskField">*</span> </label> <select name="project_approvals-0-bilder" class="select form-select" id="id_project_approvals-0-bilder">
+                  <option value="0">NoApproval</option>
+                  <option value="1">Read</option>
+                  <option value="2">Write</option>
+
+                </select> </div>
+              <div id="div_id_project_approvals-0-praesentation" class="mb-3"> <label for="id_project_approvals-0-praesentation" class="form-label requiredField">
+                  Praesentation<span class="asteriskField">*</span> </label> <select name="project_approvals-0-praesentation" class="select form-select" id="id_project_approvals-0-praesentation">
+                  <option value="0">NoApproval</option>
+                  <option value="1">Read</option>
+                  <option value="2">Write</option>
+
+                </select> </div>
+              <div id="div_id_project_approvals-0-know_how" class="mb-3"> <label for="id_project_approvals-0-know_how" class="form-label requiredField">
+                  Know how<span class="asteriskField">*</span> </label> <select name="project_approvals-0-know_how" class="select form-select" id="id_project_approvals-0-know_how">
+                  <option value="0">NoApproval</option>
+                  <option value="1">Read</option>
+                  <option value="2">Write</option>
+
+                </select> </div>
+              <div id="div_id_project_approvals-0-stud_ordner" class="mb-3"> <label for="id_project_approvals-0-stud_ordner" class="form-label requiredField">
+                  Stud ordner<span class="asteriskField">*</span> </label> <select name="project_approvals-0-stud_ordner" class="select form-select" id="id_project_approvals-0-stud_ordner">
+                  <option value="0">NoApproval</option>
+                  <option value="1">Read</option>
+                  <option value="2">Write</option>
+
+                </select> </div>
+            </form>
+
+          </div>
+
+          <button id="add-project_approval" type="button">Projekt hinzufügen</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</main>
 {% endblock content %}
 
 {% block js %}
 {{ super() }}
 
+  <script>
+    <!--    From https://www.brennantymrak.com/articles/django-dynamic-formsets-javascript-->
+
+    const form_name = "project_approvals";
+
+    const projectApprovalForm = document.querySelectorAll(".pa-form");
+    const container = document.querySelector(`#${form_name}`);
+    const addButton = document.querySelector("#add-project_approval");
+    const totalForms = document.querySelector(`#id_${form_name}-TOTAL_FORMS`);
+
+    let formNum = projectApprovalForm.length-1;
+    addButton.addEventListener('click', addForm);
+
+    function addForm(e){
+      e.preventDefault();
+
+      let newForm = projectApprovalForm[0].cloneNode(true);
+      let formRegex = RegExp(`${form_name}-(\\d){1}-`,'g');
+
+      formNum++;
+      newForm.innerHTML = newForm.innerHTML.replace(formRegex, `${form_name}-${formNum}-`);
+      container.insertBefore(newForm, addButton);
+
+      totalForms.setAttribute('value', `${formNum+1}`);
+    }
+    </script>
 
 {% endblock js %}
