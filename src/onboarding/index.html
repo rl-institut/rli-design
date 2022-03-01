@@ -2,159 +2,99 @@
 
 {% block content %}
 <main class="flex-shrink-0">
-  
-<body>
-    <div class="container-xxl p-30">
-        <div class="row">
-            <div class="col-md-12 main-datatable">
-                <div class="card_body">
-                    <div class="row d-flex">
-                        <div class="col-sm-4 createSegment"> 
-                          <a class="btn dim_button create_new"> <span class="glyphicon glyphicon-plus"></span> Create New</a>
-                        </div>
-                        
-                        <div class="col-sm-8 add_flex">
-                            <div class="form-group searchInput">
-                                <label for="email">Search:</label>
-                                <input type="search" class="form-control" id="filterbox" placeholder=" ">
+
+    <body>
+        <div class="container-xxl p-30">
+            <div class="row">
+                <div class="col-md-12 main-datatable">
+                    <div class="card_body">
+                        <div class="row d-flex">
+                            <div class="col-sm-4 createSegment">
+                                <a class="btn btn-primary  " href="./eintritt/index.html"><i
+                                        class="bi bi-plus-circle-dotted"></i>
+                                    Create New User</a>
+
+
                             </div>
-                        </div> 
-                    </div>
-                    <div class="overflow-x">
-                        <table style="width:100%;" id="filtertable" class="table cust-datatable dataTable no-footer">
-                            <thead>
-                                <tr>
-                                    <th style="min-width:50px;">ID Nummer</th>
-                                    <th style="min-width:150px;">Name</th>
-                                    <th style="min-width:150px;">Team</th>
-                                    <th style="min-width:100px;">Status</th>
-                                    <th style="min-width:100px;">Date</th>
-                                    <th style="min-width:150px;">Action</th>
-                                   
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Dummy</td>
-                                    <td><span class="mode mode_process">Processing</span></td>
-                                    <td>Journey</td>
-                                    <td>17-Apr-2020</td>
-                                    <td><span class="mode mode_on">Active</span></td>
-                                    <td>
-                                        <div class="btn-group">
-                                            <a class="dropdown-toggle dropdown_icon" data-toggle="dropdown">
-                                            <i class="fa fa-pencil-square-o"></i> </a>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a href="#" target="_blank">
-                                                        Dummy Details
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" target="_blank">
-                                                        Dummy Details
-                                                    </a>
-                                                </li>  
-                                                <li>
-                                                    <a href="#" target="_blank">
-                                                        Dummy Details
-                                                    </a>
-                                                </li>  
-                                            </ul>
-                                        </div>
-                                        <span class="actionCust">
-                                            <a href="#"><i class="fa fa-line-chart"></i></a>
-                                        </span>
-                                        <div class="btn-group">
-                                            <a class="dropdown-toggle dropdown_icon" data-toggle="dropdown">
-                                                <i class="fa fa-ellipsis-h"></i>
-                                            </a>
-                                            <ul class="dropdown-menu dropdown_more">
-                                                <li>
-                                                    <a href="#" target="_black">
-                                                        <i class="fa fa-clone"></i>Duplicate
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" target="_black">
-                                                        <i class="fa fa-trash"></i> Delete
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" target="_black">
-                                                        <i class="fa fa-list"></i>Activity</a>
+
+                            <div class="col-sm-8 add_flex">
+                                <div class="form-group searchInput">
+                                    <label for="email">Search:</label>
+                                    <input type="search" class="form-control" id="filterbox" placeholder=" ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overflow-x">
+                            <table style="width:100%;" id="filtertable"
+                                class="table cust-datatable dataTable no-footer">
+                                <thead>
+                                    <tr>
+                                        <th style="min-width:100px;">Status</th>
+                                        <th style="min-width:150px;">Name</th>
+                                        <th style="min-width:150px;">Team</th>
+                                        <th style="min-width:100px;">Date</th>
+                                        <th style="min-width:150px;">Action</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="mode mode_on">Active</span></td>
+                                        <td>Majd Rekik</td>
+                                        <td><span class="mode mode_team">Processing</span></td>
+                                        <td>17-Apr-2020</td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a class="dropdown-toggle dropdown_icon" data-toggle="dropdown">
+                                                    <i class="bi bi-plus-slash-minus"></i></a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a href="#" target="_blank">
+                                                            Dummy Details
+                                                        </a>
                                                     </li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Dummy</td>
-                                    <td><span class="mode mode_done">Completed</span></td>
-                                    <td>Journey</td>
-                                    <td>17-Apr-2020</td>
-                                    <td><span class="mode mode_off">Inactive</span></td>
-                                    <td>
-                                        <div class="btn-group">
-                                            <a class="dropdown-toggle dropdown_icon" data-toggle="dropdown">
-                                            <i class="fa fa-pencil-square-o"></i> </a>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a href="#" target="_blank">
-                                                        Dummy Details
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" target="_blank">
-                                                        Dummy Details
-                                                    </a>
-                                                </li>  
-                                                <li>
-                                                    <a href="#" target="_blank">
-                                                        Dummy Details
-                                                    </a>
-                                                </li>  
-                                            </ul>
-                                        </div>
-                                        <span class="actionCust">
-                                            <a href="#"><i class="fa fa-line-chart"></i></a>
-                                        </span>
-                                        <div class="btn-group">
-                                            <a class="dropdown-toggle dropdown_icon" data-toggle="dropdown">
-                                                <i class="fa fa-ellipsis-h"></i>
-                                            </a>
-                                            <ul class="dropdown-menu dropdown_more">
-                                                <li>
-                                                    <a href="#" target="_black">
-                                                        <i class="fa fa-clone"></i>Duplicate
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" target="_black">
-                                                        <i class="fa fa-trash"></i> Delete
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" target="_black">
-                                                        <i class="fa fa-list"></i>Activity</a>
+                                                    <li>
+                                                        <a href="#" target="_blank">
+                                                            Dummy Details
+                                                        </a>
                                                     </li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>         
-                            </tbody>
-                        </table>
+                                                    <li>
+                                                        <a href="#" target="_blank">
+                                                            Dummy Details
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <span class="actionCust">
+                                                <a href="#"><i class="bi bi-plus-slash-minus"></i></a>
+                                            </span>
+                                            <div class="btn-group">
+                                                <a class="  dropdown_icon dropdown-toggle" data-bs-toggle="dropdown"><i
+                                                        class="bi bi-plus-slash-minus"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
- 
 
 
-</body>
+
+    </body>
 
 
 

@@ -81,13 +81,13 @@ body{
     margin-bottom: 0px;
     border-radius: 50px;
     background: #ffffff;
-    border: 1px solid #002E50;
-    color: #002E50;
+    border: 1px solid #007bff;
+    color: #007bff;
     transition: all .4s ease;
 }
 .createSegment a:hover, .createSegment a:focus {
     transition: all .4s ease;
-    background: #002E50;
+    background: #007bff;
     color: #fff;
 }
 .add_flex{
@@ -249,7 +249,7 @@ body{
 .mode_off{
     background-color: #8b9096;
 }
-.mode_process{
+.mode_team{
     background-color: #ff8000;
 }
 .mode_done{
