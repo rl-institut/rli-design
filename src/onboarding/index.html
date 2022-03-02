@@ -10,30 +10,25 @@
                     <div class="card_body">
                         <div class="row d-flex">
                             <div class="col-sm-4 createSegment">
-                                <a class="btn btn-primary  " href="./eintritt/index.html"><i
-                                        class="bi bi-plus-circle-dotted"></i>
+                                <a class="btn btn-primary  " href="./eintritt/index.html"><i class="bi bi-person-plus"></i>
                                     Create New User</a>
 
 
                             </div>
 
-                            <div class="col-sm-8 add_flex">
-                                <div class="form-group searchInput">
-                                    <label for="email">Search:</label>
-                                    <input type="search" class="form-control" id="filterbox" placeholder=" ">
-                                </div>
-                            </div>
+                           
                         </div>
                         <div class="overflow-x">
                             <table style="width:100%;" id="filtertable"
                                 class="table cust-datatable dataTable no-footer">
                                 <thead>
                                     <tr>
-                                        <th style="min-width:100px;">Status</th>
                                         <th style="min-width:150px;">Name</th>
+                                        <th style="min-width:100px;">Status</th>
                                         <th style="min-width:150px;">Team</th>
                                         <th style="min-width:100px;">Date</th>
                                         <th style="min-width:150px;">Action</th>
+                                        <th style="min-width:150px;">Benutzer konto</th>
 
                                     </tr>
                                 </thead>
@@ -45,42 +40,23 @@
                                         <td>17-Apr-2020</td>
                                         <td>
                                             <div class="btn-group">
-                                                <a class="dropdown-toggle dropdown_icon" data-toggle="dropdown">
-                                                    <i class="bi bi-plus-slash-minus"></i></a>
-                                                <ul class="dropdown-menu">
-                                                    <li>
-                                                        <a href="#" target="_blank">
-                                                            Dummy Details
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" target="_blank">
-                                                            Dummy Details
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" target="_blank">
-                                                            Dummy Details
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <span class="actionCust">
-                                                <a href="#"><i class="bi bi-plus-slash-minus"></i></a>
-                                            </span>
-                                            <div class="btn-group">
-                                                <a class="  dropdown_icon dropdown-toggle" data-bs-toggle="dropdown"><i
-                                                        class="bi bi-plus-slash-minus"></i>
+                                                <a class="  dropdown_icon" data-bs-toggle="dropdown"><i class="bi bi-pencil-square"></i>
                                                 </a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li> <a class="dropdown-item" href="./eintritt/index.html"> <i class="bi bi-pencil-fill"></i>Edit Eintritt form</a> </li>
                                                     <li>
                                                         <hr class="dropdown-divider">
                                                     </li>
-                                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                                    <li><a class="dropdown-item" href="#"> <i class="bi bi-trash"></i>Delete </a></li>
+                                                
                                                 </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a class=" dropdown_icon"  href="./konto/index.html"><i class="bi bi-person-lines-fill"></i>
+                                                </a>
+                                               
                                             </div>
                                         </td>
                                     </tr>
@@ -91,8 +67,6 @@
                 </div>
             </div>
         </div>
-
-
 
     </body>
 
