@@ -124,7 +124,24 @@
                         </div>
                     </div>
                     <hr class="my-5">
-
+                    <div id="div_id_hours" class="form-group">
+                        <label for="id_hours" class="control-label  requiredField">
+                            Hours<span class="asteriskField">*</span>
+                        </label>
+                        <div class="controls ">
+                   
+                      <input  step="10" min="0" max="160"  disabled type="number" name="hours" class="numberinput form-control" required id="id_hours">
+                        </div>
+                    </div>
+                    <div id="div_id_space" class="form-group">
+                        <label for="id_space" class="control-label  requiredField">
+                            Space<span class="asteriskField">*</span>
+                        </label>
+                        <div class="controls ">
+                            <input type="number" name="space" class="numberinput form-control" required id="id_space">
+                        </div>
+                    </div>
+                    <hr class="my-5">
                     <div id="div_id_start" class=" mb-4 form-group">
                         <label for="id_start" class="control-label  requiredField">
                             Start<span class="asteriskField">*</span>
@@ -135,12 +152,9 @@
                                 placeholder="Satrat Date">
                         </div>
                     </div>
-
-
-
                     <div id="div_id_end" class=" mb-4 form-group">
                         <label for="id_end" class="control-label  requiredField">
-                            Start<span class="asteriskField">*</span>
+                            End<span class="asteriskField">*</span>
                         </label>
                         <i class="bi bi-calendar-date input-group-text"></i>
                         <div class="controls ">
@@ -1278,22 +1292,7 @@
                             </select>
                         </div>
                     </div>
-                    <div id="div_id_hours" class="form-group">
-                        <label for="id_hours" class="control-label  requiredField">
-                            Hours<span class="asteriskField">*</span>
-                        </label>
-                        <div class="controls ">
-                            <input type="number" name="hours" class="numberinput form-control" required id="id_hours">
-                        </div>
-                    </div>
-                    <div id="div_id_space" class="form-group">
-                        <label for="id_space" class="control-label  requiredField">
-                            Space<span class="asteriskField">*</span>
-                        </label>
-                        <div class="controls ">
-                            <input type="number" name="space" class="numberinput form-control" required id="id_space">
-                        </div>
-                    </div>
+                   
                     <div id="div_id_br" class="form-group">
                         <label for="id_br" class="control-label ">
                             Br
@@ -1342,6 +1341,8 @@
 
 <script>
 
+ 
+
     var applicationtypeObject = {
         "Einstellung ": [
             "MA",
@@ -1366,21 +1367,41 @@
         for (var x in applicationtypeObject) {
             applicationtypeSel.options[applicationtypeSel.options.length] = new Option(x, x);
         }
-
         applicationtypeSel.onchange = function () {
-
-
             statusSel.length = 1;
             var y = applicationtypeObject[applicationtypeSel.value]
-
             for (var i = 0; i < y.length; i++) {
-
                 statusSel.options[statusSel.options.length] = new Option(y[i], y[i]);
             }
         }
 
 
-    },
+    }
+    
+    
+
+    function  studentTypeChanged (){
+        var studenttypeSel = document.getElementById("id_student_type").value;
+
+    }
+    var studenttypeSel = document.getElementById("id_student_type");
+    var hours = document.getElementById("id_hours");
+    var fixed_hours = {
+        "1": 80,
+        "2": 40,
+        "3":60,
+        "4":160
+      }
+    studenttypeSel.onchange = function(e) {
+		studenttypeSel.value = this.value;
+		if((this.value) === "2") {
+            hours.disabled = false;
+            hours.value = "";
+    } else {
+        hours.disabled = true;
+        hours.value=fixed_hours[4]
+    }
+}
     document.querySelector(".datapicker").datepicker();
 
         <!--Datapicker https://www.codehim.com/bootstrap/bootstrap-text-input/bootstrap-5-datepicker-with-vanilla-js/-->;
