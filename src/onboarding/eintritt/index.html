@@ -129,7 +129,7 @@
             <select name="team" class="select form-control" required id="id_team">
                 <option value="" selected>---------</option>
                 <option value="1">Adminbereich</option>
-                <option value="2">Energiesysteme</option>
+                <option value="2" >Energiesysteme</option>
                 <option value="3">Mobilität</option>
                 <option value="4">Off-Grid</option>
                 <option value="5">Technologie</option>
@@ -1359,56 +1359,33 @@
 {{ super() }}
 
 <script>
+   
+  var application_type  = document.getElementById("id_application_type");
+   application_type.addEventListener("change", function(){
+       var  application_typeSel = application_type.value;
+       console.log( application_typeSel)
+       var status_select = document.getElementById("id_status");
+       var status_select_length = status_select.options.length;
+       for(var i = 0; i < status_select_length; i++){
+        console.log('option:' + status_select.options[i].value)
+         if(application_typeSel == 1){
+            status_select.options[i].disabled =  false;
+         } else if (application_typeSel == 2)   {
+            status_select.options[4].disabled =  true;
+         
+         } else   {
+            status_select.options[1].disabled =  true;
+            status_select.options[3].disabled =  true;
+            status_select.options[4].disabled =  true;
+            status_select.options[5].disabled =  true;
+         }
+        }
 
-$(function () {
-$('#datetimepicker1').datetimepicker();
-});
-$(function () {
-    $('#datetimepicker2').datetimepicker();
-    });
-
-document.querySelector(".datetimepicker1").datetimepicker();
-
-var applicationtypeObject = {
-"Einstellung ": [
-"MA",
-"Student_in",
-"Praktikant_in",
-"Bufdi",
-"Gast-WiMa"
-],
-"Verlängerung": ["MA",
-"Student_in",
-"Praktikant_in",
-],
-" Änderung": [
-"Bufdi",
-"Gast-WiMa"
-],
-}
-
-window.onload = function () {
-var applicationtypeSel = document.getElementById("id_application_type");
-var statusSel = document.getElementById("id_status");
-for (var x in applicationtypeObject) {
-applicationtypeSel.options[applicationtypeSel.options.length] = new Option(x, x);
-}
-applicationtypeSel.onchange = function () {
-statusSel.length = 1;
-var y = applicationtypeObject[applicationtypeSel.value]
-for (var i = 0; i < y.length; i++) {
-statusSel.options[statusSel.options.length] = new Option(y[i], y[i]);
-}
-}
-
-
-}
-
-
+     });
+   
 
 function  studentTypeChanged (){
 var studenttypeSel = document.getElementById("id_student_type").value;
-
 }
 var studenttypeSel = document.getElementById("id_student_type");
 var hours = document.getElementById("id_hours");
@@ -1428,6 +1405,18 @@ hours.disabled = true;
 hours.value=fixed_hours[4]
 }
 }
+
+$(function () {
+    $('#datetimepicker1').datetimepicker();
+    });
+    
+    $(function () {
+        $('#datetimepicker2').datetimepicker();
+        });
+    
+    var date1 = document.querySelector(".datetimepicker1").datetimepicker();
+
+    var date2 = document.querySelector(".datetimepicker2").datetimepicker();
 
 </script>
 
