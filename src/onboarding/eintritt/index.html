@@ -105,12 +105,12 @@
     </div>
 </div>
 <div class="col-md-4">
-    <div id="div_id_student_type" class="form-group">
+    <div id="div_id_student_type" class="form-group " >
         <label for="id_student_type" class="control-label  requiredField">
             Student type<span class="asteriskField">*</span>
         </label>
         <div class="controls  ">
-            <select name="student_type" class="form-select form-select-lg mb-3" required id="id_student_type">
+            <select disabled name="student_type" class="form-select form-select-lg mb-3" required id="id_student_type">
                 <option value="" selected>---------</option>
                 <option value="1">Master</option>
                 <option value="2">Bachelor</option>
@@ -157,8 +157,6 @@
     </div>
 </div>
 <hr class="my-5">
-
-
 <div id="div_id_start" class=" mb-4 form-group col-md-6">
     <label for="id_start" class="control-label  requiredField">
         Start  <span class="asteriskField">*</span>
@@ -1359,7 +1357,43 @@
 {{ super() }}
 
 <script>
-   
+    var studenttypeSel = document.getElementById("id_student_type");
+    var hours = document.getElementById("id_hours");
+    var fixed_hours = {
+    "1": 80,
+    "2": 40,
+    "3":60,
+    "4":160
+    }
+    var status_type  = document.getElementById("id_status");
+    var student_type  = document.getElementById("id_student_type");
+     status_type.addEventListener("change", function(){
+       var  status_typeSel = status_type.value;
+       console.log( status_typeSel)
+       if (status_typeSel==2){
+        student_type.disabled  =  false;
+       }else {
+        student_type.disabled  =  true;
+       }
+
+     });
+
+
+     function  studentTypeChanged (){
+        var studenttypeSel = document.getElementById("id_student_type").value;
+        }
+     
+        studenttypeSel.onchange = function(e) {
+        studenttypeSel.value = this.value;
+        if((this.value) === "2") {
+        hours.disabled = false;
+        hours.value = "";
+        } else {
+        hours.disabled = true;
+        hours.value=fixed_hours[4]
+        }
+        }
+        
   var application_type  = document.getElementById("id_application_type");
    application_type.addEventListener("change", function(){
        var  application_typeSel = application_type.value;
@@ -1370,11 +1404,14 @@
         console.log('option:' + status_select.options[i].value)
          if(application_typeSel == 1){
             status_select.options[i].disabled =  false;
+            hours.disabled = false;
          } else if (application_typeSel == 2)   {
             status_select.options[4].disabled =  true;
+            hours.disabled = false;
          
          } else   {
             status_select.options[1].disabled =  true;
+            hours.disabled = false;
             status_select.options[3].disabled =  true;
             status_select.options[4].disabled =  true;
             status_select.options[5].disabled =  true;
@@ -1384,27 +1421,6 @@
      });
    
 
-function  studentTypeChanged (){
-var studenttypeSel = document.getElementById("id_student_type").value;
-}
-var studenttypeSel = document.getElementById("id_student_type");
-var hours = document.getElementById("id_hours");
-var fixed_hours = {
-"1": 80,
-"2": 40,
-"3":60,
-"4":160
-}
-studenttypeSel.onchange = function(e) {
-studenttypeSel.value = this.value;
-if((this.value) === "2") {
-hours.disabled = false;
-hours.value = "";
-} else {
-hours.disabled = true;
-hours.value=fixed_hours[4]
-}
-}
 
 $(function () {
     $('#datetimepicker1').datetimepicker();
