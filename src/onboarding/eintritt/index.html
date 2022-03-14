@@ -38,7 +38,7 @@
             Application type<span class="asteriskField">*</span>
         </label>
         <div class="controls ">
-            <select name="application_type" class="select form-control" required
+            <select name="application_type" class="form-select form-select-lg mb-3" required
                 id="id_application_type">
                 <option value="" selected>---------</option>
                 <option value="1"> Einstellung</option>
@@ -79,7 +79,7 @@
             Description<span class="asteriskField">*</span>
         </label>
         <div class="controls ">
-            <textarea name="description" cols="40" rows="10" class="textarea form-control" required
+            <textarea name="description"  rows="3" class="textarea form-control" required
                 id="id_description">
            </textarea>
         </div>
@@ -93,7 +93,7 @@
             Status<span class="asteriskField">*</span>
         </label>
         <div class="controls ">
-            <select name="status" class="select form-control" required id="id_status">
+            <select name="status" class="form-select form-select-lg mb-3" required id="id_status">
                 <option value="" selected>---------</option>
                 <option value="1">MA</option>
                 <option value="2">Student_in</option>
@@ -109,8 +109,8 @@
         <label for="id_student_type" class="control-label  requiredField">
             Student type<span class="asteriskField">*</span>
         </label>
-        <div class="controls ">
-            <select name="student_type" class="select form-control" required id="id_student_type">
+        <div class="controls  ">
+            <select name="student_type" class="form-select form-select-lg mb-3" required id="id_student_type">
                 <option value="" selected>---------</option>
                 <option value="1">Master</option>
                 <option value="2">Bachelor</option>
@@ -126,7 +126,7 @@
             Team<span class="asteriskField">*</span>
         </label>
         <div class="controls ">
-            <select name="team" class="select form-control" required id="id_team">
+            <select name="team" class="form-select form-select-lg mb-3" required id="id_team">
                 <option value="" selected>---------</option>
                 <option value="1">Adminbereich</option>
                 <option value="2" >Energiesysteme</option>
@@ -139,7 +139,7 @@
     </div>
 </div>
 <hr class="my-5">
-<div id="div_id_hours" class="form-group">
+<div id="div_id_hours" class="form-group col-md-6">
     <label for="id_hours" class="control-label  requiredField">
         Hours<span class="asteriskField">*</span>
     </label>
@@ -148,7 +148,7 @@
   <input  step="10" min="0" max="160"  disabled type="number" name="hours" class="numberinput form-control" required id="id_hours">
     </div>
 </div>
-<div id="div_id_space" class="form-group">
+<div id="div_id_space" class="form-group col-md-6">
     <label for="id_space" class="control-label  requiredField">
         Space<span class="asteriskField">*</span>
     </label>
@@ -159,9 +159,9 @@
 <hr class="my-5">
 
 
-<div id="div_id_start" class=" mb-4 form-group">
+<div id="div_id_start" class=" mb-4 form-group col-md-6">
     <label for="id_start" class="control-label  requiredField">
-        Start<span class="asteriskField">*</span>
+        Start  <span class="asteriskField">*</span>
     </label>
     <div class='input-group date' id='datetimepicker1'>
         <input  id="id_start" type='text' class="form-control"  placeholder="Start  Date" />
@@ -170,7 +170,7 @@
         </span>
     </div>
 </div>
-<div id="div_id_end" class=" mb-4 form-group">
+<div id="div_id_end" class=" mb-4 form-group col-md-6">
     <label for="id_end" class="control-label  requiredField">
         End<span class="asteriskField">*</span>
     </label>
@@ -182,12 +182,12 @@
     </div>
 </div>
 <hr class="my-5">
-<div id="div_id_supervisor" class="form-group">
+<div id="div_id_supervisor" class="form-group col-md-6">
     <label for="id_supervisor" class="control-label  requiredField">
         Supervisor<span class="asteriskField">*</span>
     </label>
     <div class="controls ">
-        <select name="supervisor" class="select form-control" required id="id_supervisor">
+        <select name="supervisor" class="form-select form-select-lg mb-3" required id="id_supervisor">
             <option value="" selected>---------</option>
             <option value="2"> Anonymous</option>
             <option value="279">Sophie-Marie Fischer, BuFDi</option>
@@ -704,12 +704,12 @@
         </select>
     </div>
 </div>
-<div id="div_id_kostentraeger" class="form-group">
+<div id="div_id_kostentraeger" class="form-group col-md-6">
     <label for="id_kostentraeger" class="control-label  requiredField">
         Kostentraeger<span class="asteriskField">*</span>
     </label>
     <div class="controls ">
-        <select name="kostentraeger" class="select form-control" required id="id_kostentraeger">
+        <select name="kostentraeger" class="form-select form-select-lg mb-3" required id="id_kostentraeger">
             <option value="" selected>---------</option>
 
             <option value="316">307_Berlin_pariskonform</option>
@@ -1311,37 +1311,37 @@
         </select>
     </div>
 </div>
-
-<div id="div_id_br" class="form-group">
+<hr class="my-4">
+<div id="div_id_br" class="form-group col-md-4">
     <label for="id_br" class="control-label ">
         Br
     </label>
     <div class="controls ">
-        <select name="br" class="nullbooleanselect form-control" id="id_br">
+        <select name="br" class="nullbooleanselect form-select form-select-lg mb-3" id="id_br">
             <option value="unknown" selected>Unbekannt</option>
             <option value="true">Ja</option>
             <option value="false">Nein</option>
         </select>
     </div>
 </div>
-<div id="div_id_timebutler" class="form-group">
+<div id="div_id_timebutler" class="form-group col-md-4 ">
     <label for="id_timebutler" class="control-label ">
         Timebutler
     </label>
     <div class="controls ">
-        <select name="timebutler" class="nullbooleanselect form-control" id="id_timebutler">
+        <select name="timebutler" class="nullbooleanselect form-select form-select-lg mb-3" id="id_timebutler">
             <option value="unknown" selected>Unbekannt</option>
             <option value="true">Ja</option>
             <option value="false">Nein</option>
         </select>
     </div>
 </div>
-<div id="div_id_salary" class="form-group">
+<div id="div_id_salary" class="form-group col-md-4">
     <label for="id_salary" class="control-label ">
         Salary
     </label>
     <div class="controls ">
-        <select name="salary" class="nullbooleanselect form-control" id="id_salary">
+        <select name="salary" class="nullbooleanselect form-select form-select-lg mb-3" id="id_salary">
             <option value="unknown" selected>Unbekannt</option>
             <option value="true">Ja</option>
             <option value="false">Nein</option>
