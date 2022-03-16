@@ -2,7 +2,7 @@
 @import "variable_overrides";
 
 // Imported from node_modules, more infos: https://getbootstrap.com/docs/5.0/customize/sass/
-@import "bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap";
 
 // Import custom SCSS
 @import 'base/variables';

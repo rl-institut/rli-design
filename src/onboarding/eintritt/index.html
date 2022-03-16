@@ -1,0 +1,147 @@
+{% extends "src/onboarding/layout.html" %}
+
+{% block content %}
+
+       <body class="bg-light">
+           <div class="container">
+               <div class="py-5  text-center">
+                   <img class="mb-4 d-block mx-auto"  src="../../static/logos/RLI_logo_weiss.png" width="72" height="72" alt="">
+                   <h2>Eintritt Form</h2>
+               </div>
+           </div>
+           <div class="container">
+               <h4>New Eintritt </h4>
+               <form  novalidate action="">
+
+                
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label for="Application type" class="form-label" >Application type <span class="asteriskField">*</span></label>
+                        <select name="" id="Application type" class="form-control">
+                            <option value="" selected="">Choose...</option>
+                                <option value="19">Einstellung</option>
+                                <option value="20">Verlängerung</option>
+                                <option value="21">Änderung</option>
+                        </select>
+                        <div class="invalid-feedback" > valid first name is required.</div>
+
+                          
+                    </div>
+                    <div class="col-md-4">
+                        <label for="first name" class="form-label" >Firstname</label>
+                        <input id="first name" type="text" class="form-control" placeholder=".......">
+                        <div class="invalid-feedback" > valid first name is required.</div>
+                        
+                       
+                    </div>
+                    <div class="col-md-4">
+                        <label for="first name" class="form-label" >Firstname</label>
+                        <input id="first name" type="text" class="form-control" placeholder=".......">
+                        <div class="invalid-feedback" > valid first name is required.</div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="first name" class="form-label" >Description</label>
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                        <div class="invalid-feedback" > valid first name is required.</div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="col-md-4">
+                        <label for="Application type" class="form-label" >Status <span class="asteriskField">*</span></label>
+                        <select name="" id="Application type" class="form-control">
+                            <option value="" selected="">Choose...</option>
+                            <option value="" selected="">---------</option>
+                            <option value="2">MA</option>
+                            <option value="3">Student_in</option>
+                            <option value="4">Praktikant_in</option>
+                            <option value="5">Bufdi</option>
+                            <option value="6">Gast-WiMa</option>
+                        </select>
+                        <div class="invalid-feedback" > valid first name is required.</div>
+
+                          
+                    </div>
+                    <div class="col-md-4">
+                        <label for="Application type" class="form-label" >Student type <span class="asteriskField">*</span></label>
+                        <select name="" id="Application type" class="form-control">
+                            <option value="" selected="">Choose...</option>
+                            <option value="1">Master</option>
+                            <option value="2">Bachelor</option>
+                            <option value="3">Pflichtpraktikum</option>
+                            <option value="4">Freiwilliges Praktikum</option>
+                                
+                        </select>
+                        <div class="invalid-feedback" > valid first name is required.</div>
+                        
+                       
+                    </div>
+                    <div class="col-md-4">
+                        <label for="Application type" class="form-label" >Team <span class="asteriskField">*</span></label>
+                        <select name="" id="Application type" class="form-control">
+                            <option value="" selected="">Choose...</option>
+                            
+                            <option value="1">Adminbereich</option>
+                            <option value="2">Energiesysteme</option>
+                            <option value="3">Mobilität</option>
+                            <option value="4">Off-Grid</option>
+                            <option value="5">Technologie</option>
+                            <option value="6">RLS-Kolleg</option>
+                        </select>
+                        <div class="invalid-feedback" > valid first name is required.</div>
+                    </div>
+
+                    <hr class="my-5">
+
+                    <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+                        <input placeholder="Select date" type="text" id="example" class="form-control">
+                        <label for="example">Try me...</label>
+                        <i class="fas fa-calendar input-prefix"></i>
+                      </div>
+
+                      <hr class="my-5">
+
+                      <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+                          <input placeholder="Select date" type="text" id="example" class="form-control">
+                          <label for="example">Try me...</label>
+                          <i class="fas fa-calendar input-prefix"></i>
+                        </div>
+
+                        <hr class="my-5">
+
+                        <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+                            <input placeholder="Select date" type="text" id="example" class="form-control">
+                            <label for="example">Try me...</label>
+                            <i class="fas fa-calendar input-prefix"></i>
+                          </div>
+                          <hr class="my-5">
+
+                          <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+                              <input placeholder="Select date" type="text" id="example" class="form-control">
+                              <label for="example">Try me...</label>
+                              <i class="fas fa-calendar input-prefix"></i>
+                            </div>
+
+                   
+                   
+
+                 
+                
+                  
+
+                </div>
+               </form>
+
+           </div>
+       </body>
+{% endblock content %}
+
+{% block js %}
+{{ super() }}
+
+<script type="module" src="./eintritt.js"></script>
+
+{% endblock js %}
