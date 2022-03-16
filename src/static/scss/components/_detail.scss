@@ -1,0 +1,147 @@
+h1, h2, h3, h4 {
+  font-size: 38px;
+  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+}
+a {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a a:focus {
+  outline: none;
+}
+
+p {
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0px;
+  font-size: 14px;
+}
+
+ul, ol {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+.btn {
+  font-size: 14px;
+  padding: 10px 30px;
+  border-radius: 0px;
+  cursor: pointer;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: inline-block;
+}
+.btn-common {
+  background-color: #00b4d9;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-common:hover {
+  color: #fff;
+  background-color: #21cff3;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.btn-danger:hover {
+  background-color: #f55262;
+  border-color: #f55262;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.btn-border {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.btn-border:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+#about .img-thumb img {
+  border: 8px solid #fff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.profile-wrapper {
+  padding: 100px 0;
+}
+
+.profile-wrapper .btn {
+  margin: 10px 10px 0px 0px;
+}
+
+.profile-wrapper .btn i {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.about-profile {
+  position: relative;
+  margin: 40px 0 40px 0;
+}
+
+.about-profile .pro-title {
+  font-weight: 700;
+  color: #040404;
+  position: relative;
+  width: 250px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.about-profile .pro-title:after {
+  position: absolute;
+  color: #040404;
+  font-size: 14px;
+  left: 77px;
+}
+
+.about-profile .admin-sign {
+  position: absolute;
+  right: 45px;
+  bottom: 10px;
+}
+.about-profile .pro-detail{
+  width: 250px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.about-profile .pro{
+  width: 250px;
+  position: relative;
+  display: inline-table;
+  margin-bottom: 5px;
+}
+
+
