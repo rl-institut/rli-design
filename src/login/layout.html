@@ -24,14 +24,27 @@
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1">
-                <li class="nav-item">
-                  <a class="nav-link" href="/login/">Login</a>
-                </li>
-                <li class="nav-item">
+                <li>
                   <a class="nav-link" href="/login/about/">About</a>
                 </li>
-                <li class="nav-item">
+                <li>
                   <a class="nav-link" href="/login/contact.html">Contact</a>
+                </li>
+                <li class="lang-select">
+                  <form action="/i18n/setlang/" method="post" class="lang-select__form">
+                    <div class="lang-select__option">
+                      <input class="lang-select__input" type="radio" name="radioLang" id="radioLangDe" value="de" checked>
+                      <label class="lang-select__label" for="radioLangDe">
+                        DE
+                      </label>
+                    </div>
+                    <div class="lang-select__option">
+                      <input class="lang-select__input" type="radio" name="radioLang" id="radioLangEn" value="en">
+                      <label class="lang-select__label" for="radioLangEn">
+                        EN
+                      </label>
+                    </div>
+                  </form>
                 </li>
               </ul>
             </div>
