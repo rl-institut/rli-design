@@ -1,0 +1,15 @@
+{% extends "src/onboarding/layout.html" %}
+
+{% block content %}
+<main class="flex-shrink-0">
+  Setze Personalnummer für User ds dsd:
+  <form method="post">
+
+
+<input type="hidden" name="csrfmiddlewaretoken" value="P8OZujoqyL8ZuSRHKqYo7ofHUk5ku7IA38wsAUZb6nRVClLKBmSz8HMlEqLQJoM0"> <div id="div_id_personalnummer" class="mb-3"> <label for="id_personalnummer" class="form-label requiredField">
+                Personalnummer<span class="asteriskField">*</span> </label> <input type="number" name="personalnummer" value="123" class="numberinput form-control" required id="id_personalnummer"> </div>
+
+    <input type="submit" value="Speichern" />
+  </form>
+</main>
+{% endblock content %}
