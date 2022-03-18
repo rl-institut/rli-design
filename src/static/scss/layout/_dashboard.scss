@@ -1,0 +1,11 @@
+.dashboard {
+  .sidebar {
+    @extend .d-flex; 
+    @extend .flex-column; 
+    @extend .flex-shrink-0; 
+    @extend .p-3;
+    @extend .min-vh-100;
+    @extend .shadow;
+    width: 16.25rem;
+  }
+}
