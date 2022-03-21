@@ -1,16 +1,15 @@
- h3{
+.title-detail{
   font-size: 38px;
   font-weight: 700;
   font-family: "Roboto";
+  
 }
-ul {
+.ul-detail {
   list-style: outside none none;
   margin: 0;
   padding: 0;
 }
-ul li{
-  list-style: none;
-}
+
 .btn-common {
   background-color: #00b4d9;
   position: relative;
@@ -38,16 +37,17 @@ ul li{
   position: relative;
   margin: 40px 0 40px 0;
 }
-.details .title-detail {
+.details .sub-title {
   font-weight: 700;
   color: #040404;
   position: relative;
   width: 250px;
   display: inline-block;
   margin-bottom: 5px;
+  font-family: "Roboto";
 }
 
-.details .title-detail:after {
+.details .sub-title:after {
   position: absolute;
   color: #040404;
   font-size: 14px;
@@ -58,6 +58,7 @@ ul li{
   position: relative;
   display: inline-block;
   margin-bottom: 5px;
+  color: #040404;
 }
 .details .projekt-right{
   width: 250px;

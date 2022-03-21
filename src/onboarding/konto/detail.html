@@ -1,25 +1,21 @@
 {% extends "src/onboarding/layout.html" %}
-
 {% block content %}
 <main class="flex-shrink-0">
   <div class="container">
-    <div class="row">
+    <div class="bs-row">
       <div >
-        <div  >
-          <h3>Konto Details</h3>
-<<<<<<< HEAD
+          <h3 class="title-detail">Konto Details</h3>
           <div class="details">
-            <ul>
-              <li><span class="title-detail">UserName:</span> <span >majd rekik</span></li>
-              <li><span class="title-detail">DB-Zugang:</span> <span >True</span></li>
-              <li><span class="title-detail">Nextcloud-Zugang:</span> <span >False</span></li>
-              <li><span class="title-detail">PC-Setup</span> <span >False</span></li>
-              <li><span class="title-detail"> OS:</span> <span >Windows</span></li>
-              <li><span class="title-detail">Zusätzliche Software:</span> <span >rgrg</span></li>
-              <li><span class="title-detail">Mailinglisten:</span> <span>Team EEMob MA</span> </li>
-              <li><span class="title-detail">Projekt-Zugänge:</span>  
-
-                <li><span class="projekt-detail">307_Berlin_pariskonform</span>
+            <ul class="ul-detail" >
+              <li><span class="sub-title">UserName:</span> <span >majd rekik</span></li>
+              <li><span class="sub-title">DB-Zugang:</span> <span >True</span></li>
+              <li><span class="sub-title">Nextcloud-Zugang:</span> <span >False</span></li>
+              <li><span class="sub-title">PC-Setup</span> <span >False</span></li>
+              <li><span class="sub-title"> OS:</span> <span >Windows</span></li>
+              <li><span class="sub-title">Zusätzliche Software:</span> <span >rgrg</span></li>
+              <li><span class="sub-title">Mailinglisten:</span> <span>Team EEMob MA</span> </li>
+              <li><span class="sub-title">Projekt-Zugänge:</span>  
+                <ol><span class="projekt-detail">307_Berlin_pariskonform</span>
                   <table class="projekt-right" >
                     <tr><td>Akquise</td><td>NoApproval</td></tr>
                     <tr><td>Projektsteuerung</td><td>NoApproval</td></tr>
@@ -31,8 +27,8 @@
                     <tr><td>Know-How</td><td>NoApproval</td></tr>
                     <tr><td>Stud_ordner</td><td>NoApproval</td></tr>
                   </table>
-                </li>
-                <li><span class="projekt-detail">500_Berlin_pariskonform</span>
+                </ol>
+                <ol><span class="projekt-detail">500_Berlin_pariskonform</span>
                   <table class="projekt-right" >
                     <tr><td>Akquise</td><td>Approval</td></tr>
                     <tr><td>Projektsteuerung</td><td>Approval</td></tr>
@@ -44,58 +40,13 @@
                     <tr><td>Know-How</td><td>NoApproval</td></tr>
                     <tr><td>Stud_ordner</td><td>NoApproval</td></tr>
                   </table>
-                </li>
+                </ol>
               </li>
             </ul>
           </div>
           <a class="btn btn-common">Download Detail</a>
-         
-=======
-          <div class="about-profile">
-            <ul class="admin-profile">
-              <li><span class="pro-title">UserName:</span> <span class="pro-detail">majd rekik</span></li>
-              <li><span class="pro-title">DB-Zugang:</span> <span class="pro-detail">True</span></li>
-              <li><span class="pro-title">Nextcloud-Zugang:</span> <span class="pro-detail">False</span></li>
-              <li><span class="pro-title">PC-Setup</span> <span class="pro-detail">False</span></li>
-              <li><span class="pro-title"> OS:</span> <span class="pro-detail">Windows</span></li>
-              <li><span class="pro-title">Zusätzliche Software:</span> <span class="pro-detail">rgrg</span></li>
-              <li><span class="pro-title">Mailinglisten:</span> <span class="pro-detail">Team EEMob MA</span> </li>
-              <li><span class="pro-title">Projekt-Zugänge:</span>
-
-              <li><span class="pro-detail">307_Berlin_pariskonform</span>
-                <table class="pro" >
-                  <tr><td>Akquise</td><td>NoApproval</td></tr>
-                  <tr><td>Projektsteuerung</td><td>NoApproval</td></tr>
-                  <tr><td>Projektinhalte</td><td>NoApproval</td></tr>
-                  <tr><td>Berichte</td><td>NoApproval</td></tr>
-                  <tr><td>OEA</td><td>NoApproval</td></tr>
-                  <tr><td>Bilder</td><td>NoApproval</td></tr>
-                  <tr><td>Präsentation</td><td>NoApproval</td></tr>
-                  <tr><td>Know-How</td><td>NoApproval</td></tr>
-                  <tr><td>Stud_ordner</td><td>NoApproval</td></tr>
-                </table>
-              </li>
-              <li><span class="pro-detail">500_Berlin_pariskonform</span>
-                <table class="pro" >
-                  <tr><td>Akquise</td><td>Approval</td></tr>
-                  <tr><td>Projektsteuerung</td><td>Approval</td></tr>
-                  <tr><td>Projektinhalte</td><td>Approval</td></tr>
-                  <tr><td>Berichte</td><td>NoApproval</td></tr>
-                  <tr><td>OEA</td><td>NoApproval</td></tr>
-                  <tr><td>Bilder</td><td>NoApproval</td></tr>
-                  <tr><td>Präsentation</td><td>NoApproval</td></tr>
-                  <tr><td>Know-How</td><td>NoApproval</td></tr>
-                  <tr><td>Stud_ordner</td><td>NoApproval</td></tr>
-                </table>
-              </li>
-            </ul>
-          </div>
-          <a href="#" class="btn btn-common"><i class="icon-paper-clip"></i> Download Detail</a>
-
->>>>>>> 6e44f10c5028db023d5edc8b3b7bec66717bfa14
         </div>
       </div>
-    </div>
   </div>
 </main>
 {% endblock content %}

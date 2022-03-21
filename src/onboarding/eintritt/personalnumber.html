@@ -2,14 +2,25 @@
 
 {% block content %}
 <main class="flex-shrink-0">
-  Setze Personalnummer für User ds dsd:
-  <form method="post">
+  <div class="container">
+    <div class="row">
+      <div>
+        <h3 class="title-detail">Setze Personalnummer für User ds dsd:</h3>
+        <form method="post" class="details">
+          <input type="hidden" name="csrfmiddlewaretoken"
+            value="P8OZujoqyL8ZuSRHKqYo7ofHUk5ku7IA38wsAUZb6nRVClLKBmSz8HMlEqLQJoM0">
+          <div id="div_id_personalnummer" class="mb-3 sub-title">
+            <label for="id_personalnummer" class="form-label requiredField">
+              Personalnummer<span class="asteriskField">*</span>
+            </label>
+            <input type="number" name="personalnummer" value="123" class="numberinput form-control" required
+              id="id_personalnummer">
+          </div>
+          <input type="submit" value="Speichern" class="btn btn-primary  " />
+        </form>
+      </div>
+    </div>
+  </div>
 
-
-<input type="hidden" name="csrfmiddlewaretoken" value="P8OZujoqyL8ZuSRHKqYo7ofHUk5ku7IA38wsAUZb6nRVClLKBmSz8HMlEqLQJoM0"> <div id="div_id_personalnummer" class="mb-3"> <label for="id_personalnummer" class="form-label requiredField">
-                Personalnummer<span class="asteriskField">*</span> </label> <input type="number" name="personalnummer" value="123" class="numberinput form-control" required id="id_personalnummer"> </div>
-
-    <input type="submit" value="Speichern" />
-  </form>
 </main>
 {% endblock content %}
