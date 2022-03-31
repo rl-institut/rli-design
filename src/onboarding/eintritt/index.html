@@ -144,8 +144,7 @@
         Hours<span class="asteriskField">*</span>
     </label>
     <div class="controls ">
-
-  <input  step="10" min="0" max="160"  disabled type="number" name="hours" class="numberinput form-control" required id="id_hours">
+  <input  step="10" min="0" max="160"   disabled type="number" name="hours" class="numberinput form-control" required id="id_hours">
     </div>
 </div>
 <div id="div_id_space" class="form-group col-md-6">
@@ -1357,6 +1356,9 @@
 {{ super() }}
 
 <script>
+  
+
+
     var studenttypeSel = document.getElementById("id_student_type");
     var hours = document.getElementById("id_hours");
     var fixed_hours = {
@@ -1411,7 +1413,6 @@
          
          } else   {
             status_select.options[1].disabled =  true;
-            hours.disabled = false;
             status_select.options[3].disabled =  true;
             status_select.options[4].disabled =  true;
             status_select.options[5].disabled =  true;
