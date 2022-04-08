@@ -6,6 +6,7 @@
 
   &__option {
     @extend .form-check;
+    @extend .ps-2;
   }
 
   &__input {
@@ -19,12 +20,14 @@
     @extend .px-0;
   }
 
-  &__input:checked+label:hover {
+  &__input:checked+label:hover,
+  &__input:not(:checked)+label:hover {
     color: $blue!important;
   }
 
   &__input:not(:checked)+label {
     cursor: pointer;
+    @extend .text-muted;
   }
 
   @include media-breakpoint-down(md) {
