@@ -1,0 +1,42 @@
+.lang-select {
+  &__form {
+    @include flex-row;
+    @extend .ps-3;
+  }
+
+  &__option {
+    @extend .form-check;
+    @extend .ps-2;
+  }
+
+  &__input {
+    @extend .form-check-input;
+    opacity: 0;
+  }
+
+  &__label {
+    @extend .form-check-label;
+    @extend .nav-link;
+    @extend .px-0;
+  }
+
+  &__input:checked+label:hover,
+  &__input:not(:checked)+label:hover {
+    color: $blue!important;
+  }
+
+  &__input:not(:checked)+label {
+    cursor: pointer;
+    @extend .text-muted;
+  }
+
+  @include media-breakpoint-down(md) {
+    &__form {
+      padding: 2rem 0!important;
+    }
+    
+    &__option:first-of-type  {
+      padding: 0!important;
+    }
+  }
+}
