@@ -1,11 +1,108 @@
-.dashboard {
-  .sidebar {
-    @extend .d-flex; 
-    @extend .flex-column; 
-    @extend .flex-shrink-0; 
-    @extend .p-3;
-    @extend .min-vh-100;
-    @extend .shadow;
-    width: 16.25rem;
+.db-header {
+  @extend .navbar; 
+  @extend .sticky-top; 
+  @extend .flex-md-nowrap; 
+  @extend .p-0;
+
+  &__name {
+    @extend .navbar-brand;
+    @extend .col-md-3; 
+    @extend .col-lg-2; 
+    @extend .me-0; 
+    @extend .px-3;
+  }
+
+  &__toggler {
+    @extend .navbar-toggler; 
+    @extend .position-absolute;
+    @extend .d-md-none;
+    @extend .end-0;
+  }
+
+  &__toggler-icon {
+    @extend .navbar-toggler-icon;
+    background-color: $blue;
+  }
+
+  &__nav {
+    @extend .navbar-nav;
+
+    &-item {
+      @extend .nav-item;
+      @extend .text-nowrap;
+    }
+
+    &-link {
+      @extend .nav-link;
+      @extend .px-3;
+    }
+  }
+}
+
+.db-container {
+  @extend .container-fluid;
+
+  &__row {
+    @extend .row;
+  }
+}
+
+.db-sidebar {
+  @extend .col-md-3;
+  @extend .col-lg-2;
+  @extend .d-md-block;
+  @extend .bg-light;
+  @extend .collapse; 
+  @extend .show;
+
+  &__sticky {
+    @extend .position-sticky;
+    @extend .pt-3;
+  }
+}
+
+.db-sidebarnav {
+  @extend .nav; 
+  @extend .flex-column;
+
+  &__item {
+    @extend .nav-item;
+  }
+
+  &__link {
+    @extend .nav-link;
+
+    &--active {
+      @extend .active;
+    }
+  }
+}
+
+.db-main {
+  @extend .col-md-9;
+  @extend .ms-sm-auto; 
+  @extend .col-lg-10; 
+  @extend .px-md-4;
+}
+
+.db-topnav {
+  @extend .d-flex; 
+  @extend .justify-content-between;
+  @extend .flex-wrap;
+  @extend .flex-md-nowrap;
+  @extend .align-items-center;
+  @extend .pt-3;
+  @extend .pb-2;
+  @extend .mb-3;
+  @extend .border-bottom;
+
+  &__header {
+    @extend .h2;
+  }
+
+  &__lang {
+    @extend .btn-toolbar;
+    @extend .mb-2;
+    @extend .mb-md-0;
   }
 }
