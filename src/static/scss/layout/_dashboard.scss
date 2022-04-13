@@ -15,7 +15,7 @@
   &__toggler {
     @extend .navbar-toggler; 
     @extend .position-absolute;
-    @extend .d-md-none;
+    @extend .d-lg-none;
     @extend .end-0;
   }
 
@@ -40,19 +40,23 @@
 }
 
 .db-container {
-  @extend .container-fluid;
 
   &__row {
     @extend .row;
+    @extend .d-md-flex;
+    @extend .flex-lg-row;
   }
 }
 
 .db-sidebar {
-  @extend .col-md-3;
-  @extend .col-lg-2;
-  @extend .d-md-block;
+  @extend .col-lg-3;
+  @extend .d-lg-block;
   @extend .bg-light;
-  @extend .collapse; 
+  @extend .collapse;
+
+  @media only screen and (min-width: 1016px) {
+    width: 16.25rem;
+  }
 
   &__sticky {
     @extend .position-sticky;
@@ -78,10 +82,10 @@
 }
 
 .db-main {
-  @extend .col-md-9;
   @extend .ms-sm-auto; 
-  @extend .col-lg-10; 
+  @extend .col-lg-9; 
   @extend .px-md-4;
+  @extend .flex-lg-grow-1;
 }
 
 .db-topnav {
