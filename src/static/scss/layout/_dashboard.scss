@@ -10,6 +10,7 @@
     @extend .col-lg-3; 
     @extend .me-0; 
     @extend .px-3;
+    @extend .h-100;
 
     @include media-breakpoint-up(lg) {
       max-width: 18rem;
@@ -71,13 +72,23 @@
 
   &__sticky {
     @extend .position-sticky;
-    @extend .pt-3;
+    @extend .pt-0;
+  }
+
+  &__logo {
+    background-image: url(/static/logos/RMS_logo_notitle.svg);
+    background-position: center;
+    background-size: 6rem;
+    background-repeat: no-repeat;
+    height: 3rem;
+    @extend .mb-5;
   }
 }
 
 .db-sidebarnav {
   @extend .nav; 
   @extend .flex-column;
+  @extend .mb-4;
 
   &__item {
     @extend .nav-item;
@@ -106,7 +117,7 @@
   @extend .flex-wrap;
   @extend .flex-md-nowrap;
   @extend .align-items-center;
-  @extend .pt-3;
+  @extend .pt-1;
   @extend .pb-2;
   @extend .mb-3;
   @extend .border-bottom;
