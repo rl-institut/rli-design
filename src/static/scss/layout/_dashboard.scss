@@ -1,5 +1,6 @@
 .db-header {
-  @extend .navbar; 
+  @extend .navbar;
+  @extend .navbar-light;
   @extend .sticky-top; 
   @extend .flex-md-nowrap; 
   @extend .p-0;
@@ -96,9 +97,26 @@
 
   &__link {
     @extend .nav-link;
+    color: $navbar-light-color;
+
+    &:hover {
+      color: $navbar-light-hover-color;
+    }
+
+    &:active {
+      color: $navbar-light-active-color;
+    }
 
     &--active {
-      @extend .active;
+      background-color: $blue;
+      border-radius: $border-radius;
+      color: $white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $white;
+      }
     }
   }
 }
