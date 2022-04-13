@@ -54,10 +54,6 @@
   @extend .bg-light;
   @extend .collapse;
 
-  @media only screen and (min-width: 1016px) {
-    width: 16.25rem;
-  }
-
   &__sticky {
     @extend .position-sticky;
     @extend .pt-3;
