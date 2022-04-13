@@ -3,13 +3,18 @@
   @extend .sticky-top; 
   @extend .flex-md-nowrap; 
   @extend .p-0;
+  background-color: $gray-100;
 
   &__name {
     @extend .navbar-brand;
-    @extend .col-md-3; 
-    @extend .col-lg-2; 
+    @extend .col-lg-3; 
     @extend .me-0; 
     @extend .px-3;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 18rem;
+      background-color: $white;
+    }
   }
 
   &__toggler {
@@ -57,8 +62,12 @@
 .db-sidebar {
   @extend .col-lg-3;
   @extend .d-lg-block;
-  @extend .bg-light;
   @extend .collapse;
+  background-color: $white;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 18rem;
+  }
 
   &__sticky {
     @extend .position-sticky;
@@ -88,6 +97,7 @@
   @extend .col-lg-9; 
   @extend .px-md-4;
   @extend .flex-lg-grow-1;
+  background-color: $gray-100;
 }
 
 .db-topnav {
