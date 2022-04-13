@@ -40,11 +40,17 @@
 }
 
 .db-container {
+  @extend .flex-lg-grow-1;
 
   &__row {
     @extend .row;
     @extend .d-md-flex;
     @extend .flex-lg-row;
+    @extend .mx-0;
+
+    @include media-breakpoint-up(lg) {
+      min-height: 100%;
+    }
   }
 }
 
