@@ -122,6 +122,11 @@
         color: $white;
       }
     }
+
+    svg {
+      @extend .me-1;
+      transform: translateY(-2px);
+    }
   }
 }
 
