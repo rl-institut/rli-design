@@ -17,6 +17,7 @@
 
 // scss-docs-start color-variables
 $blue: #002E50;
+$yellow: #FFBA1A;
 $black: #292929;
 // scss-docs-end color-variables
 
@@ -185,6 +186,20 @@ $h6-font-size:                $font-size-base;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size
+);
+
+$custom-font-sizes: (
+  "7": 0.875rem
+);
+
+$font-sizes: map-merge($font-sizes, $custom-font-sizes);
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables

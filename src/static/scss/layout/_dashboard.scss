@@ -70,6 +70,7 @@
   @extend .d-lg-block;
   @extend .collapse;
   @extend .bg-white;
+  @extend .shadow;
 
   @include media-breakpoint-up(lg) {
     max-width: 18rem;
@@ -153,5 +154,70 @@
     @extend .btn-toolbar;
     @extend .mb-2;
     @extend .mb-md-0;
+  }
+}
+
+.db-content {
+  @extend .container;
+
+  &__row {
+    @extend .row;
+  }
+
+  &__col {
+    &--5 {
+      @extend .col-xl-5;
+    }
+
+    &--7 {
+      @extend .col-xl-7;
+    }
+  }
+}
+
+.db-item {
+  @extend .bg-white;
+  @extend .rounded;
+  @extend .shadow-sm;
+
+  &__title {
+    @extend .p-2;
+    @extend .border-bottom;
+    @extend .fw-bold;
+  }
+
+  &__content {
+    @extend .px-2;
+    @extend .py-3;
+  }
+}
+
+.db-diff {
+  @extend .row;
+
+  &__col {
+    @extend .col-6;
+  }
+
+  &__text {
+    @extend .text-center;
+    @extend .fs-7;
+    @extend .lh-1;
+    @extend .pb-2;
+  }
+
+  &__total {
+    @extend .text-center;
+    @extend .fw-bold;
+    @extend .p-1;
+
+    &--is {
+      background-color: $blue;
+      @extend .text-white;
+    }
+
+    &--fc {
+      background-color: $yellow-200;
+    }
   }
 }
