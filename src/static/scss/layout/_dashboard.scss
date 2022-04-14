@@ -4,7 +4,7 @@
   @extend .sticky-top; 
   @extend .flex-md-nowrap; 
   @extend .p-0;
-  background-color: $gray-100;
+  @extend .bg-light;
 
   &__name {
     @extend .navbar-brand;
@@ -69,7 +69,7 @@
   @extend .col-lg-3;
   @extend .d-lg-block;
   @extend .collapse;
-  background-color: $white;
+  @extend .bg-white;
 
   @include media-breakpoint-up(lg) {
     max-width: 18rem;
@@ -101,32 +101,23 @@
 
   &__link {
     @extend .nav-link;
-    color: $navbar-light-color;
+    @extend .link-primary;
 
-    &:hover {
-      color: $navbar-light-hover-color;
-    }
-
-    &:active {
-      color: $navbar-light-active-color;
-    }
-
-    &--active {
-      background-color: $blue;
+    &--active,
+    &--active:hover,
+    &--active:active,
+    &--active:focus {
+      @extend .link-light;
+      @extend .bg-primary;
       border-radius: $border-radius;
-      color: $white;
-
-      &:hover,
-      &:active,
-      &:focus {
-        color: $white;
-      }
     }
 
     svg {
       @extend .me-1;
       transform: translateY(-2px);
     }
+
+    
   }
 }
 
@@ -135,7 +126,7 @@
   @extend .col-lg-9; 
   @extend .px-md-4;
   @extend .flex-lg-grow-1;
-  background-color: $gray-100;
+  @extend .bg-light;
 }
 
 .db-topnav {
@@ -147,10 +138,15 @@
   @extend .pt-1;
   @extend .pb-2;
   @extend .mb-3;
-  @extend .border-bottom;
 
   &__header {
     @extend .h2;
+  }
+
+  &__options {
+    .nav-link {
+      @extend .link-primary;
+    }
   }
 
   &__lang {

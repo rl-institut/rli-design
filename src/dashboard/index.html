@@ -1,14 +1,38 @@
 {% extends "src/dashboard/layout.html" %}
 
 {% block content %}
-<div class="db-topnav">
+<section class="db-topnav">
   <h1 class="db-topnav__header">Overview</h1>
+  <div class="db-topnav__options">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">RLI</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Mobi</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">OG</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">TEO</a>
+      </li>
+      <form action="">
+        <select class="form-select" aria-label="Default select example">
+          <option>2023</option>
+          <option selected>2022</option>
+          <option>2021</option>
+          <option>2020</option>
+        </select>
+      </form>
+    </ul>
+  </div>
   <div class="db-topnav__lang">
     <div>
       DE EN
     </div>
   </div>
-</div>
+</section>
 
 <div class="db-content">test</div>
 {% endblock %}
