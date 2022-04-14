@@ -28,11 +28,15 @@
 
   &__toggler-icon {
     @extend .navbar-toggler-icon;
-    background-color: $blue;
   }
 
   &__nav {
     @extend .navbar-nav;
+    margin-right: 4rem;
+
+    @include media-breakpoint-up(lg) {
+      margin-right: 0;
+    }
 
     &-item {
       @extend .nav-item;
