@@ -194,6 +194,7 @@
 
 .db-diff {
   @extend .row;
+  @extend .pb-4;
 
   &__col {
     @extend .col-6;

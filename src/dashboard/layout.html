@@ -102,29 +102,40 @@
 
     <script type="module" src="/static/js/main.js"></script>
     <script type="text/javascript">
-      // Initialize the echarts instance based on the prepared dom
       var myChart = echarts.init(document.getElementById('mainChart'));
 
-      // Specify the configuration items and data for the chart
       var option = {
         title: {
-          text: 'ECharts Getting Started Example'
+          text: 'Budget in Tsd. €'
         },
-        tooltip: {},
-        legend: {
-          data: ['sales']
-        },
-        xAxis: {
-          data: ['Shirts', 'Cardigans', 'Chiffons', 'Pants', 'Heels', 'Socks']
-        },
-        yAxis: {},
-        series: [
-          {
-            name: 'sales',
-            type: 'bar',
-            data: [5, 20, 36, 10, 10, 20]
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+            type: 'shadow'
           }
-        ]
+        },
+        dataset: {
+          source: [
+            ['Kategorie', 'IST', 'Forecast', 'Abbau Überschüsse, Puffer und Risikobudget in Tsd. €'],
+            ['Personal', -12, -25, -65],
+            ['Eigenmittel', 72, 95, -65],
+          ]
+        },
+        xAxis: { type: 'category' },
+        yAxis: {},
+        series: [{ type: 'bar' }, { type: 'bar' }, {'type': 'line'}],
+        color: [
+          '#002C50',
+          '#FFE8B3'
+        ],
+        label: {
+          normal: {
+            position: 'top',
+            distance: 10,
+            show: true,
+            formatter: ['Label Text'].join('\n')
+          }
+        }
       };
 
       // Display the chart using the configuration items and data just specified.
