@@ -222,3 +222,7 @@
     }
   }
 }
+
+.db-diff-table {
+  @extend .row;
+}
