@@ -1,0 +1,4 @@
+.db-table {
+  @extend .table;
+  @extend .table-borderless;
+}
