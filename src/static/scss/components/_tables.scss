@@ -1,4 +1,43 @@
 .db-table {
   @extend .table;
   @extend .table-borderless;
+  @extend .fs-7;
+
+  &__head {
+    .db-table__th {
+      @include diff-is-forecast;
+    }
+  }
+
+  &__body {
+    .db-table__tr {
+      @extend .border-bottom;
+    }
+
+    .db-table__tr.db-table__tr--no-border {
+      @extend .border-0;
+    }
+
+    .db-table__tr.db-table__tr--nested {
+      @extend .fw-light;
+      @extend .fst-italic;
+
+      th {
+        @extend .ps-2;
+        @extend .fw-light;
+      }
+    }
+
+    .db-table__th {
+      @extend .text-start;
+    }
+
+    .db-table__td {
+      @extend .text-end;
+    }
+
+    .db-table__td--bold {
+      @extend .fw-bold;
+    }
+  }
 }

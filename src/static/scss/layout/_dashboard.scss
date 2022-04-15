@@ -52,6 +52,7 @@
 
 .db-container {
   @extend .flex-lg-grow-1;
+  @extend .bg-light;
 
   &__row {
     @extend .row;
@@ -73,7 +74,9 @@
   @extend .shadow;
 
   @include media-breakpoint-up(lg) {
-    max-width: 18rem;
+    max-width: $c-sidebar-width;
+    position: fixed;
+    height: 100%;
   }
 
   &__sticky {
@@ -128,6 +131,10 @@
   @extend .px-md-4;
   @extend .flex-lg-grow-1;
   @extend .bg-light;
+
+  @include media-breakpoint-up(lg) {
+    margin-left: $c-sidebar-width !important;
+  }
 }
 
 .db-topnav {
@@ -188,13 +195,13 @@
 
   &__content {
     @extend .px-2;
-    @extend .py-3;
+    @extend .py-4;
   }
 }
 
 .db-diff {
   @extend .row;
-  @extend .pb-4;
+  @extend .pb-5;
 
   &__col {
     @extend .col-6;
@@ -208,21 +215,16 @@
   }
 
   &__total {
-    @extend .text-center;
-    @extend .fw-bold;
     @extend .p-1;
-
-    &--is {
-      background-color: $blue;
-      @extend .text-white;
-    }
-
-    &--fc {
-      background-color: $yellow-200;
-    }
+    @include diff-is-forecast;
   }
+}
+
+.db-chart {
+  @extend .pb-4;
 }
 
 .db-diff-table {
   @extend .row;
+  @extend .px-2;
 }

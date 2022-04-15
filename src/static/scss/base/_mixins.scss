@@ -1,0 +1,14 @@
+@mixin diff-is-forecast {
+  @extend .text-center;
+  @extend .fw-bold;
+
+  &--is {
+    background-color: $blue !important;
+    @extend .text-white;
+  }
+
+  &--fc {
+    background-color: $yellow-200 !important;
+    @extend .text-primary;
+  }
+}
