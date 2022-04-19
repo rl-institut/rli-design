@@ -138,6 +138,7 @@
 }
 
 .db-topnav {
+  @extend .container;
   @extend .d-flex; 
   @extend .justify-content-between;
   @extend .flex-wrap;
