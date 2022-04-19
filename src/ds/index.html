@@ -1,0 +1,68 @@
+{% extends "src/login/layout.html" %}
+
+{% block content %}
+
+<section class="ds">
+  <div class="ds__container">
+    <h1>RMS Design System</h1>
+    <div class="ds__item bs-row">
+      <h2>Layout</h2>
+      <p>RMS is primarily based on ZURB Foundation. We will migrate the CSS system to Bootstrap. In order to prevent display errors and bugs, we should be sure we don't use classes that are used in Foundation. Since Bootstrap has the same type of structure as Foundation, we should use a different system. For that purpose, use BEM system as much as possible: <code>block__element--modifier</code>. Whenever possible use <a href="https://sass-lang.com/documentation/at-rules/extend" target=“_blank“ rel=“noopener noreferrer“>@extend from Sass:</a> <code>@extend {bootstrap-class}</code> if the styles you are looking for are already available under a Bootstrap class.</p>
+      <p>There are exceptions to the use of BEM, such as <code>.row</code> and <code>.col</code>. Use in that case the <code>.bs-row</code> and <code>.bs-col</code> classes. <code>@extend</code> is used to integrate the Bootsrap class declarations in these custom classes. Similarly, if only a Bootstrap class can be used and not the BEM system, create a new class and declaration: <code>.bs-{bootstrap-class}</code> and extend the Bootstrap class: <code>@extend {bootstrap-class}</code>.</p>
+      <p>To override Bootstrap variables, use <code>_variable_overrides.scss</code> and place it at the right position in the document (check where it is located inside <code>node_modules/bootstrap/scss/_variables.scss</code>), to be sure not to override the varibale more than once.</p>
+    </div>
+    <div class="ds__item bs-row">
+      <div class="bs-col">
+        <h2>Colors</h2>
+        <p>Primary color is <code>$blue</code>. It is mostly used for text, but also some background elements images.</p>
+        <p>Color for anchors is <code>$link-color</code>.</p>
+        <p>Try to use very light background colors such as <code>$white</code> or <code>$gray-100</code>. You can use box-shadows such as <code>$box-shadow-sm</code> on a component if the component and background both have <code>$white</code> as a background-color.</p>
+      </div>
+      <div class="bs-col ds__colors">
+        <div class="bs-row sample sample--blue">$blue</div>
+        <div class="bs-row sample sample--black">$black</div>
+        <div class="bs-row sample sample--gray-900">$gray-900</div>
+        <div class="bs-row sample sample--gray-800">$gray-800</div>
+        <div class="bs-row sample sample--gray-700">$gray-700</div>
+        <div class="bs-row sample sample--gray-600">$gray-600</div>
+        <div class="bs-row sample sample--gray-500">$gray-500</div>
+        <div class="bs-row sample sample--gray-400">$gray-400</div>
+        <div class="bs-row sample sample--gray-300">$gray-300</div>
+        <div class="bs-row sample sample--gray-200">$gray-200</div>
+        <div class="bs-row sample sample--gray-100">$gray-100</div>
+        <div class="bs-row sample sample--white">$white</div>
+      </div>
+    </div>
+    <div class="ds__item bs-row">
+      <div class="bs-col">
+        <p>There are also secondary colors to use whenwe want to highlight something special or different. Not to overruse.</p>
+      </div>
+      <div class="bs-col ds__colors">
+        <div class="bs-row sample sample--c-color-blue-5">$c-color-blue-5</div>
+        <div class="bs-row sample sample--c-color-blue-4">$c-color-blue-4</div>
+        <div class="bs-row sample sample--c-color-blue-3">$c-color-blue-3</div>
+        <div class="bs-row sample sample--c-color-blue-2">$c-color-blue-2</div>
+      </div>
+      <div class="bs-col ds__colors">
+        <div class="bs-row sample sample--c-color-green-5">$c-color-green-5</div>
+        <div class="bs-row sample sample--c-color-green-4">$c-color-green-4</div>
+        <div class="bs-row sample sample--c-color-green-3">$c-color-green-3</div>
+        <div class="bs-row sample sample--c-color-green-2">$c-color-green-2</div>
+      </div>
+      <div class="bs-col ds__colors">
+        <div class="bs-row sample sample--c-color-yellow-5">$c-color-yellow-5</div>
+        <div class="bs-row sample sample--c-color-yellow-4">$c-color-yellow-4</div>
+        <div class="bs-row sample sample--c-color-yellow-3">$c-color-yellow-3</div>
+        <div class="bs-row sample sample--c-color-yellow-2">$c-color-yellow-2</div>
+      </div>
+      <div class="bs-col ds__colors">
+        <div class="bs-row sample sample--c-color-red-5">$c-color-red-5</div>
+        <div class="bs-row sample sample--c-color-red-4">$c-color-red-4</div>
+        <div class="bs-row sample sample--c-color-red-3">$c-color-red-3</div>
+        <div class="bs-row sample sample--c-color-red-2">$c-color-red-2</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

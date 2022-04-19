@@ -87,6 +87,16 @@ Your navigation and `href` values should then be `/ds/` (omitted, because `index
 - you can combine both techniques
 - in `href` links I recommend to use absolute paths (relative to your root folder, in our case `src/`) with a leading slash "`/`". For example: `/ds/design-system/` for `src/ds/design-system/index.html`
 
+## What to consider when performing a PR
+
+If you add pages (e. g., `ds/index.html`), you have to explicitly export them in the `vite.config.js` file. Otherwise, they will not show up in deployment. It isn't apparent because the pages always show up in development. So please make sure to check this if you do a PR. You can check this in three different ways:
+
+- look into `vite.config.js` and check if everything is included
+- do `npm build` and then `npm preview` to build and preview a baked version. These steps also help to see if the site would build or break the build on GitHub/Netlify
+- check the automatically appearing Netlify deploy preview in your PR on GitHub
+
+Best, you combine option 1 with either option 2 or 3.
+
 ## Resources
 
 - [Design Systems 101](https://www.nngroup.com/articles/design-systems-101/)
