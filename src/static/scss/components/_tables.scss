@@ -3,6 +3,32 @@
   @extend .table-borderless;
   @extend .fs-7;
 
+  &--fixed {
+    table-layout: fixed;
+  }
+
+  &__head {
+    .db-table__th {
+      &--bg {
+        @extend .bg-light;
+      }
+    }
+  }
+
+  &--standard {
+    th {
+      @extend .fw-normal;
+    }
+  }
+
+  &--diff {
+    .db-table__head {
+      .db-table__th {
+        @include diff-is-forecast;
+      }
+    }
+  }
+
   &__head {
     .db-table__th {
       @include diff-is-forecast;
@@ -28,12 +54,22 @@
       }
     }
 
+    .db-table__tr.db-table__tr--light,
+    .db-table__tr.db-table__tr--light th,
+    .db-table__tr.db-table__tr--light td {
+      @extend .fw-light;
+    }
+
     .db-table__th {
       @extend .text-start;
     }
 
     .db-table__td {
       @extend .text-end;
+
+      &--bg {
+        @extend .bg-light;
+      }
     }
 
     .db-table__td--bold {
