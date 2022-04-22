@@ -18,6 +18,11 @@
   &--standard {
     th {
       @extend .fw-normal;
+      @extend .px-2;
+    }
+
+    td {
+      @extend .px-2;
     }
   }
 
@@ -28,16 +33,11 @@
       }
     }
   }
-
-  &__head {
-    .db-table__th {
-      @include diff-is-forecast;
-    }
-  }
-
+  
   &__body {
     .db-table__tr {
       @extend .border-bottom;
+      @extend .border-light;
     }
 
     .db-table__tr.db-table__tr--no-border {
@@ -72,6 +72,7 @@
       }
     }
 
+    .db-table__th--bold,
     .db-table__td--bold {
       @extend .fw-bold;
     }
