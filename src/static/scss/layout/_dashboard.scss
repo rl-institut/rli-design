@@ -167,6 +167,7 @@
 
 .db-content {
   @extend .container;
+  @extend .pb-5;
 
   &__row {
     @extend .row;
@@ -190,7 +191,9 @@
 
   &__title {
     @extend .p-2;
+    @extend .pt-3;
     @extend .border-bottom;
+    @extend .border-light;
     @extend .fw-bold;
   }
 
@@ -211,7 +214,7 @@
   &__text {
     @extend .text-center;
     @extend .fs-7;
-    @extend .lh-1;
+    @extend .lh-sm;
     @extend .pb-2;
   }
 
