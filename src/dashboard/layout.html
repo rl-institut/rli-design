@@ -140,6 +140,16 @@
 
       // Display the chart using the configuration items and data just specified.
       myChart.setOption(option);
+
+      window.addEventListener('resize', resize);
+
+      // Resize function
+      function resize() {
+        setTimeout(function () {
+          // Resize chart
+          myChart.resize();
+        }, 200);
+      }
     </script>
     {% block js %}{% endblock %}
   </body>
