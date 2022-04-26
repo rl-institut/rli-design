@@ -161,6 +161,7 @@
   &__tabs {
     @extend .nav;
     @extend .nav-tabs;
+    @extend .border-0;
   }
 
   &__item {
@@ -169,6 +170,21 @@
 
   &__link {
     @extend .nav-link;
+    @extend .bg-transparent;
+    @extend .border-0;
+    @extend .fw-normal;
+
+    &.active {
+      @extend .border-bottom;
+      @extend .border-4;
+      @extend .border-info;
+      @extend .fw-bold;
+      @extend .text-info;
+    }
+
+    &:hover:not(.active) {
+      @extend .text-info;
+    }
   }
 
   &__lang {
