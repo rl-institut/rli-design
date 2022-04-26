@@ -158,6 +158,19 @@
     }
   }
 
+  &__tabs {
+    @extend .nav;
+    @extend .nav-tabs;
+  }
+
+  &__item {
+    @extend .nav-item;
+  }
+
+  &__link {
+    @extend .nav-link;
+  }
+
   &__lang {
     @extend .btn-toolbar;
     @extend .mb-2;

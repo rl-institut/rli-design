@@ -14,3 +14,7 @@ main.main {
 .bs-col {
   @extend .col;
 }
+
+.bs-form-select {
+  @extend .form-select;
+}
