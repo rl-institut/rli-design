@@ -2,17 +2,10 @@
   @extend .table;
   @extend .table-borderless;
   @extend .fs-7;
+  @extend .mb-3;
 
   &--fixed {
     table-layout: fixed;
-  }
-
-  &__head {
-    .db-table__th {
-      &--bg {
-        @extend .bg-light;
-      }
-    }
   }
 
   &--standard {
@@ -26,10 +19,42 @@
     }
   }
 
+  &--large {
+    th,
+    td {
+      @extend .fs-5;
+      @extend .fw-bold;
+      @extend .py-3;
+    }
+  }
+
   &--diff {
     .db-table__head {
       .db-table__th {
         @include diff-is-forecast;
+      }
+    }
+
+    .db-table__tr.db-table__tr--nested th {
+      @extend .ps-2;
+    }
+  }
+
+  &__head {
+    .db-table__tr {
+      @extend .border-bottom;
+      @extend .border-light;
+    }
+
+    .db-table__th {
+      @extend .py-2;
+
+      &--bg {
+        @extend .bg-light;
+      }
+
+      &--muted {
+        @extend .text-muted;
       }
     }
   }
@@ -49,9 +74,14 @@
       @extend .fst-italic;
 
       th {
-        @extend .ps-2;
+        @extend .ps-3;
         @extend .fw-light;
       }
+    }
+
+    .db-table__tr.db-table__tr--large th,
+    .db-table__tr.db-table__tr--large td {
+      @extend .py-2;
     }
 
     .db-table__tr.db-table__tr--light,
