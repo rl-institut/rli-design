@@ -228,6 +228,20 @@
   @extend .rounded;
   @extend .shadow-sm;
 
+  &--budget,
+  &--costs {
+    @extend .border-start;
+    @extend .border-4;
+  }
+
+  &--budget {
+    @extend .border-success;
+  }
+
+  &--costs {
+    @extend .border-warning;
+  }
+
   &__title {
     @extend .p-2;
     @extend .pt-3;
