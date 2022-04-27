@@ -62,6 +62,12 @@
 
     .db-table__th {
       @extend .text-start;
+      @extend .position-relative;
+    }
+
+    .db-table__link {
+      @extend .position-absolute;
+      @extend .end-0;
     }
 
     .db-table__td {
