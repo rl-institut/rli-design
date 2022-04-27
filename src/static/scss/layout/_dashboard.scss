@@ -146,6 +146,7 @@
   @extend .pt-1;
   @extend .pb-2;
   @extend .mb-3;
+  user-select: none;
 
   &__header {
     @extend .h2;
@@ -165,6 +166,11 @@
 
   &__item {
     @extend .nav-item;
+
+    &--no-select {
+      @extend .py-1;
+      @extend .px-2;
+    }
   }
 
   &__year {
