@@ -2,7 +2,13 @@ const dbChart = echarts.init(document.getElementById('mainChart'));
 
 const option = {
   title: {
-    text: 'Budget in Tsd. €'
+    text: 'Budget in Tsd. €',
+    textStyle: {
+      color: '#002C50',
+      fontWeight: 'normal',
+      fontFamily: 'Roboto',
+      fontSize: 14
+    }
   },
   tooltip: {
     trigger: 'axis',
