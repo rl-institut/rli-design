@@ -55,6 +55,7 @@
   @extend .collapse;
   @extend .bg-white;
   @extend .shadow;
+  @include user-select-none;
 
   @include media-breakpoint-up(lg) {
     max-width: $c-sidebar-width;
@@ -146,7 +147,7 @@
   @extend .pt-1;
   @extend .pb-2;
   @extend .mb-3;
-  user-select: none;
+  @include user-select-none;
 
   &__header {
     @extend .h2;
@@ -233,6 +234,7 @@
     @extend .border-bottom;
     @extend .border-light;
     @extend .fw-bold;
+    @include user-select-none;
   }
 
   &__content {
@@ -254,6 +256,7 @@
     @extend .fs-7;
     @extend .lh-sm;
     @extend .pb-2;
+    @include user-select-none;
   }
 
   &__total {

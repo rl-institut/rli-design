@@ -12,6 +12,7 @@
     th {
       @extend .fw-normal;
       @extend .px-2;
+      @include user-select-none;
     }
 
     td {
@@ -44,6 +45,7 @@
     .db-table__tr {
       @extend .border-bottom;
       @extend .border-light;
+      @include user-select-none;
     }
 
     .db-table__th {
