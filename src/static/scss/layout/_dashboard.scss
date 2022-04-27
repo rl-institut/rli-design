@@ -167,6 +167,10 @@
     @extend .nav-item;
   }
 
+  &__year {
+    width: 6rem;
+  }
+
   &__link {
     @extend .nav-link;
     @extend .bg-transparent;
