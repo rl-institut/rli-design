@@ -1,3 +1,60 @@
+.login-navbar {
+  @extend .navbar; 
+  @extend .navbar-light;
+  @extend .navbar-expand-md; 
+  @extend .bg-white;
+  @extend .fixed-top; 
+  @extend .shadow-sm;
+
+  &__container {
+    @extend .container-fluid;
+    @extend .px-3;
+  }
+
+  &__brand {
+    @extend .navbar-brand;
+  }
+
+  &__toggler {
+    @extend .navbar-toggler;
+
+    &-icon {
+      @extend .navbar-toggler-icon;
+    }
+  }
+}
+
+.login-offcanvas {
+  @extend .offcanvas-end;
+
+  &__header {
+    @extend .offcanvas-header;
+  }
+
+  &__title {
+    @extend .offcanvas-title;
+  }
+
+  &__close {
+    @extend .btn-close;
+    @extend .text-reset;
+  }
+}
+
+.login-oc-body {
+  @extend .offcanvas-body;
+
+  &__nav {
+    @extend .navbar-nav;
+    @extend .justify-content-end;
+    @extend .flex-grow-1;
+  }
+
+  &__link {
+    @extend .nav-link;
+  }
+}
+
 .lang-select {
   &__form {
     @include flex-row;

@@ -7,28 +7,28 @@
     <title>RMS-Design</title>
     <link rel="stylesheet" type="text/css" href="/static/scss/styles.scss" />
   </head>
-  <body class="d-flex flex-column h-100">
+  <body>
     <header>
-      <nav class="navbar navbar-light navbar-expand-md bg-white fixed-top shadow-sm">
-        <div class="container-fluid px-3">
-          <a class="navbar-brand" href="/" aria-current="page">
+      <nav class="login-navbar">
+        <div class="login-navbar__container">
+          <a class="login-navbar__brand" href="/" aria-current="page">
             <img src="/static/logos/RMS_logo_notitle.svg" alt="RMS Logo" width="97.5" height="30">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
+          <button class="login-navbar__toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="login-navbar__toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">RMS Login</h5>
+          <div class="login-offcanvas offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="login-offcanvas__header">
+              <h5 class="login-offcanvas__title" id="offcanvasNavbarLabel">RMS Login</h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1">
+            <div class="login-oc-body">
+              <ul class="login-oc-body__nav">
                 <li>
-                  <a class="nav-link" href="/login/about/">About</a>
+                  <a class="login-oc-body__link" href="/login/about/">About</a>
                 </li>
                 <li>
-                  <a class="nav-link" href="/login/contact.html">Contact</a>
+                  <a class="login-oc-body__link" href="/login/contact.html">Contact</a>
                 </li>
                 <li class="lang-select">
                   <form action="/i18n/setlang/" method="post" class="lang-select__form">
