@@ -94,13 +94,16 @@
 
     &--name {
       @extend .fw-bold;
+      @extend .ps-2;
     }
 
     &--logout button {
       @extend .btn;
       @extend .btn-light;
+      @extend .text-start;
       @extend .text-primary;
       @extend .w-100;
+      @extend .ps-2;
     }
   }
 
