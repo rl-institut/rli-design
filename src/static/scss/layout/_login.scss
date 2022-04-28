@@ -5,18 +5,59 @@
 .login {
   height: calc(100vh - #{$c-navbar-height} - #{$c-footer-height});
   background-color: $white;
-  
 
   @include media-breakpoint-up(md) {
     background-image: url(/static/images/bg_pv_blue_gradient.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
   }
 
-  .login-logo {
+  &__container {
+    @extend .container-xxl;
+    @extend .h-100;
+    @extend .d-flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+  }
+
+  &__col {
+    @extend .bg-white;
+    @extend .col;
+    @extend .col-sm-10;
+    @extend .col-md-8;
+    @extend .col-lg-6; 
+    @extend .col-xl-4;
+    @extend .p-md-4;
+  }
+
+  &__top {
+    @extend .text-center;
+  }
+
+  &__logo {
+    @extend .mb-4;
     height: 3.5rem;
+  }
+
+  &__text {
+    @extend .h3;
+    @extend .mb-3;
+    @extend .fw-normal;
+  }
+
+  &__user-name {
+    @extend .mb-2;
+  }
+
+  &__pw {
+    @extend .mb-4;
+  }
+
+  &__btn {
+    @extend .w-100; 
+    @extend .btn;
+    @extend .btn-primary;
   }
 }
 
