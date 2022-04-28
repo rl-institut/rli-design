@@ -1,3 +1,7 @@
+.login-main {
+  @extend .flex-shrink-0;
+}
+
 .login {
   height: calc(100vh - #{$c-navbar-height} - #{$c-footer-height});
   background-color: $white;
@@ -13,6 +17,22 @@
 
   .login-logo {
     height: 3.5rem;
-    
+  }
+}
+
+.login-footer {
+  @extend .mt-auto;
+  @extend .py-2;
+  @extend .bg-white;
+
+  &__container {
+    @extend .container-fluid;
+    @extend .px-3; 
+    @extend .d-flex; 
+    @extend .justify-content-between;
+  }
+
+  &__name {
+    @extend .fw-light;
   }
 }
