@@ -75,79 +75,149 @@
         color: $blue;
       }
 
-      &--c-color-blue-5 {
-        background-color: $c-color-blue-5;
+      // colors need to be updated
+      &--c-color-blue-900 {
+        @include c-colors($blue-900, $white);
       }
 
-      &--c-color-blue-4 {
-        background-color: $c-color-blue-4;
+      &--c-color-blue-800 {
+        @include c-colors($blue-800, $white);
       }
 
-      &--c-color-blue-3 {
-        background-color: $c-color-blue-3;
-        color: $blue;
+      &--c-color-blue-700 {
+        @include c-colors($blue-700, $white);
       }
 
-      &--c-color-blue-2 {
-        background-color: $c-color-blue-2;
-        color: $blue;
+      &--c-color-blue-600 {
+        @include c-colors($blue-600, $white);
       }
 
-      &--c-color-green-5 {
-        background-color: $c-color-green-5;
+      &--c-color-blue-500 {
+        @include c-colors($blue-500, $white);
       }
 
-      &--c-color-green-4 {
-        background-color: $c-color-green-4;
-        color: $blue;
+      &--c-color-blue-400 {
+        @include c-colors($blue-400, $white);
       }
 
-      &--c-color-green-3 {
-        background-color: $c-color-green-3;
-        color: $blue;
+      &--c-color-blue-300 {
+        @include c-colors($blue-300, $black);
       }
 
-      &--c-color-green-2 {
-        background-color: $c-color-green-2;
-        color: $blue;
+      &--c-color-blue-200 {
+        @include c-colors($blue-200, $black);
       }
 
-      &--c-color-yellow-5 {
-        background-color: $c-color-yellow-5;
-        color: $blue;
+      &--c-color-blue-100 {
+        @include c-colors($blue-100, $black);
       }
 
-      &--c-color-yellow-4 {
-        background-color: $c-color-yellow-4;
-        color: $blue;
+      &--c-color-green-900 {
+        @include c-colors($green-900, $white);
       }
 
-      &--c-color-yellow-3 {
-        background-color: $c-color-yellow-3;
-        color: $blue;
+      &--c-color-green-800 {
+        @include c-colors($green-800, $white);
       }
 
-      &--c-color-yellow-2 {
-        background-color: $c-color-yellow-2;
-        color: $blue;
+      &--c-color-green-700 {
+        @include c-colors($green-700, $white);
       }
 
-      &--c-color-red-5 {
-        background-color: $c-color-red-5;
+      &--c-color-green-600 {
+        @include c-colors($green-600, $white);
       }
 
-      &--c-color-red-4 {
-        background-color: $c-color-red-4;
+      &--c-color-green-500 {
+        @include c-colors($green-500, $white);
       }
 
-      &--c-color-red-3 {
-        background-color: $c-color-red-3;
-        color: $blue;
+      &--c-color-green-400 {
+        @include c-colors($green-400, $black);
       }
 
-      &--c-color-red-2 {
-        background-color: $c-color-red-2;
-        color: $blue;
+      &--c-color-green-300 {
+        @include c-colors($green-300, $black);
+      }
+
+      &--c-color-green-200 {
+        @include c-colors($green-200, $black);
+      }
+
+      &--c-color-green-100 {
+        @include c-colors($green-100, $black);
+      }
+
+      &--c-color-yellow-900 {
+        @include c-colors($yellow-900, $white);
+      }
+
+      &--c-color-yellow-800 {
+        @include c-colors($yellow-800, $white);
+      }
+
+      &--c-color-yellow-700 {
+        @include c-colors($yellow-700, $white);
+      }
+
+      &--c-color-yellow-600 {
+        @include c-colors($yellow-600, $white);
+      }
+
+      &--c-color-yellow-500 {
+        @include c-colors($yellow-500, $black);
+      }
+
+      &--c-color-yellow-400 {
+        @include c-colors($yellow-400, $black);
+      }
+
+      &--c-color-yellow-300 {
+        @include c-colors($yellow-300, $black);
+      }
+
+      &--c-color-yellow-200 {
+        @include c-colors($yellow-200, $black);
+      }
+
+      &--c-color-yellow-100 {
+        @include c-colors($yellow-100, $black);
+      }
+
+      &--c-color-red-900 {
+        @include c-colors($red-900, $white);
+      }
+
+      &--c-color-red-800 {
+        @include c-colors($red-800, $white);
+      }
+
+      &--c-color-red-700 {
+        @include c-colors($red-700, $white);
+      }
+
+      &--c-color-red-600 {
+        @include c-colors($red-600, $white);
+      }
+
+      &--c-color-red-500 {
+        @include c-colors($red-500, $white);
+      }
+
+      &--c-color-red-400 {
+        @include c-colors($red-400, $black);
+      }
+
+      &--c-color-red-300 {
+        @include c-colors($red-300, $black);
+      }
+
+      &--c-color-red-200 {
+        @include c-colors($red-200, $black);
+      }
+
+      &--c-color-red-100 {
+        @include c-colors($red-100, $black);
       }
     }
   }

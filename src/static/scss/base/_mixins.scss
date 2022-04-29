@@ -2,3 +2,8 @@
   display: flex;
   flex-direction: row;
 }
+
+@mixin c-colors($c-bg-color, $c-color) {
+  background-color: $c-bg-color;
+  color: $c-color;
+}
