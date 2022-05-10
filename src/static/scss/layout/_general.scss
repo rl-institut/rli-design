@@ -1,3 +1,9 @@
+body {
+  @extend .d-flex;
+  @extend .flex-column;
+  @extend .h-100;
+}
+
 main {
   padding-top: $c-navbar-height;
 
