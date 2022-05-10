@@ -6,6 +6,11 @@ body {
 
 main {
   padding-top: $c-navbar-height;
+
+  &--dashboard {
+    @extend .pt-0;
+    @extend .min-vh-100;
+  }
 }
 
 .bs-row {

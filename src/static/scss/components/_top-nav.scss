@@ -57,11 +57,12 @@
 
 .lang-select {
   &__form {
-    @include flex-row;
+    @extend .flex-row;
     @extend .ps-3;
   }
 
   &__option {
+    @extend .d-inline-block;
     @extend .form-check;
     @extend .ps-2;
   }
@@ -75,6 +76,7 @@
     @extend .form-check-label;
     @extend .nav-link;
     @extend .px-0;
+    @extend .text-primary;
   }
 
   &__input:checked+label:hover,

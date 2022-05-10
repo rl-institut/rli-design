@@ -1,9 +1,410 @@
 {% extends "src/dashboard/layout.html" %}
 
 {% block content %}
-<div class="container">
-  <h1>Dashboard Playground</h1>
-  <p> Nothing so see yet!</p>
-  <a href="/">Go back.</a>
-</div>
+<section class="db-topnav">
+  <h1 class="db-topnav__header">Dashboard</h1>
+  <div class="db-topnav__options">
+    <ul class="db-topnav__tabs">
+      <li class="db-topnav__item">
+        <a class="db-topnav__link active" aria-current="page" href="#">RLI</a>
+      </li>
+      <li class="db-topnav__item">
+        <a class="db-topnav__link" href="#">Mobi</a>
+      </li>
+      <li class="db-topnav__item">
+        <a class="db-topnav__link" href="#">OG</a>
+      </li>
+      <li class="db-topnav__item">
+        <a class="db-topnav__link" href="#">TEO</a>
+      </li>
+      <!-- 
+      // Use this when only one option instead of tabs
+      <li class="db-topnav__item db-topnav__item--no-select">
+        TEO
+      </li>
+      -->
+      <div class="db-topnav__year">
+        <input type="number" name="yearSelection" placeholder="2022" class="bs-form-control" />
+      </div>
+    </ul>
+  </div>
+  <div class="db-topnav__lang">
+    <div class="lang-select">
+      <form action="/i18n/setlang/" method="post" class="lang-select__form">
+        <div class="lang-select__option">
+          <input class="lang-select__input" type="radio" name="radioLang" id="radioLangDe" value="de" checked>
+          <label class="lang-select__label" for="radioLangDe">
+            DE
+          </label>
+        </div>
+        <div class="lang-select__option">
+          <input class="lang-select__input" type="radio" name="radioLang" id="radioLangEn" value="en">
+          <label class="lang-select__label" for="radioLangEn">
+            EN
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="db-content">
+  <div class="db-content__row">
+    <div class="db-content__col db-content__col--5">
+      <div class="db-item">
+        <div class="db-item__title">
+          Restbudgets
+          <span title="This is an info text about the current table">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+            </svg>
+          </span>
+        </div>
+        <div class="db-item__content">
+          <div class="db-diff">
+            <div class="db-diff__col">
+              <div class="db-diff__text">
+                Differenz Budget vs. Ausgaben IST
+              </div>
+              <div class="db-diff__total db-diff__total--is">
+                371.000 €
+              </div>
+            </div>
+            <div class="db-diff__col">
+              <div class="db-diff__text">
+                Differenz Budget vs. Ausgaben Forecast
+              </div>
+              <div class="db-diff__total db-diff__total--fc">
+                340.000 €
+              </div>
+            </div>
+          </div>
+          <div class="db-chart">
+            <div id="mainChart" style="width: 100%;height:400px;"></div>
+          </div>
+          <div class="db-diff-table">
+            <table class="db-table db-table--diff">
+              <thead class="db-table__head">
+                <tr class="db-table__tr">
+                  <th scope="col" class="db-table__th"></th>
+                  <th scope="col" class="db-table__th db-table__th--is">IST</th>
+                  <th scope="col" class="db-table__th db-table__th--fc">Forecast</th>
+                </tr>
+              </thead>
+              <tbody class="db-table__body">
+                <tr class="db-table__tr">
+                  <th scope="row" class="db-table__th">Personal</th>
+                  <td class="db-table__td db-table__td--bold">-15.000 €</td>
+                  <td class="db-table__td db-table__td--bold">-35.000 €</td>
+                </tr>
+                <tr class="db-table__tr db-table__tr--no-border">
+                  <th scope="row" class="db-table__th">RLI-Budget</th>
+                  <td class="db-table__td db-table__td--bold">328.000 €</td>
+                  <td class="db-table__td db-table__td--bold">283.000 €</td>
+                </tr>
+                <tr class="db-table__tr db-table__tr--no-border db-table__tr--nested">
+                  <th scope="row" class="db-table__th">Admin-Budget (90x)</th>
+                  <td class="db-table__td">182.000 €</td>
+                  <td class="db-table__td">115.000 €</td>
+                </tr>
+                <tr class="db-table__tr db-table__tr--nested">
+                  <th scope="row" class="db-table__th">Teambudget (80x)</th>
+                  <td class="db-table__td">146.000 €</td>
+                  <td class="db-table__td">168.000 €</td>
+                </tr>
+                <tr class="db-table__tr db-table__tr--no-border">
+                  <th scope="row" class="db-table__th">Eigenmittel</th>
+                  <td class="db-table__td db-table__td--bold">58.000 €</td>
+                  <td class="db-table__td db-table__td--bold">92.000 €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="db-content__col db-content__col--7">
+      <div class="db-item db-item--budget">
+        <div class="db-item__title">Budget aus RLI</div>
+        <div>
+          <table class="db-table db-table--fixed db-table--standard">
+            <thead class="db-table__head">
+              <tr class="db-table__tr db-table__tr--large">
+                <th scope="col" class="db-table__th"></th>
+                <th scope="col" class="db-table__th db-table__th--bg">Jahresbudget</th>
+                <th scope="col" class="db-table__th db-table__th--bg"></th>
+              </tr>
+            </thead>
+            <tbody class="db-table__body">
+              <tr class="db-table__tr">
+                <th scope="row" class="db-table__th">
+                  Eigenmittel
+                  <span title="This is an info text about the current table">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                  </span>
+                </th>
+                <td class="db-table__td">-15.000 €</td>
+                <td class="db-table__td">&nbsp</td>
+              </tr>
+              <tr class="db-table__tr">
+                <th scope="row" class="db-table__th">
+                  Admin-Budget (90x)
+                  <span title="This is an info text about the current table">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                  </span>
+                  <span class="db-table__link" title="Zum Admin-Budget">
+                    <a href="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                      </svg>
+                    </a>
+                  </span>
+                </th>
+                <td class="db-table__td">328.000 €</td>
+                <td class="db-table__td">&nbsp</td>
+              </tr>
+              <tr class="db-table__tr">
+                <th scope="row" class="db-table__th">
+                  Teambudget (80x)
+                  <span title="This is an info text about the current table">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                  </span>
+                  <span class="db-table__link" title="Zum Teambudget">
+                    <a href="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                      </svg>
+                    </a>
+                  </span>
+                </th>
+                <td class="db-table__td">182.000 €</td>
+                <td class="db-table__td">&nbsp</td>
+              </tr>
+              <tr class="db-table__tr db-table__tr--light">
+                <th scope="row" class="db-table__th">
+                  (Abbau Überschüsse)
+                  <span title="This is an info text about the current table">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                  </span>
+                </th>
+                <td class="db-table__td">146.000 €</td>
+                <td class="db-table__td">&nbsp</td>
+              </tr>
+              <tr class="db-table__tr db-table__tr--light">
+                <th scope="row" class="db-table__th db-table__th--light">
+                  (Eigener Puffer)
+                  <span title="This is an info text about the current table">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                  </span>
+                </th>
+                <td class="db-table__td">58.000 €</td>
+                <td class="db-table__td">&nbsp</td>
+              </tr>
+              <tr class="db-table__tr db-table__tr--no-border db-table__tr--light">
+                <th scope="row" class="db-table__th">(Mögliches Risikobudget)</th>
+                <td class="db-table__td">58.000 €</td>
+                <td class="db-table__td">&nbsp</td>
+              </tr>
+              <tr class="db-table__tr db-table__tr--no-border db-table__tr--large">
+                <th scope="row" class="db-table__th db-table__th--bold">Summe</th>
+                <td class="db-table__td db-table__td--bg db-table__td--bold">232.000 €</td>
+                <td class="db-table__td db-table__td--bg db-table__td--bold">&nbsp</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="db-item db-item--budget">
+        <div class="db-item__title">Personalbudget aus Projekten</div>
+        <div>
+          <table class="db-table db-table--fixed db-table--standard">
+            <thead class="db-table__head">
+              <tr class="db-table__tr db-table__tr--large">
+                <th scope="col" class="db-table__th"></th>
+                <th scope="col" class="db-table__th db-table__th--bg">Bewilligt/beauftragt</th>
+                <th scope="col" class="db-table__th db-table__th--bg db-table__th--muted">Beantragt</th>
+              </tr>
+            </thead>
+            <tbody class="db-table__body">
+              <tr class="db-table__tr">
+                <th scope="row" class="db-table__th">
+                  Förderprojekte
+                  <span title="This is an info text about the current table">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                  </span>
+                </th>
+                <td class="db-table__td">900.000 €</td>
+                <td class="db-table__td">&nbsp</td>
+              </tr>
+              <tr class="db-table__tr">
+                <th scope="row" class="db-table__th">
+                  Auftragsprojekte
+                  <span title="This is an info text about the current table">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                  </span>
+                </th>
+                <td class="db-table__td">600.000 €</td>
+                <td class="db-table__td">&nbsp</td>
+              </tr>
+              <tr class="db-table__tr db-table__tr--no-border db-table__tr--large">
+                <th scope="row" class="db-table__th db-table__th--bold">Summe</th>
+                <td class="db-table__td db-table__td--bg db-table__td--bold">1.500.000 €</td>
+                <td class="db-table__td db-table__td--bg db-table__td--bold">&nbsp</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="db-item db-item--budget">
+        <div>
+          <table class="db-table db-table--fixed db-table--standard db-table--large">
+            <tbody class="db-table__body">
+              <tr class="db-table__tr db-table__tr--no-border">
+                <th scope="row" class="db-table__th db-table__th--bold">Summe</th>
+                <td class="db-table__td db-table__td--bg db-table__td--bold">1.732.000 €</td>
+                <td class="db-table__td db-table__td--bg db-table__td--bold">&nbsp</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="db-item db-item--costs">
+        <div class="db-item__title">Ausgaben</div>
+        <div>
+          <table class="db-table db-table--fixed db-table--standard">
+            <thead class="db-table__head">
+              <tr class="db-table__tr db-table__tr--large">
+                <th scope="col" class="db-table__th"></th>
+                <th scope="col" class="db-table__th db-table__th--bg">IST</th>
+                <th scope="col" class="db-table__th db-table__th--bg">Forecast</th>
+              </tr>
+            </thead>
+            <tbody class="db-table__body">
+              <tr class="db-table__tr">
+                <th scope="row" class="db-table__th">
+                  Projektkosten Personal
+                  <span title="This is an info text about the current table">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                  </span>
+                  <span class="db-table__link" title="Zu den Projektkosten Personal">
+                    <a href="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                      </svg>
+                    </a>
+                  </span>
+                </th>
+                <td class="db-table__td">900.000 €</td>
+                <td class="db-table__td">900.000 €</td>
+              </tr>
+              <tr class="db-table__tr db-table__tr--no-border">
+                <th scope="row" class="db-table__th">
+                  RLI-Kosten (GK-relevant)
+                  <span title="This is an info text about the current table">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                  </span>
+                </th>
+                <td class="db-table__td">600.000 €</td>
+                <td class="db-table__td">600.000 €</td>
+              </tr>
+              <tr class="db-table__tr db-table__tr--no-border db-table__tr--nested">
+                <th scope="row" class="db-table__th">
+                  Admin-Budget (90x)
+                  <span title="This is an info text about the current table">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                  </span>
+                  <span class="db-table__link" title="Zum Admin-Budget">
+                    <a href="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                      </svg>
+                    </a>
+                  </span>
+                </th>
+                <td class="db-table__td">300.000 €</td>
+                <td class="db-table__td">300.000 €</td>
+              </tr>
+              <tr class="db-table__tr db-table__tr--nested">
+                <th scope="row" class="db-table__th">
+                  Teambudget (80x)
+                  <span title="This is an info text about the current table">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                  </span>
+                  <span class="db-table__link" title="Zum Teambudget">
+                    <a href="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                      </svg>
+                    </a>
+                  </span>
+                </th>
+                <td class="db-table__td">300.000 €</td>
+                <td class="db-table__td">300.000 €</td>
+              </tr>
+              <tr class="db-table__tr">
+                <th scope="row" class="db-table__th">
+                  Eigenmitteleinsatz
+                  <span title="This is an info text about the current table">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                  </span>
+                </th>
+                <td class="db-table__td">600.000 €</td>
+                <td class="db-table__td">600.000 €</td>
+              </tr>
+              <tr class="db-table__tr db-table__tr--no-border db-table__tr--large">
+                <th scope="row" class="db-table__th db-table__th--bold">Summe</th>
+                <td class="db-table__td db-table__td--bg db-table__td--bold">2.100.000 €</td>
+                <td class="db-table__td db-table__td--bg db-table__td--bold">2.100.000 €</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block js %}
+<script type="module" src="/dashboard/index.js"></script>
 {% endblock %}
