@@ -1,0 +1,292 @@
+.db-header {
+  @extend .navbar;
+  @extend .navbar-light;
+  @extend .sticky-top; 
+  @extend .flex-md-nowrap; 
+  @extend .p-0;
+  @extend .bg-light;
+  @extend .d-lg-none;
+
+  &__name {
+    @extend .navbar-brand;
+    @extend .col-lg-3; 
+    @extend .me-0; 
+    @extend .px-3;
+    @extend .h-100;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 18rem;
+      background-color: $white;
+    }
+  }
+
+  &__toggler {
+    @extend .navbar-toggler; 
+    @extend .position-absolute;
+    @extend .d-lg-none;
+    @extend .end-0;
+    transform: translateY(2rem);
+  }
+
+  &__toggler-icon {
+    @extend .navbar-toggler-icon;
+  }
+}
+
+.db-container {
+  @extend .flex-lg-grow-1;
+  @extend .bg-light;
+
+  &__row {
+    @extend .row;
+    @extend .d-md-flex;
+    @extend .flex-lg-row;
+    @extend .mx-0;
+
+    @include media-breakpoint-up(lg) {
+      min-height: 100%;
+    }
+  }
+}
+
+.db-sidebar {
+  @extend .col-lg-3;
+  @extend .d-lg-block;
+  @extend .collapse;
+  @extend .bg-white;
+  @extend .shadow;
+  @include user-select-none;
+
+  @include media-breakpoint-up(lg) {
+    max-width: $c-sidebar-width;
+    position: fixed;
+    height: 100%;
+  }
+
+  &__sticky {
+    @extend .position-sticky;
+    @extend .pt-0;
+  }
+
+  &__logo {
+    background-image: url(/static/logos/RMS_logo_notitle.svg);
+    background-position: center;
+    background-size: 6rem;
+    background-repeat: no-repeat;
+    height: 3rem;
+    @extend .mt-1;
+    @extend .mb-5;
+  }
+}
+
+.db-sidebarnav {
+  @extend .nav; 
+  @extend .flex-column;
+  @extend .mb-4;
+
+  &__item {
+    @extend .nav-item;
+
+    &--logged {
+      @extend .fs-7;
+      @extend .pb-1;
+    }
+
+    &--name {
+      @extend .fw-bold;
+      @extend .ps-2;
+    }
+
+    &--logout button {
+      @extend .btn;
+      @extend .btn-light;
+      @extend .text-start;
+      @extend .text-primary;
+      @extend .w-100;
+      @extend .ps-2;
+    }
+  }
+
+  &__link {
+    @extend .nav-link;
+    @extend .link-primary;
+
+    &--active,
+    &--active:hover,
+    &--active:active,
+    &--active:focus {
+      @extend .link-light;
+      @extend .bg-primary;
+      border-radius: $border-radius;
+    }
+
+    svg {
+      @extend .me-1;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.db-main {
+  @extend .ms-sm-auto; 
+  @extend .col-lg-9; 
+  @extend .px-md-4;
+  @extend .pt-lg-1;
+  @extend .flex-lg-grow-1;
+  @extend .bg-light;
+
+  @include media-breakpoint-up(lg) {
+    margin-left: $c-sidebar-width !important;
+  }
+}
+
+.db-topnav {
+  @extend .container;
+  @extend .d-flex; 
+  @extend .justify-content-between;
+  @extend .flex-wrap;
+  @extend .flex-md-nowrap;
+  @extend .align-items-center;
+  @extend .pt-1;
+  @extend .pb-2;
+  @extend .mb-3;
+  @include user-select-none;
+
+  &__header {
+    @extend .h2;
+  }
+
+  &__options {
+    .nav-link {
+      @extend .link-primary;
+    }
+  }
+
+  &__tabs {
+    @extend .nav;
+    @extend .nav-tabs;
+    @extend .border-0;
+  }
+
+  &__item {
+    @extend .nav-item;
+
+    &--no-select {
+      @extend .py-1;
+      @extend .px-2;
+    }
+  }
+
+  &__year {
+    width: 6rem;
+  }
+
+  &__link {
+    @extend .nav-link;
+    @extend .bg-transparent;
+    @extend .border-0;
+    @extend .fw-normal;
+
+    &.active {
+      @extend .border-bottom;
+      @extend .border-4;
+      @extend .border-info;
+      @extend .fw-bold;
+      @extend .text-info;
+    }
+
+    &:hover:not(.active) {
+      @extend .text-info;
+    }
+  }
+
+  &__lang {
+    @extend .btn-toolbar;
+    @extend .mb-2;
+    @extend .mb-md-0;
+  }
+}
+
+.db-content {
+  @extend .container;
+  @extend .pb-5;
+
+  &__row {
+    @extend .row;
+  }
+
+  &__col {
+    &--5 {
+      @extend .col-xl-5;
+    }
+
+    &--7 {
+      @extend .col-xl-7;
+    }
+  }
+}
+
+.db-item {
+  @extend .bg-white;
+  @extend .rounded;
+  @extend .shadow-sm;
+
+  &--budget,
+  &--costs {
+    @extend .border-start;
+    @extend .border-4;
+  }
+
+  &--budget {
+    @extend .border-success;
+  }
+
+  &--costs {
+    @extend .border-warning;
+  }
+
+  &__title {
+    @extend .p-2;
+    @extend .pt-3;
+    @extend .border-bottom;
+    @extend .border-light;
+    @extend .fw-bold;
+    @include user-select-none;
+  }
+
+  &__content {
+    @extend .px-2;
+    @extend .py-4;
+  }
+}
+
+.db-diff {
+  @extend .row;
+  @extend .pb-5;
+
+  &__col {
+    @extend .col-6;
+  }
+
+  &__text {
+    @extend .text-center;
+    @extend .fs-7;
+    @extend .lh-sm;
+    @extend .pb-2;
+    @include user-select-none;
+  }
+
+  &__total {
+    @extend .p-1;
+    @include diff-is-forecast;
+  }
+}
+
+.db-chart {
+  @extend .pb-4;
+}
+
+.db-diff-table {
+  @extend .row;
+  @extend .px-2;
+}

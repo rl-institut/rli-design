@@ -1,0 +1,118 @@
+.db-table {
+  @extend .table;
+  @extend .table-borderless;
+  @extend .fs-7;
+  @extend .mb-3;
+
+  &--fixed {
+    table-layout: fixed;
+  }
+
+  &--standard {
+    th {
+      @extend .fw-normal;
+      @extend .px-2;
+      @include user-select-none;
+    }
+
+    td {
+      @extend .px-2;
+    }
+  }
+
+  &--large {
+    th,
+    td {
+      @extend .fs-5;
+      @extend .fw-bold;
+      @extend .py-3;
+    }
+  }
+
+  &--diff {
+    .db-table__head {
+      .db-table__th {
+        @include diff-is-forecast;
+      }
+    }
+
+    .db-table__tr.db-table__tr--nested th {
+      @extend .ps-2;
+    }
+  }
+
+  &__head {
+    .db-table__tr {
+      @extend .border-bottom;
+      @extend .border-light;
+      @include user-select-none;
+    }
+
+    .db-table__th {
+      @extend .py-2;
+
+      &--bg {
+        @extend .bg-light;
+      }
+
+      &--muted {
+        @extend .text-muted;
+      }
+    }
+  }
+  
+  &__body {
+    .db-table__tr {
+      @extend .border-bottom;
+      @extend .border-light;
+    }
+
+    .db-table__tr.db-table__tr--no-border {
+      @extend .border-0;
+    }
+
+    .db-table__tr.db-table__tr--nested {
+      @extend .fw-light;
+      @extend .fst-italic;
+
+      th {
+        @extend .ps-3;
+        @extend .fw-light;
+      }
+    }
+
+    .db-table__tr.db-table__tr--large th,
+    .db-table__tr.db-table__tr--large td {
+      @extend .py-2;
+    }
+
+    .db-table__tr.db-table__tr--light,
+    .db-table__tr.db-table__tr--light th,
+    .db-table__tr.db-table__tr--light td {
+      @extend .fw-light;
+    }
+
+    .db-table__th {
+      @extend .text-start;
+      @extend .position-relative;
+    }
+
+    .db-table__link {
+      @extend .position-absolute;
+      @extend .end-0;
+    }
+
+    .db-table__td {
+      @extend .text-end;
+
+      &--bg {
+        @extend .bg-light;
+      }
+    }
+
+    .db-table__th--bold,
+    .db-table__td--bold {
+      @extend .fw-bold;
+    }
+  }
+}

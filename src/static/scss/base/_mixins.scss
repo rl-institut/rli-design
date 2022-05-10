@@ -1,4 +1,20 @@
-@mixin flex-row {
-  display: flex;
-  flex-direction: row;
+@mixin diff-is-forecast {
+  @extend .text-center;
+  @extend .fw-bold;
+
+  &--is {
+    background-color: $blue !important;
+    @extend .text-white;
+  }
+
+  &--fc {
+    background-color: $yellow-200 !important;
+    @extend .text-primary;
+  }
+}
+
+@mixin user-select-none {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
