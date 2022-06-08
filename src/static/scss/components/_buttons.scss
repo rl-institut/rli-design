@@ -1,3 +1,5 @@
+@use '../base/index' as *;
+
 .bs-btn {
   @extend .btn;
 }

@@ -1,3 +1,5 @@
+@use '../base/index' as *;
+
 .anon-layout {
   @extend .position-relative;
   @extend .overflow-hidden;

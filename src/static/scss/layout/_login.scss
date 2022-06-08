@@ -1,3 +1,5 @@
+@use '../base/index' as *;
+
 .login-main {
   @extend .flex-shrink-0;
 }

@@ -1,3 +1,5 @@
+@use '../base/index' as *;
+
 .login-navbar {
   @extend .navbar; 
   @extend .navbar-light;

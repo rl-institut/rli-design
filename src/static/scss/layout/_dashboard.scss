@@ -1,3 +1,6 @@
+@use '../base/index' as *;
+@use '../base/mixins' as *;
+
 .db-header {
   @extend .navbar;
   @extend .navbar-light;

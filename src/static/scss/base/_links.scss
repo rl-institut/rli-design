@@ -1,3 +1,5 @@
+@use 'index' as *;
+
 main a {
   font-weight: $font-weight-bold;
 }

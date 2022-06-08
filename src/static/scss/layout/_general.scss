@@ -1,3 +1,5 @@
+@use '../base/index' as *;
+
 body {
   @extend .d-flex;
   @extend .flex-column;
