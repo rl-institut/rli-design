@@ -1,4 +1,4 @@
-@use '../base/index' as *;
+@use '../base' as *;
 
 .anon-layout {
   @extend .position-relative;
