@@ -1,3 +1,6 @@
+@use '../base' as *;
+@use '../base/mixins' as *;
+
 .db-table {
   @extend .table;
   @extend .table-borderless;

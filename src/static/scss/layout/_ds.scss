@@ -1,3 +1,5 @@
+@use '../base' as *;
+
 .ds {
   @extend .d-flex;
   @extend .justify-content-center;

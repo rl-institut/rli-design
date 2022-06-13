@@ -1,3 +1,5 @@
+@use 'index' as *;
+
 @mixin diff-is-forecast {
   @extend .text-center;
   @extend .fw-bold;
