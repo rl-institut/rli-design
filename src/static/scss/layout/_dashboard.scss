@@ -124,6 +124,11 @@
       @extend .text-primary;
       @extend .w-100;
       @extend .ps-2;
+
+      &:hover {
+        @extend .bg-info;
+        @extend .text-white;
+      }
     }
   }
 
