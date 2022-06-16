@@ -91,13 +91,30 @@
     @extend .nav-item;
 
     &--logged {
+      @extend .d-flex;
+      @extend .flex-row;
+      @extend .justify-content-between;
       @extend .fs-7;
       @extend .pb-1;
+    }
+
+    &--user {
+      transform: translateY(4px);
     }
 
     &--name {
       @extend .fw-bold;
       @extend .ps-2;
+    }
+
+    &--icon {
+      @extend .text-primary;
+      @extend .p-0;
+      @extend .pe-2;
+
+      &:hover {
+        @extend .text-info;
+      }
     }
 
     &--logout button {
