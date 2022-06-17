@@ -35,6 +35,7 @@
   &--diff {
     .db-table__head {
       .db-table__th {
+        @extend .py-1;
         @include diff-is-forecast;
       }
     }
