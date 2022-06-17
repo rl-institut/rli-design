@@ -59,6 +59,7 @@
   @extend .bg-white;
   @extend .shadow;
   @include user-select-none;
+  overflow-y: auto;
 
   @include media-breakpoint-up(lg) {
     max-width: $c-sidebar-width;
