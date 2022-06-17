@@ -289,6 +289,7 @@
   @extend .bg-white;
   @extend .rounded;
   @extend .shadow-sm;
+  @extend .mb-3;
 
   &--budget,
   &--costs {
