@@ -96,6 +96,7 @@
       @extend .flex-row;
       @extend .justify-content-between;
       @extend .fs-7;
+      @extend .px-2;
       @extend .pb-1;
     }
 
@@ -104,14 +105,17 @@
     }
 
     &-name {
+      @extend .d-block;
       @extend .fw-bold;
-      @extend .ps-2;
+      @extend .overflow-hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 12rem;
     }
 
     &-icon {
       @extend .text-primary;
       @extend .p-0;
-      @extend .pe-2;
 
       &:hover {
         @extend .text-info;
