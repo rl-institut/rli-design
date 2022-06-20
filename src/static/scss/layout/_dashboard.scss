@@ -88,6 +88,10 @@
   @extend .flex-column;
   @extend .mb-4;
 
+  .db-sidebarnav--subcat {
+    @extend .mb-0;
+  }
+
   &__item {
     @extend .nav-item;
 
