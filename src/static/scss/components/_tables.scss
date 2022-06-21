@@ -5,7 +5,6 @@
   @extend .table;
   @extend .table-borderless;
   @extend .fs-7;
-  @extend .mb-3;
 
   &--fixed {
     table-layout: fixed;
@@ -35,6 +34,7 @@
   &--diff {
     .db-table__head {
       .db-table__th {
+        @extend .py-1;
         @include diff-is-forecast;
       }
     }
