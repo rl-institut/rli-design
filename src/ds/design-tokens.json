@@ -1,4 +1,15 @@
 {
+  "borderRadius": {
+    "nav": {
+      "sidebarAnchor": {
+        "default": {
+          "value": "$border-radius",
+          "utility": "<no utility>",
+          "description": "Sidebar anchor default border-radius"
+        }
+      }
+    }
+  },
   "colors": {
     "background": {
       "body": {
@@ -13,6 +24,33 @@
           "value": "$gray-100",
           "utility": ".bg-light",
           "description": "Dashboard background-color"
+        }
+      },
+      "sidebarAnchor": {
+        "default": {
+          "value": "$white",
+          "utility": ".bg-white",
+          "description": "Sidebar anchor default background-color"
+        },
+        "active": {
+          "value": "$info",
+          "utility": ".bg-info",
+          "description": "Sidebar anchor active background-color"
+        },
+        "hover": {
+          "value": "$blue",
+          "utility": ".bg-primary",
+          "description": "Sidebar anchor hover background-color"
+        },
+        "focus": {
+          "value": "$blue",
+          "utility": ".bg-primary",
+          "description": "Sidebar anchor focus background-color"
+        },
+        "visited": {
+          "value": "$white",
+          "utility": ".bg-white",
+          "description": "Sidebar anchor visited background-color"
         }
       }
     },
@@ -38,8 +76,8 @@
           "description": "Sidebar anchor default text-color"
         },
         "active": {
-          "value": "$blue",
-          "utility": ".link-primary",
+          "value": "$white",
+          "utility": ".text-info",
           "description": "Sidebar anchor active text-color"
         },
         "hover": {
@@ -48,14 +86,45 @@
           "description": "Sidebar anchor hover text-color"
         },
         "focus": {
-          "value": "$blue",
-          "utility": ".link-primary",
+          "value": "$white",
+          "utility": ".text-info",
           "description": "Sidebar anchor focus text-color"
         },
         "visited": {
           "value": "$blue",
           "utility": ".link-primary",
           "description": "Sidebar anchor visited text-color"
+        }
+      }
+    }
+  },
+  "spacing": {
+    "padding": {
+      "sidebarAnchor": {
+        "default": {
+          "value": "0.5rem 1rem",
+          "utility": ".nav-link",
+          "description": "Sidebar anchor default padding size"
+        }
+      }
+    }
+  },
+  "typography": {
+    "fontSize": {
+      "sidebarAnchor": {
+        "default": {
+          "value": "$font-size-base",
+          "utility": ".fs-6",
+          "description": "Sidebar anchor default font-size"
+        }
+      }
+    },
+    "fontWeight": {
+      "sidebarAnchor": {
+        "default": {
+          "value": "$font-weight-normal",
+          "utility": ".fw-normal",
+          "description": "Sidebar anchor default font-weight"
         }
       }
     }
