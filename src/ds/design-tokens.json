@@ -1,0 +1,63 @@
+{
+  "colors": {
+    "background": {
+      "body": {
+        "default": {
+          "value": "$white",
+          "utility": ".bg-white",
+          "description": "Main body background-color"
+        }
+      },
+      "dashboard": {
+        "default": {
+          "value": "$gray-100",
+          "utility": ".bg-light",
+          "description": "Dashboard background-color"
+        }
+      }
+    },
+    "text": {
+      "body": {
+        "default": {
+          "value": "$blue",
+          "utility": ".text-primary",
+          "description": "Body text-color"
+        }
+      },
+      "button": {
+        "default": {
+          "value": "$white",
+          "utility": ".text-white",
+          "description": "Main button text-color"
+        }
+      },
+      "sidebarAnchor": {
+        "default": {
+          "value": "$blue",
+          "utility": ".link-primary",
+          "description": "Sidebar anchor default text-color"
+        },
+        "active": {
+          "value": "$blue",
+          "utility": ".link-primary",
+          "description": "Sidebar anchor active text-color"
+        },
+        "hover": {
+          "value": "$white",
+          "utility": ".text-info",
+          "description": "Sidebar anchor hover text-color"
+        },
+        "focus": {
+          "value": "$blue",
+          "utility": ".link-primary",
+          "description": "Sidebar anchor focus text-color"
+        },
+        "visited": {
+          "value": "$blue",
+          "utility": ".link-primary",
+          "description": "Sidebar anchor visited text-color"
+        }
+      }
+    }
+  }
+}
