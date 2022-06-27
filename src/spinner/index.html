@@ -1,0 +1,39 @@
+{% extends "src/spinner/layout.html" %}
+
+{% block content %}
+<div id="lds-spinner">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<section class="container">
+  <h1>Loading Spinner</h1>
+  <ul>
+    <li><a href="/">go back...</a></li>
+  </ul>
+</section>
+
+
+{% endblock %}
+
+{% block js %}
+<script>
+  function init() {
+    const ldsSpinner = document.getElementById("lds-spinner");
+    ldsSpinner.style.visibility = "visible";
+  }
+
+  window.onload = init;
+
+</script>
+{% endblock %}
