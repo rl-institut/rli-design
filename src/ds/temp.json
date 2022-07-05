@@ -1,0 +1,56 @@
+[
+  {
+    "type": "category",
+    "name": "borderRadius",
+    "value": {
+      "usage": "nav",
+      "value": {
+        "component": "sideBarAnchor",
+        "value": {
+          "modifier": "default",
+          "value": {
+            "value": "$border-radius",
+            "utility": "<no utility>",
+            "description": "Sidebar anchor default border-radius"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "borderRadius",
+    "value": {
+      "usage": "nav",
+      "value": {
+        "component": "sideBarAnchor",
+        "value": {
+          "modifier": "default",
+          "value": {
+            "value": "$border-radius",
+            "utility": "<no utility>",
+            "description": "Sidebar anchor default border-radius"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "borderRadius",
+    "value": {
+      "usage": "nav",
+      "value": {
+        "component": "sideBarAnchor",
+        "value": {
+          "modifier": "default",
+          "value": {
+            "value": "$border-radius",
+            "utility": "<no utility>",
+            "description": "Sidebar anchor default border-radius"
+          }
+        }
+      }
+    }
+  }
+]
