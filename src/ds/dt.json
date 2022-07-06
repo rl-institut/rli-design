@@ -244,7 +244,7 @@
           "name": "active",
           "value": {
             "variable": "$white",
-            "utility": ".text-info",
+            "utility": ".text-white",
             "description": "Sidebar anchor active text-color"
           }
         }
@@ -265,7 +265,7 @@
           "name": "hover",
           "value": {
             "variable": "$white",
-            "utility": ".text-info",
+            "utility": ".text-white",
             "description": "Sidebar anchor hover text-color"
           }
         }
@@ -286,7 +286,7 @@
           "name": "focus",
           "value": {
             "variable": "$white",
-            "utility": ".text-info",
+            "utility": ".text-white",
             "description": "Sidebar anchor focus text-color"
           }
         }
