@@ -168,5 +168,10 @@
         @extend .rounded;
       }
     }
+
+    &__variables,
+    &__utilities {
+      @extend .fs-8;
+    }
   }
 }
