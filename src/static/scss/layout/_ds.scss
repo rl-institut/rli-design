@@ -153,4 +153,20 @@
       }
     }
   }
+
+  .dt-table {
+    @extend .table;
+    @extend .fs-7;
+
+    &__token {
+      @extend .font-monospace;
+      @extend .fs-8;
+
+      span {
+        @extend .bg-light;
+        @extend .px-1;
+        @extend .rounded;
+      }
+    }
+  }
 }

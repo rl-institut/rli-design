@@ -41,7 +41,7 @@ const componentDescription = "component";
 const designTokensTable = document.getElementById("js-dtTable");
 let designTokensTableContent = '';
 for (let i = 0; i < designTokens.length; i++) {
-  designTokensTableContent += `<tr><td>${designTokens[i]}</td><td>${dtRoles[i]}</td><td>${dtVariables[i]}</td><td>${dtUtilities[i]}</td></tr>`;
+  designTokensTableContent += `<tr><td class="dt-table__token"><span>${designTokens[i]}</span></td><td>${dtRoles[i]}</td><td>${dtVariables[i]}</td><td>${dtUtilities[i]}</td></tr>`;
   designTokensTable.innerHTML = designTokensTableContent;
 }
 
