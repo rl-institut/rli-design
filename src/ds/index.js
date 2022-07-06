@@ -7,13 +7,37 @@ const categories = [
   "typography"
 ];
 
-const tokensCategories = tokens.map((token) => token.name);
+const usages = [
+  "background",
+  "fontSize",
+  "fontWeight",
+  "nav",
+  "padding",
+  "text"
+];
 
-// Test if all categories are correct
-const tokensCategoriesAreValid = tokensCategories.every(value=> categories.includes(value));
+const components = [
+  "body",
+  "button",
+  "dashboard",
+  "sidebarAnchor"
+]
 
-if (!tokensCategoriesAreValid) {
-  console.error("Some token category names aren't correct");
-  console.log(tokensCategories);
+const categoryDescription = "category";
+const usageDescription = "usage";
+const componentDescription = "component";
+
+const tokenCategories = tokens.map((token) => token.name);
+const tokenUsages = tokens.map((token) => token.value.name);
+const tokenComponents = tokens.map((token) => token.value.value.name);
+
+function testNames(token, name, description) {
+  const namesAreValid = token.every(e=> name.includes(e));
+  if (!namesAreValid) {
+    console.error(`Some token ${description} names aren't correct`);
+  }
 }
 
+testNames(tokenCategories, categories, categoryDescription);
+testNames(tokenUsages, usages, usageDescription);
+testNames(tokenComponents, components, componentDescription);

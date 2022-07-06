@@ -7,7 +7,7 @@
       "name": "nav",
       "value": {
         "type": "component",
-        "name": "sideBarAnchor",
+        "name": "sidebarAnchor",
         "value": {
           "type": "modifier",
           "name": "default",
@@ -70,7 +70,7 @@
       "name": "background",
       "value": {
         "type": "component",
-        "name": "sideBarAnchor",
+        "name": "sidebarAnchor",
         "value": {
           "type": "modifier",
           "name": "default",
@@ -91,7 +91,7 @@
       "name": "background",
       "value": {
         "type": "component",
-        "name": "sideBarAnchor",
+        "name": "sidebarAnchor",
         "value": {
           "type": "modifier",
           "name": "active",
@@ -112,7 +112,7 @@
       "name": "background",
       "value": {
         "type": "component",
-        "name": "sideBarAnchor",
+        "name": "sidebarAnchor",
         "value": {
           "type": "modifier",
           "name": "hover",
@@ -133,7 +133,7 @@
       "name": "background",
       "value": {
         "type": "component",
-        "name": "sideBarAnchor",
+        "name": "sidebarAnchor",
         "value": {
           "type": "modifier",
           "name": "focus",
@@ -154,7 +154,7 @@
       "name": "background",
       "value": {
         "type": "component",
-        "name": "sideBarAnchor",
+        "name": "sidebarAnchor",
         "value": {
           "type": "modifier",
           "name": "visited",
