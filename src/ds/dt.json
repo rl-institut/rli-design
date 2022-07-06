@@ -13,7 +13,7 @@
           "name": "default",
           "value": {
             "variable": "$border-radius",
-            "utility": "<no utility>",
+            "utility": "--no utility--",
             "description": "Sidebar anchor default border-radius"
           }
         }
