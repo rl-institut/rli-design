@@ -156,22 +156,36 @@
 
   .dt-table {
     @extend .table;
+    @extend .bg-light;
     @extend .fs-7;
+
+    tr {
+      height: 4rem;
+    }
 
     &__token {
       @extend .font-monospace;
       @extend .fs-8;
 
       span {
-        @extend .bg-light;
         @extend .px-1;
         @extend .rounded;
+        background-color: $gray-200;
       }
     }
 
     &__variables,
     &__utilities {
       @extend .fs-8;
+    }
+
+    &__display {
+      &--bg span {
+        @extend .border;
+        @extend .d-inline-block;
+        height: 2rem;
+        width: 2rem;
+      }
     }
   }
 }
