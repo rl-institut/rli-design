@@ -3,13 +3,16 @@
     "type": "category",
     "name": "borderRadius",
     "value": {
-      "usage": "nav",
+      "type": "usage",
+      "name": "nav",
       "value": {
-        "component": "sideBarAnchor",
+        "type": "component",
+        "name": "sideBarAnchor",
         "value": {
-          "modifier": "default",
+          "type": "modifier",
+          "name": "default",
           "value": {
-            "value": "$border-radius",
+            "variable": "$border-radius",
             "utility": "<no utility>",
             "description": "Sidebar anchor default border-radius"
           }
@@ -19,17 +22,20 @@
   },
   {
     "type": "category",
-    "name": "borderRadius",
+    "name": "colors",
     "value": {
-      "usage": "nav",
+      "type": "usage",
+      "name": "background",
       "value": {
-        "component": "sideBarAnchor",
+        "type": "component",
+        "name": "body",
         "value": {
-          "modifier": "default",
+          "type": "modifier",
+          "name": "default",
           "value": {
-            "value": "$border-radius",
-            "utility": "<no utility>",
-            "description": "Sidebar anchor default border-radius"
+            "variable": "$white",
+            "utility": ".bg-white",
+            "description": "Main body background-color"
           }
         }
       }
@@ -37,17 +43,335 @@
   },
   {
     "type": "category",
-    "name": "borderRadius",
+    "name": "colors",
     "value": {
-      "usage": "nav",
+      "type": "usage",
+      "name": "background",
       "value": {
-        "component": "sideBarAnchor",
+        "type": "component",
+        "name": "dashboard",
         "value": {
-          "modifier": "default",
+          "type": "modifier",
+          "name": "default",
           "value": {
-            "value": "$border-radius",
-            "utility": "<no utility>",
-            "description": "Sidebar anchor default border-radius"
+            "variable": "$gray-100",
+            "utility": ".bg-light",
+            "description": "Dashboard background-color"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "colors",
+    "value": {
+      "type": "usage",
+      "name": "background",
+      "value": {
+        "type": "component",
+        "name": "sideBarAnchor",
+        "value": {
+          "type": "modifier",
+          "name": "default",
+          "value": {
+            "variable": "$white",
+            "utility": ".bg-white",
+            "description": "Sidebar anchor default background-color"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "colors",
+    "value": {
+      "type": "usage",
+      "name": "background",
+      "value": {
+        "type": "component",
+        "name": "sideBarAnchor",
+        "value": {
+          "type": "modifier",
+          "name": "active",
+          "value": {
+            "variable": "$info",
+            "utility": ".bg-info",
+            "description": "Sidebar anchor active background-color"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "colors",
+    "value": {
+      "type": "usage",
+      "name": "background",
+      "value": {
+        "type": "component",
+        "name": "sideBarAnchor",
+        "value": {
+          "type": "modifier",
+          "name": "hover",
+          "value": {
+            "variable": "$blue",
+            "utility": ".bg-primary",
+            "description": "Sidebar anchor hover background-color"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "colors",
+    "value": {
+      "type": "usage",
+      "name": "background",
+      "value": {
+        "type": "component",
+        "name": "sideBarAnchor",
+        "value": {
+          "type": "modifier",
+          "name": "focus",
+          "value": {
+            "variable": "$blue",
+            "utility": ".bg-primary",
+            "description": "Sidebar anchor focus background-color"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "colors",
+    "value": {
+      "type": "usage",
+      "name": "background",
+      "value": {
+        "type": "component",
+        "name": "sideBarAnchor",
+        "value": {
+          "type": "modifier",
+          "name": "visited",
+          "value": {
+            "variable": "$white",
+            "utility": ".bg-white",
+            "description": "Sidebar anchor visited background-color"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "colors",
+    "value": {
+      "type": "usage",
+      "name": "text",
+      "value": {
+        "type": "component",
+        "name": "body",
+        "value": {
+          "type": "modifier",
+          "name": "default",
+          "value": {
+            "variable": "$blue",
+            "utility": ".text-primary",
+            "description": "Body text-color"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "colors",
+    "value": {
+      "type": "usage",
+      "name": "text",
+      "value": {
+        "type": "component",
+        "name": "button",
+        "value": {
+          "type": "modifier",
+          "name": "default",
+          "value": {
+            "variable": "$white",
+            "utility": ".text-white",
+            "description": "Main button text-color"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "colors",
+    "value": {
+      "type": "usage",
+      "name": "text",
+      "value": {
+        "type": "component",
+        "name": "sidebarAnchor",
+        "value": {
+          "type": "modifier",
+          "name": "default",
+          "value": {
+            "variable": "$blue",
+            "utility": ".link-primary",
+            "description": "Sidebar anchor default text-color"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "colors",
+    "value": {
+      "type": "usage",
+      "name": "text",
+      "value": {
+        "type": "component",
+        "name": "button",
+        "value": {
+          "type": "modifier",
+          "name": "active",
+          "value": {
+            "variable": "$white",
+            "utility": ".text-info",
+            "description": "Sidebar anchor active text-color"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "colors",
+    "value": {
+      "type": "usage",
+      "name": "text",
+      "value": {
+        "type": "component",
+        "name": "button",
+        "value": {
+          "type": "modifier",
+          "name": "hover",
+          "value": {
+            "variable": "$white",
+            "utility": ".text-info",
+            "description": "Sidebar anchor hover text-color"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "colors",
+    "value": {
+      "type": "usage",
+      "name": "text",
+      "value": {
+        "type": "component",
+        "name": "button",
+        "value": {
+          "type": "modifier",
+          "name": "focus",
+          "value": {
+            "variable": "$white",
+            "utility": ".text-info",
+            "description": "Sidebar anchor focus text-color"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "colors",
+    "value": {
+      "type": "usage",
+      "name": "text",
+      "value": {
+        "type": "component",
+        "name": "button",
+        "value": {
+          "type": "modifier",
+          "name": "visited",
+          "value": {
+            "variable": "$blue",
+            "utility": ".link-primary",
+            "description": "Sidebar anchor visited text-color"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
+      "name": "padding",
+      "value": {
+        "type": "component",
+        "name": "sidebarAnchor",
+        "value": {
+          "type": "modifier",
+          "name": "default",
+          "value": {
+            "variable": "0.5rem 1rem",
+            "utility": ".nav-link",
+            "description": "Sidebar anchor default padding size"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typography",
+    "value": {
+      "type": "usage",
+      "name": "fontSize",
+      "value": {
+        "type": "component",
+        "name": "sidebarAnchor",
+        "value": {
+          "type": "modifier",
+          "name": "default",
+          "value": {
+            "variable": "$font-size-base",
+            "utility": ".fs-6",
+            "description": "Sidebar anchor default font-size"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typography",
+    "value": {
+      "type": "usage",
+      "name": "fontWeight",
+      "value": {
+        "type": "component",
+        "name": "sidebarAnchor",
+        "value": {
+          "type": "modifier",
+          "name": "default",
+          "value": {
+            "variable": "$font-weight-normal",
+            "utility": ".fw-normal",
+            "description": "Sidebar anchor default font-weight"
           }
         }
       }

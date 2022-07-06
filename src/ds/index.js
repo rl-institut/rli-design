@@ -1,3 +1,3 @@
-import examples from "./temp.json";
+import tokens from "./temp.json";
 
-examples.map((example) => console.log(example.value.value.value.value));
+tokens.map((token) => console.log(token.value.value.value));
