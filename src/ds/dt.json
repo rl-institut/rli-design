@@ -10,11 +10,13 @@
         "name": "sideLink",
         "value": {
           "type": "modifier",
-          "name": "default",
           "value": {
-            "variable": "$border-radius",
-            "utility": "--no utility--",
-            "description": "Sidebar link default border-radius"
+            "type": "state",
+            "value": {
+              "variable": "$border-radius",
+              "utility": "--no utility--",
+              "description": "Sidebar link default border-radius"
+            }
           }
         }
       }
@@ -31,11 +33,13 @@
         "name": "body",
         "value": {
           "type": "modifier",
-          "name": "default",
           "value": {
-            "variable": "$white",
-            "utility": ".bg-white",
-            "description": "Main body background-color"
+            "type": "state",
+            "value": {
+              "variable": "$white",
+              "utility": ".bg-white",
+              "description": "Body background-color"
+            }
           }
         }
       }
@@ -54,9 +58,12 @@
           "type": "modifier",
           "name": "default",
           "value": {
-            "variable": "$gray-100",
-            "utility": ".bg-light",
-            "description": "Dashboard background-color"
+            "type": "state",
+            "value": {
+              "variable": "$gray-100",
+              "utility": ".bg-light",
+              "description": "Dashboard background-color"
+            }
           }
         }
       }
@@ -73,11 +80,14 @@
         "name": "sideLink",
         "value": {
           "type": "modifier",
-          "name": "default",
+          "name": "primary",
           "value": {
-            "variable": "$white",
-            "utility": ".bg-white",
-            "description": "Sidebar link default background-color"
+            "type": "state",
+            "value": {
+              "variable": "$white",
+              "utility": ".bg-white",
+              "description": "Sidebar link default background-color"
+            }
           }
         }
       }
@@ -94,11 +104,15 @@
         "name": "sideLink",
         "value": {
           "type": "modifier",
-          "name": "active",
+          "name": "primary",
           "value": {
-            "variable": "$info",
-            "utility": ".bg-info",
-            "description": "Sidebar link active background-color"
+            "type": "state",
+            "name": "active",
+            "value": {
+              "variable": "$info",
+              "utility": ".bg-info",
+              "description": "Sidebar link active background-color"
+            }
           }
         }
       }
@@ -115,11 +129,15 @@
         "name": "sideLink",
         "value": {
           "type": "modifier",
-          "name": "hover",
+          "name": "primary",
           "value": {
-            "variable": "$blue",
-            "utility": ".bg-primary",
-            "description": "Sidebar link hover background-color"
+            "type": "state",
+            "name": "hover",
+            "value": {
+              "variable": "$blue",
+              "utility": ".bg-primary",
+              "description": "Sidebar link hover background-color"
+            }
           }
         }
       }
@@ -136,11 +154,15 @@
         "name": "sideLink",
         "value": {
           "type": "modifier",
-          "name": "focus",
+          "name": "primary",
           "value": {
-            "variable": "$blue",
-            "utility": ".bg-primary",
-            "description": "Sidebar link focus background-color"
+            "type": "state",
+            "name": "focus",
+            "value": {
+              "variable": "$blue",
+              "utility": ".bg-primary",
+              "description": "Sidebar link focus background-color"
+            }
           }
         }
       }
@@ -157,11 +179,15 @@
         "name": "sideLink",
         "value": {
           "type": "modifier",
-          "name": "visited",
+          "name": "primary",
           "value": {
-            "variable": "$white",
-            "utility": ".bg-white",
-            "description": "Sidebar link visited background-color"
+            "type": "state",
+            "name": "visited",
+            "value": {
+              "variable": "$white",
+              "utility": ".bg-white",
+              "description": "Sidebar link visited background-color"
+            }
           }
         }
       }
@@ -178,11 +204,14 @@
         "name": "body",
         "value": {
           "type": "modifier",
-          "name": "default",
+          "name": "primary",
           "value": {
-            "variable": "$blue",
-            "utility": ".text-primary",
-            "description": "Body text-color"
+            "type": "state",
+            "value": {
+              "variable": "$blue",
+              "utility": ".text-primary",
+              "description": "Body text-color"
+            }
           }
         }
       }
@@ -199,11 +228,14 @@
         "name": "btn",
         "value": {
           "type": "modifier",
-          "name": "default",
+          "name": "primary",
           "value": {
-            "variable": "$white",
-            "utility": ".text-white",
-            "description": "Main button text-color"
+            "type": "state",
+            "value": {
+              "variable": "$white",
+              "utility": ".text-white",
+              "description": "Main button text-color"
+            }
           }
         }
       }
@@ -220,11 +252,14 @@
         "name": "sideLink",
         "value": {
           "type": "modifier",
-          "name": "default",
+          "name": "primary",
           "value": {
-            "variable": "$blue",
-            "utility": ".link-primary",
-            "description": "Sidebar link default text-color"
+            "type": "state",
+            "value": {
+              "variable": "$blue",
+              "utility": ".link-primary",
+              "description": "Sidebar link default text-color"
+            }
           }
         }
       }
@@ -238,14 +273,18 @@
       "name": "txt",
       "value": {
         "type": "component",
-        "name": "btn",
+        "name": "sideLink",
         "value": {
           "type": "modifier",
-          "name": "active",
+          "name": "primary",
           "value": {
-            "variable": "$white",
-            "utility": ".text-white",
-            "description": "Sidebar link active text-color"
+            "type": "state",
+            "name": "active",
+            "value": {
+              "variable": "$white",
+              "utility": ".text-white",
+              "description": "Sidebar link active text-color"
+            }
           }
         }
       }
@@ -259,14 +298,18 @@
       "name": "txt",
       "value": {
         "type": "component",
-        "name": "btn",
+        "name": "sideLink",
         "value": {
           "type": "modifier",
-          "name": "hover",
+          "name": "primary",
           "value": {
-            "variable": "$white",
-            "utility": ".text-white",
-            "description": "Sidebar link hover text-color"
+            "type": "state",
+            "name": "hover",
+            "value": {
+              "variable": "$white",
+              "utility": ".text-white",
+              "description": "Sidebar link hover text-color"
+            }
           }
         }
       }
@@ -280,14 +323,18 @@
       "name": "txt",
       "value": {
         "type": "component",
-        "name": "btn",
+        "name": "sideLink",
         "value": {
           "type": "modifier",
-          "name": "focus",
+          "name": "primary",
           "value": {
-            "variable": "$white",
-            "utility": ".text-white",
-            "description": "Sidebar link focus text-color"
+            "type": "state",
+            "name": "focus",
+            "value": {
+              "variable": "$white",
+              "utility": ".text-white",
+              "description": "Sidebar link focus text-color"
+            }
           }
         }
       }
@@ -301,14 +348,18 @@
       "name": "txt",
       "value": {
         "type": "component",
-        "name": "btn",
+        "name": "sideLink",
         "value": {
           "type": "modifier",
-          "name": "visited",
+          "name": "primary",
           "value": {
-            "variable": "$blue",
-            "utility": ".link-primary",
-            "description": "Sidebar link visited text-color"
+            "type": "state",
+            "name": "visited",
+            "value": {
+              "variable": "$blue",
+              "utility": ".link-primary",
+              "description": "Sidebar link visited text-color"
+            }
           }
         }
       }
@@ -325,11 +376,14 @@
         "name": "sideLink",
         "value": {
           "type": "modifier",
-          "name": "default",
+          "name": "normal",
           "value": {
-            "variable": "0.5rem 1rem",
-            "utility": ".nav-link",
-            "description": "Sidebar link default padding size"
+            "type": "state",
+            "value": {
+              "variable": "0.5rem 1rem",
+              "utility": ".nav-link",
+              "description": "Sidebar link default padding size"
+            }
           }
         }
       }
@@ -346,11 +400,14 @@
         "name": "sideLink",
         "value": {
           "type": "modifier",
-          "name": "default",
+          "name": "normal",
           "value": {
-            "variable": "$font-size-base",
-            "utility": ".fs-6",
-            "description": "Sidebar link default font-size"
+            "type": "state",
+            "value": {
+              "variable": "$font-size-base",
+              "utility": ".fs-6",
+              "description": "Sidebar link default font-size"
+            }
           }
         }
       }
@@ -367,11 +424,14 @@
         "name": "sideLink",
         "value": {
           "type": "modifier",
-          "name": "default",
+          "name": "normal",
           "value": {
-            "variable": "$font-weight-normal",
-            "utility": ".fw-normal",
-            "description": "Sidebar link default font-weight"
+            "type": "state",
+            "value": {
+              "variable": "$font-weight-normal",
+              "utility": ".fw-normal",
+              "description": "Sidebar link default font-weight"
+            }
           }
         }
       }
