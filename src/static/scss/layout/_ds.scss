@@ -12,7 +12,16 @@
   }
 
   &__item {
-    @extend .pb-4;
+    @extend .mb-4;
+    @extend .py-2;
+
+    &--light {
+      @extend .bg-light;
+    }
+
+    &--center {
+      @extend .justify-content-center;
+    }
   }
 
   &__colors {
