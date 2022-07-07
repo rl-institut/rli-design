@@ -22,3 +22,7 @@ main {
 .bs-col {
   @extend .col;
 }
+
+.bs-col-6 {
+  @extend .col-lg-6;
+}
