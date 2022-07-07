@@ -7,14 +7,14 @@
       "name": "nav",
       "value": {
         "type": "component",
-        "name": "sidebarAnchor",
+        "name": "sideLink",
         "value": {
           "type": "modifier",
           "name": "default",
           "value": {
             "variable": "$border-radius",
             "utility": "--no utility--",
-            "description": "Sidebar anchor default border-radius"
+            "description": "Sidebar link default border-radius"
           }
         }
       }
@@ -25,7 +25,7 @@
     "name": "color",
     "value": {
       "type": "usage",
-      "name": "background",
+      "name": "bg",
       "value": {
         "type": "component",
         "name": "body",
@@ -46,10 +46,10 @@
     "name": "color",
     "value": {
       "type": "usage",
-      "name": "background",
+      "name": "bg",
       "value": {
         "type": "component",
-        "name": "dashboard",
+        "name": "db",
         "value": {
           "type": "modifier",
           "name": "default",
@@ -67,17 +67,17 @@
     "name": "color",
     "value": {
       "type": "usage",
-      "name": "background",
+      "name": "bg",
       "value": {
         "type": "component",
-        "name": "sidebarAnchor",
+        "name": "sideLink",
         "value": {
           "type": "modifier",
           "name": "default",
           "value": {
             "variable": "$white",
             "utility": ".bg-white",
-            "description": "Sidebar anchor default background-color"
+            "description": "Sidebar link default background-color"
           }
         }
       }
@@ -88,17 +88,17 @@
     "name": "color",
     "value": {
       "type": "usage",
-      "name": "background",
+      "name": "bg",
       "value": {
         "type": "component",
-        "name": "sidebarAnchor",
+        "name": "sideLink",
         "value": {
           "type": "modifier",
           "name": "active",
           "value": {
             "variable": "$info",
             "utility": ".bg-info",
-            "description": "Sidebar anchor active background-color"
+            "description": "Sidebar link active background-color"
           }
         }
       }
@@ -109,17 +109,17 @@
     "name": "color",
     "value": {
       "type": "usage",
-      "name": "background",
+      "name": "bg",
       "value": {
         "type": "component",
-        "name": "sidebarAnchor",
+        "name": "sideLink",
         "value": {
           "type": "modifier",
           "name": "hover",
           "value": {
             "variable": "$blue",
             "utility": ".bg-primary",
-            "description": "Sidebar anchor hover background-color"
+            "description": "Sidebar link hover background-color"
           }
         }
       }
@@ -130,17 +130,17 @@
     "name": "color",
     "value": {
       "type": "usage",
-      "name": "background",
+      "name": "bg",
       "value": {
         "type": "component",
-        "name": "sidebarAnchor",
+        "name": "sideLink",
         "value": {
           "type": "modifier",
           "name": "focus",
           "value": {
             "variable": "$blue",
             "utility": ".bg-primary",
-            "description": "Sidebar anchor focus background-color"
+            "description": "Sidebar link focus background-color"
           }
         }
       }
@@ -151,17 +151,17 @@
     "name": "color",
     "value": {
       "type": "usage",
-      "name": "background",
+      "name": "bg",
       "value": {
         "type": "component",
-        "name": "sidebarAnchor",
+        "name": "sideLink",
         "value": {
           "type": "modifier",
           "name": "visited",
           "value": {
             "variable": "$white",
             "utility": ".bg-white",
-            "description": "Sidebar anchor visited background-color"
+            "description": "Sidebar link visited background-color"
           }
         }
       }
@@ -172,7 +172,7 @@
     "name": "color",
     "value": {
       "type": "usage",
-      "name": "text",
+      "name": "txt",
       "value": {
         "type": "component",
         "name": "body",
@@ -193,10 +193,10 @@
     "name": "color",
     "value": {
       "type": "usage",
-      "name": "text",
+      "name": "txt",
       "value": {
         "type": "component",
-        "name": "button",
+        "name": "btn",
         "value": {
           "type": "modifier",
           "name": "default",
@@ -214,17 +214,17 @@
     "name": "color",
     "value": {
       "type": "usage",
-      "name": "text",
+      "name": "txt",
       "value": {
         "type": "component",
-        "name": "sidebarAnchor",
+        "name": "sideLink",
         "value": {
           "type": "modifier",
           "name": "default",
           "value": {
             "variable": "$blue",
             "utility": ".link-primary",
-            "description": "Sidebar anchor default text-color"
+            "description": "Sidebar link default text-color"
           }
         }
       }
@@ -235,17 +235,17 @@
     "name": "color",
     "value": {
       "type": "usage",
-      "name": "text",
+      "name": "txt",
       "value": {
         "type": "component",
-        "name": "button",
+        "name": "btn",
         "value": {
           "type": "modifier",
           "name": "active",
           "value": {
             "variable": "$white",
             "utility": ".text-white",
-            "description": "Sidebar anchor active text-color"
+            "description": "Sidebar link active text-color"
           }
         }
       }
@@ -256,17 +256,17 @@
     "name": "color",
     "value": {
       "type": "usage",
-      "name": "text",
+      "name": "txt",
       "value": {
         "type": "component",
-        "name": "button",
+        "name": "btn",
         "value": {
           "type": "modifier",
           "name": "hover",
           "value": {
             "variable": "$white",
             "utility": ".text-white",
-            "description": "Sidebar anchor hover text-color"
+            "description": "Sidebar link hover text-color"
           }
         }
       }
@@ -277,17 +277,17 @@
     "name": "color",
     "value": {
       "type": "usage",
-      "name": "text",
+      "name": "txt",
       "value": {
         "type": "component",
-        "name": "button",
+        "name": "btn",
         "value": {
           "type": "modifier",
           "name": "focus",
           "value": {
             "variable": "$white",
             "utility": ".text-white",
-            "description": "Sidebar anchor focus text-color"
+            "description": "Sidebar link focus text-color"
           }
         }
       }
@@ -298,17 +298,17 @@
     "name": "color",
     "value": {
       "type": "usage",
-      "name": "text",
+      "name": "txt",
       "value": {
         "type": "component",
-        "name": "button",
+        "name": "btn",
         "value": {
           "type": "modifier",
           "name": "visited",
           "value": {
             "variable": "$blue",
             "utility": ".link-primary",
-            "description": "Sidebar anchor visited text-color"
+            "description": "Sidebar link visited text-color"
           }
         }
       }
@@ -322,14 +322,14 @@
       "name": "padding",
       "value": {
         "type": "component",
-        "name": "sidebarAnchor",
+        "name": "sideLink",
         "value": {
           "type": "modifier",
           "name": "default",
           "value": {
             "variable": "0.5rem 1rem",
             "utility": ".nav-link",
-            "description": "Sidebar anchor default padding size"
+            "description": "Sidebar link default padding size"
           }
         }
       }
@@ -340,17 +340,17 @@
     "name": "typography",
     "value": {
       "type": "usage",
-      "name": "fontSize",
+      "name": "fs",
       "value": {
         "type": "component",
-        "name": "sidebarAnchor",
+        "name": "sideLink",
         "value": {
           "type": "modifier",
           "name": "default",
           "value": {
             "variable": "$font-size-base",
             "utility": ".fs-6",
-            "description": "Sidebar anchor default font-size"
+            "description": "Sidebar link default font-size"
           }
         }
       }
@@ -361,17 +361,17 @@
     "name": "typography",
     "value": {
       "type": "usage",
-      "name": "fontWeight",
+      "name": "fw",
       "value": {
         "type": "component",
-        "name": "sidebarAnchor",
+        "name": "sideLink",
         "value": {
           "type": "modifier",
           "name": "default",
           "value": {
             "variable": "$font-weight-normal",
             "utility": ".fw-normal",
-            "description": "Sidebar anchor default font-weight"
+            "description": "Sidebar link default font-weight"
           }
         }
       }
