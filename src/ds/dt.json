@@ -1,29 +1,6 @@
 [
   {
     "type": "category",
-    "name": "borderRadius",
-    "value": {
-      "type": "usage",
-      "name": "nav",
-      "value": {
-        "type": "component",
-        "name": "sideLink",
-        "value": {
-          "type": "modifier",
-          "value": {
-            "type": "state",
-            "value": {
-              "variable": "$border-radius",
-              "utility": "--no utility--",
-              "description": "Sidebar link default border-radius"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "type": "category",
     "name": "color",
     "value": {
       "type": "usage",
@@ -77,10 +54,10 @@
       "name": "bg",
       "value": {
         "type": "component",
-        "name": "sideLink",
+        "name": "sideNav",
         "value": {
           "type": "modifier",
-          "name": "primary",
+          "name": "link",
           "value": {
             "type": "state",
             "value": {
@@ -101,10 +78,10 @@
       "name": "bg",
       "value": {
         "type": "component",
-        "name": "sideLink",
+        "name": "sideNav",
         "value": {
           "type": "modifier",
-          "name": "primary",
+          "name": "link",
           "value": {
             "type": "state",
             "name": "active",
@@ -126,10 +103,10 @@
       "name": "bg",
       "value": {
         "type": "component",
-        "name": "sideLink",
+        "name": "sideNav",
         "value": {
           "type": "modifier",
-          "name": "primary",
+          "name": "link",
           "value": {
             "type": "state",
             "name": "hover",
@@ -151,10 +128,10 @@
       "name": "bg",
       "value": {
         "type": "component",
-        "name": "sideLink",
+        "name": "sideNav",
         "value": {
           "type": "modifier",
-          "name": "primary",
+          "name": "link",
           "value": {
             "type": "state",
             "name": "focus",
@@ -176,10 +153,10 @@
       "name": "bg",
       "value": {
         "type": "component",
-        "name": "sideLink",
+        "name": "sideNav",
         "value": {
           "type": "modifier",
-          "name": "primary",
+          "name": "link",
           "value": {
             "type": "state",
             "name": "visited",
@@ -269,6 +246,30 @@
     "name": "color",
     "value": {
       "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "name": "row",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$gray-100",
+              "utility": ".border-light",
+              "description": "Table header background-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "color",
+    "value": {
+      "type": "usage",
       "name": "txt",
       "value": {
         "type": "component",
@@ -320,10 +321,10 @@
       "name": "txt",
       "value": {
         "type": "component",
-        "name": "sideLink",
+        "name": "sideNav",
         "value": {
           "type": "modifier",
-          "name": "primary",
+          "name": "link",
           "value": {
             "type": "state",
             "value": {
@@ -344,10 +345,10 @@
       "name": "txt",
       "value": {
         "type": "component",
-        "name": "sideLink",
+        "name": "sideNav",
         "value": {
           "type": "modifier",
-          "name": "primary",
+          "name": "link",
           "value": {
             "type": "state",
             "name": "active",
@@ -369,10 +370,10 @@
       "name": "txt",
       "value": {
         "type": "component",
-        "name": "sideLink",
+        "name": "sideNav",
         "value": {
           "type": "modifier",
-          "name": "primary",
+          "name": "link",
           "value": {
             "type": "state",
             "name": "hover",
@@ -394,10 +395,10 @@
       "name": "txt",
       "value": {
         "type": "component",
-        "name": "sideLink",
+        "name": "sideNav",
         "value": {
           "type": "modifier",
-          "name": "primary",
+          "name": "link",
           "value": {
             "type": "state",
             "name": "focus",
@@ -419,10 +420,10 @@
       "name": "txt",
       "value": {
         "type": "component",
-        "name": "sideLink",
+        "name": "sideNav",
         "value": {
           "type": "modifier",
-          "name": "primary",
+          "name": "link",
           "value": {
             "type": "state",
             "name": "visited",
@@ -438,20 +439,115 @@
   },
   {
     "type": "category",
+    "name": "position",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "name": "row",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".border-bottom",
+              "description": "Table row border position"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "size",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "name": "row",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$border-width",
+              "utility": ".border",
+              "description": "Table row border-width"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "size",
+    "value": {
+      "type": "usage",
+      "name": "br",
+      "value": {
+        "type": "component",
+        "name": "sideNav",
+        "value": {
+          "type": "modifier",
+          "name": "link",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$border-radius",
+              "utility": "",
+              "description": "Sidebar link border-radius"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "size",
+    "value": {
+      "type": "usage",
+      "name": "br",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$border-radius",
+              "utility": "",
+              "description": "Table border-radius"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
     "name": "spacing",
     "value": {
       "type": "usage",
       "name": "padding",
       "value": {
         "type": "component",
-        "name": "sideLink",
+        "name": "sideNav",
         "value": {
           "type": "modifier",
-          "name": "normal",
+          "name": "link",
           "value": {
             "type": "state",
             "value": {
-              "variable": "0.5rem 1rem",
+              "variable": "",
               "utility": ".nav-link",
               "description": "Sidebar link default padding size"
             }
@@ -468,10 +564,10 @@
       "name": "fs",
       "value": {
         "type": "component",
-        "name": "sideLink",
+        "name": "sideNav",
         "value": {
           "type": "modifier",
-          "name": "normal",
+          "name": "link",
           "value": {
             "type": "state",
             "value": {
@@ -492,10 +588,10 @@
       "name": "fw",
       "value": {
         "type": "component",
-        "name": "sideLink",
+        "name": "sideNav",
         "value": {
           "type": "modifier",
-          "name": "normal",
+          "name": "link",
           "value": {
             "type": "state",
             "value": {

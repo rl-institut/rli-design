@@ -17,12 +17,16 @@ let designTokensTableContent = "";
 const categories = [
   "borderRadius",
   "color",
+  "position",
   "spacing",
+  "size",
   "typography"
 ];
 
 const usages = [
   "bg",
+  "br",
+  "border",
   "fs",
   "fw",
   "nav",
@@ -34,7 +38,7 @@ const components = [
   "body",
   "btn",
   "db",
-  "sideLink",
+  "sideNav",
   "table"
 ]
 
