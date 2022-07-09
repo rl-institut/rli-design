@@ -198,6 +198,77 @@
     "name": "color",
     "value": {
       "type": "usage",
+      "name": "bg",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$white",
+              "utility": ".bg-white",
+              "description": "Table background-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "color",
+    "value": {
+      "type": "usage",
+      "name": "bg",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "name": "footer",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$gray-100",
+              "utility": ".bg-light",
+              "description": "Table footer background-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "color",
+    "value": {
+      "type": "usage",
+      "name": "bg",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "name": "header",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$gray-100",
+              "utility": ".bg-light",
+              "description": "Table header background-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "color",
+    "value": {
+      "type": "usage",
       "name": "txt",
       "value": {
         "type": "component",

@@ -34,7 +34,8 @@ const components = [
   "body",
   "btn",
   "db",
-  "sideLink"
+  "sideLink",
+  "table"
 ]
 
 const categoryDescription = "category";
