@@ -1,7 +1,7 @@
 [
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "bg",
@@ -24,7 +24,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "bg",
@@ -33,7 +33,6 @@
         "name": "db",
         "value": {
           "type": "modifier",
-          "name": "default",
           "value": {
             "type": "state",
             "value": {
@@ -48,7 +47,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "bg",
@@ -72,7 +71,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "bg",
@@ -97,7 +96,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "bg",
@@ -122,7 +121,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "bg",
@@ -147,7 +146,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "bg",
@@ -172,7 +171,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "bg",
@@ -195,7 +194,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "bg",
@@ -219,7 +218,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "bg",
@@ -243,7 +242,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "border",
@@ -267,7 +266,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "txt",
@@ -291,7 +290,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "txt",
@@ -315,7 +314,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "txt",
@@ -339,7 +338,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "txt",
@@ -364,7 +363,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "txt",
@@ -389,7 +388,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "txt",
@@ -414,7 +413,7 @@
   },
   {
     "type": "category",
-    "name": "color",
+    "name": "clr",
     "value": {
       "type": "usage",
       "name": "txt",
@@ -439,7 +438,30 @@
   },
   {
     "type": "category",
-    "name": "position",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "txt",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$blue",
+              "utility": ".text-primary",
+              "description": "Table text color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "pos",
     "value": {
       "type": "usage",
       "name": "border",
@@ -455,6 +477,29 @@
               "variable": "",
               "utility": ".border-bottom",
               "description": "Table row border position"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "size",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$border-0",
+              "utility": ".table-borderless",
+              "description": "Table row border-width"
             }
           }
         }
@@ -537,7 +582,7 @@
     "name": "spacing",
     "value": {
       "type": "usage",
-      "name": "padding",
+      "name": "pd",
       "value": {
         "type": "component",
         "name": "sideNav",
@@ -558,7 +603,7 @@
   },
   {
     "type": "category",
-    "name": "typography",
+    "name": "typo",
     "value": {
       "type": "usage",
       "name": "fs",
@@ -582,7 +627,30 @@
   },
   {
     "type": "category",
-    "name": "typography",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "fs",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$font-size-sm",
+              "utility": ".fs-7",
+              "description": "Table font-size"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
     "value": {
       "type": "usage",
       "name": "fw",
@@ -598,6 +666,101 @@
               "variable": "$font-weight-normal",
               "utility": ".fw-normal",
               "description": "Sidebar link default font-weight"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "fw",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$font-weight-normal",
+              "utility": ".fw-normal",
+              "description": "Table font-weight"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "fw",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "name": "footer",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$font-weight-bold",
+              "utility": ".fw-bold",
+              "description": "Table footer font-weight"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "fw",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "name": "sub",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$font-weight-light",
+              "utility": ".fw-light",
+              "description": "Table sub-category font-weight"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "fw",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "name": "title",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$font-weight-bold",
+              "utility": ".fw-bold",
+              "description": "Table title font-weight"
             }
           }
         }

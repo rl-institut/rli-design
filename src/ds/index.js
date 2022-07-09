@@ -16,11 +16,11 @@ let designTokensTableContent = "";
 
 const categories = [
   "borderRadius",
-  "color",
-  "position",
+  "clr",
+  "pos",
   "spacing",
   "size",
-  "typography"
+  "typo"
 ];
 
 const usages = [
@@ -30,7 +30,7 @@ const usages = [
   "fs",
   "fw",
   "nav",
-  "padding",
+  "pd",
   "txt"
 ];
 
