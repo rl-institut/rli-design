@@ -39,6 +39,7 @@ const components = [
   "body",
   "btn",
   "db",
+  "dbItem",
   "sideNav",
   "table"
 ]

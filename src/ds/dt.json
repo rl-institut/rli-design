@@ -221,6 +221,56 @@
     "name": "clr",
     "value": {
       "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "dbItem",
+        "value": {
+          "type": "modifier",
+          "name": "indicator",
+          "value": {
+            "type": "state",
+            "name": "negative",
+            "value": {
+              "variable": "$warning",
+              "utility": ".border-warning",
+              "description": "Dashboard item warning border-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "dbItem",
+        "value": {
+          "type": "modifier",
+          "name": "indicator",
+          "value": {
+            "type": "state",
+            "name": "positive",
+            "value": {
+              "variable": "$success",
+              "utility": ".border-success",
+              "description": "Dashboard item success border-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
       "name": "bg",
       "value": {
         "type": "component",
@@ -467,6 +517,30 @@
       "name": "border",
       "value": {
         "type": "component",
+        "name": "dbItem",
+        "value": {
+          "type": "modifier",
+          "name": "indicator",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".border-start",
+              "description": "Dashboard item indicator border position"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "pos",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
         "name": "table",
         "value": {
           "type": "modifier",
@@ -477,6 +551,30 @@
               "variable": "",
               "utility": ".border-bottom",
               "description": "Table row border position"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "size",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "dbItem",
+        "value": {
+          "type": "modifier",
+          "name": "indicator",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".border-4",
+              "description": "Dashboard item indicator border-width"
             }
           }
         }
