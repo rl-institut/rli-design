@@ -594,7 +594,151 @@
             "value": {
               "variable": "",
               "utility": ".nav-link",
-              "description": "Sidebar link default padding size"
+              "description": "Sidebar link padding size"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
+      "name": "pd",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "name": "header",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".p-2",
+              "description": "Table row horizontal padding size"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
+      "name": "pd",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "name": "footer",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".p-2",
+              "description": "Table row horizontal padding size"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
+      "name": "pd",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "name": "row",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".px-2 .py-1",
+              "description": "Table row horizontal padding size"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
+      "name": "pd",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "name": "title",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".p-2 .pt-3",
+              "description": "Table row horizontal padding size"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "align",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "name": "header",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".text-start",
+              "description": "Table header content alignment"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "align",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "modifier",
+          "name": "number",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".text-end",
+              "description": "Table numbers alignment"
             }
           }
         }
