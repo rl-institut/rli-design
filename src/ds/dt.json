@@ -9,7 +9,7 @@
         "type": "component",
         "name": "body",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "value": {
             "type": "state",
             "value": {
@@ -32,7 +32,7 @@
         "type": "component",
         "name": "db",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "value": {
             "type": "state",
             "value": {
@@ -55,7 +55,7 @@
         "type": "component",
         "name": "sideNav",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "link",
           "value": {
             "type": "state",
@@ -79,7 +79,7 @@
         "type": "component",
         "name": "sideNav",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "link",
           "value": {
             "type": "state",
@@ -104,7 +104,7 @@
         "type": "component",
         "name": "sideNav",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "link",
           "value": {
             "type": "state",
@@ -129,7 +129,7 @@
         "type": "component",
         "name": "sideNav",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "link",
           "value": {
             "type": "state",
@@ -154,7 +154,7 @@
         "type": "component",
         "name": "sideNav",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "link",
           "value": {
             "type": "state",
@@ -179,7 +179,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "value": {
             "type": "state",
             "value": {
@@ -202,7 +202,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "footer",
           "value": {
             "type": "state",
@@ -226,7 +226,7 @@
         "type": "component",
         "name": "dbItem",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "indicator",
           "value": {
             "type": "state",
@@ -251,7 +251,7 @@
         "type": "component",
         "name": "dbItem",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "indicator",
           "value": {
             "type": "state",
@@ -276,7 +276,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "header",
           "value": {
             "type": "state",
@@ -300,7 +300,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "row",
           "value": {
             "type": "state",
@@ -324,7 +324,7 @@
         "type": "component",
         "name": "body",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "primary",
           "value": {
             "type": "state",
@@ -348,7 +348,7 @@
         "type": "component",
         "name": "btn",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "primary",
           "value": {
             "type": "state",
@@ -372,7 +372,7 @@
         "type": "component",
         "name": "sideNav",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "link",
           "value": {
             "type": "state",
@@ -396,7 +396,7 @@
         "type": "component",
         "name": "sideNav",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "link",
           "value": {
             "type": "state",
@@ -421,7 +421,7 @@
         "type": "component",
         "name": "sideNav",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "link",
           "value": {
             "type": "state",
@@ -446,7 +446,7 @@
         "type": "component",
         "name": "sideNav",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "link",
           "value": {
             "type": "state",
@@ -471,7 +471,7 @@
         "type": "component",
         "name": "sideNav",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "link",
           "value": {
             "type": "state",
@@ -496,7 +496,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "value": {
             "type": "state",
             "value": {
@@ -519,7 +519,7 @@
         "type": "component",
         "name": "dbItem",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "indicator",
           "value": {
             "type": "state",
@@ -543,7 +543,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "row",
           "value": {
             "type": "state",
@@ -567,7 +567,7 @@
         "type": "component",
         "name": "dbItem",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "indicator",
           "value": {
             "type": "state",
@@ -591,7 +591,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "value": {
             "type": "state",
             "value": {
@@ -614,7 +614,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "row",
           "value": {
             "type": "state",
@@ -638,7 +638,7 @@
         "type": "component",
         "name": "sideNav",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "link",
           "value": {
             "type": "state",
@@ -662,7 +662,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "value": {
             "type": "state",
             "value": {
@@ -685,7 +685,7 @@
         "type": "component",
         "name": "sideNav",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "link",
           "value": {
             "type": "state",
@@ -709,7 +709,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "header",
           "value": {
             "type": "state",
@@ -733,7 +733,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "footer",
           "value": {
             "type": "state",
@@ -757,7 +757,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "row",
           "value": {
             "type": "state",
@@ -781,7 +781,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "title",
           "value": {
             "type": "state",
@@ -805,7 +805,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "header",
           "value": {
             "type": "state",
@@ -829,7 +829,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "number",
           "value": {
             "type": "state",
@@ -853,7 +853,7 @@
         "type": "component",
         "name": "sideNav",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "link",
           "value": {
             "type": "state",
@@ -877,7 +877,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "value": {
             "type": "state",
             "value": {
@@ -900,7 +900,7 @@
         "type": "component",
         "name": "sideNav",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "link",
           "value": {
             "type": "state",
@@ -924,7 +924,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "value": {
             "type": "state",
             "value": {
@@ -947,7 +947,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "footer",
           "value": {
             "type": "state",
@@ -971,7 +971,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "sub",
           "value": {
             "type": "state",
@@ -995,7 +995,7 @@
         "type": "component",
         "name": "table",
         "value": {
-          "type": "modifier",
+          "type": "subitem",
           "name": "title",
           "value": {
             "type": "state",

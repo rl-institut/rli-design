@@ -5,7 +5,7 @@ let designTokens = [];
 const tokenCategories = tokens.map((token) => token.name);
 const tokenUsages = tokens.map((token) => token.value.name);
 const tokenComponents = tokens.map((token) => token.value.value.name);
-const tokenModifiers = tokens.map((token) => token.value.value.value.name);
+const tokenSubitems = tokens.map((token) => token.value.value.value.name);
 const tokenStates = tokens.map((token) => token.value.value.value.value.name);
 const dtRoles = tokens.map((token) => token.value.value.value.value.value.description);
 const dtVariables = tokens.map((token) => token.value.value.value.value.value.variable);
@@ -55,12 +55,12 @@ function createDesignTokens() {
   let dt = "";
 
   for (let i = 0; i < tokenCategories.length; i++) {
-    if (typeof tokenModifiers[i] === "undefined" && typeof tokenStates[i] === "undefined") {
+    if (typeof tokenSubitems[i] === "undefined" && typeof tokenStates[i] === "undefined") {
       designTokens.push(`${tokenCategories[i]}.${tokenUsages[i]}.${tokenComponents[i]}`);
     } else if (typeof tokenStates[i] === "undefined") {
-      designTokens.push(`${tokenCategories[i]}.${tokenUsages[i]}.${tokenComponents[i]}.${tokenModifiers[i]}`);
+      designTokens.push(`${tokenCategories[i]}.${tokenUsages[i]}.${tokenComponents[i]}.${tokenSubitems[i]}`);
     } else {
-      designTokens.push(`${tokenCategories[i]}.${tokenUsages[i]}.${tokenComponents[i]}.${tokenModifiers[i]}.${tokenStates[i]}`);
+      designTokens.push(`${tokenCategories[i]}.${tokenUsages[i]}.${tokenComponents[i]}.${tokenSubitems[i]}.${tokenStates[i]}`);
     }
   }
   return designTokens;
