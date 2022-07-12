@@ -207,7 +207,8 @@ $font-sizes: (
 );
 
 $custom-font-sizes: (
-  "7": 0.875rem
+  "7": 0.875rem,
+  "8": 0.75rem
 );
 
 $font-sizes: map-merge($font-sizes, $custom-font-sizes);

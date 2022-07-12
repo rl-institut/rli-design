@@ -1,0 +1,1012 @@
+[
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "bg",
+      "value": {
+        "type": "component",
+        "name": "body",
+        "value": {
+          "type": "subitem",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$white",
+              "utility": ".bg-white",
+              "description": "Body background-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "bg",
+      "value": {
+        "type": "component",
+        "name": "db",
+        "value": {
+          "type": "subitem",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$gray-100",
+              "utility": ".bg-light",
+              "description": "Dashboard background-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "bg",
+      "value": {
+        "type": "component",
+        "name": "sideNav",
+        "value": {
+          "type": "subitem",
+          "name": "link",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$white",
+              "utility": ".bg-white",
+              "description": "Sidebar link default background-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "bg",
+      "value": {
+        "type": "component",
+        "name": "sideNav",
+        "value": {
+          "type": "subitem",
+          "name": "link",
+          "value": {
+            "type": "state",
+            "name": "active",
+            "value": {
+              "variable": "$info",
+              "utility": ".bg-info",
+              "description": "Sidebar link active background-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "bg",
+      "value": {
+        "type": "component",
+        "name": "sideNav",
+        "value": {
+          "type": "subitem",
+          "name": "link",
+          "value": {
+            "type": "state",
+            "name": "hover",
+            "value": {
+              "variable": "$blue",
+              "utility": ".bg-primary",
+              "description": "Sidebar link hover background-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "bg",
+      "value": {
+        "type": "component",
+        "name": "sideNav",
+        "value": {
+          "type": "subitem",
+          "name": "link",
+          "value": {
+            "type": "state",
+            "name": "focus",
+            "value": {
+              "variable": "$blue",
+              "utility": ".bg-primary",
+              "description": "Sidebar link focus background-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "bg",
+      "value": {
+        "type": "component",
+        "name": "sideNav",
+        "value": {
+          "type": "subitem",
+          "name": "link",
+          "value": {
+            "type": "state",
+            "name": "visited",
+            "value": {
+              "variable": "$white",
+              "utility": ".bg-white",
+              "description": "Sidebar link visited background-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "bg",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$white",
+              "utility": ".bg-white",
+              "description": "Table background-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "bg",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "name": "footer",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$gray-100",
+              "utility": ".bg-light",
+              "description": "Table footer background-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "dbItem",
+        "value": {
+          "type": "subitem",
+          "name": "indicator",
+          "value": {
+            "type": "state",
+            "name": "negative",
+            "value": {
+              "variable": "$warning",
+              "utility": ".border-warning",
+              "description": "Dashboard item warning border-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "dbItem",
+        "value": {
+          "type": "subitem",
+          "name": "indicator",
+          "value": {
+            "type": "state",
+            "name": "positive",
+            "value": {
+              "variable": "$success",
+              "utility": ".border-success",
+              "description": "Dashboard item success border-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "bg",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "name": "header",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$gray-100",
+              "utility": ".bg-light",
+              "description": "Table header background-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "name": "row",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$gray-100",
+              "utility": ".border-light",
+              "description": "Table header background-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "txt",
+      "value": {
+        "type": "component",
+        "name": "body",
+        "value": {
+          "type": "subitem",
+          "name": "primary",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$blue",
+              "utility": ".text-primary",
+              "description": "Body text-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "txt",
+      "value": {
+        "type": "component",
+        "name": "btn",
+        "value": {
+          "type": "subitem",
+          "name": "primary",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$white",
+              "utility": ".text-white",
+              "description": "Main button text-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "txt",
+      "value": {
+        "type": "component",
+        "name": "sideNav",
+        "value": {
+          "type": "subitem",
+          "name": "link",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$blue",
+              "utility": ".link-primary",
+              "description": "Sidebar link default text-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "txt",
+      "value": {
+        "type": "component",
+        "name": "sideNav",
+        "value": {
+          "type": "subitem",
+          "name": "link",
+          "value": {
+            "type": "state",
+            "name": "active",
+            "value": {
+              "variable": "$white",
+              "utility": ".text-white",
+              "description": "Sidebar link active text-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "txt",
+      "value": {
+        "type": "component",
+        "name": "sideNav",
+        "value": {
+          "type": "subitem",
+          "name": "link",
+          "value": {
+            "type": "state",
+            "name": "hover",
+            "value": {
+              "variable": "$white",
+              "utility": ".text-white",
+              "description": "Sidebar link hover text-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "txt",
+      "value": {
+        "type": "component",
+        "name": "sideNav",
+        "value": {
+          "type": "subitem",
+          "name": "link",
+          "value": {
+            "type": "state",
+            "name": "focus",
+            "value": {
+              "variable": "$white",
+              "utility": ".text-white",
+              "description": "Sidebar link focus text-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "txt",
+      "value": {
+        "type": "component",
+        "name": "sideNav",
+        "value": {
+          "type": "subitem",
+          "name": "link",
+          "value": {
+            "type": "state",
+            "name": "visited",
+            "value": {
+              "variable": "$blue",
+              "utility": ".link-primary",
+              "description": "Sidebar link visited text-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "txt",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$blue",
+              "utility": ".text-primary",
+              "description": "Table text color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "pos",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "dbItem",
+        "value": {
+          "type": "subitem",
+          "name": "indicator",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".border-start",
+              "description": "Dashboard item indicator border position"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "pos",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "name": "row",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".border-bottom",
+              "description": "Table row border position"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "size",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "dbItem",
+        "value": {
+          "type": "subitem",
+          "name": "indicator",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".border-4",
+              "description": "Dashboard item indicator border-width"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "size",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$border-0",
+              "utility": ".table-borderless",
+              "description": "Table row border-width"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "size",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "name": "row",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$border-width",
+              "utility": ".border",
+              "description": "Table row border-width"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "size",
+    "value": {
+      "type": "usage",
+      "name": "br",
+      "value": {
+        "type": "component",
+        "name": "sideNav",
+        "value": {
+          "type": "subitem",
+          "name": "link",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$border-radius",
+              "utility": "",
+              "description": "Sidebar link border-radius"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "size",
+    "value": {
+      "type": "usage",
+      "name": "br",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$border-radius",
+              "utility": "",
+              "description": "Table border-radius"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
+      "name": "pd",
+      "value": {
+        "type": "component",
+        "name": "sideNav",
+        "value": {
+          "type": "subitem",
+          "name": "link",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".nav-link",
+              "description": "Sidebar link padding size"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
+      "name": "pd",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "name": "header",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".p-2",
+              "description": "Table row horizontal padding size"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
+      "name": "pd",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "name": "footer",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".p-2",
+              "description": "Table row horizontal padding size"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
+      "name": "pd",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "name": "row",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".px-2 .py-1",
+              "description": "Table row horizontal padding size"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
+      "name": "pd",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "name": "title",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".p-2 .pt-3",
+              "description": "Table row horizontal padding size"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "align",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "name": "header",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".text-start",
+              "description": "Table header content alignment"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "align",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "name": "number",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".text-end",
+              "description": "Table numbers alignment"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "fs",
+      "value": {
+        "type": "component",
+        "name": "sideNav",
+        "value": {
+          "type": "subitem",
+          "name": "link",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$font-size-base",
+              "utility": ".fs-6",
+              "description": "Sidebar link default font-size"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "fs",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$font-size-sm",
+              "utility": ".fs-7",
+              "description": "Table font-size"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "fw",
+      "value": {
+        "type": "component",
+        "name": "sideNav",
+        "value": {
+          "type": "subitem",
+          "name": "link",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$font-weight-normal",
+              "utility": ".fw-normal",
+              "description": "Sidebar link default font-weight"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "fw",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$font-weight-normal",
+              "utility": ".fw-normal",
+              "description": "Table font-weight"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "fw",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "name": "footer",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$font-weight-bold",
+              "utility": ".fw-bold",
+              "description": "Table footer font-weight"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "fw",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "name": "sub",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$font-weight-light",
+              "utility": ".fw-light",
+              "description": "Table sub-category font-weight"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "fw",
+      "value": {
+        "type": "component",
+        "name": "table",
+        "value": {
+          "type": "subitem",
+          "name": "title",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$font-weight-bold",
+              "utility": ".fw-bold",
+              "description": "Table title font-weight"
+            }
+          }
+        }
+      }
+    }
+  }
+]
