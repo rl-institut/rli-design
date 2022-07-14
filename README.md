@@ -14,7 +14,7 @@ https://rms-design-8d69fd10.netlify.app
 
 ### RMS Design Storybook
 
-rms-design-storybook-95974c.netlify.app
+https://rms-design-storybook-95974c.netlify.app
 
 ## Install (after doing `git clone`)
 
