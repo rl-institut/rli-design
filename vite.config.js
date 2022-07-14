@@ -10,6 +10,7 @@ export default {
         root: path.resolve(__dirname, "src/index.html"),
         dashboard: path.resolve(__dirname, "src/dashboard/index.html"),
         designsystem: path.resolve(__dirname, "src/ds/index.html"),
+        designsystemTable: path.resolve(__dirname, "src/ds/table.html"),
         login: path.resolve(__dirname, "src/login/index.html"),
         loginAbout: path.resolve(__dirname, "src/login/about/index.html"),
         loginContact: path.resolve(__dirname, "src/login/contact.html"),

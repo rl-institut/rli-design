@@ -12,7 +12,16 @@
   }
 
   &__item {
-    @extend .pb-4;
+    @extend .mb-4;
+    @extend .py-2;
+
+    &--light {
+      @extend .bg-light;
+    }
+
+    &--center {
+      @extend .justify-content-center;
+    }
   }
 
   &__colors {
@@ -150,6 +159,41 @@
       &--c-color-red-2 {
         background-color: $c-color-red-2;
         color: $blue;
+      }
+    }
+  }
+
+  .dt-table {
+    @extend .table;
+    @extend .bg-light;
+    @extend .fs-7;
+
+    tr {
+      height: 4rem;
+    }
+
+    &__token {
+      @extend .font-monospace;
+      @extend .fs-8;
+
+      span {
+        @extend .px-1;
+        @extend .rounded;
+        background-color: $gray-200;
+      }
+    }
+
+    &__variables,
+    &__utilities {
+      @extend .fs-8;
+    }
+
+    &__display {
+      &--bg span {
+        @extend .border;
+        @extend .d-inline-block;
+        height: 2rem;
+        width: 2rem;
       }
     }
   }
