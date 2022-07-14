@@ -23,5 +23,7 @@
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.2.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@storybook/addon-storysource": "^6.5.9"
+  }
 }
