@@ -11,6 +11,7 @@ export default {
         dashboard: path.resolve(__dirname, "src/dashboard/index.html"),
         designsystem: path.resolve(__dirname, "src/ds/index.html"),
         designsystemTable: path.resolve(__dirname, "src/ds/table.html"),
+        loadingSpinner: path.resolve(__dirname, "src/spinner/index.html"),
         login: path.resolve(__dirname, "src/login/index.html"),
         loginAbout: path.resolve(__dirname, "src/login/about/index.html"),
         loginContact: path.resolve(__dirname, "src/login/contact.html"),
