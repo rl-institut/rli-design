@@ -27,6 +27,7 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/html/writing-stories/args
 Primary.args = {
   primary: true,
+  backgroundColor: '#002E50',
   label: 'Button',
 };
 
