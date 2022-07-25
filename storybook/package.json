@@ -20,10 +20,17 @@
     "@storybook/builder-webpack4": "^6.5.9",
     "@storybook/html": "^6.5.9",
     "@storybook/manager-webpack4": "^6.5.9",
+    "@storybook/preset-scss": "^1.0.3",
     "@storybook/testing-library": "^0.0.13",
-    "babel-loader": "^8.2.5"
+    "babel-loader": "^8.2.5",
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.54.0",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^2.0.0"
   },
   "dependencies": {
-    "@storybook/addon-storysource": "^6.5.9"
+    "@storybook/addon-storysource": "^6.5.9",
+    "bootstrap": "^5.2.0"
   }
 }

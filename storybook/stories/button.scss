@@ -1,5 +1,5 @@
 .storybook-button {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   letter-spacing: 0.05rem;
   border: 0;
@@ -7,11 +7,13 @@
   cursor: pointer;
   display: inline-block;
   line-height: 1;
+
+  &--primary {
+    color: white;
+    background-color: #002e50;
+  }
 }
-.storybook-button--primary {
-  color: white;
-  background-color: #002E50;
-}
+
 .storybook-button--secondary {
   color: #333;
   background-color: transparent;
