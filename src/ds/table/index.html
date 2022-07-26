@@ -8,10 +8,14 @@
     <div class="ds__item bs-row">
       <div class="bs-col-8">
         <p>This table is built on top of <a href="https://getbootstrap.com/docs/5.0/content/tables/">Bootstrap tables</a> and is used on a dashboard.</p>
+        <select class="form-select" id="js-select-class" aria-label="Default select example">
+          <option value="db-item--budget" selected>Budget</option>
+          <option value="db-item--costs">Costs</option>
+        </select>
       </div>
     </div>
     <div class="ds__item ds__item--light ds__item--center bs-row">
-      <div class="bs-col-8">
+      <div class="bs-col-8" id="jsDashboardTable">
         <div class="db-item db-item--budget">
           <div class="db-item__title">Budget vom RLI</div>
           <div>
@@ -84,4 +88,8 @@
   </div>
 </section>
 
+{% endblock %}
+
+{% block js %}
+<script type="module" src="/ds/table/index.js"></script>
 {% endblock %}
