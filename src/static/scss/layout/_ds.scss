@@ -22,10 +22,6 @@
     &--center {
       @extend .justify-content-center;
     }
-
-    &--code {
-      @extend .bg-light;
-    }
   }
 
   &__colors {
