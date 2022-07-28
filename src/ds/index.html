@@ -3,6 +3,44 @@
 {% block content %}
 
 <section class="ds">
+  <div class="ds__nav">
+    <ul class="db-sidebarnav">
+      <li class="db-sidebarnav__item">
+        <a class="db-sidebarnav__link db-sidebarnav__link--collapse" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+          Get started
+        </a>
+        <div class="collapse show" id="home-collapse">
+          <ul class="db-sidebarnav db-sidebarnav--subcat">
+            <li><a href="#" class="db-sidebarnav__item">Overview</a></li>
+            <li><a href="#" class="db-sidebarnav__item">Design tokens</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="db-sidebarnav__item">
+        <a class="db-sidebarnav__link db-sidebarnav__link--collapse" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          General
+        </a>
+        <div class="collapse" id="dashboard-collapse">
+          <ul class="db-sidebarnav db-sidebarnav--subcat">
+            <li><a href="#" class="db-sidebarnav__item">Layout</a></li>
+            <li><a href="#" class="db-sidebarnav__item">Colors</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="db-sidebarnav__item">
+        <a class="db-sidebarnav__link db-sidebarnav__link--collapse" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          Components
+        </a>
+        <div class="collapse" id="orders-collapse">
+          <ul class="db-sidebarnav db-sidebarnav--subcat">
+            <li><a href="#" class="db-sidebarnav__item">Buttons</a></li>
+            <li><a href="#" class="db-sidebarnav__item">Links</a></li>
+            <li><a href="#" class="db-sidebarnav__item">Tables</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
   <div class="ds__container">
     <h1>RMS Design System</h1>
     <div class="ds__item bs-row">

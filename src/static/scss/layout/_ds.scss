@@ -1,9 +1,17 @@
 @use '../base' as *;
 
 .ds {
+  @extend .container;
   @extend .d-flex;
   @extend .justify-content-center;
   @extend .py-5;
+
+  &__nav {
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .p-2;
+    width: 20rem;
+  }
 
   &__container {
     @extend .container;
