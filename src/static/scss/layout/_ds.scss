@@ -13,6 +13,75 @@
     width: 20rem;
   }
 
+  &-sidebarnav {
+    @extend .nav; 
+    @extend .flex-column;
+    @extend .mb-4;
+  
+    .db-sidebarnav--subcat {
+      @extend .mb-0;
+    }
+  
+    &__item {
+      @extend .nav-item;
+    }
+  
+    &__link {
+      @extend .position-relative;
+      @extend .nav-link;
+      @extend .link-primary;
+      @extend .d-inline-flex;
+      @extend .w-100;
+      border-radius: $border-radius;
+      cursor: pointer;
+      user-select: none;
+
+      &--subpage {
+        @extend .py-1;
+        @extend .ps-3;
+        @extend .fs-7;
+      }
+  
+      &:hover {
+        @extend .bg-info;
+        @extend .text-white;
+      }
+  
+      &--active,
+      &--active:hover,
+      &--active:active,
+      &--active:focus {
+        @extend .link-light;
+        @extend .bg-primary;
+      }
+  
+      svg {
+        @extend .me-1;
+        transform: translateY(3px);
+      }
+  
+      &--collapse::after {
+        @extend .position-absolute;
+        right: 0.5rem;
+        width: 1.25em;
+        line-height: 0;
+        content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,46,80,1%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+        transition: transform .35s ease;
+        transform-origin: 0.3rem 50%;
+        transform: rotate(90deg) translateX(2px);
+      }
+  
+      &--collapse[aria-expanded="true"]::after {
+        transform: rotate(-90deg) translateX(-7px);
+      }
+  
+      &--active.ds-sidebarnav__link--collapse::after,
+      &.ds-sidebarnav__link--collapse:hover::after {
+        content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,1%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+      }
+    }
+  }
+
   &__container {
     @extend .container;
     @extend .d-flex;
