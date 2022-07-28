@@ -38,7 +38,47 @@
     </header>
 
     <main class="login-main">
-      {% block content %}{% endblock %}
+      <section class="ds">
+        <div class="ds__nav">
+          <ul class="ds-sidebarnav">
+            <li class="ds-sidebarnav__item">
+              <a class="ds-sidebarnav__link ds-sidebarnav__link--collapse" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                Get started
+              </a>
+              <div class="collapse show" id="home-collapse">
+                <ul class="ds-sidebarnav ds-sidebarnav--subcat">
+                  <li><a href="#" class="ds-sidebarnav__link ds-sidebarnav__link--subpage">Overview</a></li>
+                  <li><a href="#" class="ds-sidebarnav__link ds-sidebarnav__link--subpage">Design tokens</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="ds-sidebarnav__item">
+              <a class="ds-sidebarnav__link ds-sidebarnav__link--collapse" data-bs-toggle="collapse" data-bs-target="#general-collapse" aria-expanded="false">
+                General
+              </a>
+              <div class="collapse" id="general-collapse">
+                <ul class="ds-sidebarnav ds-sidebarnav--subcat">
+                  <li><a href="#" class="ds-sidebarnav__link ds-sidebarnav__link--subpage">Layout</a></li>
+                  <li><a href="#" class="ds-sidebarnav__link ds-sidebarnav__link--subpage">Colors</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="ds-sidebarnav__item">
+              <a class="ds-sidebarnav__link ds-sidebarnav__link--collapse" data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+                Components
+              </a>
+              <div class="collapse" id="components-collapse">
+                <ul class="ds-sidebarnav ds-sidebarnav--subcat">
+                  <li><a href="#" class="ds-sidebarnav__link ds-sidebarnav__link--subpage">Buttons</a></li>
+                  <li><a href="#" class="ds-sidebarnav__link ds-sidebarnav__link--subpage">Links</a></li>
+                  <li><a href="#" class="ds-sidebarnav__link ds-sidebarnav__link--subpage">Tables</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        {% block content %}{% endblock %}
+      </section>
     </main>
 
     <footer class="login-footer">
