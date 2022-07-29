@@ -1,4 +1,4 @@
-import tokens from "./dt.json";
+import tokens from "/ds/design-tokens/dt.json";
 
 // Variables
 let designTokens = [];
