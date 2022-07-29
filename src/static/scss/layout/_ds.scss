@@ -104,6 +104,10 @@
       @extend .bg-light;
       @extend .p-2;
     }
+
+    pre {
+      max-width: 58rem;
+    }
   }
 
   &__colors {
