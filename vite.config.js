@@ -8,9 +8,9 @@ export default {
     rollupOptions: {
       input: {
         root: path.resolve(__dirname, "src/index.html"),
+        componentTable: path.resolve(__dirname, "src/ds/components/table/index.html"),
         dashboard: path.resolve(__dirname, "src/dashboard/index.html"),
         designsystem: path.resolve(__dirname, "src/ds/index.html"),
-        designsystemTable: path.resolve(__dirname, "src/ds/table/index.html"),
         designTokens: path.resolve(__dirname, "src/ds/design-tokens/index.html"),
         loadingSpinner: path.resolve(__dirname, "src/spinner/index.html"),
         login: path.resolve(__dirname, "src/login/index.html"),
