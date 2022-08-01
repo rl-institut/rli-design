@@ -5,8 +5,13 @@
 <div class="ds__container">
   <h1>Overview</h1>
   <div class="ds__item bs-row">
-    <h2>Introduction</h2>
-    <p>TBD</p>
+    <p>This design system (DS) is being developed primarily for the RMS platform, but it is also an intitative to develop a DS that could be used in the future for other platforms and tools developed by the RLI. It is still at an initial phase of development, therefore the structure and content can still be changed, but here are the main details about the current state of the RMS DS:</p>
+    <h2>Bootstrap</h2>
+    <p>At the moment the RMS platform is primarily based on ZURB Foundation. Since this CSS framework is not being maintained anymore, we want to migrate the CSS system to something more stable and that should last longer, in our case, <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Bootstrap v5.0</a>.</p>
+    <h2>BEM</h2>
+    <p>In order to prevent display errors and bugs, we should be sure we don't use Foundation classes. Since Bootstrap has the same type of structure as Foundation, we should use a different system: BEM. We can then write our own CSS classes. It works as follows: <code>block__element--modifier</code>. Also, whenever possible, use <a href="https://sass-lang.com/documentation/at-rules/extend" target=“_blank“ rel=“noopener noreferrer“>@extend from Sass:</a> <code>@extend {bootstrap-class}</code> if the styles you are looking for are already available under a Bootstrap class. Look for Bootstrap component or utility CSS classes and try to @extend them as much as possible. It is in some cases not possible, though, e.g. when CSS classes are triggered by JS events from Bootstrap, in that case you need to leave them in order for the component to work. Or a utility might not be available, so you need to add your own custom CSS code for that.</p>
+    <h2>Sass</h2>
+    <p>Write the CSS code in <a href="https://sass-lang.com/guide">Sass</a> form. With BEM it is then easy to do it.</p>
   </div>
 </div>
 
