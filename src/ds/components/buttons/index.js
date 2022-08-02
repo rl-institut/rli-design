@@ -1,12 +1,9 @@
-const bgColor = document.getElementById('js-bg-color');
-const button = document.getElementById('jsButton');
+const button = document.getElementById('js-button');
 const buttonText = button.innerHTML;
 const buttonChild = button.firstElementChild;
-const selectBg = document.getElementById('js-select-bg');
 const selectType = document.getElementById('js-select-type');
 const buttonCode = document.getElementById('js-button-code');
 const buttonCSSClass = document.getElementById('js-button-css-class');
-let selectedBg = selectBg.value;
 let selectedType = selectType.value;
 
 buttonCode.append(buttonText);
@@ -16,6 +13,8 @@ const updateSnippet = function(classValue) {
 }
 
 const updateDemo = function(e, selected, classValue) {
+  console.log(selected);
+  console.log(classValue);
   e.classList.replace(selected, classValue);
 }
 

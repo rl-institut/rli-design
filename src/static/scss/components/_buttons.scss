@@ -7,3 +7,23 @@
 .bs-btn-primary {
   @extend .btn-primary;
 }
+
+.button {
+  @extend .btn;
+
+  &--primary {
+    @extend .btn-info;
+  }
+
+  &--secondary {
+    @extend .btn-primary;
+  }
+
+  &--ghost {
+    @extend .btn-outline-primary;
+  }
+
+  &--link {
+    @extend .btn-link;
+  }
+}
