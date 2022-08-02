@@ -3,19 +3,19 @@
 {% block content %}
 
 <div class="ds__container">
-  <h1>Table</h1>
+  <h1>Buttons</h1>
   <div class="ds__item bs-row">
     <div class="bs-col-8">
-      <p>This table is built on top of <a href="https://getbootstrap.com/docs/5.0/content/tables/">Bootstrap tables</a> and is used on a dashboard.</p>
+      <p>The buttons are built on top of <a href="https://getbootstrap.com/docs/5.0/components/buttons/">Bootstrap buttons</a> and can be used anywhere on the app.</p>
       <select class="form-select" id="js-select-class" aria-label="Change table options">
-        <option value="db-item--budget" selected>Budget</option>
-        <option value="db-item--costs">Costs</option>
+        <option value="btn-primary" selected>Primary</option>
+        <option value="btn-secondary">Secondary</option>
       </select>
     </div>
   </div>
   <div class="ds__item ds__item--light ds__item--center bs-row">
-    <div class="bs-col-8" id="jsDashboardTable">
-      <button>Test</button>
+    <div class="bs-col-8" id="jsButton">
+      <button type="button" class="btn btn-primary">Primary</button>
     </div>
   </div>
   <div class="ds__item bs-row">
@@ -24,14 +24,14 @@
         CSS class modifier:
       </div>
     </div>
-    <div id="js-table-css-class" class="bs-col ds__item--code">
-      <code>.db-item--budget</code>
+    <div id="js-button-css-class" class="bs-col ds__item--code">
+      <code>.btn-primary</code>
     </div>
   </div>
   <div class="ds__item bs-row">
     <div class="bs-col">
       <pre>
-        <code id="js-table-code" class="language-css"></code>
+        <code id="js-button-code" class="language-css"></code>
       </pre>
     </div>
   </div>
