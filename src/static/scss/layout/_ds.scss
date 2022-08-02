@@ -92,8 +92,16 @@
     @extend .mb-4;
     @extend .py-2;
 
+    &--white {
+      @extend .bg-white;
+    }
+
     &--light {
       @extend .bg-light;
+    }
+
+    &--dark {
+      @extend .bg-primary;
     }
 
     &--center {
