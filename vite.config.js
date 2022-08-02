@@ -8,6 +8,7 @@ export default {
     rollupOptions: {
       input: {
         root: path.resolve(__dirname, "src/index.html"),
+        componentButtons: path.resolve(__dirname, "src/ds/components/buttons/index.html"),
         componentTable: path.resolve(__dirname, "src/ds/components/table/index.html"),
         dashboard: path.resolve(__dirname, "src/dashboard/index.html"),
         designsystem: path.resolve(__dirname, "src/ds/index.html"),

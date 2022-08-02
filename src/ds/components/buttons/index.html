@@ -1,0 +1,44 @@
+{% extends "src/ds/layout.html" %}
+
+{% block content %}
+
+<div class="ds__container">
+  <h1>Table</h1>
+  <div class="ds__item bs-row">
+    <div class="bs-col-8">
+      <p>This table is built on top of <a href="https://getbootstrap.com/docs/5.0/content/tables/">Bootstrap tables</a> and is used on a dashboard.</p>
+      <select class="form-select" id="js-select-class" aria-label="Change table options">
+        <option value="db-item--budget" selected>Budget</option>
+        <option value="db-item--costs">Costs</option>
+      </select>
+    </div>
+  </div>
+  <div class="ds__item ds__item--light ds__item--center bs-row">
+    <div class="bs-col-8" id="jsDashboardTable">
+      <button>Test</button>
+    </div>
+  </div>
+  <div class="ds__item bs-row">
+    <div class="bs-row">
+      <div class="bs-col-6">
+        CSS class modifier:
+      </div>
+    </div>
+    <div id="js-table-css-class" class="bs-col ds__item--code">
+      <code>.db-item--budget</code>
+    </div>
+  </div>
+  <div class="ds__item bs-row">
+    <div class="bs-col">
+      <pre>
+        <code id="js-table-code" class="language-css"></code>
+      </pre>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script type="module" src="/ds/components/buttons/index.js"></script>
+{% endblock %}
