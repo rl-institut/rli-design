@@ -23,7 +23,7 @@
     @extend .btn-outline-primary;
   }
 
-  &--link {
-    @extend .btn-link;
+  &--danger {
+    @extend .btn-danger;
   }
 }
