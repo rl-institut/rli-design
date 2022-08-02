@@ -7,3 +7,7 @@
 .bs-form-control {
   @extend .form-control;
 }
+
+.bs-form-select {
+  @extend .form-select;
+}
