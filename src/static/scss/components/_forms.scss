@@ -10,4 +10,9 @@
 
 .bs-form-select {
   @extend .form-select;
+  @extend .d-inline-block;
+
+  &--small {
+    max-width: 12rem;
+  }
 }
