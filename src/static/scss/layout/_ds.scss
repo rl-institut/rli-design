@@ -104,6 +104,10 @@
       @extend .bg-primary;
     }
 
+    &--border {
+      @extend .border;
+    }
+
     &--center {
       @extend .justify-content-center;
     }
