@@ -26,4 +26,12 @@
   &--danger {
     @extend .btn-danger;
   }
+
+  &--sm {
+    @extend .btn-sm;
+  }
+
+  &--lg {
+    @extend .btn-lg;
+  }
 }

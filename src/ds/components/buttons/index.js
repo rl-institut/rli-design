@@ -1,26 +1,35 @@
+const selectType = document.getElementById('js-select-type');
+let selectedType = selectType.value;
+
+const selectSize = document.getElementById('js-select-size');
+let selectedSize = selectSize.value;
+
 const button = document.getElementById('js-button');
 const buttonText = button.innerHTML;
 const buttonChild = button.firstElementChild;
-const selectType = document.getElementById('js-select-type');
-const buttonCode = document.getElementById('js-button-code');
+
 const buttonCSSClass = document.getElementById('js-button-css-class');
-let selectedType = selectType.value;
+const buttonCode = document.getElementById('js-button-code');
 
 buttonCode.append(buttonText);
 
 const updateSnippet = function(classValue) {
-  buttonCSSClass.innerHTML = `<code>.${classValue}</code>`;
+  buttonCSSClass.innerHTML = `<code>.button .${selectedType} .${selectedSize}</code>`;
 }
 
-const updateDemo = function(e, selected, classValue) {
-  console.log(selected);
-  console.log(classValue);
-  e.classList.replace(selected, classValue);
+const updateDemo = function() {
+  buttonChild.removeAttribute('class');
+  buttonChild.classList.add('button', selectedType, selectedSize);
 }
 
 selectType.onchange = function() {
-  const classValue = this.value;
-  updateSnippet(classValue);
-  updateDemo(buttonChild, selectedType, classValue);
-  selectedType = classValue;
+  selectedType = this.value;
+  updateSnippet();
+  updateDemo();
+}
+
+selectSize.onchange = function() {
+  selectedSize = this.value;
+  updateSnippet();
+  updateDemo();
 }
