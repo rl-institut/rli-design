@@ -10,6 +10,7 @@
 
 .button {
   @extend .btn;
+  letter-spacing: $c-letter-spacing;
 
   &--primary {
     @extend .btn-info;
@@ -29,9 +30,18 @@
 
   &--sm {
     @extend .btn-sm;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  &--md {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   &--lg {
     @extend .btn-lg;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }

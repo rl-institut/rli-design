@@ -241,6 +241,7 @@ $text-muted:                  rgba(0, 46, 80, 0.5) !default;
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 // scss-docs-start input-btn-variables
+$input-btn-padding-x: 2rem;
 // scss-docs-end input-btn-variables
 
 
@@ -249,6 +250,7 @@ $text-muted:                  rgba(0, 46, 80, 0.5) !default;
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 // scss-docs-start btn-variables
+$input-padding-x: 1rem;
 $btn-font-weight: 400;
 
 // Allows for customizing button radius independently from global border radius

@@ -1008,5 +1008,51 @@
         }
       }
     }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "ls",
+      "value": {
+        "type": "component",
+        "name": "body",
+        "value": {
+          "type": "subitem",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "0.03rem",
+              "utility": "",
+              "description": "Body letter-spacing"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "ls",
+      "value": {
+        "type": "component",
+        "name": "button",
+        "value": {
+          "type": "subitem",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "0.03rem",
+              "utility": "",
+              "description": "Button (medium) letter-spacing"
+            }
+          }
+        }
+      }
+    }
   }
 ]
