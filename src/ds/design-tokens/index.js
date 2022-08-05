@@ -30,6 +30,7 @@ const usages = [
   "border",
   "fs",
   "fw",
+  "ls",
   "nav",
   "pd",
   "txt"
