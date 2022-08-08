@@ -1023,7 +1023,7 @@
           "value": {
             "type": "state",
             "value": {
-              "variable": "0.03rem",
+              "variable": "$c-letter-spacing",
               "utility": "",
               "description": "Body letter-spacing"
             }
@@ -1046,7 +1046,7 @@
           "value": {
             "type": "state",
             "value": {
-              "variable": "0.03rem",
+              "variable": "$c-letter-spacing",
               "utility": "",
               "description": "Button (medium) letter-spacing"
             }
