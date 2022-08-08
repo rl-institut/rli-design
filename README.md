@@ -10,11 +10,7 @@ This repo is a collection of elements, components, pages and ideas on creating t
 
 ### RMS Design Vite
 
-https://rms-design-8d69fd10.netlify.app
-
-### RMS Design Storybook
-
-https://rms-design-storybook-95974c.netlify.app
+https://rli-design-4bc787.netlify.app
 
 ## Install (after doing `git clone`)
 
