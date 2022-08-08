@@ -224,6 +224,80 @@
       "name": "border",
       "value": {
         "type": "component",
+        "name": "btn",
+        "value": {
+          "type": "subitem",
+          "name": "primary",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$primary",
+              "utility": ".border-primary",
+              "description": "Primary button border-color"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "btn",
+        "value": {
+          "type": "subitem",
+          "name": "primary",
+          "value": {
+            "type": "state",
+            "name": "hover",
+            "value": {
+              "variable": "$btn-hover-border-shade-amount, $btn-hover-border-tint-amount",
+              "utility": ".border-primary",
+              "description": "Primary button border-color on hover"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
+        "name": "btn",
+        "value": {
+          "type": "subitem",
+          "name": "primary",
+          "value": {
+            "type": "state",
+            "name": "active",
+            "value": {
+              "variable": "$btn-active-border-shade-amount, $btn-active-border-tint-amount",
+              "utility": ".border-primary",
+              "description": "Primary button border-color on active"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "clr",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
         "name": "dbItem",
         "value": {
           "type": "subitem",
@@ -565,6 +639,29 @@
       "name": "border",
       "value": {
         "type": "component",
+        "name": "btn",
+        "value": {
+          "type": "subitem",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "",
+              "utility": ".border-1",
+              "description": "Button border-width"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "size",
+    "value": {
+      "type": "usage",
+      "name": "border",
+      "value": {
+        "type": "component",
         "name": "dbItem",
         "value": {
           "type": "subitem",
@@ -884,6 +981,29 @@
               "variable": "$font-size-sm",
               "utility": ".fs-7",
               "description": "Table font-size"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "typo",
+    "value": {
+      "type": "usage",
+      "name": "fw",
+      "value": {
+        "type": "component",
+        "name": "btn",
+        "value": {
+          "type": "subitem",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$font-weight-normal",
+              "utility": ".fw-normal",
+              "description": "Button font-weight"
             }
           }
         }
