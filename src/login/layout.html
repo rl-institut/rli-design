@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RMS-Design</title>
+    <title>RLI-Design</title>
     <link rel="stylesheet" type="text/css" href="/static/scss/styles.scss" />
   </head>
   <body>
@@ -12,15 +12,38 @@
       <nav class="login-navbar">
         <div class="login-navbar__container">
           <a class="login-navbar__brand" href="/" aria-current="page">
-            <img src="/static/logos/RMS_logo_notitle.svg" alt="RMS Logo" width="97.5" height="30">
+            <img
+              src="/static/logos/RMS_logo_notitle.svg"
+              alt="RMS Logo"
+              width="97.5"
+              height="30"
+            />
           </a>
-          <button class="login-navbar__toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <button
+            class="login-navbar__toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
             <span class="login-navbar__toggler-icon"></span>
           </button>
-          <div class="login-offcanvas offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div
+            class="login-offcanvas offcanvas"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
             <div class="login-offcanvas__header">
-              <h5 class="login-offcanvas__title" id="offcanvasNavbarLabel">RMS Login</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 class="login-offcanvas__title" id="offcanvasNavbarLabel">
+                RMS Login
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="login-oc-body">
               <ul class="login-oc-body__nav">
@@ -28,18 +51,37 @@
                   <a class="login-oc-body__link" href="/login/about/">About</a>
                 </li>
                 <li>
-                  <a class="login-oc-body__link" href="/login/contact.html">Contact</a>
+                  <a class="login-oc-body__link" href="/login/contact.html"
+                    >Contact</a
+                  >
                 </li>
                 <li class="lang-select">
-                  <form action="/i18n/setlang/" method="post" class="lang-select__form">
+                  <form
+                    action="/i18n/setlang/"
+                    method="post"
+                    class="lang-select__form"
+                  >
                     <div class="lang-select__option">
-                      <input class="lang-select__input" type="radio" name="radioLang" id="radioLangDe" value="de" checked>
+                      <input
+                        class="lang-select__input"
+                        type="radio"
+                        name="radioLang"
+                        id="radioLangDe"
+                        value="de"
+                        checked
+                      />
                       <label class="lang-select__label" for="radioLangDe">
                         DE
                       </label>
                     </div>
                     <div class="lang-select__option">
-                      <input class="lang-select__input" type="radio" name="radioLang" id="radioLangEn" value="en">
+                      <input
+                        class="lang-select__input"
+                        type="radio"
+                        name="radioLang"
+                        id="radioLangEn"
+                        value="en"
+                      />
                       <label class="lang-select__label" for="radioLangEn">
                         EN
                       </label>
@@ -53,9 +95,7 @@
       </nav>
     </header>
 
-    <main class="login-main">
-      {% block content %}{% endblock %}
-    </main>
+    <main class="login-main">{% block content %}{% endblock %}</main>
 
     <footer class="login-footer">
       <div class="login-footer__container">

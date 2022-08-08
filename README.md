@@ -32,7 +32,7 @@ npm run dev
 npm run build
 ```
 
-Please note: to run the build step, usually is not needed. A developer develops by running `npm run dev`. After committing or merging your changes to the `main` branch, you find the build result [deployed on netlify](https://rms-design-8d69fd10-214d-46a8-a5cd-93888ceee417.netlify.app/) in under one minute processing time (as of writing 22s).
+Please note: to run the build step, usually is not needed. A developer develops by running `npm run dev`. After committing or merging your changes to the `main` branch, you find the build result [deployed on netlify](https://rli-design-4bc787.netlify.app) in under one minute processing time (as of writing 22s).
 
 ## Preview Project (in `dist/` folder)
 
