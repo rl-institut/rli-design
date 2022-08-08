@@ -1,4 +1,6 @@
-# RMS-Design
+# RLI Design System
+
+PLEASE NOTE: This repo shall gradually (from project to project) transform into a generic RLI design system.
 
 Source of truth for the UX/UI of the RLI-Management-System (RMS). Based on [Vite](https://vitejs.dev/).
 
@@ -8,7 +10,7 @@ This repo is a collection of elements, components, pages and ideas on creating t
 
 ## Live Preview (branch `main`)
 
-### RMS Design Vite
+### RLI Design System online
 
 https://rli-design-4bc787.netlify.app
 
