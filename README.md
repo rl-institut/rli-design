@@ -8,8 +8,6 @@ This repo is a collection of elements, components, pages and ideas on creating t
 
 ## Live Preview (branch `main`)
 
-### RLI Design System online
-
 https://rli-design-4bc787.netlify.app
 
 ## Install (after doing `git clone`)
