@@ -25,7 +25,7 @@ $gray-900: #070809;
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue: #002E50;
+$blue: #0060AF;
 $green: #51FACE;
 $yellow: #FFC94D;
 $black: #292929;
@@ -35,7 +35,7 @@ $black: #292929;
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$info: #0060AF;
+$info: #002E50;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -95,7 +95,7 @@ $spacers: (
 // Body
 //
 // Settings for the `<body>` element.
-$body-color: $blue;
+$body-color: $info;
 // Utilities maps
 //
 // Extends the default `$theme-colors` maps to help create our utilities.

@@ -78,7 +78,7 @@
     @extend .form-check-label;
     @extend .nav-link;
     @extend .px-0;
-    @extend .text-primary;
+    @extend .text-info;
   }
 
   &__input:checked+label:hover,
