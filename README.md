@@ -2,7 +2,7 @@
 
 PLEASE NOTE: This repo shall gradually (from project to project) transform into a generic RLI design system.
 
-Source of truth for the UX/UI of the RLI-Management-System (RMS). Based on [Vite](https://vitejs.dev/).
+This repo started out as the single source of truth for the UX/UI of the RLI-Management-System (RMS) and is technically based on [Vite](https://vitejs.dev/).
 
 ## About
 
