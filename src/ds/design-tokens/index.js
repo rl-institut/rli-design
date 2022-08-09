@@ -33,6 +33,8 @@ const usages = [
   "ls",
   "nav",
   "pd",
+  "pd-x",
+  "pd-y",
   "txt"
 ];
 

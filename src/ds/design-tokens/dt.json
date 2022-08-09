@@ -777,6 +777,150 @@
     "name": "spacing",
     "value": {
       "type": "usage",
+      "name": "pd-x",
+      "value": {
+        "type": "component",
+        "name": "btn",
+        "value": {
+          "type": "subitem",
+          "name": "small",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$btn-padding-x-sm",
+              "utility": ".button--sm",
+              "description": "Button (small) horizontal padding"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
+      "name": "pd-x",
+      "value": {
+        "type": "component",
+        "name": "btn",
+        "value": {
+          "type": "subitem",
+          "name": "medium",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$btn-padding-x",
+              "utility": ".button--md",
+              "description": "Button (medium) horizontal padding"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
+      "name": "pd-x",
+      "value": {
+        "type": "component",
+        "name": "btn",
+        "value": {
+          "type": "subitem",
+          "name": "large",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$btn-padding-x-lg",
+              "utility": ".button--lg",
+              "description": "Button (large) horizontal padding"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
+      "name": "pd-y",
+      "value": {
+        "type": "component",
+        "name": "btn",
+        "value": {
+          "type": "subitem",
+          "name": "small",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$btn-padding-y-sm",
+              "utility": ".button--sm",
+              "description": "Button (small) vertical padding"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
+      "name": "pd-y",
+      "value": {
+        "type": "component",
+        "name": "btn",
+        "value": {
+          "type": "subitem",
+          "name": "medium",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$btn-padding-y",
+              "utility": ".button--md",
+              "description": "Button (medium) vertical padding"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
+      "name": "pd-y",
+      "value": {
+        "type": "component",
+        "name": "btn",
+        "value": {
+          "type": "subitem",
+          "name": "large",
+          "value": {
+            "type": "state",
+            "value": {
+              "variable": "$btn-padding-y-lg",
+              "utility": ".button--lg",
+              "description": "Button (large) vertical padding"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "category",
+    "name": "spacing",
+    "value": {
+      "type": "usage",
       "name": "pd",
       "value": {
         "type": "component",
