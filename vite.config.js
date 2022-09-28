@@ -20,6 +20,7 @@ export default {
         loginAbout: path.resolve(__dirname, "src/login/about/index.html"),
         loginContact: path.resolve(__dirname, "src/login/contact.html"),
         onboarding: path.resolve(__dirname, "src/onboarding/index.html"),
+        spinner: path.resolve(__dirname, "src/spinner/index.html"),
       },
     },
   },

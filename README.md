@@ -1,6 +1,6 @@
-# RMS-Design
+# RLI Design System
 
-Source of truth for the UX/UI of the RLI-Management-System (RMS). Based on [Vite](https://vitejs.dev/).
+PLEASE NOTE: This repo shall gradually (from project to project) transform into a generic RLI design system. It's not there yet. This repo started out as the single source of truth for the UX/UI of the RLI-Management-System (RMS) and is technically based on [Vite](https://vitejs.dev/).
 
 ## About
 
@@ -8,13 +8,7 @@ This repo is a collection of elements, components, pages and ideas on creating t
 
 ## Live Preview (branch `main`)
 
-### RMS Design Vite
-
-https://rms-design-8d69fd10.netlify.app
-
-### RMS Design Storybook
-
-https://rms-design-storybook-95974c.netlify.app
+https://rli-design-4bc787.netlify.app
 
 ## Install (after doing `git clone`)
 
@@ -34,7 +28,7 @@ npm run dev
 npm run build
 ```
 
-Please note: to run the build step, usually is not needed. A developer develops by running `npm run dev`. After committing or merging your changes to the `main` branch, you find the build result [deployed on netlify](https://rms-design-8d69fd10-214d-46a8-a5cd-93888ceee417.netlify.app/) in under one minute processing time (as of writing 22s).
+Please note: to run the build step, usually is not needed. A developer develops by running `npm run dev`. After committing or merging your changes to the `main` branch, you find the build result [deployed on netlify](https://rli-design-4bc787.netlify.app) in under one minute processing time (as of writing 22s).
 
 ## Preview Project (in `dist/` folder)
 
