@@ -30,3 +30,11 @@ main {
 .bs-col-6 {
   @extend .col-lg-6;
 }
+
+.bs-col-4 {
+  @extend .col-lg-4;
+}
+
+.bs-col-3 {
+  @extend .col-lg-3;
+}

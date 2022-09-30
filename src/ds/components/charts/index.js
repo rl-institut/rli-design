@@ -21,6 +21,12 @@ const chartVariables = {
     top: 30,
     bottom: 20
   },
+  gridsm: {
+    left: 46,
+    right: 0,
+    top: 50,
+    bottom: 20
+  },
   tooltip: {
     textStyle: {
       color: '#002C50'
@@ -67,6 +73,7 @@ const values = {
 var dpSingleBar = echarts.init(document.getElementById('dp-single-bar'));
 var dpTwoBars = echarts.init(document.getElementById('dp-two-bars'));
 var dpComparisonBars1 = echarts.init(document.getElementById('dp-comparison-bars1'));
+var dpComparisonBars2 = echarts.init(document.getElementById('dp-comparison-bars2'));
 
 // Bar chart with single column
 const optionSingleBar = {
@@ -158,12 +165,7 @@ const optionTwoBarsComparison1 = {
     textStyle: values.titleStyle
   },
   tooltip: values.tooltip,
-  grid: {
-    left: 46,
-    right: 0,
-    top: 50,
-    bottom: 20
-  },
+  grid: chartVariables.gridsm,
   textStyle: values.textStyle,
   xAxis: { 
     type: 'category',
@@ -217,6 +219,67 @@ const optionTwoBarsComparison1 = {
   ]
 };
 
+const optionTwoBarsComparison2 = {
+  title: {
+    text: 'CO2-Emissionen (Mt)',
+    textStyle: values.titleStyle
+  },
+  tooltip: values.tooltip,
+  grid: chartVariables.gridsm,
+  textStyle: values.textStyle,
+  xAxis: { 
+    type: 'category',
+    data: [
+      '2021', 
+      '2035'
+    ],
+    axisLabel: values.axisLabel,
+    axisLine: values.axisLine,
+    axisTick: {
+      show: chartVariables.ticks.show
+    }
+  },
+  yAxis: {
+    type: 'value',
+    axisLabel: values.axisLabel
+  },
+  series: [
+    {
+      type: 'bar',
+      data: [
+        70,
+        {
+          value: 30,
+          itemStyle: {
+            color: chartVariables.colors.orange
+          }
+        }
+      ],
+      color: [
+        chartVariables.colors.grey
+      ],
+      barWidth: chartVariables.bars.smallWidth,
+      markLine: {
+        data: [
+          { 
+            yAxis: 19,
+            lineStyle: {
+              color: chartVariables.colors.orange,
+              width: 3,
+              type: 'solid'
+            }
+          }
+        ],
+        tooltip: {
+          show: false
+        },
+        symbol:['none', 'none']
+      }
+    }
+  ]
+};
+
 dpSingleBar.setOption(optionSingleBar);
 dpTwoBars.setOption(optionTwoBars);
 dpComparisonBars1.setOption(optionTwoBarsComparison1);
+dpComparisonBars2.setOption(optionTwoBarsComparison2);
