@@ -208,6 +208,9 @@ const optionTwoBarsComparison1 = {
             }
           }
         ],
+        tooltip: {
+          show: false
+        },
         symbol:['none', 'none']
       }
     }
