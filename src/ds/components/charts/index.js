@@ -1,3 +1,5 @@
+// VARIABLES
+
 const chartVariables = {
   colors: {
     primary: '#002C50',
@@ -17,6 +19,11 @@ const chartVariables = {
     top: 30,
     bottom: 20
   },
+  tooltip: {
+    textStyle: {
+      color: '#002C50'
+    }
+  },
   ticks: {
     show: false
   },
@@ -26,48 +33,50 @@ const chartVariables = {
   }
 };
 
+const values = {
+  axisLabel: {
+    fontSize: chartVariables.typography.fontSizeSmall,
+    fontWeight: chartVariables.typography.fontWeight
+  },
+  axisLine: {
+    lineStyle: {
+      color: chartVariables.colors.primary
+    }
+  },
+  textStyle: {
+    color: chartVariables.colors.primary
+  },
+  tooltip: {
+    textStyle: {
+      color: chartVariables.colors.primary
+    }
+  }
+}
+
+// CHARTS
+
 var dpSingleBar = echarts.init(document.getElementById('dp-single-bar'));
 var dpTwoBars = echarts.init(document.getElementById('dp-two-bars'));
 
+// Bar chart with single column
 const optionSingleBar = {
-  tooltip: {
-    textStyle: {
-      color: chartVariables.typography.fontColor
-    }
-  },
-  grid: {
-    left: chartVariables.grid.left,
-    right: chartVariables.grid.right,
-    bottom: chartVariables.grid.bottom,
-    top: chartVariables.grid.top
-  },
-  textStyle: {
-    color: chartVariables.typography.fontColor,
-  },
+  tooltip: values.tooltip,
+  grid: chartVariables.grid,
+  textStyle: values.textStyle,
   xAxis: { 
     type: 'category',
     data: [
       '2021'
     ],
-    axisLabel: {
-      fontSize: chartVariables.typography.fontSizeSmall,
-      fontWeight: chartVariables.typography.fontWeight
-    },
-    axisLine: {
-      lineStyle: {
-        color: chartVariables.colors.primary
-      }
-    },
+    axisLabel: values.axisLabel,
+    axisLine: values.axisLine,
     axisTick: {
       show: chartVariables.ticks.show
     }
   },
   yAxis: {
     type: 'value',
-    axisLabel: {
-      fontSize: chartVariables.typography.fontSizeSmall,
-      fontWeight: chartVariables.typography.fontWeight
-    },
+    axisLabel: values.axisLabel,
     name: 'EinwohnerInnen (Tsd.)',
     nameTextStyle: {
       align: 'left',
@@ -89,46 +98,26 @@ const optionSingleBar = {
   ]
 };
 
+// Bar chart with two columns
 const optionTwoBars = {
-  tooltip: {
-    textStyle: {
-      color: chartVariables.typography.fontColor
-    }
-  },
-  grid: {
-    left: chartVariables.grid.left,
-    right: chartVariables.grid.right,
-    bottom: chartVariables.grid.bottom,
-    top: chartVariables.grid.top
-  },
-  textStyle: {
-    color: chartVariables.typography.fontColor
-  },
+  tooltip: values.tooltip,
+  grid: chartVariables.grid,
+  textStyle: values.textStyle,
   xAxis: { 
     type: 'category',
     data: [
       '2021', 
       '2035'
     ],
-    axisLabel: {
-      fontSize: chartVariables.typography.fontSizeSmall,
-      fontWeight: chartVariables.typography.fontWeight
-    },
-    axisLine: {
-      lineStyle: {
-        color: chartVariables.colors.primary
-      }
-    },
+    axisLabel: values.axisLabel,
+    axisLine: values.axisLine,
     axisTick: {
       show: chartVariables.ticks.show
     }
   },
   yAxis: {
     type: 'value',
-    axisLabel: {
-      fontSize: chartVariables.typography.fontSizeSmall,
-      fontWeight: chartVariables.typography.fontWeight
-    },
+    axisLabel: values.axisLabel,
     name: 'Stromerzeugung (GWh)',
     nameTextStyle: {
       align: 'left',
@@ -151,7 +140,7 @@ const optionTwoBars = {
       color: [
         chartVariables.colors.grey
       ],
-      barWidth: chartVariables.bars.singleWidth
+      barWidth: chartVariables.bars.width
     }
   ]
 };
