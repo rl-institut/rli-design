@@ -3,7 +3,9 @@
 const chartVariables = {
   colors: {
     primary: '#002C50',
-    grey: '#C3D1DC'
+    grey: '#C3D1DC',
+    green: '#06DFA7',
+    orange: '#E6A100'
   },
   typography: {
     fontFamily: 'Roboto',
@@ -187,7 +189,7 @@ const optionTwoBarsComparison1 = {
         {
           value: 82,
           itemStyle: {
-            color: chartVariables.colors.primary
+            color: chartVariables.colors.green
           }
         }
       ],
