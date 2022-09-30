@@ -196,7 +196,20 @@ const optionTwoBarsComparison1 = {
       color: [
         chartVariables.colors.grey
       ],
-      barWidth: chartVariables.bars.smallWidth
+      barWidth: chartVariables.bars.smallWidth,
+      markLine: {
+        data: [
+          { 
+            yAxis: 93,
+            lineStyle: {
+              color: chartVariables.colors.green,
+              width: 3,
+              type: 'solid'
+            }
+          }
+        ],
+        symbol:['none', 'none']
+      }
     }
   ]
 };
