@@ -17,6 +17,9 @@ const chartVariables = {
     top: 30,
     bottom: 20
   },
+  ticks: {
+    show: false
+  },
   bars: {
     width: 30,
     singleWidth: 40
@@ -54,6 +57,9 @@ const optionSingleBar = {
       lineStyle: {
         color: chartVariables.colors.primary
       }
+    },
+    axisTick: {
+      show: chartVariables.ticks.show
     }
   },
   yAxis: {
@@ -96,7 +102,7 @@ const optionTwoBars = {
     top: chartVariables.grid.top
   },
   textStyle: {
-    color: chartVariables.typography.fontColor,
+    color: chartVariables.typography.fontColor
   },
   xAxis: { 
     type: 'category',
@@ -112,6 +118,9 @@ const optionTwoBars = {
       lineStyle: {
         color: chartVariables.colors.primary
       }
+    },
+    axisTick: {
+      show: chartVariables.ticks.show
     }
   },
   yAxis: {
