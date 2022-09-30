@@ -10,6 +10,16 @@ const chartVariables = {
     fontWeight: 300,
     fontColor: '#002C50',
     lineHeight: 20
+  },
+  grid: {
+    left: 46,
+    right: 0,
+    top: 30,
+    bottom: 20
+  },
+  bars: {
+    width: 30,
+    singleWidth: 40
   }
 };
 
@@ -24,10 +34,10 @@ const optionSingleBar = {
     }
   },
   grid: {
-    left: '30%',
-    right: '30%',
-    bottom: 20,
-    top: 30
+    left: chartVariables.grid.left,
+    right: chartVariables.grid.right,
+    bottom: chartVariables.grid.bottom,
+    top: chartVariables.grid.top
   },
   textStyle: {
     color: chartVariables.typography.fontColor,
@@ -69,7 +79,7 @@ const optionSingleBar = {
       color: [
         chartVariables.colors.grey
       ],
-      barWidth: 40
+      barWidth: chartVariables.bars.singleWidth
     }
   ]
 };
