@@ -11,7 +11,7 @@ const chartVariables = {
     fontSizeSmall: 12,
     fontWeight: 300,
     fontColor: '#002C50',
-    lineHeight: 20
+    lineHeight: 16
   },
   grid: {
     left: 46,
@@ -29,11 +29,18 @@ const chartVariables = {
   },
   bars: {
     width: 30,
-    singleWidth: 40
+    singleWidth: 40,
+    smallWidth: 20
   }
 };
 
 const values = {
+  titleStyle: {
+    color: chartVariables.colors.primary,
+    fontSize: chartVariables.typography.fontSize,
+    fontWeight: chartVariables.typography.fontWeight,
+    lineHeight: chartVariables.typography.lineHeight
+  },
   axisLabel: {
     fontSize: chartVariables.typography.fontSizeSmall,
     fontWeight: chartVariables.typography.fontWeight
@@ -57,9 +64,14 @@ const values = {
 
 var dpSingleBar = echarts.init(document.getElementById('dp-single-bar'));
 var dpTwoBars = echarts.init(document.getElementById('dp-two-bars'));
+var dpComparisonBars1 = echarts.init(document.getElementById('dp-comparison-bars1'));
 
 // Bar chart with single column
 const optionSingleBar = {
+  title: {
+    text: 'EinwohnerInnen (Tsd.)',
+    textStyle: values.titleStyle
+  },
   tooltip: values.tooltip,
   grid: chartVariables.grid,
   textStyle: values.textStyle,
@@ -76,13 +88,7 @@ const optionSingleBar = {
   },
   yAxis: {
     type: 'value',
-    axisLabel: values.axisLabel,
-    name: 'EinwohnerInnen (Tsd.)',
-    nameTextStyle: {
-      align: 'left',
-      fontSize: chartVariables.typography.fontSize,
-      fontWeight: chartVariables.typography.fontWeight
-    }
+    axisLabel: values.axisLabel
   },
   series: [
     { 
@@ -100,6 +106,10 @@ const optionSingleBar = {
 
 // Bar chart with two columns
 const optionTwoBars = {
+  title: {
+    text: 'Stromerzeugung (GWh)',
+    textStyle: values.titleStyle
+  },
   tooltip: values.tooltip,
   grid: chartVariables.grid,
   textStyle: values.textStyle,
@@ -117,13 +127,7 @@ const optionTwoBars = {
   },
   yAxis: {
     type: 'value',
-    axisLabel: values.axisLabel,
-    name: 'Stromerzeugung (GWh)',
-    nameTextStyle: {
-      align: 'left',
-      fontSize: chartVariables.typography.fontSize,
-      fontWeight: chartVariables.typography.fontWeight
-    }
+    axisLabel: values.axisLabel
   },
   series: [
     {
@@ -145,5 +149,56 @@ const optionTwoBars = {
   ]
 };
 
+// 2 bar charts with two columns for comparison
+const optionTwoBarsComparison1 = {
+  title: {
+    text: 'Anteil Erneuerbare \nEnergien (%)',
+    textStyle: values.titleStyle
+  },
+  tooltip: values.tooltip,
+  grid: {
+    left: 46,
+    right: 0,
+    top: 50,
+    bottom: 20
+  },
+  textStyle: values.textStyle,
+  xAxis: { 
+    type: 'category',
+    data: [
+      '2021', 
+      '2035'
+    ],
+    axisLabel: values.axisLabel,
+    axisLine: values.axisLine,
+    axisTick: {
+      show: chartVariables.ticks.show
+    }
+  },
+  yAxis: {
+    type: 'value',
+    axisLabel: values.axisLabel
+  },
+  series: [
+    {
+      type: 'bar',
+      data: [
+        45,
+        {
+          value: 82,
+          itemStyle: {
+            color: chartVariables.colors.primary
+          }
+        }
+      ],
+      color: [
+        chartVariables.colors.grey
+      ],
+      barWidth: chartVariables.bars.smallWidth
+    }
+  ]
+};
+
 dpSingleBar.setOption(optionSingleBar);
 dpTwoBars.setOption(optionTwoBars);
+dpComparisonBars1.setOption(optionTwoBarsComparison1);
