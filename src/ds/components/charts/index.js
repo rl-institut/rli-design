@@ -5,7 +5,9 @@ const chartVariables = {
     primary: '#002C50',
     grey: '#C3D1DC',
     green: '#06DFA7',
-    orange: '#E6A100'
+    orange: '#E6A100',
+    greenDarker: '#00BC8C',
+    orangeDarker: '#BE880B'
   },
   typography: {
     fontFamily: 'Roboto',
@@ -39,13 +41,16 @@ const chartVariables = {
     width: 30,
     singleWidth: 40,
     smallWidth: 20
+  },
+  markLine: {
+    width: 1
   }
 };
 
 const values = {
   titleStyle: {
     color: chartVariables.colors.primary,
-    fontSize: chartVariables.typography.fontSize,
+    fontSize: chartVariables.typography.fontSizeSmall,
     fontWeight: chartVariables.typography.fontWeight,
     lineHeight: chartVariables.typography.lineHeight
   },
@@ -204,8 +209,8 @@ const optionTwoBarsComparison1 = {
           { 
             yAxis: 93,
             lineStyle: {
-              color: chartVariables.colors.green,
-              width: 3,
+              color: chartVariables.colors.greenDarker,
+              width: chartVariables.markLine.width,
               type: 'solid'
             }
           }
@@ -264,8 +269,8 @@ const optionTwoBarsComparison2 = {
           { 
             yAxis: 19,
             lineStyle: {
-              color: chartVariables.colors.orange,
-              width: 3,
+              color: chartVariables.colors.orangeDarker,
+              width: chartVariables.markLine.width,
               type: 'solid'
             }
           }
