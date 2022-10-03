@@ -256,8 +256,12 @@ const optionTwoBarsComparison2 = {
         {
           value: 30,
           itemStyle: {
-            color: chartVariables.colors.orange
-          }
+            color: chartVariables.colors.orange,
+            decal: {
+              show: true,
+              symbol: 'triangle'
+            }
+          },
         }
       ],
       color: [
