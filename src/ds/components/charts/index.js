@@ -83,6 +83,7 @@ var dpComparisonBars1 = echarts.init(document.getElementById('dp-comparison-bars
 var dpComparisonBars2 = echarts.init(document.getElementById('dp-comparison-bars2'));
 var dpComparisonBarsPattern1 = echarts.init(document.getElementById('dp-comparison-bars-pattern1'));
 var dpComparisonBarsPattern2 = echarts.init(document.getElementById('dp-comparison-bars-pattern2'));
+var dpLine = echarts.init(document.getElementById('dp-line'));
 
 // Bar chart with single column
 const optionSingleBar = {
@@ -427,9 +428,45 @@ const optionTwoBarsComparisonPattern2 = {
   ]
 };
 
+const optionLine = {
+  title: {
+    text: 'Bevölkerungsentwicklung (Personen in Tsd.) \n(Prognose)',
+    textStyle: values.titleStyle
+  },
+  tooltip: values.tooltip,
+  grid: chartVariables.gridsm,
+  textStyle: values.textStyle,
+  xAxis: {
+    type: 'category',
+    data: [
+      '2020',
+      '2035',
+      '2050'
+    ]
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      data: [52, 40, 28],
+      type: 'line',
+      symbol: 'circle',
+      symbolSize: 6,
+      lineStyle: {
+        color: chartVariables.colors.primary
+      },
+      itemStyle: {
+        color: chartVariables.colors.primary
+      }
+    }
+  ]
+};
+
 dpSingleBar.setOption(optionSingleBar);
 dpTwoBars.setOption(optionTwoBars);
 dpComparisonBars1.setOption(optionTwoBarsComparison1);
 dpComparisonBars2.setOption(optionTwoBarsComparison2);
 dpComparisonBarsPattern1.setOption(optionTwoBarsComparisonPattern1);
 dpComparisonBarsPattern2.setOption(optionTwoBarsComparisonPattern2);
+dpLine.setOption(optionLine);
