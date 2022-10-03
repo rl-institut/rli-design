@@ -27,7 +27,7 @@ const chartVariables = {
   },
   gridsm: {
     left: 46,
-    right: 0,
+    right: 30,
     top: 50,
     bottom: 20
   },
