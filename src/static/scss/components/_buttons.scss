@@ -7,3 +7,32 @@
 .bs-btn-primary {
   @extend .btn-primary;
 }
+
+.button {
+  @extend .btn;
+  letter-spacing: $c-letter-spacing;
+
+  &--primary {
+    @extend .btn-primary;
+  }
+
+  &--secondary {
+    @extend .btn-info;
+  }
+
+  &--ghost {
+    @extend .btn-outline-primary;
+  }
+
+  &--danger {
+    @extend .btn-danger;
+  }
+
+  &--sm {
+    @extend .btn-sm;
+  }
+
+  &--lg {
+    @extend .btn-lg;
+  }
+}

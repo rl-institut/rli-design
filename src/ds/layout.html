@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RLI Design System</title>
+    <link rel="stylesheet" type="text/css" href="/static/scss/styles.scss" />
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="login-navbar">
+        <div class="login-navbar__container">
+          <a class="login-navbar__brand" href="/" aria-current="page">
+            <img src="/static/logos/RMS_logo_notitle.svg" alt="RMS Logo" width="97.5" height="30">
+          </a>
+          <button class="login-navbar__toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="login-navbar__toggler-icon"></span>
+          </button>
+          <div class="login-offcanvas offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="login-offcanvas__header">
+              <h5 class="login-offcanvas__title" id="offcanvasNavbarLabel">RMS Login</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="login-oc-body">
+              <ul class="login-oc-body__nav">
+                <li>
+                  <a class="login-oc-body__link" href="/login/about/">About</a>
+                </li>
+                <li>
+                  <a class="login-oc-body__link" href="/login/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="login-main">
+      <section class="ds">
+        <div class="ds__nav">
+          <ul class="ds-sidebarnav">
+            <li class="ds-sidebarnav__item">
+              <a class="ds-sidebarnav__link ds-sidebarnav__link--collapse" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                Get started
+              </a>
+              <div class="collapse show" id="home-collapse">
+                <ul class="ds-sidebarnav ds-sidebarnav--subcat">
+                  <li><a href="/ds/index.html" class="ds-sidebarnav__link ds-sidebarnav__link--subpage">Overview</a></li>
+                  <li><a href="/ds/design-tokens/index.html" class="ds-sidebarnav__link ds-sidebarnav__link--subpage">Design tokens</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="ds-sidebarnav__item">
+              <a class="ds-sidebarnav__link ds-sidebarnav__link--collapse" data-bs-toggle="collapse" data-bs-target="#general-collapse" aria-expanded="false">
+                General
+              </a>
+              <div class="collapse" id="general-collapse">
+                <ul class="ds-sidebarnav ds-sidebarnav--subcat">
+                  <li><a href="/ds/general/layout/index.html" class="ds-sidebarnav__link ds-sidebarnav__link--subpage">Layout</a></li>
+                  <li><a href="/ds/general/colors/index.html" class="ds-sidebarnav__link ds-sidebarnav__link--subpage">Colors</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="ds-sidebarnav__item">
+              <a class="ds-sidebarnav__link ds-sidebarnav__link--collapse" data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+                Components
+              </a>
+              <div class="collapse" id="components-collapse">
+                <ul class="ds-sidebarnav ds-sidebarnav--subcat">
+                  <li><a href="/ds/components/buttons/index.html" class="ds-sidebarnav__link ds-sidebarnav__link--subpage">Buttons</a></li>
+                  <li><a href="/ds/components/charts/index.html" class="ds-sidebarnav__link ds-sidebarnav__link--subpage">Charts</a></li>
+                  <li><a href="/ds/components/table/index.html" class="ds-sidebarnav__link ds-sidebarnav__link--subpage">Tables</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        {% block content %}{% endblock %}
+      </section>
+    </main>
+
+    <footer class="login-footer">
+      <div class="login-footer__container">
+        <span class="login-footer__name">Reiner Lemoine Institut</span>
+        <span><a href="#">v3.42.1</a></span>
+      </div>
+    </footer>
+
+    <script type="module" src="/static/js/main.js"></script>
+    <script type="module" src="/static/js/vendors/prism.js"></script>
+    {% block js %}{% endblock %}
+  </body>
+</html>

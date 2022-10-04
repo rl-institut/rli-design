@@ -1,0 +1,152 @@
+{% extends "src/ds/layout.html" %}
+
+{% block content %}
+
+<div class="ds__container">
+  <h1>Buttons</h1>
+  <div class="ds__item bs-row">
+    <div class="bs-col-8">
+      <p>The buttons are built on top of <a href="https://getbootstrap.com/docs/5.0/components/buttons/">Bootstrap buttons</a> and can be used anywhere on the app.</p>
+      <select class="bs-form-select bs-form-select--small" id="js-select-type" aria-label="Change button types options">
+        <option value="button--primary" selected>Primary</option>
+        <option value="button--secondary">Secondary</option>
+        <option value="button--ghost">Ghost</option>
+        <option value="button--danger">Danger</option>
+      </select>
+      <select class="bs-form-select bs-form-select--small" id="js-select-size" aria-label="Change sizes options">
+        <option value="button--sm">Small</option>
+        <option value="button--md" selected>Medium</option>
+        <option value="button--lg">Large</option>
+      </select>
+    </div>
+  </div>
+  <div class="ds__item ds__item--border ds__item--center bs-row" id="js-bg-color">
+    <div id="js-button">
+      <button type="button" class="button button--primary button--md">Primary</button>
+    </div>
+  </div>
+  <div class="ds__item bs-row">
+    <div class="bs-row">
+      <div class="bs-col-6">
+        CSS class modifier:
+      </div>
+    </div>
+    <div id="js-button-css-class" class="bs-col ds__item--code">
+      <code>.button .button--primary .button--md</code>
+    </div>
+  </div>
+  <div class="ds__item bs-row">
+    <div class="bs-col">
+      <pre>
+        <code id="js-button-code" class="language-css"></code>
+      </pre>
+    </div>
+  </div>
+  <div class="ds__item bs-row">
+    <div class="bs-col">
+      <h2>Usage</h2>
+      <h3>Modifiers</h3>
+      <h4>Types</h4>
+      <table class="dt-table">
+        <thead>
+          <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Use case</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Primary</th>
+            <td>Only once per page. For call to actions and when it is necessary to stand out.</td>
+          </tr>
+          <tr>
+            <th scope="row">Secondary</th>
+            <td>There can be several on a single page, but best is only one. For important actions.</td>
+          </tr>
+          <tr>
+            <th scope="row">Ghost</th>
+            <td>There can be several on a single page, but best is only one. For less important actions.</td>
+          </tr>
+          <tr>
+            <th scope="row">Danger</th>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>Sizes</h4>
+      <table class="dt-table">
+        <thead>
+          <tr>
+            <th scope="col">Size</th>
+            <th scope="col">Use case</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Small</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Medium</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Large</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">XLarge</th>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>Alignment</h4>
+      <table class="dt-table">
+        <thead>
+          <tr>
+            <th scope="col">Alignment</th>
+            <th scope="col">Use case</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Left-justified</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Center</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Right-justified</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Full-span</th>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="ds__item bs-row">
+    <table class="dt-table">
+      <thead>
+        <tr>
+          <th scope="col">Token</th>
+          <th scope="col">Role</th>
+          <th scope="col">Variable</th>
+          <th scope="col">Utility</th>
+        </tr>
+      </thead>
+      <tbody id="js-button-dtTable">
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script type="module" src="/ds/components/buttons/index.js"></script>
+{% endblock %}

@@ -122,7 +122,7 @@
       @extend .p-0;
 
       &:hover {
-        @extend .text-info;
+        @extend .text-primary;
       }
     }
 
@@ -130,12 +130,12 @@
       @extend .btn;
       @extend .btn-light;
       @extend .text-start;
-      @extend .text-primary;
+      @extend .text-info;
       @extend .w-100;
       @extend .ps-2;
 
       &:hover {
-        @extend .bg-info;
+        @extend .bg-primary;
         @extend .text-white;
       }
     }
@@ -144,6 +144,7 @@
   &__link {
     @extend .position-relative;
     @extend .nav-link;
+    @extend .text-info;
     @extend .link-primary;
     @extend .d-inline-flex;
     @extend .w-100;
@@ -156,7 +157,7 @@
     }
 
     &:hover {
-      @extend .bg-info;
+      @extend .bg-primary;
       @extend .text-white;
     }
 
@@ -165,7 +166,8 @@
     &--active:active,
     &--active:focus {
       @extend .link-light;
-      @extend .bg-primary;
+      @extend .text-white;
+      @extend .bg-info;
     }
 
     svg {
@@ -251,6 +253,7 @@
 
   &__link {
     @extend .nav-link;
+    @extend .text-info;
     @extend .bg-transparent;
     @extend .border-0;
     @extend .fw-normal;
