@@ -1,0 +1,12 @@
+{% extends "src/charts/layout.html" %}
+
+{% block content %}
+  <h1>Charts</h1>
+  <div id="barChart" style="width: 400px;height:400px;"></div>
+    <a href="/"><button type="button" class="btn btn-primary">go back...</button></a>
+{% endblock %}
+
+
+{% block js %}
+<script type="module" src="/charts/charts.js"></script>
+{% endblock %}

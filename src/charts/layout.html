@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RLI-Design</title>
+    <link rel="stylesheet" type="text/css" href="/static/scss/styles.scss" />
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.js"></script>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header class="db-header">
+      <div class="db-header__name"></div>
+      <button
+        class="db-header__toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#sidebarMenu"
+        aria-controls="sidebarMenu"
+        aria-expanded="true"
+        aria-label="Toggle navigation"
+      >
+        <span class="db-header__toggler-icon"></span>
+      </button>
+    </header>
+
+    <div class="db-container">
+      <div class="db-container__row">
+        <main class="db-main">{% block content %}{% endblock %}</main>
+      </div>
+    </div>
+
+    <script type="module" src="/static/js/main.js"></script>
+    {% block js %}{% endblock %}
+  </body>
+</html>
