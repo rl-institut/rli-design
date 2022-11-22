@@ -1,0 +1,23 @@
+{% extends "src/ds/layout.html" %}
+
+{% block content %}
+
+<div class="ds__container">
+  <h1>Side panels</h1>
+  <div class="ds__item bs-row">
+    <div class="bs-col">
+      <p>Here is a basic example from the DigiPlan tool.</p>
+    </div>
+  </div>
+  <div class="ds__item bs-row">
+    Test
+  </div>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script type="module" src="/ds/components/side-panels/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+{% endblock %}
