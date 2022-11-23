@@ -3,6 +3,7 @@
 
 $panel-width-sm: 22rem;
 $panel-width: 26rem;
+$panel-slider-height: 6.5rem;
 $icon-margin-right: 0.25rem;
 
 .panel {
@@ -50,7 +51,7 @@ $icon-margin-right: 0.25rem;
     @extend .py-4;
 
     &__heading {
-      @extend .px-4;
+      @extend .px-3;
       @extend .fs-7;
       @extend .fw-light;
       @extend .text-uppercase;
@@ -64,20 +65,29 @@ $icon-margin-right: 0.25rem;
     &__tabs {
       .nav-tabs,
       .c-slider {
-        @extend .px-4;
+        @extend .px-3;
       }
 
       .c-slider {
-        @extend .pb-3;
+        @extend .position-relative;
+        height: $panel-slider-height;
       }
 
       .c-slider.active {
-        @extend .px-4;
+        @extend .px-3;
         @extend .bg-light;
         @extend .border-start;
         @extend .border-5;
         @extend .border-5;
         border-color: #A6BDDB;
+      }
+
+      .c-slider + .sidepanel {
+        display: none;
+      }
+
+      .c-slider.active + .sidepanel {
+        display: block;
       }
     }
 
@@ -103,6 +113,20 @@ $icon-margin-right: 0.25rem;
     button svg {
       @include translateY(-2px);
       margin-right: $icon-margin-right;
+    }
+  }
+
+  .sidepanel {
+    @extend .position-absolute;
+    @extend .bg-light;
+    @extend .p-3;
+    @include translateY(-$panel-slider-height);
+    width: 24rem;
+    left: $panel-width;
+
+    &__heading {
+      @extend .fs-7;
+      @extend .fw-bold;
     }
   }
 }
