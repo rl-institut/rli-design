@@ -9,6 +9,7 @@ $icon-margin-right: 0.25rem;
   @extend .d-flex;
   @extend .flex-column;
   @extend .h-auto;
+  @extend .bg-white;
   @extend .shadow;
   width: 25rem;
 
@@ -81,101 +82,6 @@ $icon-margin-right: 0.25rem;
     button svg {
       @include translateY(-2px);
       margin-right: $icon-margin-right;
-    }
-  }
-}
-
-.footer {
-  @extend .flex-shrink-0;
-  @extend .border-top;
-  @extend .bg-white;
-  @extend .position-sticky;
-  @extend .bottom-0;
-  @extend .w-auto;
-  z-index: 9;
-
-  &__btns {
-    @extend .d-flex;
-    @extend .flex-row;
-    @extend .px-4;
-    @extend .py-2;
-    @extend .border-bottom;
-
-    button {
-      @extend .w-50;
-    }
-  }
-
-  &__logos {
-    @extend .d-flex;
-    @extend .flex-row;
-    @extend .text-center;
-    @extend .pt-2;
-
-    .logo--bmbf {
-      @extend .text-end;
-
-      img {
-        width: 8rem;
-      }
-    }
-  }
-
-  &__logo {
-    @extend .flex-fill;
-
-    &--rli {
-      @extend .text-center;
-      @extend .ps-2;
-
-      img {
-        width: 4.5rem;
-      }
-    }
-
-    &--eaa {
-      @extend .text-start;
-      @extend .ps-4;
-
-      img {
-        @include translateX(1rem);
-        width: 5rem;
-      }
-    }
-
-    &--rg {
-      @extend .text-end;
-
-      img {
-        @include translateY(-0.5rem);
-        width: 9rem;
-      }
-    }
-  }
-
-  &__links {
-    height: 1.5rem;
-
-    ul {
-      @include ul-horizontal;
-      @extend .d-flex;
-      @extend .flex-row;
-      @extend .justify-content-center;
-    }
-
-    li {
-      @extend .d-inline-block;
-      @extend .fs-7;
-
-      button {
-        @extend .bg-white;
-        @extend .border-0;
-        @extend .link-primary;
-      }
-    }
-
-    li:not(:last-of-type) {
-      @extend .pe-2;
     }
   }
 }
