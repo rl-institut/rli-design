@@ -74,6 +74,10 @@ $icon-margin-right: 0.25rem;
       .c-slider.active {
         @extend .px-4;
         @extend .bg-light;
+        @extend .border-start;
+        @extend .border-5;
+        @extend .border-5;
+        border-color: #A6BDDB;
       }
     }
 
