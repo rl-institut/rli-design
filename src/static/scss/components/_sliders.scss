@@ -2,7 +2,7 @@
 
 .irs.irs--flat {
   .irs-line {
-    @extend .bg-light;
+    background-color: $gray-200;
   }
 
   .irs-from,

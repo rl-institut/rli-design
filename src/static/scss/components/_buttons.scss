@@ -24,6 +24,15 @@
     @extend .btn-outline-primary;
   }
 
+  &--link {
+    @extend .btn-link;
+  }
+
+  &--transparent {
+    @extend .btn-link;
+    @extend .p-0;
+  }
+
   &--danger {
     @extend .btn-danger;
   }

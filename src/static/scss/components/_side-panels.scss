@@ -3,7 +3,7 @@
 
 $panel-width-sm: 22rem;
 $panel-width: 26rem;
-$panel-slider-height: 6.5rem;
+$panel-slider-height: 7rem;
 $icon-margin-right: 0.25rem;
 
 .panel {
@@ -88,6 +88,19 @@ $icon-margin-right: 0.25rem;
 
       .c-slider.active + .sidepanel {
         display: block;
+      }
+
+      .c-slider__label {
+        @extend .d-flex;
+        @extend .flex-row;
+        @extend .justify-content-between;
+        @extend .pb-2;
+
+        &--more button {
+          @extend .text-primary;
+          @extend .fs-7;
+          @extend .fw-bold;
+        }
       }
     }
 
