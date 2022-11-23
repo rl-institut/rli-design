@@ -8,6 +8,7 @@ $icon-margin-right: 0.25rem;
 .panel {
   @extend .d-flex;
   @extend .flex-column;
+  @extend .p-0;
   @extend .h-auto;
   @extend .bg-white;
   @extend .shadow;
@@ -42,7 +43,6 @@ $icon-margin-right: 0.25rem;
 
   &__settings {
     @extend .bg-white;
-    @extend .px-4;
     @extend .pb-3;
   }
 
@@ -50,6 +50,7 @@ $icon-margin-right: 0.25rem;
     @extend .py-4;
 
     &__heading {
+      @extend .px-4;
       @extend .fs-7;
       @extend .fw-light;
       @extend .text-uppercase;
@@ -57,6 +58,22 @@ $icon-margin-right: 0.25rem;
       svg {
         @include translateY(-2px);
         margin-right: $icon-margin-right;
+      }
+    }
+
+    &__tabs {
+      .nav-tabs,
+      .c-slider {
+        @extend .px-4;
+      }
+
+      .c-slider {
+        @extend .pb-3;
+      }
+
+      .c-slider.active {
+        @extend .px-4;
+        @extend .bg-light;
       }
     }
 
@@ -82,18 +99,6 @@ $icon-margin-right: 0.25rem;
     button svg {
       @include translateY(-2px);
       margin-right: $icon-margin-right;
-    }
-  }
-}
-
-.dropdown-menu.sidepanel {
-  @extend .p-3;
-  width: 24rem;
-
-  .sidepanel {
-    &__title {
-      @extend .fs-7;
-      @extend .fw-bold;
     }
   }
 }

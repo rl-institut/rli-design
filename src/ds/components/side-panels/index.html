@@ -9,7 +9,7 @@
       <p>Here is a basic example from the DigiPlan tool.</p>
     </div>
   </div>
-  <div class="ds__item bs-row" style="height:80vw; background-color: lightsteelblue;">
+  <div class="ds__item bs-row" style="height:80vh; background-color: lightsteelblue;">
     <div class="panel">
       <div class="panel__settings">
         <div class="panel-item">
@@ -20,111 +20,39 @@
             Flächen
           </h2>
           <div class="panel-item__tabs">
-            <ul class="c-tabs nav nav-tabs" id="settings_area_tab" role="tablist">
-              <li class="c-tabs__nav-item" role="presentation">
-                <button class="c-tabs__nav-link active" id="wind-tab" data-bs-toggle="tab" data-bs-target="#wind" type="button" role="tab" aria-controls="wind" aria-selected="true">
-                  <svg width="16" height="16" version="1.1" fill="currentColor" viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m8.4667 0.025321v4.2762c-0.89922 0.23858-1.5663 1.0686-1.5663 2.0423 0 0.1682 0.019787 0.33204 0.057361 0.48938l-3.3874 1.956 0.52917 0.91571 3.3548-1.9358c0.26835 0.29432 0.61807 0.51241 1.0123 0.61702v7.4889h-6.35v1.0583h6.35v5.17e-4h1.0589v-5.17e-4h6.3495v-1.0583h-6.3495v-7.4889c0.41594-0.11036 0.7822-0.34745 1.0557-0.66663l3.4422 1.9854 0.52917-0.91571-3.5037-2.0226c3.4e-5 -1.65e-4 -3.4e-5 -3.517e-4 0-5.168e-4 0.027938-0.13666 0.042891-0.27777 0.042891-0.4222 0-0.97361-0.66709-1.8037-1.5663-2.0423v-4.2762h-1.0589zm0.52968 5.2658c0.5765 2e-7 1.0366 0.46232 1.0366 1.0526s-0.46013 1.0526-1.0366 1.0526c-0.5765 0-1.0371-0.46232-1.0371-1.0526-1e-7 -0.59033 0.46065-1.0526 1.0371-1.0526z"></path>
-                  </svg>
-                  Windflächen
-                </button>
-              </li>
-              <li class="c-tabs__nav-item" role="presentation">
-                <button class="c-tabs__nav-link" id="pv-tab" data-bs-toggle="tab" data-bs-target="#pv" type="button" role="tab" aria-controls="pv" aria-selected="false" tabindex="-1">
-                  <svg width="16" height="16" version="1.1" fill="currentColor" viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m4.3692 1.0589-3.4923 11.64h0.71107 2.6443v3.176h1.0589v-3.176h6.3516v3.176h1.0563v-3.176h3.3574l-3.4918-11.64h-8.1954zm0.78703 1.0583h2.7812v2.1151h-3.4163l0.6351-2.1151zm3.8401 0h2.7812l0.6351 2.1151h-3.4163v-2.1151zm-4.793 3.174h3.7341v2.1172h-4.3692l0.6351-2.1172zm4.793 0h3.7341l0.6351 2.1172h-4.3692v-2.1172zm-5.7459 3.1755h4.6871v3.176h-5.6405l0.95343-3.176zm5.7459 0h4.6871l0.95343 3.176h-5.6405v-3.176z"></path>
-                  </svg>
-                  PV-Freiflächen
-                </button>
-              </li>
-            </ul>
             <div class="c-tabs__content">
               <div class="c-tabs__pane fade show active" id="wind" role="tabpanel" aria-labelledby="wind-tab">
+                <div class="c-slider active">
+                  <div class="c-slider__label">
+                    <span><label for="id_bio">Biomasse und Biogas [MW]:</label></span>
+                  </div>
+                  <span class="irs irs--flat js-irs-0"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">0</span><span class="irs-max" style="visibility: visible;">100</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 66.725%;">71</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 70.003%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 67.6291%;"><i></i><i></i><i></i></span></span><input type="text" name="bio" class="js-range-slider irs-hidden-input" data-min="0" data-max="100" data-from="71" data-grid="" required="" id="id_bio" tabindex="-1" readonly="">
+                </div>
+              
                 <div class="c-slider">
-          <div class="c-slider__label">
-            <span><label for="id_bio">Biomasse und Biogas [MW]:</label></span>
-      
-          </div>
-          <span class="irs irs--flat js-irs-0"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">0</span><span class="irs-max" style="visibility: visible;">100</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 66.725%;">71</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 70.003%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 67.6291%;"><i></i><i></i><i></i></span></span><input type="text" name="bio" class="js-range-slider irs-hidden-input" data-min="0" data-max="100" data-from="71" data-grid="" required="" id="id_bio" tabindex="-1" readonly="">
-        </div>
-      
-        <div class="c-slider">
-          <div class="c-slider__label" style="position: relative;">
-            <span><label for="id_conventional">Konventionelle Kraftwerke [MW]:</label></span>
-            <div class="btn-group dropend" style="display: flex; flex-direction: row; justify-content: end;">
-              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="width:100%">
-                Wind
-              </button>
-              <div class="dropdown-menu sidepanel">
-                <p class="sidepanel__title">Detaileinstellungen</p>
-              </div>
-            </div>
-          </div>
-          <span class="irs irs--flat js-irs-1"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">0</span><span class="irs-max" style="visibility: visible;">216</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 30.4056%;">71</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 33.6836%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 31.3098%;"><i></i><i></i><i></i></span></span><input type="text" name="conventional" class="js-range-slider irs-hidden-input" data-min="0" data-max="216" data-from="71" data-grid="" required="" id="id_conventional" tabindex="-1" readonly="">
-        </div>
-      
-        <div class="c-slider">
-          <div class="c-slider__label">
-            <span><label for="id_pv_ground">Photovoltaik (Freiflächenanlagen) [MW]:</label></span>
-      
-          </div>
-          <span class="irs irs--flat js-irs-2"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: hidden;">0</span><span class="irs-max" style="visibility: visible;">2 125</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 2.27842%;">71</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 5.55643%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 3.18254%;"><i></i><i></i><i></i></span></span><input type="text" name="pv_ground" class="js-range-slider irs-hidden-input" data-min="0" data-max="2125" data-from="71" data-grid="" required="" id="id_pv_ground" tabindex="-1" readonly="">
-        </div>
-      
-        <div class="c-slider">
-          <div class="c-slider__label">
-            <span><label for="id_pv_roof">Photvoltaik (Dachanlagen) [MW]:</label></span>
-      
-          </div>
-          <span class="irs irs--flat js-irs-3"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">100</span><span class="irs-max" style="visibility: visible;">400</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 29.9518%;">200</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 34.1246%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 31.7507%;"><i></i><i></i><i></i></span></span><input type="text" name="pv_roof" class="js-range-slider irs-hidden-input" data-min="100" data-max="400" data-from="200" data-grid="" required="" id="id_pv_roof" tabindex="-1" readonly="">
-        </div>
+                  <div class="c-slider__label" style="position: relative;">
+                    <span><label for="id_conventional">Konventionelle Kraftwerke [MW]:</label></span>
+                  </div>
+                  <span class="irs irs--flat js-irs-1"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">0</span><span class="irs-max" style="visibility: visible;">216</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 30.4056%;">71</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 33.6836%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 31.3098%;"><i></i><i></i><i></i></span></span><input type="text" name="conventional" class="js-range-slider irs-hidden-input" data-min="0" data-max="216" data-from="71" data-grid="" required="" id="id_conventional" tabindex="-1" readonly="">
+                </div>
+              
+                <div class="c-slider">
+                  <div class="c-slider__label">
+                    <span><label for="id_pv_ground">Photovoltaik (Freiflächenanlagen) [MW]:</label></span>
+              
+                  </div>
+                  <span class="irs irs--flat js-irs-2"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: hidden;">0</span><span class="irs-max" style="visibility: visible;">2 125</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 2.27842%;">71</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 5.55643%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 3.18254%;"><i></i><i></i><i></i></span></span><input type="text" name="pv_ground" class="js-range-slider irs-hidden-input" data-min="0" data-max="2125" data-from="71" data-grid="" required="" id="id_pv_ground" tabindex="-1" readonly="">
+                </div>
+              
+                <div class="c-slider">
+                  <div class="c-slider__label">
+                    <span><label for="id_pv_roof">Photvoltaik (Dachanlagen) [MW]:</label></span>
+              
+                  </div>
+                  <span class="irs irs--flat js-irs-3"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">100</span><span class="irs-max" style="visibility: visible;">400</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 29.9518%;">200</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 34.1246%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 31.7507%;"><i></i><i></i><i></i></span></span><input type="text" name="pv_roof" class="js-range-slider irs-hidden-input" data-min="100" data-max="400" data-from="200" data-grid="" required="" id="id_pv_roof" tabindex="-1" readonly="">
+                </div>
               </div>
               <div class="c-tabs__pane fade" id="pv" role="tabpanel" aria-labelledby="pv-tab">...</div>
-            </div>
-          </div>
-        </div>
-        <div class="panel-item">
-          <h2 class="panel-item__heading">
-            <svg width="16" height="16" version="1.1" fill="currentColor" viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
-              <path d="m2.6779 0c-1.455 0-2.6448 1.1914-2.6448 2.6464 7e-8 1.455 1.1898 2.6448 2.6448 2.6448 0.52912 0 1.0228-0.1577 1.4376-0.42788l2.1456 2.1461c-0.27832 0.41875-0.4408 0.91988-0.4408 1.4573 0 0.53698 0.16235 1.0382 0.44028 1.4568l-2.158 2.159c-0.41822-0.2776-0.91926-0.43977-1.4562-0.43977-1.455 0-2.6463 1.1893-2.6464 2.6443-2.7496e-7 1.455 1.1914 2.6469 2.6464 2.6469 1.455 0 2.6448-1.1919 2.6448-2.6469-2e-7 -0.53724-0.16244-1.0379-0.44028-1.4562l2.1585-2.1585c0.41877 0.27836 0.91985 0.44132 1.4573 0.44132 0.53702 0 1.0382-0.16283 1.4568-0.4408l2.1394 2.1389c-0.28593 0.42212-0.4532 0.93-0.4532 1.4754 0 1.455 1.1914 2.6469 2.6464 2.6469 1.455 0 2.6443-1.1919 2.6443-2.6469-1e-6 -1.455-1.1893-2.6443-2.6443-2.6443-0.52886 0-1.023 0.15742-1.4376 0.42736l-2.1456-2.1466c0.27797-0.41857 0.4408-0.91974 0.4408-1.4568 0-0.53743-0.16296-1.0385-0.44132-1.4573l2.1585-2.1585c0.41834 0.27784 0.919 0.44028 1.4562 0.44028 1.455 3e-7 2.6469-1.1898 2.6469-2.6448 0-1.455-1.1919-2.6464-2.6469-2.6464-1.455 4.1244e-7 -2.6443 1.1914-2.6443 2.6464 0 0.53698 0.16217 1.038 0.43977 1.4562l-2.159 2.158c-0.41855-0.27794-0.91977-0.44028-1.4568-0.44028-0.53739 1e-7 -1.0385 0.16248-1.4573 0.4408l-2.1389-2.1384c0.28617-0.42223 0.45372-0.93078 0.45372-1.4764 1e-7 -1.455-1.1914-2.6464-2.6464-2.6464zm-0.041341 1.0589c0.013708-3.422e-4 0.027544 0 0.041341 0 0.88302 1e-7 1.5875 0.70448 1.5875 1.5875 0 0.88302-0.70448 1.5859-1.5875 1.5859-0.88302 0-1.588-0.70293-1.588-1.5859 0-0.86922 0.68306-1.5659 1.5467-1.5875zm11.609 0c0.013708-3.422e-4 0.027544 0 0.041341 0 0.88302-1e-7 1.588 0.70448 1.588 1.5875s-0.705 1.5859-1.588 1.5859c-0.88302-3e-7 -1.588-0.70293-1.588-1.5859 0-0.86922 0.68306-1.5659 1.5467-1.5875zm-5.779 5.8198c0.88302 0 1.588 0.705 1.588 1.588 0 0.88302-0.705 1.588-1.588 1.588-0.88302-1e-6 -1.588-0.705-1.588-1.588 1e-7 -0.88302 0.705-1.588 1.588-1.588zm-5.8203 5.8203c0.88302 0 1.5859 0.705 1.5859 1.588 1e-7 0.88302-0.70293 1.588-1.5859 1.588s-1.5875-0.705-1.5875-1.588c3e-7 -0.88302 0.70448-1.588 1.5875-1.588zm11.61 0c0.88302 0 1.586 0.705 1.586 1.588 0 0.88302-0.70293 1.588-1.586 1.588-0.88302 0-1.588-0.705-1.588-1.588 0-0.88302 0.705-1.588 1.588-1.588z"></path>
-             </svg>
-            Energiesystem
-          </h2>
-          <div class="panel-item__tabs">
-            <ul class="c-tabs nav nav-tabs" id="settings_energysystem_tab" role="tablist">
-              <li class="c-tabs__nav-item" role="presentation">
-                <button class="c-tabs__nav-link active" id="electricity-prod-tab" data-bs-toggle="tab" data-bs-target="#electricity-prod" type="button" role="tab" aria-controls="electricity-prod" aria-selected="true">
-                  <svg width="16" height="16" version="1.1" fill="currentColor" viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m8.2021 0.025372-5.4677 8.4414h9.5898l-4.9159 8.4665h1.3229l5.4035-9.5251h-9.4609l4.8512-7.3828z"></path>
-                  </svg>
-                  Stromerzeugung
-                </button>
-              </li>
-              <li class="c-tabs__nav-item" role="presentation">
-                <button class="c-tabs__nav-link" id="electricity-consumption-tab" data-bs-toggle="tab" data-bs-target="#electricity-consumption" type="button" role="tab" aria-controls="electricity-consumption" aria-selected="false" tabindex="-1">
-                  <svg width="16" height="16" version="1.1" fill="currentColor" viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m12.7 0.025321-3.175 5.2663h5.5563l-2.6458 4.2333h1.3229l3.175-5.2917h-5.5562l2.6458-4.208h-1.3229zm-6.8797 7.383c-1.455 1e-7 -2.6443 1.1914-2.6443 2.6463 4e-7 1.455 1.1893 2.6443 2.6443 2.6443 1.455 0 2.6463-1.1893 2.6464-2.6443 0-1.455-1.1914-2.6463-2.6464-2.6463zm0 1.0583c0.88302 0 1.588 0.705 1.588 1.588-2e-7 0.88302-0.705 1.588-1.588 1.588-0.88302 0-1.588-0.705-1.588-1.588-1e-7 -0.88302 0.705-1.588 1.588-1.588zm0 5.5568c-1.3916 0-2.6568 0.29501-3.6174 0.80874-0.90503 0.48404-1.5903 1.2072-1.6666 2.1012h1.0682c0.078026-0.39129 0.43118-0.81091 1.0986-1.1679 0.76313-0.40815 1.8785-0.68316 3.1171-0.68316 1.2386 0 2.3561 0.27501 3.1192 0.68316 0.66746 0.35698 1.0206 0.7766 1.0986 1.1679h1.0682c-0.076422-0.89393-0.7636-1.6171-1.6686-2.1012-0.96055-0.51373-2.2258-0.80874-3.6174-0.80874z"></path>
-                  </svg>
-                  Strombedarf
-                </button>
-              </li>
-            </ul>
-            <div class="c-tabs__content">
-              <div class="c-tabs__pane fade show active" id="electricity-prod" role="tabpanel" aria-labelledby="electricity-prod-tab">
-                <div class="c-slider">
-                  <div class="c-slider__label">
-                    <span>Strombedarf Haushalte [%]</span>
-                  </div>
-                  <input type="text" class="js-rs-wind-roof" name="my_range" value="">
-                </div>
-                <div class="c-slider">
-                  <div class="c-slider__label">
-                    <span>Strombedarf GHD + Landwirtschaft [%]</span>
-                  </div>
-                  <input type="text" class="js-rs-wind-ground" name="my_range" value="">
-                </div>
-              </div>
-              <div class="c-tabs__pane fade" id="electricity-consumption" role="tabpanel" aria-labelledby="electricity-consumption-tab">...</div>
             </div>
           </div>
         </div>
