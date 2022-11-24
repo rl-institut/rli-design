@@ -79,7 +79,22 @@ $icon-margin-right: 0.25rem;
       .c-slider.active {
         @extend .px-3;
         @extend .bg-light;
+      }
+
+      .c-slider--wind.active {
         border-color: #A6BDDB !important;
+      }
+
+      .c-slider--pv-ground.active {
+        border-color: #FA9FB5 !important;
+      }
+
+      .c-slider--pv-roof.active {
+        border-color: #FEC44F !important;
+      }
+
+      .c-slider--biomass.active {
+        border-color: #99D8C9 !important;
       }
 
       .c-slider + .sidepanel {
@@ -140,6 +155,14 @@ $icon-margin-right: 0.25rem;
     &__heading {
       @extend .fs-7;
       @extend .fw-bold;
+    }
+
+    &__slider {
+      @extend .pb-3;
+    }
+
+    &__label {
+      @extend .fs-7;
     }
   }
 }
