@@ -11,6 +11,8 @@ export default {
         charts: path.resolve(__dirname, "src/charts/index.html"),
         componentButtons: path.resolve(__dirname, "src/ds/components/buttons/index.html"),
         componentCharts: path.resolve(__dirname, "src/ds/components/charts/index.html"),
+        componentSidePanels: path.resolve(__dirname, "src/ds/components/side-panels/index.html"),
+        componentSliders: path.resolve(__dirname, "src/ds/components/sliders/index.html"),
         componentTable: path.resolve(__dirname, "src/ds/components/table/index.html"),
         dashboard: path.resolve(__dirname, "src/dashboard/index.html"),
         designsystem: path.resolve(__dirname, "src/ds/index.html"),
