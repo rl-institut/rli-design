@@ -1,0 +1,126 @@
+{% extends "src/ds/layout.html" %}
+
+{% block content %}
+
+<div class="ds__container">
+  <h1>Side panels</h1>
+  <div class="ds__item bs-row">
+    <div class="bs-col">
+      <p>Here is a basic example from the DigiPlan tool.</p>
+    </div>
+  </div>
+  <div class="ds__item bs-row" style="position: relative; height:80vh; background-color: lightsteelblue;">
+    <div class="panel">
+      <div class="panel__settings">
+        <div class="panel-item">
+          <h2 class="panel-item__heading">
+            <svg width="16" height="16" version="1.1" fill="currentColor" viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg">
+              <path d="m8.4667 0-8.4667 4.2333 8.4667 4.2333 8.4667-4.2333-8.4667-4.2333zm0 1.0583 6.6146 3.175-6.6146 3.175-6.6146-3.175 6.6146-3.175zm-8.4667 7.4083 8.4667 4.2333 8.4667-4.2333h-1.8521l-6.6146 3.175-6.6146-3.175h-1.8521zm0 4.2333 8.4667 4.2333 8.4667-4.2333h-1.8521l-6.6146 3.175-6.6146-3.175h-1.8521z"></path>
+             </svg>
+            Flächen
+          </h2>
+          <div class="panel-item__tabs">
+            <div class="c-tabs__content">
+              <div class="c-tabs__pane fade show" id="wind" role="tabpanel" aria-labelledby="wind-tab">
+                <div class="c-slider c-slider--wind active">
+                  <div class="c-slider__label">
+                    <span><label for="id_bio">Wind (MW)</label></span>
+                    <span class="c-slider__label--more">
+                      <button class="button button--transparent">
+                        mehr
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                        </svg>
+                      </button>
+                    </span>
+                  </div>
+                  <span class="irs irs--flat js-irs-0"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">0</span><span class="irs-max" style="visibility: visible;">100</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 66.725%;">71</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 70.003%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 67.6291%;"><i></i><i></i><i></i></span></span><input type="text" name="bio" class="js-range-slider irs-hidden-input" data-min="0" data-max="100" data-from="71" data-grid="" required="" id="id_bio" tabindex="-1" readonly="">
+                </div>
+                <div class="sidepanel">
+                  <p class="sidepanel__heading">
+                    Detaileinstellungen
+                  </p>
+                  <div class="sidepanel__slider">
+                    <div class="sidepanel__label">
+                      <span><label for="id_conventional">Abstand zu Siedlungen (m)</label></span>
+                    </div>
+                    <span class="irs irs--flat js-irs-1"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">0</span><span class="irs-max" style="visibility: visible;">216</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 30.4056%;">71</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 33.6836%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 31.3098%;"><i></i><i></i><i></i></span></span><input type="text" name="conventional" class="js-range-slider irs-hidden-input" data-min="0" data-max="216" data-from="71" data-grid="" required="" id="id_conventional" tabindex="-1" readonly="">
+                  </div>
+                  <div class="sidepanel__slider">
+                    <div class="sidepanel__label">
+                      <span><label for="id_conventional">Abstand zu Siedlungen (m)</label></span>
+                    </div>
+                    <span class="irs irs--flat js-irs-1"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">0</span><span class="irs-max" style="visibility: visible;">216</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 30.4056%;">71</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 33.6836%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 31.3098%;"><i></i><i></i><i></i></span></span><input type="text" name="conventional" class="js-range-slider irs-hidden-input" data-min="0" data-max="216" data-from="71" data-grid="" required="" id="id_conventional" tabindex="-1" readonly="">
+                  </div>
+                  <div class="sidepanel__slider">
+                    <div class="sidepanel__label">
+                      <span><label for="id_conventional">Abstand zu Siedlungen (m)</label></span>
+                    </div>
+                    <span class="irs irs--flat js-irs-1"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">0</span><span class="irs-max" style="visibility: visible;">216</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 30.4056%;">71</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 33.6836%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 31.3098%;"><i></i><i></i><i></i></span></span><input type="text" name="conventional" class="js-range-slider irs-hidden-input" data-min="0" data-max="216" data-from="71" data-grid="" required="" id="id_conventional" tabindex="-1" readonly="">
+                  </div>
+                </div>
+                <div class="c-slider c-slider--pv-ground">
+                  <div class="c-slider__label">
+                    <span><label for="id_conventional">Freiflächen-PV (MW)</label></span>
+                  </div>
+                  <span class="irs irs--flat js-irs-1"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">0</span><span class="irs-max" style="visibility: visible;">216</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 30.4056%;">71</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 33.6836%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 31.3098%;"><i></i><i></i><i></i></span></span><input type="text" name="conventional" class="js-range-slider irs-hidden-input" data-min="0" data-max="216" data-from="71" data-grid="" required="" id="id_conventional" tabindex="-1" readonly="">
+                </div>
+                <div class="sidepanel">
+                  <p class="sidepanel__heading">
+                    Detaileinstellungen
+                  </p>
+                  <div class="sidepanel__slider">
+                    <div class="sidepanel__label">
+                      <span><label for="id_conventional">Abstand zu Siedlungen (m)</label></span>
+                    </div>
+                    <span class="irs irs--flat js-irs-1"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">0</span><span class="irs-max" style="visibility: visible;">216</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 30.4056%;">71</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 33.6836%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 31.3098%;"><i></i><i></i><i></i></span></span><input type="text" name="conventional" class="js-range-slider irs-hidden-input" data-min="0" data-max="216" data-from="71" data-grid="" required="" id="id_conventional" tabindex="-1" readonly="">
+                  </div>
+                </div>
+                <div class="c-slider c-slider--pv-roof">
+                  <div class="c-slider__label">
+                    <span><label for="id_pv_ground">Aufdach-PV (MW)</label></span>
+                  </div>
+                  <span class="irs irs--flat js-irs-2"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: hidden;">0</span><span class="irs-max" style="visibility: visible;">2 125</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 2.27842%;">71</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 5.55643%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 3.18254%;"><i></i><i></i><i></i></span></span><input type="text" name="pv_ground" class="js-range-slider irs-hidden-input" data-min="0" data-max="2125" data-from="71" data-grid="" required="" id="id_pv_ground" tabindex="-1" readonly="">
+                </div>
+                <div class="sidepanel">
+                  <p class="sidepanel__heading">
+                    Detaileinstellungen
+                  </p>
+                  <div class="sidepanel__slider">
+                    <div class="sidepanel__label">
+                      <span><label for="id_conventional">Abstand zu Siedlungen (m)</label></span>
+                    </div>
+                    <span class="irs irs--flat js-irs-1"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">0</span><span class="irs-max" style="visibility: visible;">216</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 30.4056%;">71</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 33.6836%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 31.3098%;"><i></i><i></i><i></i></span></span><input type="text" name="conventional" class="js-range-slider irs-hidden-input" data-min="0" data-max="216" data-from="71" data-grid="" required="" id="id_conventional" tabindex="-1" readonly="">
+                  </div>
+                </div>
+                <div class="c-slider c-slider--biomass">
+                  <div class="c-slider__label">
+                    <span><label for="id_pv_roof">Bioenergie (MW)</label></span>
+                  </div>
+                  <span class="irs irs--flat js-irs-3"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">100</span><span class="irs-max" style="visibility: visible;">400</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 29.9518%;">200</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 34.1246%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 31.7507%;"><i></i><i></i><i></i></span></span><input type="text" name="pv_roof" class="js-range-slider irs-hidden-input" data-min="100" data-max="400" data-from="200" data-grid="" required="" id="id_pv_roof" tabindex="-1" readonly="">
+                </div>
+                <div class="sidepanel">
+                  <p class="sidepanel__heading">
+                    Detaileinstellungen
+                  </p>
+                  <div class="sidepanel__slider">
+                    <div class="sidepanel__label">
+                      <span><label for="id_conventional">Abstand zu Siedlungen (m)</label></span>
+                    </div>
+                    <span class="irs irs--flat js-irs-1"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">0</span><span class="irs-max" style="visibility: visible;">216</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 30.4056%;">71</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 33.6836%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 31.3098%;"><i></i><i></i><i></i></span></span><input type="text" name="conventional" class="js-range-slider irs-hidden-input" data-min="0" data-max="216" data-from="71" data-grid="" required="" id="id_conventional" tabindex="-1" readonly="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script type="module" src="/ds/components/side-panels/index.js"></script>
+{% endblock %}

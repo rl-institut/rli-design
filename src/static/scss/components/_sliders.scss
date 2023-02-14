@@ -1,0 +1,41 @@
+@use '../base' as *;
+
+.irs.irs--flat {
+  .irs-line {
+    background-color: $gray-200;
+  }
+
+  .irs-from,
+  .irs-to,
+  .irs-bar,
+  .irs-single {
+    @extend .bg-dark;
+  }
+
+  .irs-bar,
+  .irs-line {
+    height: 8px;
+  }
+
+  .irs-single:before {
+    border-top-color: $black;
+  }
+
+  .irs-handle {
+    height: 14px;
+
+    &>i:first-child,
+    &.state_hover>i:first-child,
+    &:hover>i:first-child {
+      @extend .bg-dark;
+    }
+  }
+}
+
+.c-slider {
+  @extend .pt-2;
+
+  &__label {
+    @extend .fs-7;
+  }
+}
