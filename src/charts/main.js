@@ -1,8 +1,5 @@
 import { optionGradient, overview_option } from "./options";
 
-
-const barChart = echarts.init(document.getElementById("barChart"));
-const barChart2 = echarts.init(document.getElementById("barChart2"));
 const overview = echarts.init(document.getElementById("overview"));
 
 const option = {
@@ -47,14 +44,10 @@ const option = {
 
 function resizeChart() {
   setTimeout(function () {
-    barChart.resize();
-    barChart2.resize();
-    overview.resize();
+      overview.resize();
   }, 200);
 };
 
-barChart.setOption(option);
-barChart2.setOption(optionGradient);
 overview.setOption(overview_option);
 
 window.addEventListener("resize", resizeChart); 
