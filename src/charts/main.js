@@ -7,7 +7,7 @@ function resizeChart() {
   setTimeout(function () {
       overview.resize();
       detailed_overview.resize();
-  }, 200);
+  }, 300);
 };
 
 overview.setOption(overview_option);
