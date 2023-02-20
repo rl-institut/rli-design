@@ -240,3 +240,96 @@ export const overview_option = {
       },
     ]
   };
+ export const GHG_overview_option = {
+    title: {
+          text: 'THG Bilanzierung'
+        },
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        // Use axis to trigger tooltip
+        type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+      }
+    },
+    legend: {},
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: {
+      type: 'value'
+    },
+    yAxis: {
+      type: 'category',
+      data: ['Ziel', 'Szenario', 'Status Quo', '1990']
+    },
+    series: [
+      {
+        name: 'GHG',
+        type: 'bar',
+        stack: 'total',
+        color: '#C8D8E4',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [320, 302, 501, 634]
+      },
+      {
+        name: 'Haushalte',
+        type: 'bar',
+        stack: 'total',
+        color: '#74A9CF',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [120, 132, 201, 334]
+      },
+      {
+        name: 'Industrie',
+        type: 'bar',
+        stack: 'total',
+        color: '#FA9FB5',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [220, 220, 291, 334]
+      },
+      {
+        name: 'XXX',
+        type: 'bar',
+        stack: 'total',
+        color: '#FEC44F',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [150, 212, 201, 354]
+      },
+      {
+        name: 'XXX',
+        type: 'bar',
+        stack: 'total',
+        color: '#8C96C6',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [120, 132, 301, 434]
+      }
+    ]
+  }; 
