@@ -36,3 +36,114 @@ export const overview_option = {
       }
     ]
   };
+ export const detailed_overview_option = {
+    title: {
+        text: 'Detallierte Übersicht'
+      },
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        // Use axis to trigger tooltip
+        type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+      }
+    },
+    legend: {},
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: {
+      type: 'value'
+    },
+    yAxis: {
+      type: 'category',
+      data: ['Ziel Szenario - Verbrauch', 
+      'Ziel Szenario - Erzeugung', 
+      'Mein Szenario - Verbrauch', 
+      'Mein Szenario - Erzeugung', 
+      'Status Quo - Verbrauch', 
+      'Status Quo - Erzeugung']
+    },
+    series: [
+      {
+        name: 'Wind',
+        type: 'bar',
+        stack: 'total',
+        color: '#1F82C0',
+        label: {
+          show: true
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [0, 502, 0, 334, 0, 230]
+      },
+      {
+        name: 'Bioenergie',
+        type: 'bar',
+        stack: 'total',
+        color: '#98D47E',
+        label: {
+          show: true
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [0, 136, 0, 134, 0, 130]
+      },
+      {
+        name: 'Freiflächen - PV',
+        type: 'bar',
+        stack: 'total',
+        color: '#F6B93B',
+        label: {
+          show: true
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [0, 382, 0, 234, 0, 130 ]
+      },
+      {
+        name: 'Aufdach - PV',
+        type: 'bar',
+        stack: 'total',
+        color: '#FFD660',
+        label: {
+          show: true
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [0, 312, 0 , 254, 0 , 130]
+      },
+      {
+        name: 'Konventionell',
+        type: 'bar',
+        stack: 'total',
+        color: '#CFCFCF', 
+        label: {
+          show: true
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [0 , 132, 0 , 534,0 , 1130 ]
+      },
+      {
+        name: 'Verbrauch',
+        type: 'bar',
+        stack: 'total',
+        color: '#e9e0c8',
+        label: {
+          show: true
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [1450, 0 , 1440, 0 , 1800 ]
+      },
+    ]
+  };
