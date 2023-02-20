@@ -333,3 +333,63 @@ export const overview_option = {
       }
     ]
   }; 
+  export const overview_comparison_option = {
+    title: {
+        text: 'Erzeugung - Verbrauch '
+      },
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'shadow'
+      }
+    },
+    legend: {
+      data: [ 'Erzeugung', 'Verbrauch']
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'value'
+      }
+    ],
+    yAxis: [
+      {
+        type: 'category',
+        axisTick: {
+          show: false
+        },
+        data: ['Ziel', 'Szenario', 'Status Quo']
+      }
+    ],
+    series: [
+      {
+        name: 'Verbrauch',
+        type: 'bar',
+        stack: 'Total',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [200, 230, 341]
+      },
+      {
+        name: 'Erzeugung',
+        type: 'bar',
+        stack: 'Total',
+        label: {
+          show: false,
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [-220, -200, -100 ]
+      }
+    ]
+  };
