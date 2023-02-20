@@ -147,7 +147,7 @@ export const overview_option = {
       },
     ]
   };
-  export const overview_generation_option = {
+  export const Overview_generation_option = {
     title: {
         text: 'Übersicht Erzeugung'
       },
