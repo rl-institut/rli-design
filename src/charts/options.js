@@ -25,7 +25,7 @@ export const overview_option = {
     },
     series: [
       {
-        name: 'Bedarf',
+        name: 'Erzeugung',
         type: 'bar',
         data: [104970, 131744, 630230],
       },
