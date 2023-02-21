@@ -37,116 +37,127 @@ export const overview_option = {
     ]
   };
  export const detailed_overview_option = {
-    title: {
-        text: 'Detallierte Übersicht'
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      // Use axis to trigger tooltip
+      type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+    }
+  },
+  legend: {
+     show: true,
+    bottom: '12'
+  },
+  grid: {
+    top: '10%',
+    left: '3%',
+    right: '15%',
+    bottom: '10%',
+    containLabel: true
+  },
+  xAxis: {
+    type: 'value',
+      show: true,
+    position: 'bottom',
+    name: 'Mt CO₂-\Emissionen',
+      nameLocation: 'end',
+      nameTextStyle: 'Roboto',
+        width: '76',
+        heigth: '32',
+      fontWeight: '300', 
+      fontSize: '14'
+  },
+  yAxis: {
+    type: 'category',
+    data: ['Ziel Szenario - Verbrauch', 
+    'Ziel Szenario - Erzeugung', 
+    'Mein Szenario - Verbrauch', 
+    'Mein Szenario - Erzeugung', 
+    'Status Quo - Verbrauch', 
+    'Status Quo - Erzeugung']
+  },
+  series: [
+    {
+      name: 'Wind',
+      type: 'bar',
+        barWidth: '35',
+      stack: 'total',
+      color: '#1F82C0',
+      label: {
+        show: false
       },
-    tooltip: {
-      trigger: 'axis',
-      axisPointer: {
-        // Use axis to trigger tooltip
-        type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
-      }
+      emphasis: {
+        focus: 'series'
+      },
+      data: [0, 502, 0, 334, 0, 230]
     },
-    legend: {},
-    grid: {
-      left: '3%',
-      right: '4%',
-      bottom: '3%',
-      containLabel: true
+    {
+      name: 'Freiflächen - PV',
+      type: 'bar',
+      stack: 'total',
+      color: '#F6B93B',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [0, 382, 0, 234, 0, 130 ]
     },
-    xAxis: {
-      type: 'value'
+    {
+      name: 'Aufdach - PV',
+      type: 'bar',
+      stack: 'total',
+      color: '#FFD660',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [0, 312, 0 , 254, 0 , 130]
     },
-    yAxis: {
-      type: 'category',
-      data: ['Ziel Szenario - Verbrauch', 
-      'Ziel Szenario - Erzeugung', 
-      'Mein Szenario - Verbrauch', 
-      'Mein Szenario - Erzeugung', 
-      'Status Quo - Verbrauch', 
-      'Status Quo - Erzeugung']
+        {
+      name: 'Bioenergie',
+      type: 'bar',
+      stack: 'total',
+      color: '#98D47E',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [0, 136, 0, 134, 0, 130]
     },
-    series: [
-      {
-        name: 'Wind',
-        type: 'bar',
-        stack: 'total',
-        color: '#1F82C0',
-        label: {
-          show: true
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        data: [0, 502, 0, 334, 0, 230]
+    {
+      name: 'Konventionell',
+      type: 'bar',
+      stack: 'total',
+      color: '#CFCFCF', 
+      label: {
+        show: false
       },
-      {
-        name: 'Bioenergie',
-        type: 'bar',
-        stack: 'total',
-        color: '#98D47E',
-        label: {
-          show: true
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        data: [0, 136, 0, 134, 0, 130]
+      emphasis: {
+        focus: 'series'
       },
-      {
-        name: 'Freiflächen - PV',
-        type: 'bar',
-        stack: 'total',
-        color: '#F6B93B',
-        label: {
-          show: true
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        data: [0, 382, 0, 234, 0, 130 ]
+      data: [0 , 132, 0 , 534,0 , 1130 ]
+    },
+    {
+      name: 'Verbrauch',
+      type: 'bar',
+      stack: 'total',
+      color: '#e9e0c8',
+      label: {
+        show: false
       },
-      {
-        name: 'Aufdach - PV',
-        type: 'bar',
-        stack: 'total',
-        color: '#FFD660',
-        label: {
-          show: true
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        data: [0, 312, 0 , 254, 0 , 130]
+      emphasis: {
+        focus: 'series'
       },
-      {
-        name: 'Konventionell',
-        type: 'bar',
-        stack: 'total',
-        color: '#CFCFCF', 
-        label: {
-          show: true
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        data: [0 , 132, 0 , 534,0 , 1130 ]
-      },
-      {
-        name: 'Verbrauch',
-        type: 'bar',
-        stack: 'total',
-        color: '#e9e0c8',
-        label: {
-          show: true
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        data: [1450, 0 , 1440, 0 , 1800 ]
-      },
-    ]
-  };
+      data: [1450, 0 , 1440, 0 , 1800 ]
+    },
+  ]
+};
   export const Overview_generation_option = {
     title: {
         text: 'Übersicht Erzeugung'
