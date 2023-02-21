@@ -241,98 +241,121 @@ export const overview_option = {
     ]
   };
  export const GHG_overview_option = {
-    title: {
-          text: 'THG Bilanzierung'
-        },
-    tooltip: {
-      trigger: 'axis',
-      axisPointer: {
-        // Use axis to trigger tooltip
-        type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
-      }
-    },
-    legend: {},
-    grid: {
-      left: '3%',
-      right: '4%',
-      bottom: '3%',
-      containLabel: true
-    },
-    xAxis: {
-      type: 'value'
-    },
-    yAxis: {
-      type: 'category',
-      data: ['Ziel', 'Szenario', 'Status Quo', '1990']
-    },
-    series: [
-      {
-        name: 'GHG',
-        type: 'bar',
-        stack: 'total',
-        color: '#C8D8E4',
-        label: {
-          show: false
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        data: [320, 302, 501, 634]
+  backgroundColor: '#FFFFFF',
+  fontStyle: 'Roboto',
+  fontSize: '14',
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      // Use axis to trigger tooltip
+      type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+    }
+  },
+  legend: {
+    show: true,
+    bottom: '12'
+  },
+  grid: {
+    top: '10%',
+    left: '3%',
+    right: '15%',
+    bottom: '10%',
+    containLabel: true
+  },
+  xAxis:  {
+    type: 'value',
+    show: true,
+    position: 'bottom',
+    name: 'Mt CO₂-\Emissionen',
+      nameLocation: 'end',
+      nameTextStyle: 'Roboto',
+        width: '76',
+        heigth: '32',
+      fontWeight: '300', 
+      fontSize: '14',
+    
+  },
+  yAxis: {
+    show: true,
+    type: 'category',
+    data: ['Ziel', 'Szenario', 'Status Quo', '1990'],
+    nameTextStyle: 'Roboto',
+    fontWeight: '400', 
+    fontSize: '14',
+  },
+  series: [
+    {
+      name: 'GHG',
+      type: 'bar',
+       barWidth: '25',
+      stack: 'total',
+      color: '#C8D8E4',
+      label: {
+        show: false
       },
-      {
-        name: 'Haushalte',
-        type: 'bar',
-        stack: 'total',
-        color: '#74A9CF',
-        label: {
-          show: false
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        data: [120, 132, 201, 334]
+      emphasis: {
+        focus: 'series'
       },
-      {
-        name: 'Industrie',
-        type: 'bar',
-        stack: 'total',
-        color: '#FA9FB5',
-        label: {
-          show: false
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        data: [220, 220, 291, 334]
+      data: [20, 20, 20, 20]
+    },
+    {
+      name: 'Haushalte',
+      type: 'bar',
+        barWidth: '25',
+      stack: 'total',
+      color: '#74A9CF',
+      label: {
+        show: false
       },
-      {
-        name: 'XXX',
-        type: 'bar',
-        stack: 'total',
-        color: '#FEC44F',
-        label: {
-          show: false
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        data: [150, 212, 201, 354]
+      emphasis: {
+        focus: 'series'
       },
-      {
-        name: 'XXX',
-        type: 'bar',
-        stack: 'total',
-        color: '#8C96C6',
-        label: {
-          show: false
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        data: [120, 132, 301, 434]
-      }
-    ]
-  }; 
+      data: [12, 15, 30, 34]
+    },
+    {
+      name: 'Industrie',
+      type: 'bar',
+        barWidth: '25',
+      stack: 'total',
+      color: '#FA9FB5',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [20, 20, 31, 34]
+    },
+    {
+      name: 'XXX',
+      type: 'bar',
+        barWidth: '25',
+      stack: 'total',
+      color: '#FEC44F',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [5, 12, 15, 24]
+    },
+    {
+      name: 'XXX',
+      type: 'bar',
+        barWidth: '25',
+      stack: 'total',
+      color: '#8C96C6',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [15, 20, 30, 34]
+    }
+  ]
+};
   export const overview_comparison_option = {
     title: {
         text: 'Erzeugung - Verbrauch '
