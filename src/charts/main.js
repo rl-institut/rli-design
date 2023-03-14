@@ -6,6 +6,7 @@ import {
   GHG_overview_option, 
   overview_comparison_option,
   strom_overview,
+  strom_THG,
 } from "./options";
 
 const overview = echarts.init(document.getElementById("overview"));
@@ -14,6 +15,7 @@ const overview_generation = echarts.init(document.getElementById("overview_gener
 const GHG_overview = echarts.init(document.getElementById("GHG_overview"));
 const overview_comparison = echarts.init(document.getElementById("overview_comparison"));
 const strom_overview = echarts.init(document.getElementById("strom_overview"));
+const strom_THG = echarts.init(document.getElementById("strom_THG"));
 
 function resizeChart() {
   setTimeout(function () {
@@ -21,7 +23,9 @@ function resizeChart() {
       detailed_overview.resize();
       overview_generation.resize ();
       GHG_overview.resize ();
-      overview_comparison
+      overview_comparison.resize (); 
+      strom_overview.resize ();
+      strom_THG.resize ();
   }, 200);
 };
 
@@ -31,5 +35,6 @@ Overview_generation.setOption(overview_generation);
 GHG_overview.setOption(GHG_overview);
 overview_comparison.setOption(overview_comparison);
 strom_overview.setOption(strom_overview);
+strom_THG.setOption(strom_THG);
 
 window.addEventListener("resize", resizeChart);

@@ -589,4 +589,103 @@ export const overview_option = {
         data: [350, 0 , 0, 0]
       },
     ]
+  };
+  export const strom_THG = {
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        // Use axis to trigger tooltip
+        type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+      }
+    },
+    legend: {
+      show: true,
+      bottom: '15',
+      itemWidth: 14,
+      itemHeight: 14
+    },
+    grid: {
+      top: '10%',
+      left: '3%',
+      right: '25%',
+      bottom: '18%',
+      containLabel: true
+    },
+    xAxis: {
+      type: 'value',
+      show: true,
+      position: 'bottom',
+      name: 'Mt CO₂-\nEmissionen',
+        nameLocation: 'end',
+        nameTextStyle: 'Roboto',
+          width: '76',
+          heigth: '32',
+        fontWeight: '300',
+        fontSize: '14'
+    },
+    yAxis: {
+      type: 'category',
+      data: ['Ziel',
+      'Mein Szenario',
+      'Status Quo',
+      '1990' ],
+      axisTick: {
+        show: false
+      }
+    },
+    series: [
+      {
+        name: 'GHG',
+        type: 'bar',
+        barWidth: '16',
+        stack: 'total',
+        color: '#F5F5DC',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [10, 30, 34, 37]
+      },
+      {
+        name: 'Haushalte',
+        type: 'bar',
+        stack: 'total',
+        color: '#A8DADC',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [20, 25 , 27, 30]
+      },
+       {
+        name: 'Industrie',
+        type: 'bar',
+        stack: 'total',
+        color: '#C27BA0',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [30, 40, 50, 60]
+      },
+      {
+        name: 'Sonstiges',
+        type: 'bar',
+        stack: 'total',
+        color: '#B0BEC5',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [30, 40 , 45, 50]
+      },
+    ]
   }
