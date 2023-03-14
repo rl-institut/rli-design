@@ -427,3 +427,166 @@ export const overview_option = {
       }
     ]
   };
+  export const strom_overview = {
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        // Use axis to trigger tooltip
+        type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+      }
+    },
+    legend: {
+      show: true,
+      bottom: '15',
+      itemWidth: 14,
+      itemHeight: 14
+    },
+    grid: {
+      top: '10%',
+      left: '3%',
+      right: '25%',
+      bottom: '18%',
+      containLabel: true
+    },
+    xAxis: {
+      type: 'value',
+      show: true,
+      position: 'bottom',
+      name: 'TWh',
+        nameLocation: 'end',
+        nameTextStyle: 'Roboto',
+          width: '76',
+          heigth: '32',
+        fontWeight: '300',
+        fontSize: '14'
+    },
+    yAxis: {
+      type: 'category',
+      data: ['Bedarf',
+      'Ziel',
+      'Mein Szeanrio',
+      'Status Quo' ],
+      axisTick: {
+        show: false
+      }
+    },
+    series: [
+      {
+        name: 'Wind',
+        type: 'bar',
+        barWidth: '16',
+        stack: 'total',
+        color: '#1F82C0',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [0, 502, 400, 334]
+      },
+      {
+        name: 'Freiflächen - PV',
+        type: 'bar',
+        stack: 'total',
+        color: '#F6B93B',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [0, 382, 300, 234 ]
+      },
+      {
+        name: 'Aufdach - PV',
+        type: 'bar',
+        stack: 'total',
+        color: '#FFD660',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [0, 312, 280 , 254]
+      },
+          {
+        name: 'Bioenergie',
+        type: 'bar',
+        stack: 'total',
+        color: '#98D47E',
+        label: {
+          show: false
+        },
+        emphasis: {
+        },
+        data: [0, 136, 135, 134]
+      },
+      {
+        name: 'Konventionell',
+        type: 'bar',
+        stack: 'total',
+        color: '#1A1A1A',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [0 , 132, 200, 534 ]
+      },
+      {
+        name: 'GHG',
+        type: 'bar',
+        stack: 'total',
+        color: '#F5F5DC',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [400, 0 , 0, 0]
+      },
+      {
+        name: 'Haushalte',
+        type: 'bar',
+        stack: 'total',
+        color: '#A8DADC',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [360, 0 , 0, 0]
+      },
+       {
+        name: 'Industrie',
+        type: 'bar',
+        stack: 'total',
+        color: '#C27BA0',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [300, 0 , 0, 0]
+      },
+      {
+        name: 'Sonstiges',
+        type: 'bar',
+        stack: 'total',
+        color: '#B0BEC5',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [350, 0 , 0, 0]
+      },
+    ]
+  }
