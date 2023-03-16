@@ -7,7 +7,8 @@ import {
   overview_comparison_option,
   strom_overview,
   strom_THG,
-  verkehr_overview
+  verkehr_overview,
+  verkehr_thg,
 } from "./options";
 
 const overview = echarts.init(document.getElementById("overview"));
@@ -18,6 +19,7 @@ const overview_comparison = echarts.init(document.getElementById("overview_compa
 const strom_overview = echarts.init(document.getElementById("strom_overview"));
 const strom_THG = echarts.init(document.getElementById("strom_THG"));
 const verkehr_overview = echarts.init(document.getElementById("verkehr_overview"));
+const verkehr_thg = echarts.init(document.getElementById("verkehr_thg"));
 
 function resizeChart() {
   setTimeout(function () {
@@ -29,6 +31,7 @@ function resizeChart() {
       strom_overview.resize();
       strom_THG.resize();
       verkehr_overview.resize();
+      verkehr_thg.resize();
   }, 200);
 };
 
@@ -40,5 +43,6 @@ overview_comparison.setOption(overview_comparison);
 strom_overview.setOption(strom_overview);
 strom_THG.setOption(strom_THG);
 verkehr_overview.setOption(verkehr_overview);
+verkehr_thg.setOption(verkehr_thg);
 
 window.addEventListener("resize", resizeChart);

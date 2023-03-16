@@ -787,4 +787,90 @@ export const overview_option = {
         data: [500, 300, 100]
       },
     ]
-  }
+  }; 
+  export const verkehr_thg = {
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        // Use axis to trigger tooltip
+        type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+      }
+    },
+    legend: {
+      show: true,
+      bottom: '15',
+      itemWidth: 14,
+      itemHeight: 14
+    },
+    grid: {
+      top: '10%',
+      left: '3%',
+      right: '25%',
+      bottom: '18%',
+      containLabel: true
+    },
+    xAxis: {
+      type: 'value',
+      show: true,
+      position: 'bottom',
+      name: 'Mt CO₂-\nEmissionen',
+        nameLocation: 'end',
+        nameTextStyle: 'Roboto',
+          width: '76',
+          heigth: '32',
+        fontWeight: '300',
+        fontSize: '14'
+    },
+    yAxis: {
+      type: 'category',
+      data: ['Ziel',
+      'Mein Szenario',
+      'Status Quo',
+      '1990' ],
+      axisTick: {
+        show: false
+      }
+    },
+    series: [
+      {
+        name: 'Sockel',
+        type: 'bar',
+        barWidth: '16',
+        stack: 'total',
+        color: '#C8D8E4',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [30, 30, 30, 30]
+      },
+      {
+        name: 'Konventionell',
+        type: 'bar',
+        stack: 'total',
+        color: '#647078',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [15, 25 , 65, 100]
+      },
+       {
+        name: 'Erneuerbare Energien',
+        type: 'bar',
+        stack: 'total',
+        color: '#A8E7BA',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [65, 65, 38, 10]
+      },
+    ]
+  };
