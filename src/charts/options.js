@@ -688,4 +688,103 @@ export const overview_option = {
         data: [30, 40 , 45, 50]
       },
     ]
+  };
+  export const verkehr_overview = {
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        // Use axis to trigger tooltip
+        type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+      }
+    },
+    legend: {
+      show: true,
+      bottom: '15',
+      itemWidth: 14,
+      itemHeight: 14
+    },
+    grid: {
+      top: '10%',
+      left: '3%',
+      right: '25%',
+      bottom: '18%',
+      containLabel: true
+    },
+    xAxis: {
+      type: 'value',
+      show: true,
+      position: 'bottom',
+      name: 'Anzahl Autos',
+        nameLocation: 'end',
+        nameTextStyle: 'Roboto',
+          width: '76',
+          heigth: '32',
+        fontWeight: '300',
+        fontSize: '14'
+    },
+    yAxis: {
+      type: 'category',
+      data: ['Ziel\nSzenario',
+      'Mein \nSzenario',
+      'Status Quo'
+      ],
+      axisTick: {
+        show: false
+      }
+    },
+    series: [
+      {
+        name: 'Diesel',
+        type: 'bar',
+        barWidth: '16',
+        stack: 'total',
+        color: '#647078',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [50, 222, 400]
+      },
+      {
+        name: 'Benzin',
+        type: 'bar',
+        stack: 'total',
+        color: '#866E18',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [20, 182, 350]
+      },
+      {
+        name: 'Hybrid',
+        type: 'bar',
+        stack: 'total',
+        color: '#8FDCE1',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [100, 100, 140]
+      },
+          {
+        name: 'E-Auto',
+        type: 'bar',
+        stack: 'total',
+        color: '#98D47E',
+        label: {
+          show: false
+        },
+        emphasis: {
+          focus: 'series'
+        },
+        data: [500, 300, 100]
+      },
+    ]
   }
