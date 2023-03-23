@@ -9,6 +9,7 @@ import {
   strom_THG,
   verkehr_overview,
   verkehr_thg,
+  anteil_ee,
 } from "./options";
 
 const overview = echarts.init(document.getElementById("overview"));
@@ -20,6 +21,7 @@ const strom_overview = echarts.init(document.getElementById("strom_overview"));
 const strom_THG = echarts.init(document.getElementById("strom_THG"));
 const verkehr_overview = echarts.init(document.getElementById("verkehr_overview"));
 const verkehr_thg = echarts.init(document.getElementById("verkehr_thg"));
+const anteil_ee = echarts.init(document.getElementById("anteil_ee"));
 
 function resizeChart() {
   setTimeout(function () {
@@ -32,6 +34,7 @@ function resizeChart() {
       strom_THG.resize();
       verkehr_overview.resize();
       verkehr_thg.resize();
+      anteil_ee.resize();
   }, 200);
 };
 
@@ -44,5 +47,6 @@ strom_overview.setOption(strom_overview);
 strom_THG.setOption(strom_THG);
 verkehr_overview.setOption(verkehr_overview);
 verkehr_thg.setOption(verkehr_thg);
+anteil_ee.setOption(anteil_ee);
 
 window.addEventListener("resize", resizeChart);

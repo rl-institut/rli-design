@@ -874,3 +874,55 @@ export const overview_option = {
       },
     ]
   };
+  export const anteil_ee = {
+    xAxis: {
+      type: 'category',
+      data: ['0','2021', '2045', '0'],
+      boundaryGap: false
+    },
+    yAxis: {
+      show: true,
+      type: 'value',
+        maxValueSpan: '100',
+        name: 'Anteil Erneuerbare\n Energien (%)',
+          nameLocation: 'end',
+          nameTextStyle: 'Roboto',
+            width: '76',
+            heigth: '32',
+          fontWeight: '300',
+          fontSize: '14',
+    },
+    series: [
+          {
+        type: 'line',
+          boundaryGap: false,
+        smooth: 0.6,
+        lineStyle: {
+          color: '#06DFA7',
+           width: 5
+        },
+        data: [90,90,90,90]
+      },
+      { 
+        type: 'bar',
+          barWidth:'40',
+        data: [
+          {value: 0, 
+          itemStyle: {
+            color: '#F4F6F7'
+            }
+          },
+          {value: 30, 
+          itemStyle: {
+            color: '#C3D1DC'
+            }
+          },
+          {value: 90, 
+          itemStyle: {
+            color: '#06DFA7'
+            }
+          },
+        ],
+      },
+    ],
+  }
