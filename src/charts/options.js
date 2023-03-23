@@ -925,4 +925,56 @@ export const overview_option = {
         ],
       },
     ],
+  }, 
+  export const co2_emissionen = {
+    xAxis: {
+      type: 'category',
+      data: ['0','2021', '2045', '0'],
+      boundaryGap: false
+    },
+    yAxis: {
+      show: true,
+      type: 'value',
+        maxValueSpan: '100',
+        name: 'CO2-Emissionen (Mt)',
+          nameLocation: 'end',
+          nameTextStyle: 'Roboto',
+            width: '76',
+            heigth: '32',
+          fontWeight: '300',
+          fontSize: '14',
+    },
+    series: [
+          {
+        type: 'line',
+          boundaryGap: false,
+        smooth: 0.6,
+        lineStyle: {
+          color: '#E6A100',
+           width: 5
+        },
+        data: [30,30,30,30]
+      },
+      { 
+        type: 'bar',
+          barWidth:'40',
+        data: [
+          {value: 0, 
+          itemStyle: {
+            color: '#F4F6F7'
+            }
+          },
+          {value: 90, 
+          itemStyle: {
+            color: '#C3D1DC'
+            }
+          },
+          {value: 30, 
+          itemStyle: {
+            color: '#E6A100'
+            }
+          },
+        ],
+      },
+    ],
   }
