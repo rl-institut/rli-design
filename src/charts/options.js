@@ -40,8 +40,7 @@ export const overview_option = {
   tooltip: {
     trigger: 'axis',
     axisPointer: {
-      // Use axis to trigger tooltip
-      type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+      type: 'shadow' 
     }
   },
   legend: {
@@ -59,7 +58,7 @@ export const overview_option = {
     type: 'value',
       show: true,
     position: 'bottom',
-    name: 'Mt CO₂-\Emissionen',
+    name: 'TWh',
       nameLocation: 'end',
       nameTextStyle: 'Roboto',
         width: '76',
@@ -78,6 +77,19 @@ export const overview_option = {
   },
   series: [
     {
+      name: 'Konventionell',
+      type: 'bar',
+      stack: 'total',
+      color: '#CFCFCF', 
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [0 , 132, 0 , 334,0 , 700 ]
+    },
+    {
       name: 'Wind',
       type: 'bar',
         barWidth: '35',
@@ -89,7 +101,7 @@ export const overview_option = {
       emphasis: {
         focus: 'series'
       },
-      data: [0, 502, 0, 334, 0, 230]
+      data: [0, 302, 0, 234, 0, 230]
     },
     {
       name: 'Freiflächen - PV',
@@ -102,7 +114,7 @@ export const overview_option = {
       emphasis: {
         focus: 'series'
       },
-      data: [0, 382, 0, 234, 0, 130 ]
+      data: [0, 282, 0, 234, 0, 100 ]
     },
     {
       name: 'Aufdach - PV',
@@ -115,7 +127,7 @@ export const overview_option = {
       emphasis: {
         focus: 'series'
       },
-      data: [0, 312, 0 , 254, 0 , 130]
+      data: [0, 312, 0 , 254, 0 , 100]
     },
         {
       name: 'Bioenergie',
@@ -131,33 +143,203 @@ export const overview_option = {
       data: [0, 136, 0, 134, 0, 130]
     },
     {
-      name: 'Konventionell',
+      name: 'GHD',
       type: 'bar',
       stack: 'total',
-      color: '#CFCFCF', 
+      color: '#F5F5DC',
       label: {
         show: false
       },
       emphasis: {
         focus: 'series'
       },
-      data: [0 , 132, 0 , 534,0 , 1130 ]
+      data: [300, 0 , 344, 0 , 380 ]
     },
     {
-      name: 'Verbrauch',
+      name: 'Haushalte',
       type: 'bar',
       stack: 'total',
-      color: '#e9e0c8',
+      color: '#A8DADC',
       label: {
         show: false
       },
       emphasis: {
         focus: 'series'
       },
-      data: [1450, 0 , 1440, 0 , 1800 ]
+      data: [245, 0 , 244, 0 , 380]
+    },
+    {
+      name: 'Industrie',
+      type: 'bar',
+      stack: 'total',
+      color: '#C27BA0',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [280, 0 , 300, 0 , 350]
+    },
+    {
+      name: 'Sonstiges',
+      type: 'bar',
+      stack: 'total',
+      color: '#B0BEC5',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [145, 0 , 144, 0 , 180]
     },
   ]
 };
+export detailed_overview__grouped_option = {
+  let xAxisData = [];
+  let data1= [];
+  let data2 = [];
+  let data3 = [];
+  let data4 = [];
+  for (let i = 0; i < 3; i++) {
+    xAxisData.push('Szenario');
+    data1.push(+(Math.random() * 2).toFixed(2));
+    data2.push(+(Math.random() * 5).toFixed(2));
+    data3.push(+(Math.random() + 0.3).toFixed(2));
+    data4.push(+Math.random().toFixed(2));
+  }
+  var emphasisStyle = {
+    itemStyle: {
+      shadowBlur: 10,
+      shadowColor: 'rgba(0,0,0,0.3)'
+    }
+  };
+  option = {
+    legend: {
+      data: ['Konventionell', 'Wind', 'Freiflächen-PV', 'Aufdach-PV', 'Bioenergie', 'GHD', 'Haushalt', 'Industrie', 'Sonstiges'],
+       bottom: '12'
+    },
+    brush: {
+      toolbox: ['rect', 'polygon', 'lineX', 'lineY', 'keep', 'clear'],
+      xAxisIndex: 0
+    },
+    toolbox: {
+      feature: {
+        magicType: {
+          type: ['stack']
+        },
+        dataView: {}
+      }
+    },
+    tooltip: {},
+    yAxis: {
+      data: xAxisData,
+      axisLine: { onZero: true },
+      splitLine: { show: false },
+      splitArea: { show: false }
+    },
+    xAxis: {},
+    grid: {
+      bottom: 100
+    },
+    series: [
+      {
+        name: 'Konventionell',
+        type: 'bar',
+        stack: 'five',
+        color: '#CFCFCF',
+        emphasis: emphasisStyle,
+        data: [132, 334, 700 ]
+      },
+      {
+        name: 'Wind',
+        type: 'bar',
+        stack: 'five',
+        color: '#1F82C0',
+        emphasis: emphasisStyle,
+        data: [302,234, 230]
+      },
+      {
+        name: 'Freiflächen-PV',
+        type: 'bar',
+        stack: 'five',
+        color: '#F6B93B',
+        emphasis: emphasisStyle,
+        data: [282, 234, 100]
+      },
+      {
+        name: 'Aufdach-PV',
+        type: 'bar',
+        stack: 'five',
+        color: '#FFD660',
+        emphasis: emphasisStyle,
+        data: [312, 254, 100]
+      },
+      {
+        name: 'Bioenergie',
+        type: 'bar',
+        stack: 'five',
+        color: '#98D47E',
+        emphasis: emphasisStyle,
+        data: [136, 134, 130]
+      }, 
+      {
+        name: 'GHD',
+        type: 'bar',
+        stack: 'four',
+        color: '#F5F5DC',
+        emphasis: emphasisStyle,
+        data: [300, 344, 380]
+      }, 
+      {
+        name: 'Haushalte',
+        type: 'bar',
+        stack: 'four',
+        color: '#A8DADC',
+        emphasis: emphasisStyle,
+        data: [254, 244, 380]
+      }, 
+      {
+        name: 'Industrie',
+        type: 'bar',
+        stack: 'four',
+        color: '#C27BA0',
+        emphasis: emphasisStyle,
+        data: [280, 300, 350]
+      }, 
+      {
+        name: 'Sonstiges',
+        type: 'bar',
+        stack: 'four',
+        color: '#B0BEC5',
+        emphasis: emphasisStyle,
+        data: [145, 144, 180]
+      }
+    ]
+  };
+  myChart.on('brushSelected', function (params) {
+    var brushed = [];
+    var brushComponent = params.batch[0];
+    for (var sIdx = 0; sIdx < brushComponent.selected.length; sIdx++) {
+      var rawIndices = brushComponent.selected[sIdx].dataIndex;
+      brushed.push('[Series ' + sIdx + '] ' + rawIndices.join(', '));
+    }
+    myChart.setOption({
+      title: {
+        backgroundColor: '#333',
+        text: 'SELECTED DATA INDICES: \n' + brushed.join('\n'),
+        bottom: 0,
+        right: '10%',
+        width: 100,
+        textStyle: {
+          fontSize: 12,
+          color: '#fff'
+        }
+      }
+    });
+  });
+}
   export const Overview_generation_option = {
     title: {
         text: 'Übersicht Erzeugung'
