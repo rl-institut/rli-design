@@ -196,7 +196,7 @@ export const overview_option = {
     },
   ]
 };
-export detailed_overview__grouped_option = {
+export detailed_overview_grouped_option = {
   let xAxisData = [];
   let data1= [];
   let data2 = [];
