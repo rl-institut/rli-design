@@ -1,5 +1,6 @@
 import { 
   detailed_overview_option, 
+  detailed_overview_grouped_option,
   optionGradient, 
   overview_option,
   overview_generation_option,
@@ -15,6 +16,7 @@ import {
 
 const overview = echarts.init(document.getElementById("overview"));
 const detailed_overview = echarts.init(document.getElementById("detailed_overview"));
+const detailed_overview_grouped = echarts.init(document.getElementById("detailed_overview_grouped"));
 const overview_generation = echarts.init(document.getElementById("overview_generation"));
 const GHG_overview = echarts.init(document.getElementById("GHG_overview"));
 const overview_comparison = echarts.init(document.getElementById("overview_comparison"));
@@ -29,6 +31,7 @@ function resizeChart() {
   setTimeout(function () {
       overview.resize();
       detailed_overview.resize();
+      detailed_overview_grouped.resize();
       overview_generation.resize();
       GHG_overview.resize();
       overview_comparison.resize(); 
@@ -38,11 +41,12 @@ function resizeChart() {
       verkehr_thg.resize();
       anteil_ee.resize();
       co2_emissionen.resize(),
-  }, 200);
+    }, 200);
 };
 
 overview.setOption(overview_option);
 detailed_overview.setOption(detailed_overview_option);
+detailed_overview_grouped.setOption(detailed_overview)
 Overview_generation.setOption(overview_generation);
 GHG_overview.setOption(GHG_overview);
 overview_comparison.setOption(overview_comparison);
