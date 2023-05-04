@@ -196,7 +196,7 @@ export const overview_option = {
     },
   ]
 };
-export const detailed_overview_grouped_option = 
+detailed_overview_grouped_option_schleife = 
   [let xAxisData = [],
   for (let i = 0; i < 1; i++) {
     xAxisData.push('Status Quo', 'Mein Szenario', 'Ziel Szenario')
@@ -207,7 +207,7 @@ export const detailed_overview_grouped_option =
       shadowColor: 'rgba(0,0,0,0.3)'
     }
   };]
-option = { legend: {
+export const detailed_overview_grouped_option = { legend: {
       data: ['Konventionell', 'Wind', 'Freiflächen-PV', 'Aufdach-PV', 'Bioenergie', 'GHD', 'Haushalt', 'Industrie', 'Sonstiges'],
       bottom: '12'
     },
