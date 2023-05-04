@@ -196,29 +196,20 @@ export const overview_option = {
     },
   ]
 };
-export detailed_overview_grouped_option = {
-  let xAxisData = [];
-  let data1= [];
-  let data2 = [];
-  let data3 = [];
-  let data4 = [];
-  for (let i = 0; i < 3; i++) {
-    xAxisData.push('Szenario');
-    data1.push(+(Math.random() * 2).toFixed(2));
-    data2.push(+(Math.random() * 5).toFixed(2));
-    data3.push(+(Math.random() + 0.3).toFixed(2));
-    data4.push(+Math.random().toFixed(2));
+export const detailed_overview_grouped_option = 
+  [let xAxisData = [],
+  for (let i = 0; i < 1; i++) {
+    xAxisData.push('Status Quo', 'Mein Szenario', 'Ziel Szenario')
   }
   var emphasisStyle = {
     itemStyle: {
       shadowBlur: 10,
       shadowColor: 'rgba(0,0,0,0.3)'
     }
-  };
-  option = {
-    legend: {
+  };]
+option = { legend: {
       data: ['Konventionell', 'Wind', 'Freiflächen-PV', 'Aufdach-PV', 'Bioenergie', 'GHD', 'Haushalt', 'Industrie', 'Sonstiges'],
-       bottom: '12'
+      bottom: '12'
     },
     brush: {
       toolbox: ['rect', 'polygon', 'lineX', 'lineY', 'keep', 'clear'],
@@ -233,20 +224,36 @@ export detailed_overview_grouped_option = {
       }
     },
     tooltip: {},
+    grid: {
+    top: '10%',
+    left: '3%',
+    right: '15%',
+    bottom: '10%',
+    containLabel: true
+  },
     yAxis: {
       data: xAxisData,
       axisLine: { onZero: true },
       splitLine: { show: false },
       splitArea: { show: false }
     },
-    xAxis: {},
-    grid: {
-      bottom: 100
-    },
+    xAxis: {
+    type: 'value',
+      show: true,
+    position: 'bottom',
+    name: 'TWh',
+      nameLocation: 'end',
+      nameTextStyle: 'Roboto',
+        width: '76',
+        heigth: '32',
+      fontWeight: '300', 
+      fontSize: '14'
+  },
     series: [
       {
         name: 'Konventionell',
         type: 'bar',
+          barWidth: '35',
         stack: 'five',
         color: '#CFCFCF',
         emphasis: emphasisStyle,
@@ -303,6 +310,7 @@ export detailed_overview_grouped_option = {
       {
         name: 'Industrie',
         type: 'bar',
+         barWidth: '35',
         stack: 'four',
         color: '#C27BA0',
         emphasis: emphasisStyle,
@@ -317,29 +325,7 @@ export detailed_overview_grouped_option = {
         data: [145, 144, 180]
       }
     ]
-  };
-  myChart.on('brushSelected', function (params) {
-    var brushed = [];
-    var brushComponent = params.batch[0];
-    for (var sIdx = 0; sIdx < brushComponent.selected.length; sIdx++) {
-      var rawIndices = brushComponent.selected[sIdx].dataIndex;
-      brushed.push('[Series ' + sIdx + '] ' + rawIndices.join(', '));
-    }
-    myChart.setOption({
-      title: {
-        backgroundColor: '#333',
-        text: 'SELECTED DATA INDICES: \n' + brushed.join('\n'),
-        bottom: 0,
-        right: '10%',
-        width: 100,
-        textStyle: {
-          fontSize: 12,
-          color: '#fff'
-        }
-      }
-    });
-  });
-}
+ };
   export const Overview_generation_option = {
     title: {
         text: 'Übersicht Erzeugung'
