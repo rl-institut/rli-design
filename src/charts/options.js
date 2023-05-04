@@ -158,7 +158,7 @@
     },
   ]
 };
-detailed_overview_grouped_option_schleife = 
+/* schleife fuer detailed_overview_grouped_option= 
   [let xAxisData = [],
   for (let i = 0; i < 1; i++) {
     xAxisData.push('Status Quo', 'Mein Szenario', 'Ziel Szenario')
@@ -168,7 +168,7 @@ detailed_overview_grouped_option_schleife =
       shadowBlur: 10,
       shadowColor: 'rgba(0,0,0,0.3)'
     }
-  };]
+  };] */
 export const detailed_overview_grouped_option = { legend: {
       data: ['Konventionell', 'Wind', 'Freiflächen-PV', 'Aufdach-PV', 'Bioenergie', 'GHD', 'Haushalt', 'Industrie', 'Sonstiges'],
       bottom: '12'
@@ -417,72 +417,11 @@ export const detailed_overview_grouped_option = { legend: {
     }
   ]
 };
-  export const overview_comparison_option = {
-    title: {
-        text: 'Erzeugung - Verbrauch '
-      },
-    tooltip: {
-      trigger: 'axis',
-      axisPointer: {
-        type: 'shadow'
-      }
-    },
-    legend: {
-      data: [ 'Erzeugung', 'Verbrauch']
-    },
-    grid: {
-      left: '3%',
-      right: '4%',
-      bottom: '3%',
-      containLabel: true
-    },
-    xAxis: [
-      {
-        type: 'value'
-      }
-    ],
-    yAxis: [
-      {
-        type: 'category',
-        axisTick: {
-          show: false
-        },
-        data: ['Ziel', 'Szenario', 'Status Quo']
-      }
-    ],
-    series: [
-      {
-        name: 'Verbrauch',
-        type: 'bar',
-        stack: 'Total',
-        label: {
-          show: false
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        data: [200, 230, 341]
-      },
-      {
-        name: 'Erzeugung',
-        type: 'bar',
-        stack: 'Total',
-        label: {
-          show: false,
-        },
-        emphasis: {
-          focus: 'series'
-        },
-        data: [-220, -200, -100 ]
-      }
-    ]
-  };
   export const strom_overview = {
     tooltip: {
       trigger: 'axis',
       axisPointer: {
-        // Use axis to trigger tooltip
-        type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+        type: 'shadow' 
       }
     },
     legend: {
@@ -587,7 +526,7 @@ export const detailed_overview_grouped_option = { legend: {
         data: [0 , 132, 200, 534 ]
       },
       {
-        name: 'GHG',
+        name: 'GHD',
         type: 'bar',
         stack: 'total',
         color: '#F5F5DC',
@@ -644,8 +583,7 @@ export const detailed_overview_grouped_option = { legend: {
     tooltip: {
       trigger: 'axis',
       axisPointer: {
-        // Use axis to trigger tooltip
-        type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+        type: 'shadow' 
       }
     },
     legend: {
@@ -685,7 +623,7 @@ export const detailed_overview_grouped_option = { legend: {
     },
     series: [
       {
-        name: 'GHG',
+        name: 'GHD',
         type: 'bar',
         barWidth: '16',
         stack: 'total',
@@ -743,8 +681,7 @@ export const detailed_overview_grouped_option = { legend: {
     tooltip: {
       trigger: 'axis',
       axisPointer: {
-        // Use axis to trigger tooltip
-        type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+        type: 'shadow' 
       }
     },
     legend: {
@@ -842,8 +779,7 @@ export const detailed_overview_grouped_option = { legend: {
     tooltip: {
       trigger: 'axis',
       axisPointer: {
-        // Use axis to trigger tooltip
-        type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+        type: 'shadow' 
       }
     },
     legend: {
