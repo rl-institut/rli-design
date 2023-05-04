@@ -911,7 +911,7 @@ export const detailed_overview_grouped_option = { legend: {
         ],
       },
     ],
-  }, 
+  }; 
   export const co2_emissionen = {
     xAxis: {
       type: 'category',
