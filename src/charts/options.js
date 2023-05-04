@@ -1,4 +1,4 @@
- export const detailed_overview_option = {
+export const detailed_overview_option = {
   tooltip: {
     trigger: 'axis',
     axisPointer: {
