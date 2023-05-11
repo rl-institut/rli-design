@@ -1064,18 +1064,14 @@ export const waerme_overview_option = {
     },
   ]
 };
-export const
-  /*wärme dezentral plus zentral
- let xAxisData = [];
- for (let i = 0; i < 1; i++) 
-   {xAxisData.push('Status Quo', 'Mein Szenario', 'Ziel Szenario')}
- var emphasisStyle = {
-     itemStyle: {
-       shadowBlur: 10,
-       shadowColor: 'rgba(0,0,0,0.3)'
-     }
-  };*/
-  waerme_dezentral_zentral_option = {
+/*const xAxisData = ['Status Quo', 'Mein Szenario', 'Ziel Szenario'];
+const emphasisStyle = {
+  itemStyle: {
+    shadowBlur: 10,
+    shadowColor: 'rgba(0,0,0,0.3)'
+  }
+};*/
+export const waerme_dezentral_zentral = {
     legend: {
       data: ['Kohleofen', 'Holzofen', 'Gasheizkessel', 'Solarthermiekollektor', 'Wärmepumpe', 'Thermische Energiespeicher', 'Große Gasheizkessel', 'Große Wärmepumpen', 'Power to Heat', 'Große Solarthermiekollektoren'],
       bottom: '12'

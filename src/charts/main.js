@@ -13,6 +13,7 @@ import {
   anteil_ee,
   co2_emissionen,
   waerme_overview_option,
+  waerme_dezentral_zentral,
 } from "./options";
 
 //const overviewElement = echarts.init(document.getElementById("overview"));
@@ -28,6 +29,7 @@ const verkehrThgElement = echarts.init(document.getElementById("verkehr_thg"));
 const anteilEeElement = echarts.init(document.getElementById("anteil_ee"));
 const co2EmissionenElement = echarts.init(document.getElementById("co2_emissionen"));
 const waermeOverviewElement = echarts.init(document.getElementById("waerme_overview_option"));
+const waermeDezentralZentralElement = echarts.init(document.getElementById("waerme_dezentral_zentral"))
 
 function resizeChart() {
   setTimeout(function () {
@@ -44,6 +46,7 @@ function resizeChart() {
     anteilEeElement.resize();
     co2EmissionenElement.resize();
     waermeOverviewElement.resize();
+    waermeDezentralZentralElement.resize();
   }, 200);
 };
 
@@ -59,6 +62,7 @@ verkehrOverviewElement.setOption(verkehr_overview);
 verkehrThgElement.setOption(verkehr_thg);
 anteilEeElement.setOption(anteil_ee);
 co2EmissionenElement.setOption(co2_emissionen);
-waermeOverviewElement.setOption(waerme_overview_option)
+waermeOverviewElement.setOption(waerme_overview_option);
+waermeDezentralZentralElement.setOption(waerme_dezentral_zentral);
 
 window.addEventListener("resize", resizeChart);
