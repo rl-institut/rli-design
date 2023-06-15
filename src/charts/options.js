@@ -967,18 +967,111 @@ export const co2_emissionen = {
     },
   ],
 };
-export const
-  /*wärme dezentral plus zentral
- let xAxisData = [];
- for (let i = 0; i < 1; i++) 
-   {xAxisData.push('Status Quo', 'Mein Szenario', 'Ziel Szenario')}
- var emphasisStyle = {
-     itemStyle: {
-       shadowBlur: 10,
-       shadowColor: 'rgba(0,0,0,0.3)'
-     }
-  };*/
-  waerme_dezentral_zentral_option = {
+export const waerme_overview_option = {
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow' 
+    }
+  },
+  legend: {
+    show: true,
+    bottom: '15',
+    itemWidth: 14,
+    itemHeight: 14
+  },
+  grid: {
+    top: '10%',
+    left: '3%',
+    right: '25%',
+    bottom: '18%',
+    containLabel: true
+  },
+  xAxis: {
+    type: 'value',
+    show: true,
+    position: 'bottom',
+    name: 'TWh',
+    nameLocation: 'end',
+    nameTextStyle: 'Roboto',
+    width: '76',
+    heigth: '32',
+    fontWeight: '300',
+    fontSize: '14'
+  },
+  yAxis: {
+    type: 'category',
+    data: ['Ziel',
+      'Mein Szeanrio',
+      'Status Quo' ],
+    axisTick: {
+      show: false
+    }
+  },
+  series: [
+    {
+      name: 'GHD',
+      type: 'bar',
+      barWidth: '35',
+      stack: 'total',
+      color: '#F5F5DC',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [200, 300, 320]
+    },
+    {
+      name: 'Haushalte',
+      type: 'bar',
+      stack: 'total',
+      color: '#A8DADC',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [260, 300, 310]
+    },
+    {
+      name: 'Industrie',
+      type: 'bar',
+      stack: 'total',
+      color: '#C27BA0',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [200, 250, 350]
+    },
+    {
+      name: 'Sonstiges',
+      type: 'bar',
+      stack: 'total',
+      color: '#B0BEC5',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [150, 150, 150]
+    },
+  ]
+};
+/*const xAxisData = ['Status Quo', 'Mein Szenario', 'Ziel Szenario'];
+const emphasisStyle = {
+  itemStyle: {
+    shadowBlur: 10,
+    shadowColor: 'rgba(0,0,0,0.3)'
+  }
+};*/
+export const waerme_dezentral_zentral = {
     legend: {
       data: ['Kohleofen', 'Holzofen', 'Gasheizkessel', 'Solarthermiekollektor', 'Wärmepumpe', 'Thermische Energiespeicher', 'Große Gasheizkessel', 'Große Wärmepumpen', 'Power to Heat', 'Große Solarthermiekollektoren'],
       bottom: '12'
