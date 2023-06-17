@@ -1198,4 +1198,85 @@ export const waerme_dezentral_zentral = {
         data: [145, 144, 180]
       }
     ]
-  }
+  }, 
+  export const thg_new_waterfall_option = {
+    backgroundColor: '#FFFFFF',
+    fontStyle: 'Roboto',
+    fontSize: '14',
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'shadow'
+      }
+    },
+    legend: {
+      show: true,
+      bottom: '12'
+    },
+    grid: {
+      top: '10%',
+      left: '3%',
+      right: '15%',
+      bottom: '10%',
+      containLabel: true
+    },
+    xAxis: {
+      type: 'category',
+      splitLine: { show: false },
+      data: ['Status Quo', 'Detail SQ', 'Mein Szenario', 'Detail MS', 'Szenario', 'Detail Szeanrio']
+    },
+    yAxis: {
+      type: 'value'
+    },
+    series: [
+      {
+        name: 'Sockel 1',
+        type: 'bar',
+        stack: 'Total',
+        itemStyle: {
+          borderColor: 'transparent',
+          color: 'transparent'
+        },
+        emphasis: {
+          itemStyle: {
+            borderColor: 'transparent',
+            color: 'transparent'
+          }
+        },
+        data: [0, 150, 0, 240, 0, 195]
+      },
+      {
+        name: 'Sockel 2.1',
+        type: 'bar',
+        barWidth: '25',
+        stack: 'Total',
+        label: {
+          show: false,
+          position: 'inside'
+        },
+        data: [290, 60, 300, 20, 270, 30]
+      },
+      {
+        name: 'Sockel 2.2',
+        type: 'bar',
+        barWidth: '25',
+        stack: 'Total',
+        label: {
+          show: false,
+          position: 'inside'
+        },
+        data: [0, 60, 0, 20, 0, 30]
+      },
+       {
+        name: 'Sockel 2.3',
+        type: 'bar',
+        barWidth: '25',
+        stack: 'Total',
+        label: {
+          show: false,
+          position: 'inside'
+        },
+        data: [0, 20, 0, 20, 0, 15]
+      },
+    ]
+  };
