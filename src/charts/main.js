@@ -67,6 +67,6 @@ anteilEeElement.setOption(anteil_ee);
 co2EmissionenElement.setOption(co2_emissionen);
 waermeOverviewElement.setOption(waerme_overview_option);
 waermeDezentralZentralElement.setOption(waerme_dezentral_zentral);
-thgNewWaterfallElement.setOption(thg_new_waterfall_option)
+thgNewWaterfallElement.setOption(thg_new_waterfall_option);
 
 window.addEventListener("resize", resizeChart);

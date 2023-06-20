@@ -1198,7 +1198,7 @@ export const waerme_dezentral_zentral = {
         data: [145, 144, 180]
       }
     ]
-  }, 
+  };
   export const thg_new_waterfall_option = {
     backgroundColor: '#FFFFFF',
     fontStyle: 'Roboto',
@@ -1210,8 +1210,8 @@ export const waerme_dezentral_zentral = {
       }
     },
     legend: {
-      show: true,
-      bottom: '12'
+    show: true,
+    bottom: '12'
     },
     grid: {
       top: '10%',
@@ -1279,4 +1279,4 @@ export const waerme_dezentral_zentral = {
         data: [0, 20, 0, 20, 0, 15]
       },
     ]
-  };
+}
