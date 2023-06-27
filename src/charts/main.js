@@ -15,6 +15,8 @@ import {
   waerme_overview_option,
   waerme_dezentral_zentral,
   thg_new_waterfall_option,
+  thg_waterfall_one_option,
+  thg_waterfall_two_option,
 } from "./options";
 
 //const overviewElement = echarts.init(document.getElementById("overview"));
@@ -31,7 +33,9 @@ const anteilEeElement = echarts.init(document.getElementById("anteil_ee"));
 const co2EmissionenElement = echarts.init(document.getElementById("co2_emissionen"));
 const waermeOverviewElement = echarts.init(document.getElementById("waerme_overview_option"));
 const waermeDezentralZentralElement = echarts.init(document.getElementById("waerme_dezentral_zentral"));
-const thgNewWaterfallElement =  echarts.init(document.getElementById("thg_new_waterfall"))
+const thgNewWaterfallElement = echarts.init(document.getElementById("thg_new_waterfall"));
+const thgWaterfallOneElement = echarts.init(document.getElementById("thg_waterfall_one"));
+const thgWaterfallTwoElement = echarts.init(document.getElementById("thg_waterfall_two"));
 
 function resizeChart() {
   setTimeout(function () {
@@ -50,6 +54,8 @@ function resizeChart() {
     waermeOverviewElement.resize();
     waermeDezentralZentralElement.resize();
     thgNewWaterfallElement.resize();
+    thgWaterfallOneElement.resize();
+    thgWaterfallTwoElement.resize()
   }, 200);
 };
 
@@ -68,5 +74,7 @@ co2EmissionenElement.setOption(co2_emissionen);
 waermeOverviewElement.setOption(waerme_overview_option);
 waermeDezentralZentralElement.setOption(waerme_dezentral_zentral);
 thgNewWaterfallElement.setOption(thg_new_waterfall_option);
+thgWaterfallOneElement.setOption(thg_waterfall_one_option);
+thgWaterfallTwoElement.setOption(thg_waterfall_two_option);
 
 window.addEventListener("resize", resizeChart);

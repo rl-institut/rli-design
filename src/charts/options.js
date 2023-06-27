@@ -54,7 +54,7 @@ export const detailed_overview_option = {
     {
       name: 'Wind',
       type: 'bar',
-      barWidth: '35',
+      barWidth: '16',
       stack: 'total',
       color: '#1F82C0',
       label: {
@@ -212,7 +212,7 @@ export const detailed_overview_grouped_option = {
     {
       name: 'Konventionell',
       type: 'bar',
-      barWidth: '35',
+      barWidth: '16',
       stack: 'five',
       color: '#CFCFCF',
       emphasis: emphasisStyle,
@@ -269,7 +269,7 @@ export const detailed_overview_grouped_option = {
     {
       name: 'Industrie',
       type: 'bar',
-      barWidth: '35',
+      barWidth: '16',
       stack: 'four',
       color: '#C27BA0',
       emphasis: emphasisStyle,
@@ -331,7 +331,7 @@ export const GHG_overview_option = {
     {
       name: 'Sockel',
       type: 'bar',
-      barWidth: '25',
+      barWidth: '16',
       stack: 'total',
       color: '#F2F2F2',
       label: {
@@ -359,7 +359,7 @@ export const GHG_overview_option = {
     {
       name: 'Haushalte',
       type: 'bar',
-      barWidth: '25',
+      barWidth: '16',
       stack: 'total',
       color: '#74A9CF',
       label: {
@@ -373,7 +373,7 @@ export const GHG_overview_option = {
     {
       name: 'Industrie',
       type: 'bar',
-      barWidth: '25',
+      barWidth: '16',
       stack: 'total',
       color: '#FA9FB5',
       label: {
@@ -387,7 +387,7 @@ export const GHG_overview_option = {
     {
       name: 'XXX',
       type: 'bar',
-      barWidth: '25',
+      barWidth: '16',
       stack: 'total',
       color: '#FEC44F',
       label: {
@@ -401,7 +401,7 @@ export const GHG_overview_option = {
     {
       name: 'XXX',
       type: 'bar',
-      barWidth: '25',
+      barWidth: '16',
       stack: 'total',
       color: '#8C96C6',
       label: {
@@ -1012,7 +1012,7 @@ export const waerme_overview_option = {
     {
       name: 'GHD',
       type: 'bar',
-      barWidth: '35',
+      barWidth: '16',
       stack: 'total',
       color: '#F5F5DC',
       label: {
@@ -1118,7 +1118,7 @@ export const waerme_dezentral_zentral = {
       {
         name: 'Kohleofen',
         type: 'bar',
-        barWidth: '35',
+        barWidth: '16',
         stack: 'five',
         color: '#604F4F',
         emphasis: emphasisStyle,
@@ -1183,7 +1183,7 @@ export const waerme_dezentral_zentral = {
       {
         name: 'Power-to-Heat',
         type: 'bar',
-        barWidth: '35',
+        barWidth: '16',
         stack: 'four',
         color: '#D7DF01',
         emphasis: emphasisStyle,
@@ -1248,7 +1248,7 @@ export const waerme_dezentral_zentral = {
       {
         name: 'Sockel 2.1',
         type: 'bar',
-        barWidth: '25',
+        barWidth: '16',
         stack: 'Total',
         label: {
           show: false,
@@ -1259,7 +1259,7 @@ export const waerme_dezentral_zentral = {
       {
         name: 'Sockel 2.2',
         type: 'bar',
-        barWidth: '25',
+        barWidth: '16',
         stack: 'Total',
         label: {
           show: false,
@@ -1270,7 +1270,7 @@ export const waerme_dezentral_zentral = {
        {
         name: 'Sockel 2.3',
         type: 'bar',
-        barWidth: '25',
+        barWidth: '16',
         stack: 'Total',
         label: {
           show: false,
@@ -1279,4 +1279,347 @@ export const waerme_dezentral_zentral = {
         data: [0, 20, 0, 20, 0, 15]
       },
     ]
+};
+export const thg_waterfall_one_option = {
+  backgroundColor: '#FFFFFF',
+  fontStyle: 'Roboto',
+  fontSize: '14',
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
+    }
+  },
+  legend: {
+  show: true,
+  bottom: '12'
+  },
+  grid: {
+    top: '10%',
+    left: '3%',
+    right: '15%',
+    bottom: '10%',
+    containLabel: true
+  },
+  xAxis: {
+    type: 'category',
+    splitLine: { show: false },
+    data: ['1990', 'Status Quo', 'Mein Szenario', 'Energiewirtschaft']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      name: '',
+      type: 'bar',
+      stack: 'Total',
+      itemStyle: {
+        borderColor: 'transparent',
+        color: 'transparent'
+      },
+      emphasis: {
+        itemStyle: {
+          borderColor: 'transparent',
+          color: 'transparent'
+        }
+      },
+      data: [0, 0, 0, 510]
+    },
+    {
+      name: 'Abfallwirtschaft und Sonstiges',
+      type: 'bar',
+      barWidth: '16',
+      color: '#F5F5DC',
+      stack: 'Total',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [100, 100, 100, 0]
+    },
+    {
+      name: 'Landwirtschaft',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#87D068',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [100, 100, 100, 0]
+    },
+     {
+      name: 'Industrie',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#FA9FB5',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [100, 100, 100, 0]
+    },
+    {
+      name: 'Verkehr',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#6C567B',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [100, 100, 100, 0]
+    },
+    {
+      name: 'Gebäude',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#A8DADC',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [100, 100, 100, 0]
+    },
+    {
+      name: 'Energiewirtschaft',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#E6772E',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [100, 100, 100, 0]
+    }, 
+    {
+      name: 'Erneuerbare Energie',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#48BF91',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [0, 0, 0, 50]
+    },
+    {
+      name: 'Export',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#F6B93B',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [0, 0, 0, 20]
+    },
+    {
+      name: 'Import',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#D9B38C',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [0, 0, 0, 20]
+    }, 
+    {
+      name: '',
+      type: 'line',
+      symbol: 'none',
+      symbolSize: '10',
+//        symbolOffset:'',
+      symbolRotate: '-90',
+        lineStyle: {
+          type:'dashed'
+      },
+        color: '#808B96',
+        label: {
+        show: false,
+       },
+      data: ['-', '-', 600, 600],
+    },
+  ],
+};
+export const thg_waterfall_two_option = {
+  backgroundColor: '#FFFFFF',
+  fontStyle: 'Roboto',
+  fontSize: '14',
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
+    }
+  },
+  legend: {
+  show: true,
+  bottom: '12'
+  },
+  grid: {
+    top: '10%',
+    left: '3%',
+    right: '15%',
+    bottom: '10%',
+    containLabel: true
+  },
+  xAxis: {
+    type: 'category',
+    splitLine: { show: false },
+    data: ['1990', 'Status Quo', 'Mein Szenario', 'Energiewirtschaft']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      name: '',
+      type: 'bar',
+      stack: 'Total',
+      itemStyle: {
+        borderColor: 'transparent',
+        color: 'transparent'
+      },
+      emphasis: {
+        itemStyle: {
+          borderColor: 'transparent',
+          color: 'transparent'
+        }
+      },
+      data: [0, 0, 0, 500]
+    },
+    {
+      name: 'Abfallwirtschaft und Sonstiges',
+      type: 'bar',
+      barWidth: '16',
+      color: '#F5F5DC',
+      stack: 'Total',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [100, 100, 100, 0]
+    },
+    {
+      name: 'Landwirtschaft',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#87D068',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [100, 100, 100, 0]
+    },
+     {
+      name: 'Industrie',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#FA9FB5',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [100, 100, 100, 0]
+    },
+    {
+      name: 'Verkehr',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#6C567B',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [100, 100, 100, 0]
+    },
+    {
+      name: 'Gebäude',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#A8DADC',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [100, 100, 100, 0]
+    },
+    {
+      name: 'Energiewirtschaft',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#E6772E',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [100, 100, 100, 0]
+    }, 
+    {
+      name: 'Erneuerbare Energie',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#48BF91',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [0, 0, 0, 50]
+    },
+    {
+      name: 'Export',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#F6B93B',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [0, 0, 0, 30]
+    },
+    {
+      name: 'Import',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#D9B38C',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [0, 0, 0, 20]
+    }, 
+    {
+      name: '',
+      type: 'line',
+      markLine: {
+        symbol: 'emptyArrow',
+        color: '#808B96',
+        data: [
+          {
+            xAxis: '',
+            yAxis:'550',
+            symbol: 'none',
+          }
+        ]
+      },
+    },
+  ],
 }
