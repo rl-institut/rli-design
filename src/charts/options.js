@@ -1094,7 +1094,7 @@ export const thg_waterfall_option = {
   xAxis: {
     type: 'category',
     splitLine: { show: false },
-    data: ['2019', 'Mein Szenario', 'Reduktion durch grüne Energie aus:']
+    data: ['2019', 'Reduktion durch grüne Energie aus:']
   },
   yAxis: {
     type: 'value'
@@ -1114,7 +1114,7 @@ export const thg_waterfall_option = {
           color: 'transparent'
         }
       },
-      data: [0, 0, 410]
+      data: [0, 410]
     },
     {
       name: 'Abfallwirtschaft und Sonstiges',
@@ -1126,7 +1126,7 @@ export const thg_waterfall_option = {
         show: false,
         position: 'inside'
       },
-      data: [100, 80, 0]
+      data: [80, 0]
     },
     {
       name: 'Landwirtschaft',
@@ -1138,7 +1138,7 @@ export const thg_waterfall_option = {
         show: false,
         position: 'inside'
       },
-      data: [100, 80, 0]
+      data: [80, 0]
     },
      {
       name: 'Industrie',
@@ -1150,7 +1150,7 @@ export const thg_waterfall_option = {
         show: false,
         position: 'inside'
       },
-      data: [100, 80, 0]
+      data: [80, 0]
     },
     {
       name: 'Verkehr',
@@ -1162,7 +1162,7 @@ export const thg_waterfall_option = {
         show: false,
         position: 'inside'
       },
-      data: [100, 80, 0]
+      data: [80, 0]
     },
     {
       name: 'Gebäude',
@@ -1174,7 +1174,7 @@ export const thg_waterfall_option = {
         show: false,
         position: 'inside'
       },
-      data: [100, 80, 0]
+      data: [80, 0]
     },
     {
       name: 'Energiewirtschaft',
@@ -1186,7 +1186,7 @@ export const thg_waterfall_option = {
         show: false,
         position: 'inside'
       },
-      data: [100, 100, 0]
+      data: [100, 0]
     }, 
     {
       name: 'Exporte',
@@ -1198,7 +1198,7 @@ export const thg_waterfall_option = {
         show: false,
         position: 'inside'
       },
-      data: [0, 0, 20 ]
+      data: [0, 20 ]
     },
     {
       name: 'Importe',
@@ -1210,7 +1210,7 @@ export const thg_waterfall_option = {
         show: false,
         position: 'inside'
       },
-      data: [0, 0, 20]
+      data: [0, 20]
     },
     {
       name: 'Regionale Erzeugung',
@@ -1222,7 +1222,7 @@ export const thg_waterfall_option = {
         show: false,
         position: 'inside'
       },
-      data: [0, 0, 50]
+      data: [0, 50]
     },
     {
       name: 'Referenzlinie',
@@ -1238,7 +1238,7 @@ export const thg_waterfall_option = {
         label: {
         show: false,
        },
-      data: [600, 500, 500]
+      data: [500, 500]
     },
   ],
 };
@@ -1251,11 +1251,16 @@ const emphasisStyle = {
 };
 export const thg_statisch_option = {
   legend: {
-    data: ['Abfallwirtschaft und Sonstiges', 
-    'Landwirtschaft', 
-    'Industrie', 
-    'Verkehr', 
-    'Gebäude', 
+    data: ['Abfallwirtschaft und Sonstiges ABW', 
+    'Landwirtschaft ABW', 
+    'Industrie ABW', 
+    'Verkehr ABW', 
+    'Gebäude ABW', 
+    'Abfallwirtschaft und Sonstiges SA', 
+    'Landwirtschaft SA', 
+    'Industrie SA', 
+    'Verkehr SA', 
+    'Gebäude SA'
     ],
     bottom: '12'
   },
@@ -1289,7 +1294,7 @@ export const thg_statisch_option = {
     type: 'log',
     show: true,
     position: 'bottom',
-    name: 'Mt CO₂-\Emissionen',
+    name: 'kt CO₂-Äquivalent ',
     nameLocation: 'end',
     nameTextStyle: 'Roboto',
     width: '76',
