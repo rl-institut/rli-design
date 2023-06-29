@@ -158,13 +158,13 @@ export const detailed_overview_option = {
     },
   ]
 };
-const xAxisData = ['Status Quo', 'Mein Szenario', 'Ziel Szenario'];
+/* const xAxisData = ['Status Quo', 'Mein Szenario', 'Ziel Szenario'];
 const emphasisStyle = {
   itemStyle: {
     shadowBlur: 10,
     shadowColor: 'rgba(0,0,0,0.3)'
   }
-};
+}; */
 export const detailed_overview_grouped_option = {
   legend: {
     data: ['Konventionell', 'Wind', 'Freiflächen-PV', 'Aufdach-PV', 'Bioenergie', 'GHD', 'Haushalt', 'Industrie', 'Sonstiges'],
@@ -282,135 +282,6 @@ export const detailed_overview_grouped_option = {
       color: '#B0BEC5',
       emphasis: emphasisStyle,
       data: [145, 144, 180]
-    }
-  ]
-};
-export const GHG_overview_option = {
-  backgroundColor: '#FFFFFF',
-  fontStyle: 'Roboto',
-  fontSize: '14',
-  tooltip: {
-    trigger: 'axis',
-    axisPointer: {
-      type: 'shadow'
-    }
-  },
-  legend: {
-    show: true,
-    bottom: '12'
-  },
-  grid: {
-    top: '10%',
-    left: '3%',
-    right: '15%',
-    bottom: '10%',
-    containLabel: true
-  },
-  xAxis: {
-    type: 'value',
-    show: true,
-    position: 'bottom',
-    name: 'Mt CO₂-\Emissionen',
-    nameLocation: 'end',
-    nameTextStyle: 'Roboto',
-    width: '76',
-    heigth: '32',
-    fontWeight: '300',
-    fontSize: '14',
-
-  },
-  yAxis: {
-    show: true,
-    type: 'category',
-    data: ['Ziel', 'Szenario', 'Status Quo', '1990'],
-    nameTextStyle: 'Roboto',
-    fontWeight: '400',
-    fontSize: '14',
-  },
-  series: [
-    {
-      name: 'Sockel',
-      type: 'bar',
-      barWidth: '16',
-      stack: 'total',
-      color: '#F2F2F2',
-      label: {
-        show: false
-      },
-      emphasis: {
-        focus: 'series'
-      },
-      data: [20, 20, 20, 20]
-    },
-    {
-      name: 'GHD',
-      type: 'bar',
-      barWidth: '25',
-      stack: 'total',
-      color: '#F5F5DC',
-      label: {
-        show: false
-      },
-      emphasis: {
-        focus: 'series'
-      },
-      data: [15, 17, 20, 25]
-    },
-    {
-      name: 'Haushalte',
-      type: 'bar',
-      barWidth: '16',
-      stack: 'total',
-      color: '#74A9CF',
-      label: {
-        show: false
-      },
-      emphasis: {
-        focus: 'series'
-      },
-      data: [12, 15, 30, 34]
-    },
-    {
-      name: 'Industrie',
-      type: 'bar',
-      barWidth: '16',
-      stack: 'total',
-      color: '#FA9FB5',
-      label: {
-        show: false
-      },
-      emphasis: {
-        focus: 'series'
-      },
-      data: [20, 20, 31, 34]
-    },
-    {
-      name: 'XXX',
-      type: 'bar',
-      barWidth: '16',
-      stack: 'total',
-      color: '#FEC44F',
-      label: {
-        show: false
-      },
-      emphasis: {
-        focus: 'series'
-      },
-      data: [5, 12, 15, 24]
-    },
-    {
-      name: 'XXX',
-      type: 'bar',
-      barWidth: '16',
-      stack: 'total',
-      color: '#8C96C6',
-      label: {
-        show: false
-      },
-      emphasis: {
-        focus: 'series'
-      },
-      data: [15, 20, 30, 34]
     }
   ]
 };
@@ -1198,89 +1069,8 @@ export const waerme_dezentral_zentral = {
         data: [145, 144, 180]
       }
     ]
-  };
-  export const thg_new_waterfall_option = {
-    backgroundColor: '#FFFFFF',
-    fontStyle: 'Roboto',
-    fontSize: '14',
-    tooltip: {
-      trigger: 'axis',
-      axisPointer: {
-        type: 'shadow'
-      }
-    },
-    legend: {
-    show: true,
-    bottom: '12'
-    },
-    grid: {
-      top: '10%',
-      left: '3%',
-      right: '15%',
-      bottom: '10%',
-      containLabel: true
-    },
-    xAxis: {
-      type: 'category',
-      splitLine: { show: false },
-      data: ['Status Quo', 'Detail SQ', 'Mein Szenario', 'Detail MS', 'Szenario', 'Detail Szeanrio']
-    },
-    yAxis: {
-      type: 'value'
-    },
-    series: [
-      {
-        name: 'Sockel 1',
-        type: 'bar',
-        stack: 'Total',
-        itemStyle: {
-          borderColor: 'transparent',
-          color: 'transparent'
-        },
-        emphasis: {
-          itemStyle: {
-            borderColor: 'transparent',
-            color: 'transparent'
-          }
-        },
-        data: [0, 150, 0, 240, 0, 195]
-      },
-      {
-        name: 'Sockel 2.1',
-        type: 'bar',
-        barWidth: '16',
-        stack: 'Total',
-        label: {
-          show: false,
-          position: 'inside'
-        },
-        data: [290, 60, 300, 20, 270, 30]
-      },
-      {
-        name: 'Sockel 2.2',
-        type: 'bar',
-        barWidth: '16',
-        stack: 'Total',
-        label: {
-          show: false,
-          position: 'inside'
-        },
-        data: [0, 60, 0, 20, 0, 30]
-      },
-       {
-        name: 'Sockel 2.3',
-        type: 'bar',
-        barWidth: '16',
-        stack: 'Total',
-        label: {
-          show: false,
-          position: 'inside'
-        },
-        data: [0, 20, 0, 20, 0, 15]
-      },
-    ]
-};
-export const thg_waterfall_one_option = {
+  }; 
+export const thg_waterfall_option = {
   backgroundColor: '#FFFFFF',
   fontStyle: 'Roboto',
   fontSize: '14',
@@ -1304,7 +1094,7 @@ export const thg_waterfall_one_option = {
   xAxis: {
     type: 'category',
     splitLine: { show: false },
-    data: ['1990', 'Status Quo', 'Mein Szenario', 'Energiewirtschaft']
+    data: ['2019', 'Mein Szenario', 'Reduktion durch grüne Energie aus:']
   },
   yAxis: {
     type: 'value'
@@ -1324,7 +1114,7 @@ export const thg_waterfall_one_option = {
           color: 'transparent'
         }
       },
-      data: [0, 0, 0, 510]
+      data: [0, 0, 410]
     },
     {
       name: 'Abfallwirtschaft und Sonstiges',
@@ -1336,7 +1126,7 @@ export const thg_waterfall_one_option = {
         show: false,
         position: 'inside'
       },
-      data: [100, 100, 100, 0]
+      data: [100, 80, 0]
     },
     {
       name: 'Landwirtschaft',
@@ -1348,7 +1138,7 @@ export const thg_waterfall_one_option = {
         show: false,
         position: 'inside'
       },
-      data: [100, 100, 100, 0]
+      data: [100, 80, 0]
     },
      {
       name: 'Industrie',
@@ -1360,7 +1150,7 @@ export const thg_waterfall_one_option = {
         show: false,
         position: 'inside'
       },
-      data: [100, 100, 100, 0]
+      data: [100, 80, 0]
     },
     {
       name: 'Verkehr',
@@ -1372,7 +1162,7 @@ export const thg_waterfall_one_option = {
         show: false,
         position: 'inside'
       },
-      data: [100, 100, 100, 0]
+      data: [100, 80, 0]
     },
     {
       name: 'Gebäude',
@@ -1384,7 +1174,7 @@ export const thg_waterfall_one_option = {
         show: false,
         position: 'inside'
       },
-      data: [100, 100, 100, 0]
+      data: [100, 80, 0]
     },
     {
       name: 'Energiewirtschaft',
@@ -1396,22 +1186,10 @@ export const thg_waterfall_one_option = {
         show: false,
         position: 'inside'
       },
-      data: [100, 100, 100, 0]
+      data: [100, 100, 0]
     }, 
     {
-      name: 'Erneuerbare Energie',
-      type: 'bar',
-      barWidth: '16',
-      stack: 'Total',
-      color: '#48BF91',
-      label: {
-        show: false,
-        position: 'inside'
-      },
-      data: [0, 0, 0, 50]
-    },
-    {
-      name: 'Export',
+      name: 'Exporte',
       type: 'bar',
       barWidth: '16',
       stack: 'Total',
@@ -1420,10 +1198,10 @@ export const thg_waterfall_one_option = {
         show: false,
         position: 'inside'
       },
-      data: [0, 0, 0, 20]
+      data: [0, 0, 20 ]
     },
     {
-      name: 'Import',
+      name: 'Importe',
       type: 'bar',
       barWidth: '16',
       stack: 'Total',
@@ -1432,12 +1210,24 @@ export const thg_waterfall_one_option = {
         show: false,
         position: 'inside'
       },
-      data: [0, 0, 0, 20]
-    }, 
+      data: [0, 0, 20]
+    },
     {
-      name: '',
+      name: 'Regionale Erzeugung',
+      type: 'bar',
+      barWidth: '16',
+      stack: 'Total',
+      color: '#48BF91',
+      label: {
+        show: false,
+        position: 'inside'
+      },
+      data: [0, 0, 50]
+    },
+    {
+      name: 'Referenzlinie',
       type: 'line',
-      symbol: 'none',
+      symbol: '',
       symbolSize: '10',
 //        symbolOffset:'',
       symbolRotate: '-90',
@@ -1448,24 +1238,40 @@ export const thg_waterfall_one_option = {
         label: {
         show: false,
        },
-      data: ['-', '-', 600, 600],
+      data: [600, 500, 500]
     },
   ],
 };
-export const thg_waterfall_two_option = {
-  backgroundColor: '#FFFFFF',
-  fontStyle: 'Roboto',
-  fontSize: '14',
-  tooltip: {
-    trigger: 'axis',
-    axisPointer: {
-      type: 'shadow'
+const yAxisData = ['1990', '2019'];
+const emphasisStyle = {
+  itemStyle: {
+    shadowBlur: 10,
+    shadowColor: 'rgba(0,0,0,0.3)'
+  }
+};
+export const thg_statisch_option = {
+  legend: {
+    data: ['Abfallwirtschaft und Sonstiges', 
+    'Landwirtschaft', 
+    'Industrie', 
+    'Verkehr', 
+    'Gebäude', 
+    ],
+    bottom: '12'
+  },
+  brush: {
+    toolbox: ['rect', 'polygon', 'lineX', 'lineY', 'keep', 'clear'],
+    xAxisIndex: 0
+  },
+  toolbox: {
+    feature: {
+      magicType: {
+        type: ['stack']
+      },
+      dataView: {}
     }
   },
-  legend: {
-  show: true,
-  bottom: '12'
-  },
+  tooltip: {},
   grid: {
     top: '10%',
     left: '3%',
@@ -1474,152 +1280,105 @@ export const thg_waterfall_two_option = {
     containLabel: true
   },
   xAxis: {
-    type: 'category',
+    data: yAxisData,
+    axisLine: { onZero: true },
     splitLine: { show: false },
-    data: ['1990', 'Status Quo', 'Mein Szenario', 'Energiewirtschaft']
+    splitArea: { show: false }
   },
   yAxis: {
-    type: 'value'
+    type: 'log',
+    show: true,
+    position: 'bottom',
+    name: 'Mt CO₂-\Emissionen',
+    nameLocation: 'end',
+    nameTextStyle: 'Roboto',
+    width: '76',
+    heigth: '32',
+    fontWeight: '300',
+    fontSize: '14'
   },
   series: [
     {
-      name: '',
-      type: 'bar',
-      stack: 'Total',
-      itemStyle: {
-        borderColor: 'transparent',
-        color: 'transparent'
-      },
-      emphasis: {
-        itemStyle: {
-          borderColor: 'transparent',
-          color: 'transparent'
-        }
-      },
-      data: [0, 0, 0, 500]
-    },
-    {
-      name: 'Abfallwirtschaft und Sonstiges',
+      name: 'Abfallwirtschaft und Sonstiges ABW',
       type: 'bar',
       barWidth: '16',
+      stack: 'five',
       color: '#F5F5DC',
-      stack: 'Total',
-      label: {
-        show: false,
-        position: 'inside'
-      },
-      data: [100, 100, 100, 0]
+      emphasis: emphasisStyle,
+      data: [13, 33]
     },
     {
-      name: 'Landwirtschaft',
+      name: 'Landwirtschaft ABW',
       type: 'bar',
-      barWidth: '16',
-      stack: 'Total',
+      stack: 'five',
       color: '#87D068',
-      label: {
-        show: false,
-        position: 'inside'
-      },
-      data: [100, 100, 100, 0]
+      emphasis: emphasisStyle,
+      data: [30, 23]
     },
-     {
-      name: 'Industrie',
+    {
+      name: 'Industrie ABW',
       type: 'bar',
-      barWidth: '16',
-      stack: 'Total',
+      stack: 'five',
       color: '#FA9FB5',
-      label: {
-        show: false,
-        position: 'inside'
-      },
-      data: [100, 100, 100, 0]
+      emphasis: emphasisStyle,
+      data: [28, 23]
     },
     {
-      name: 'Verkehr',
+      name: 'Verkehr ABW',
       type: 'bar',
-      barWidth: '16',
-      stack: 'Total',
+      stack: 'five',
       color: '#6C567B',
-      label: {
-        show: false,
-        position: 'inside'
-      },
-      data: [100, 100, 100, 0]
+      emphasis: emphasisStyle,
+      data: [31, 25]
     },
     {
-      name: 'Gebäude',
+      name: 'Gebäude ABW',
       type: 'bar',
-      barWidth: '16',
-      stack: 'Total',
+      stack: 'five',
       color: '#A8DADC',
-      label: {
-        show: false,
-        position: 'inside'
-      },
-      data: [100, 100, 100, 0]
+      emphasis: emphasisStyle,
+      data: [13, 13]
     },
     {
-      name: 'Energiewirtschaft',
+      name: 'Abfallwirtschaft und Sonstiges SA',
       type: 'bar',
       barWidth: '16',
-      stack: 'Total',
-      color: '#E6772E',
-      label: {
-        show: false,
-        position: 'inside'
-      },
-      data: [100, 100, 100, 0]
-    }, 
-    {
-      name: 'Erneuerbare Energie',
-      type: 'bar',
-      barWidth: '16',
-      stack: 'Total',
-      color: '#48BF91',
-      label: {
-        show: false,
-        position: 'inside'
-      },
-      data: [0, 0, 0, 50]
+      stack: 'four',
+      color: '#F5F5DC',
+      emphasis: emphasisStyle,
+      data: [132, 334]
     },
     {
-      name: 'Export',
+      name: 'Landwirtschaft SA',
       type: 'bar',
-      barWidth: '16',
-      stack: 'Total',
-      color: '#F6B93B',
-      label: {
-        show: false,
-        position: 'inside'
-      },
-      data: [0, 0, 0, 30]
+      stack: 'four',
+      color: '#87D068',
+      emphasis: emphasisStyle,
+      data: [302, 234]
     },
     {
-      name: 'Import',
+      name: 'Industrie SA',
       type: 'bar',
-      barWidth: '16',
-      stack: 'Total',
-      color: '#D9B38C',
-      label: {
-        show: false,
-        position: 'inside'
-      },
-      data: [0, 0, 0, 20]
-    }, 
-    {
-      name: '',
-      type: 'line',
-      markLine: {
-        symbol: 'emptyArrow',
-        color: '#808B96',
-        data: [
-          {
-            xAxis: '',
-            yAxis:'550',
-            symbol: 'none',
-          }
-        ]
-      },
+      stack: 'four',
+      color: '#FA9FB5',
+      emphasis: emphasisStyle,
+      data: [282, 234]
     },
-  ],
+    {
+      name: 'Verkehr SA',
+      type: 'bar',
+      stack: 'four',
+      color: '#6C567B',
+      emphasis: emphasisStyle,
+      data: [312, 254]
+    },
+    {
+      name: 'Gebäude SA',
+      type: 'bar',
+      stack: 'four',
+      color: '#A8DADC',
+      emphasis: emphasisStyle,
+      data: [136, 134]
+    },
+  ]
 }
